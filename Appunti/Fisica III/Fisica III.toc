@@ -1,0 +1,8 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {section}{\numberline {0.1}Teoria cinetica}{2}{section.0.1}%
+\contentsline {subsection}{\numberline {0.1.1}Esperimento selettore di velocità}{3}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {0.1.2}Effetto Doppler termico}{4}{subsection.0.1.2}%
+\contentsline {chapter}{\numberline {1}Calore specifico solidi}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Teoria Einstein (1906)}{5}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Modello di Debye}{5}{section.1.2}%
