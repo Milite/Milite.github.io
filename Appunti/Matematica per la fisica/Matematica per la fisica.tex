@@ -1,0 +1,1002 @@
+\documentclass[a4paper,11pt]{report}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+
+\usepackage{wrapfig}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{geometry}
+\geometry{a4paper, top=2.5cm, bottom=2cm, left=2cm, right=2cm}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=blue,
+	citecolor = black,      
+	urlcolor=cyan,
+}
+
+\swapnumbers
+\theoremstyle{remark}
+\newtheorem*{oss}{Oss}
+\newtheorem*{nb}{N.B}
+\newtheorem*{coro}{Corollario}
+\theoremstyle{definition}
+\newtheorem*{teo}{Teorema}
+\newtheorem*{Def}{Def}
+
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\begin{document}
+	\date{}
+	\author{Marco Militello}
+	\title{Matematica per la fisica}
+	\maketitle
+	\tableofcontents
+	\newpage
+	
+\part{Analisi complessa}
+
+\chapter{Numeri complessi}
+\begin{Def}
+	Un numero complesso è una coppia ordinata $(a,b)$ con $a,b \in \R$ tale che siano definite
+	\begin{center}
+	\begin{tabular}{ll}
+		 Addizione  & $[(a,b)+(c,d) = (a+c, b+d)]$\\
+		 Moltiplicazione & $[(a,b)(c,d) = (ac-bd, ad+bd)]$ \\
+		 Relazione di equivalenza & $[(a,b) = (c,d) \iff a=c \; b=d]$
+	\end{tabular}
+ 	\end{center}
+\end{Def}
+\begin{teo}
+	\[\C = \{(a,b)\, | \, a,b \in \R\}\]
+	è un campo Abeliano rispetto addizione e moltiplicazione
+\end{teo}
+\begin{oss}\hfil
+	\begin{itemize}
+		\item Proprietà commutativa e associativa seguono da quelle dei reali
+		\item Identità additiva \quad $(0) \rightarrow (0,0)$
+		\item Esiste opposto: \quad $(a,b) + (-a,-b) = (0,0)$
+		\item Identità moltiplicativa: \quad $(1) \rightarrow (1,0)$
+		\item Esiste inverso: \quad $(a,b)\frac{1}{(a,b)}= (1,0) \; \frac{1}{(a,b)} = \left(\frac{a}{a^2+b^2}, -\frac{b}{a^2+b^2}\right)$
+	\end{itemize}
+\end{oss}
+\begin{teo}\hfill\\
+	Il sottoinsieme $\C_0 = \{(a,0) \, | \, a \in \R\} \subset \C$ è un campo rispetto ad addizione e moltiplicazione \newline
+	$\C_0$ è ISOMORFO a $\R$
+\end{teo}
+\begin{Def}{\textbf{Unità immaginaria}}
+	\[(0,1) = i\]
+	$(0,1)(0,1) = (-1,0) \qquad (0,-1)=-i$
+\end{Def}
+\begin{Def}[\textbf{Forma cartesiana}]
+	\[z = (a,b) = a + ib \qquad a,b \in \R; \, z \in \C\]
+	$a = Re\{z\} \quad b=Im\{z\}$
+\end{Def}
+\begin{Def}[\textbf{Coniugazione complessa}]
+	\[\bar{z} = a-ib = (a,-b) \quad z = a+ib = (a,b)\]
+\end{Def}
+Operazioni notevoli:
+\begin{itemize}
+	\item $z + \bar{z} = 2Re\{z\} = 2a$
+	\item $z-\bar{z} = 2iIm\{z\} = 2ib$
+	\item  $z\bar{z} = a^2+b^2 = \abs{z}^2$
+\end{itemize}
+
+\section{Piano complesso (Armand-Gauss)}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.4\linewidth]{immagini/piano_gauss}
+\end{figure}
+\begin{gather*}
+	\abs{\vec{v}} = \abs{z} = \sqrt{a^2+b^2} \\
+	\begin{cases}
+		a = \abs{z}\cos\theta \\
+		b = \abs{z}\sin\theta
+	\end{cases}
+\end{gather*}
+Somma come somma vettoriale
+\begin{Def}[\textbf{Coordinate polari}]
+	\[z = a+ib = r(\cos\theta + i \sin\theta) \quad r= \sqrt{a^+b^2} \quad \tan\theta = \frac{b}{a}\]
+	\[\arg(z)=\theta=
+	\begin{cases}
+		\arctan\left(\frac{b}{a}\right) & a>0 \\
+		\arctan\left(\frac{b}{a}\right) + \pi & a<0 \; b>0 \\
+		\arctan\left(\frac{b}{a}\right) -\pi & a<0 \; b<0 \\
+		\frac{\pi}{2} & a=0 \; b>0 \\
+		-\frac{\pi}{2} & a=0 \; b<0
+	\end{cases}\]
+\end{Def}
+\subsection*{Formula di Eulero}
+Estendere $e^\gamma \quad \text{con } \gamma \in \R$ \; a \; $e^z \quad \text{con } z \in \C$ 
+\[e^z = e^x(\cos(y)+i\sin(y))\]
+\begin{oss}
+	\begin{gather*}
+		z = re^{i\theta} \rightarrow \bar{z} = re^{-i\theta} \\
+		z_1z_2 = r_1r_2e^{i(\theta_1 + \theta_2)}
+	\end{gather*}
+\end{oss}
+\subsection*{Formula di De Moivre}
+Se $n \in \mathbb{Z} $ si ha:
+\[z^n = r^n(\cos(n\theta) +i \sin(n\theta))\]
+\subsection*{Radice n-esima}
+Se $n \in \mathbb{Z}$ si ha:
+\[z^{\frac{1}{n}} = \sqrt[n]{r} \left(\cos\left(\frac{\theta + 2k\pi}{n}\right) + i\sin\left(\frac{\theta + 2k\pi}{n}\right)\right)\]
+Allora esistono n diverse radici si $z$ se $\abs{z} \neq 0$
+\subsection*{Equazioni di secondo grado in $\C$}
+\[az^2+bz+c \qquad \text{con } a,b,c \in \R \; z \in \C\]
+Ha sempre 2 soluzioni 
+\begin{itemize}
+	\item[*] Se $\Delta = b^2 - 4ac \geq 0 \; \Rightarrow$ 2 soluzioni reali
+	\item[*] Se $\Delta <0 \; \Rightarrow -\Delta >0 \Rightarrow z_{1,2} \in \C \text{ e } z_1 = \bar{z}_2$
+\end{itemize}
+\subsection*{Logaritmo}
+\[\log(z) = \log(r) + i\phi\]
+Così definito il logaritmo è una funzione palindroma, cioè assume valori differenti a seconda $\theta \mapsto \theta + 2k\pi$
+Allora scelgo $\theta$ per aver $\log(z)$ univoco
+\[\theta \in
+\begin{cases}
+	[0,\pi] & y>0 \\
+	[-\pi,0] & y<0
+\end{cases}\]
+\begin{nb}
+	$\log(z)$ è discontinuo per $x \in (-\infty,0]$ \newline
+	Allora escludo $(-\infty,0] \Rightarrow \C \smallsetminus (-\infty,0) \Rightarrow$ BRANCH CUT
+\end{nb}
+\noindent Definiamo 
+\[\log(z) = \log(r) +i\arg(z)\]
+$\overline{\log(z)} = \log(\bar{z})$
+\subsection*{Norma}
+Su $\C$ è definita la norma $\abs{z}$ che soddisfa le proprietà di una distanza $d(a,b) \quad a,b \in \C$
+\begin{itemize}
+	\item $d(a,b) = d(b,a)$
+	\item $d(a,b) = 0 \iff a=b$
+	\item $\forall c \in \C \Rightarrow d(a,b) + d(b,c) \geq d(a,c)$
+\end{itemize}
+\noindent \'E possibile allora definire la distanza 
+\[d(z_1,z_2) = \abs{z_1-z_2} \qquad z_1,z_2 \in \C \]
+\begin{Def}[\textbf{Successione di Cauchy}]\hfill\\ \label{cauchy}
+	\[\{z_k\} \; \text{tale che} \; \forall \epsilon>0 \; \exists N_\epsilon>0 \; | \; \forall n,m>N_\epsilon \Rightarrow \abs{z_n-z_m}<\epsilon\]
+\end{Def}
+\begin{nb}\hfill
+	\begin{enumerate}
+		\item $\{z_k\}$ è di \hyperref[cauchy]{Cauchy} se lo sono anche $\{Re(z_k)\} \text{ e } \{Im(z_k)\}$ 
+		\item Tutte le successioni convergenti sono di \hyperref[cauchy]{Cauchy}; in $\C$ è vero anche il viceversa perchè $\C$ è completo
+	\end{enumerate}
+\end{nb}
+\begin{Def}[\textbf{Serie su $\C$}]\hfil\\
+	La serie $\sum_n z_n$ con $z_n \in \C$ converge a $z \in \C$ se la successione delle somme parziali $\{S_n\}$ converge a $z$
+	\[S_n = \sum_{k=0}^{n-1} z_n\]
+\end{Def}
+\newpage
+\begin{oss}\hfil
+	\begin{itemize}
+		\item Condizione necessaria convergenza: \quad $z_n \to 0 \text{ per } n \to \infty$
+		cioè 
+		$\begin{cases}
+			Re(z_n) \to 0 \\
+			Im(z_n) \to 0
+		\end{cases}$
+		\item Condizione sufficiente: CONVERGENZA ASSOLUTA cioè \newline
+		Se converge $\sum \abs{z_n}$  su $\R \Rightarrow$ converge anche $\sum z_n$ su $\C$
+	\end{itemize}
+\end{oss}
+\begin{Def}
+	\[e^{i\theta} = \sum_{n=0}^{\infty} \frac{1}{n!} {(i\theta)}^n\]
+\end{Def}
+\begin{oss}
+	$e^{i\theta} = \cos\theta + i\sin\theta$
+\end{oss}
+\begin{Def}[\textbf{Serie di potenze}]\hfil\\
+	$S(z,z_0)$ con $z,z_0 \in \C \text{ e } z_0$ centro si ha:
+	\[S(z,z_0) = \sum_{n=0}^{\infty} a_n {(z-z_0)}^n \quad an=cost \, \in \C\]
+\end{Def}
+\noindent Convergenza per ogni $z$ fissato $\Rightarrow$ 	CONVERGENZA PUNTALE
+\begin{oss}
+	\[E = \{z \in \C \; | \; S(z,z_0) \text{ è convergente}\}\]
+	$E$ non è mai vuoto $\rightarrow z_0 \in E$ e $S(z,z_0) = a_0$ cioè converge 
+\end{oss}
+\begin{Def}[\textbf{Raggio di convergenza}] \label{def:raggio conv} 
+	\[D = \{\abs{z-z_0} \; \forall z \in E\}\]
+	Raggio di convergenza:
+	\[R = \sup_{z \in E} D\]
+	cioè la maggior distanza da $z_0$ per cui la serie converge
+\end{Def}
+\begin{oss}\hfil
+	\begin{itemize}
+		\item Le serie di potenze su $\C$ convergono in un cerchio di raggio $R$
+		\item Se la serie converge solo in $z=z_0 \Rightarrow R=0$
+		\item Se la serie converge $\forall z \in \C \Rightarrow R=\infty$
+	\end{itemize}
+\end{oss}
+\subsubsection*{Calcolo del raggio di convergenza}
+\begin{enumerate}
+	\item $ \displaystyle R = {\left(\lim_{n \to \infty} \sup_{k \geq n} {\abs{a_k}}^\frac{1}{k}\right) }^{-1}$ \newline
+	Si riduce a $\displaystyle \lim_{n \to \infty} \frac{1}{{\abs{a_n}}^{\frac{1}{n}}}$ se tale limite esiste
+	\item  $\displaystyle R =\lim_{n \to \infty} \frac{\abs{a_n}}{\abs{a_{n+1}}}$ se tale limite esiste 
+\end{enumerate}
+\noindent Calcolato $R \Rightarrow$ 
+$\begin{cases}
+	\abs{z-z_0}<R & \text{la serie converge} \\
+	\abs{z-z_0}>R & \text{la serie diverge} \\
+	\abs{z-z_0}=R & \text{si studia caso per caso}
+\end{cases}$
+\begin{oss}
+	La derivata di una serie di potenze con raggio di convergenza $R$ ha lo stesso raggio di convergenza
+\end{oss}
+\begin{coro}
+	Una serie di potenze è infinitamente differenziabile all'interno del suo raggio di convergenza
+\end{coro}
+\chapter{Funzioni complesse}
+\begin{Def}[\textbf{Funzione complessa}] \label{def:f complessa} \hfil\\
+	Una funzione complessa è una mappa 
+	\[f: \, \C \to \C \]
+	che associa un punto $z \in \C$ a un punto $w = f(z) \in \C$
+	\[f(z) = Re(f(z)) + iIm(f(z)) \Rightarrow f(z) = u(x,y) + iv(x,y)\]
+	$u,v$ funzioni su $\R^2$ di $x,y \in \R$
+\end{Def}
+\begin{Def}[\textbf{Continuità}] \label{def:continuità} \hfill\\
+	$f(z)$ è continua in $z_0 \in \C$ se è definita in un intorno di $z_0$ ed esiste finito il limite 
+	\[\lim_{z \to z_0} f(z) = f(z_0)\]
+\end{Def}
+\begin{Def}[\textbf{Limite}]\label{def:limite}\hfil\\
+	$f(z_0)$ è il limite di $f(z)$ per $z \to z_0$ se:
+	\[\forall \epsilon>0 \; \exists \delta>0 \; | \; \abs{z-z_0}<\delta \text{ se } \abs{f(z)-f(z_0)}<\epsilon\]
+\end{Def}
+\begin{nb}
+	Come per $\R^2$ il limite deve essere indipendente dal cammino
+\end{nb}
+\begin{Def}[\textbf{Continuità su un dominio}]\hfil\\
+	$f(z)$ è continua su un $D \subseteq \C$ se è continua $\forall z \in D$
+\end{Def}
+\begin{Def}[\textbf{Derivata si una funzione continua}]\hfil\\
+	$f(z)$ è differenziabile se esiste il limite
+	\[\lim_{z \to z_0} \frac{f(z)-f(z_0)}{z-z_0} = f'(z_0) = \frac{df}{dz}\Bigr|_{z_0}\]
+\end{Def}
+\begin{nb}
+	Anche la derivata è indipendente dal cammino
+\end{nb}
+\begin{Def}[\textbf{Funzione olomorfa}]\label{def:olomorfa}\hfil\\
+	Una funzione differenziabile su $D \subseteq \C$ si dice OLOMORFA
+\end{Def}
+\subsubsection*{Proprietà funzioni olomorfe}
+\begin{itemize}
+	\item $(f \pm g)' (z) = f'(z) \pm g'(z)$
+	\item $(fg)'(z) = f'(z)g(z) + f(z)g'(z)$
+	\item $\left(\frac{f}{g}\right)'(z) = \frac{f'(z)g(z) - f(z)g'(z)}{g^2(z)} \quad g(z) \ne 0$ 
+	\item Funzione composta: \quad $\frac{d}{dz} (f \circ g) (z) = f'(g(z))g'(z)$
+	\item Derivata funzione inversa: data $w= f(z)$ olomorfa in $z_0$ con $f'(z_0)$ \newline
+	$h(w) = z = f^{-1}(w) \text{ è olomorfa in } w_0=f(z_0) \text{ e } h'(w_0) = \frac{1}{f'(h(w_0))} = \frac{1}{f'(z_0)}$
+\end{itemize}
+\section{Condizioni di Cauchy-Riemann}
+Condizioni necessarie e sufficienti per verificare differenziabilità
+\begin{teo}\hfill\\
+	$f(z) = u(x,y) + iv(x,y)$ tale che $u,v$ abbiano derivate parziali continue in un intorno di $z_0 = x_0 + iy_0$
+	 \[\delta_x f(z_0) = i\delta_y f(z)\] cioè:
+		\begin{itemize}
+			\item $\delta_x u(x,y) \bigr|_{(x_0,y_0)} = \delta_y v(x,y) \bigr|_{x_0,y_0}$
+			\item $\delta_y u(x,y) \bigr|_{(x_0,y_0)} = -\delta_x v(x,y) \bigr|_{x_0,y_0}$
+		\end{itemize}
+\end{teo}
+\begin{oss}
+	Le condizioni di Cauchy-Riemann permettono di scrivere le derivate complesse di $f(z) = u +iv$ in 4 modi equivalenti:
+	\[f'(z) = \begin{cases}
+		\delta_x u + i \delta_x v \\
+		\delta_x u - i \delta_y v \\
+		\delta_x u - i \delta_y u \\
+		\delta_y u + i \delta_x u 
+	\end{cases}\]
+\end{oss}
+\begin{Def}[\textbf{Operatori differenziali in $\bf {z,\bar{z}}$}]
+	\begin{gather*}
+		\delta_z = \frac{1}{2}(\delta_x - i\delta_y) \\
+		\delta_{\bar{z}} = \frac{1}{2}(\delta_x + i\delta_y)
+	\end{gather*}
+\end{Def}
+\begin{teo}\hfil\\
+	Se $f(z)$ è olomorfa su un dominio $D \subseteq \C \Rightarrow \delta_{\bar{z}} f(z) =0$
+\end{teo}
+\begin{Def}[\textbf{Funzioni anti-olomorfe}]\hfil\\
+	Una funzione si dice anti-olomorfa se
+	\[\frac{\delta}{\delta z} f(z) =0\]
+\end{Def}
+\begin{oss}
+	Si può dimostrare che se $f(z)$ è antiolomorfa $\Rightarrow \bar{f}(z)$ è olomorfa 
+\end{oss}
+\begin{Def}[\textbf{Funzioni trigonometriche}]
+	\[\cos{z} = \frac{1}{2} (e^{iz} + e^{-iz}) \qquad \sin{z} = \frac{1}{2i} (e^{iz} - e^{-iz}) \]
+\end{Def}
+\begin{Def}[\textbf{Funzioni iperboliche}]
+	\[\cosh{z} = \frac{1}{2} (e^z+e^{-z}) \qquad \sinh{z} = \frac{1}{2} (e^z-e^{-z})\]
+\end{Def}
+\section{Proiezione stereografica e punto all'infinito}
+I numeri complessi sul piano $\C$ possono essere rappresentati come punti sulla superficie di una sfera
+\[S^2 = \left\{(\xi,\eta,\zeta) \; \Bigr| \; \xi^2 + \eta^2 + {\left(\zeta - \frac{1}{2}\right)}^2 = \frac{1}{4}\right\}\]
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{immagini/sfera}
+	\label{fig:sfera}
+\end{figure}
+\begin{gather*}
+	x = \frac{\xi}{1-\zeta} \qquad y = \frac{\eta}{1-\zeta} \\
+	\xi = \frac{x}{x^2+y^2+1} \qquad \eta = \frac{y}{x^2+y^2+1} \qquad \zeta = \frac{x^2+y^2}{x^2+y^2+1}
+\end{gather*}
+\noindent $\zeta =1 \Rightarrow x=y=\infty  \rightarrow (0,0,1)$ è chiamato PUNTO ALL'INFINITO 
+\[\C \cup \{\infty\} = S^2 = \hat{\C} \rightarrow \text{ COMPATTIFICAZIONE di } \C\]
+$\hat{\C}$ è isomorfo a una sfera
+\begin{nb}
+	Avremmo potuto usare la proiezione del polo sud $(0,0,-1)$; in questo caso il punto $z=\infty$ sarebbe stato mappato su $w = \frac{1}{x+iy}=0$ \newline
+	Quindi per studiare $f(z)$ definita su $\C$ e capire il suo andamento a $z=\infty$ posso studiare $f\left(\frac{1}{w}\right)$ attorno a $w=\infty$ con $w=\frac{1}{z}$ \newline
+	Se $f\left(\frac{1}{w}\right)$ è olomorfa o singolare in $w=0 \Rightarrow f(z)$ è olomorfa o singolare in $z=\infty$ 
+\end{nb}
+\begin{Def}[\textbf{Intera}]\hfil\\
+	Se $f(z)$ è olomorfa su tutto $\C \Rightarrow$ si dice INTERA	 
+\end{Def}
+\begin{Def}[\textbf{Singolarità}]\hfil\\
+	I punti in cui $f(z)$ (non intera) non è differenziabile o non è definita si dicono SINGOLARIT\'A
+\end{Def}
+\section{Singolarità}
+\section*{Singolarità isolate}
+Se $f(z)$ è olomorfa in un intono di $D(z_0,\epsilon) =\{z \; | \; \abs{z-z_0}<\epsilon\}$ di $z_0$ ma non in $z_0$; se $f(z_0)$ non è definta o non  differenziabile
+\begin{enumerate}
+	\item \textbf{Singolarità rimovibile} \newline
+	Se $f(z_0)$ non è definta, ma esiste finito 
+	\[\lim_{z\to z_0} f(z)\]
+	posso estendere $f$ in $z_0$ 
+	\[f(z_0) = \lim_{z\to z_0} f(z)\] 
+	Con questa estensione $f(z)$ estesa è olomorfa in $D \cup \{z_0\}$
+	\item \textbf{Singolarità di tipo polo di ordine k} \newline
+	Se esiste finito
+	\[\lim_{z\to z_0} {(z-z_0)}^kf(z) = a \ne 0 \quad k \in \mathbb{N}\geq 1\]
+	allora $f(z)$ ha un polo di ordine k
+	\begin{itemize}
+		\item K=1 $\rightarrow$ Polo semplice
+		\item k=2 $\rightarrow$ Polo doppio
+	\end{itemize}
+	\begin{oss}
+		Nelle vicinanze di un polo di ordine k si può scrivere 
+		\[f(z) = \frac{g(z)}{{(z-z_0)}^k} \quad g(z) \text{ olomorfa e non nulla in } z_0\]
+	\end{oss}
+	\begin{oss}
+		dato un polo di ordine k
+		\[\lim_{z\to z_0} {(z-z_0)}^kf(z) = \infty \quad \forall k < n\]
+		In particolare per $k=0$
+		\[\lim_{z\to z_0} f(z)=0 \text{ la funzione diverge ad un polo}\]
+	\end{oss}
+	\item \textbf{Singolarità essenziale} \newline
+	Singolarità non rimovibile neanche moltiplicando per ${(z-z_0)}^n$ con $n\to \infty$ \newline
+	Se $f(z_0)$ è singolarità essenziale di $f(z)$ allora non esiste $\lim_{z\to z_0}$ \newline
+	$f(z)$ oscilla violentemente tanto più mi avvicino a $z_0$ a seconda del cammino; $f(z)$ può assumere qualsiasi valore
+\end{enumerate}
+\begin{teo}[\textbf{Weierstrass}]\hfil\\
+	$f(z_0)$ singolarità essenziale; posso avvicinarmi quanto voglio alla singolarità essenziale e allo stesso tempo avvicinarmi a qualsiasi complesso
+	\[\forall \epsilon,\delta>0 \; \forall c \in \C \Rightarrow \exists z \; | \; \abs{z-z_0}<\delta \text{ e } \abs{f(z)-c}<\epsilon\]
+\end{teo}
+\begin{teo}[\textbf{Picard}]\hfil\\
+	In un intono di $z_0$ singolarità essenziale di $f(z)$ , $f(z)$ assume qualsiasi valore complesso un numero infinito di volte con eccezione al più di un valore
+\end{teo}
+\begin{Def}[\textbf{Funzione meromorfa}]\hfil\\
+	$f(z)$ è MEROMORFA se le sue uniche singolarità in un dominio $D \subseteq \C$ sono rimovibili o poli (non si considerano le singolarità a $z=\infty$)
+\end{Def}
+	\begin{oss}
+		Si possono studiare le proprietà di singolarità di $f(z)$ in z=$\infty$ studiando le proprietà di $f(w)$ con $w=\frac{1}{z}$ in $w=0$ \newline
+		Grazie al doppio mapping della proiezione stereografica si ha: 
+	\end{oss}
+	\begin{itemize}
+		\item poli in z $\rightarrow$ zeri in w 
+		\item zeri in z $\rightarrow$ poli in w
+		\item singolarità essenziali in z $\rightarrow$ singolarità essenziali in w
+	\end{itemize} 
+	\section*{Singolarità non isolata}
+	Singolarità si dice non isolata se non esiste intorno in cui è isolate
+	\begin{nb}
+		Basta un solo punto $z_1$ tale che $\abs{z-z_0}<\delta$ con $f(z_1)$ non olomorfa per avere che $f(z_0)$ è singolarità non isolata
+	\end{nb}
+	\begin{enumerate}
+		\item Singolarità che sono punti limite di una sequenza di singolarità isolate \newline
+		es.: $f(z) = \tan(\frac{1}{z})$
+		\item Punti di diramazione di funzioni a più variabili \newline
+		es.: $f(z) = \sqrt{z}$
+	\end{enumerate}
+\chapter{Superfici di Rieamann}
+	Una volta fissata la disposizione del branch cut, tutti i valori della funzione in tutti i rami sono fissati sapendo il valore in un punto. \newline
+	$f(z)=\sqrt{z}$ definisco cut $(-\infty,0]$ e dico che $\sqrt{1}:=1$; Ho completamente determinato $f(z)$ sia $w_0(z)$ che $w_1(z)$. \newline
+	Questo suggerisce che esiste descrizione alternativa in cui non ci sono tagli. \newline
+	La funzione a valori doppi sono quindi single-value ed olomorfe. \newline
+	Estendo il dominio con molteplici copie di $D \subseteq \mathbb{C}$. \newline
+	es.: lo stesso punto $z \in \mathbb{C}$ possiamo immaginare abbia 2 immagini diverse $f(z)$ : $f_1(z)$ e $f_2(z)$ \newline
+	Raddoppiando $\mathbb{C}$ avremmo 2 copie $z_1$ e $z_2$ $\Rightarrow$ abbiamo $f_1(z_1)$ e $f_2(z_2)$ che ora sono single-valued. \newline
+	Il nuovo dominio si chiama {\bfseries SUPERIFICIE DI RIEMANN}  e corrisponde ad un'estensione di $\mathbb{C}$
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.7\linewidth]{immagini/riemann.jpg}
+		\caption{Superficie di Riemann}
+		\label{fig:riemann}
+	\end{figure}
+	\noindent Le due copie di $\C$ vanno incollate lungo quello che prima era il branch cut. In questo modo attraversando le linee di congiungimento si passa da un ramo all'altro. \newline
+	In generale ci sono tante copie di $D \in \mathbb{C}$ quante sono le branch-cut (eventualmente anche infinite [es:~$\log(z)]$)
+	\chapter{Integrazione sul piano complesso}	
+	Le proprietà di olomorfia di $f(z)$ su $\mathbb{C}$ possono essere determinate dalle condizioni di Riemann. \newline
+	Le proprietà di differenziabilità sono connesse con le proprietà di integrabiltà di $f(z) \mbox{ su } \mathbb{C}$ 
+	\section{Curve}
+	\begin{Def}[\textbf{Curva}] \hfil\\
+		Una curva è una mappa continua 
+			\begin{gather*}
+				\gamma:[a,b] \in \mathbb{R} \rightarrow \mathbb{C} \\
+				t \mapsto \gamma(t)= x(t) +iy(t)
+			\end{gather*}	
+		$z_a = \gamma(a) \mbox{ e } z_b=\gamma(b)$ sono gli estremi della curva 
+	\end{Def}
+	\begin{Def}[\textbf{Orientazione curva}] \hfil
+		\begin{itemize}
+			\item Una curva si dice che ha ORIENTAZIONE POSITIVA se il verso di percorrenza è antiorario
+			\item Una curva si dice che ha ORIENTAZIONE NEGATIVA se il verso di percorrenza è orario
+		\end{itemize}
+	\end{Def}
+	\begin{Def}[\textbf{Curva opposta}]\hfil\\
+		La curva con orientazione opposta è data da una mappa 
+		\[t \mapsto \gamma(a+b-t)=-\gamma\]
+	\end{Def}
+	\begin{Def}[\textbf{Curva semplice}]\hfil\\
+		Una curva semplice è una curva che non si interseca $\Rightarrow$ mapping iniettivo
+		\[\gamma(t_1)\neq\gamma(t_2) \quad \forall t_1\neq t_2\]
+	\end{Def}
+	\begin{Def}[\textbf{Curva chiusa}]\hfil\\
+		Una curva chiusa è una curva tale che $\gamma(a)=\gamma(b)$ 
+	\end{Def}
+		\begin{Def}{\textbf{Curva di Jordan}}\hfil\\
+		Una curva di Jordan è una curva semplice e chiusa (nessun altro punto oltre a $z_a=z_b$ coincide)
+	\end{Def}
+	\begin{Def}{\textbf{Curva regolare a tratti}}\hfill\\
+		Data una curva $\gamma(t)=x(t)+iy(t)$, se $x(t) \mbox{ e } y(t)$ sono continue per $t\in[a,b]$ e se esiste una partizione di $[a,b]$ dove $x'(t) \mbox{ e } y'(t)$ sono continue e non simultaneamente nulle $\Rightarrow$ $\gamma(t)$ è regolare a tratti.
+	\end{Def} 
+	\begin{Def}{\textbf{Curve omotope}}\hfil\\
+		Due curve su $D \in \mathbb{C}$ con gli stessi estremi $[a,b]$ sono omotope se: esiste una mappa continua che manda l'una nell'altra
+		\begin{gather*}
+			\gamma:[a,b]\times[0,1] \mapsto D \in \mathbb{C} \mbox{ t.c. se } t=[a,b] \mbox{ e } u=[0,1]: \\
+			\forall t \in [a,b] \mbox{ } \forall u \in [0,1] \Rightarrow \gamma(t,0) = 	\gamma_1(t) \mbox{ e } \gamma(t,1)= \gamma_2(t)
+		\end{gather*}
+		Quindi $\gamma(a,u)=\gamma_1(a)=\gamma_2(a) \mbox{ e } \gamma(b,u)=\gamma_1(b)=\gamma_2(b)$ \newline
+		Per ogni valore di u ho una curva in D; variando u passo da $\gamma_1$ a $\gamma_2$ 
+	\end{Def} 
+		\begin{teo}[\textbf{Jordan}]\hfil\\
+			Ogni curva di Jordan divide il piano complesso in 2 regioni. \newline
+			Se l'orientazione della curva è positiva a destra ho la regione esterna, mentre a destra ho la regione interna; se l'orientazione è negativa ho l'opposto. 
+		\end{teo}
+		\begin{Def}{\textbf{Dominio semplicemente connesso}}\hfil\\
+			Date due curve $\gamma_1$ e $\gamma_2$ che sono omotope 
+			\begin{equation*}
+					\forall u \in [0,1] \Rightarrow \gamma(a,u)=\gamma(b,u) \mbox{ e } \gamma(t,0)=\gamma_1(t) 	\mbox{ } \gamma(t,1)=\gamma_2(t)
+			\end{equation*}
+			Allora il dominio D è semplicemente connesso se ogni curva chiusa è omotopa ad un punto (cioè può essere deformata in punto). \newline
+			Ciò è possibile solo se non ci sono buchi.
+		\end{Def}
+	\section{Integrale di linea}
+	\begin{Def}[\textbf{Integrale di linea}]\hfil\\
+		Data una curva regolare a tratti $\gamma: t\mapsto\gamma(t)=x(t)+iy(t) \text{ con } t \in [a,b]\subseteq\mathbb{C}$ \newline
+		Dato un dominio $D\subseteq\mathbb{C}$ e una funzione $f(z) \mbox{ con } z=\gamma(t)$ che sia continua $\forall z=\gamma(t)\in D \mbox{ e } \forall t \in [a,b]$ $\Rightarrow$ si definisce INTEGRALE DI LINEA di f lungo $\gamma$
+		\begin{equation*}
+		\int_\gamma f(z)\,dz = \int_{a}^{b} f(\gamma(t))\gamma'(t)\,dt \quad \mbox{ con }\gamma'(t) = \frac{d\gamma(t)}{dt} = x'(t)+iy'(t)
+		\end{equation*}
+		Si ha dunque 
+		\begin{equation*}
+			\int_\gamma f(z)\,dz = \int_{a}^{b} \bigl[u(x(t),y(t)) + iy(x(t),y(t))\bigr]\bigl(x'(t)+iy'(t)\bigr)\,dt \quad \text{con } f(z)= u(x,y)+iv(x,y)
+		\end{equation*}
+		\begin{equation*}
+		\int_\gamma f(z)\,dz = \int_{a}^{b} (ux'-vy')\,dt + i\int_{a}^{b} (uy'+vx')\,dt
+		\end{equation*}
+	\end{Def}
+	\begin{oss}
+		Questo ci dice l'integrale è lineare e i cammini possono essere sommati
+		\begin{gather*}
+			\int_\gamma af(z)+bf(z)\,dz = a\int_\gamma f(z)\,dz + b\int_\gamma f(z)\,dz \quad \forall a,b \in \mathbb{C} \\
+			\int_{\gamma_1} f(z)\,dz + \int_{\gamma_2} f(z)\,dz = \int_{\gamma_1+\gamma_2} f(z)\,dz \quad \mbox{se } \gamma_1(b)=\gamma_2(a)
+		\end{gather*}
+		Questa proprietà mi permette di scrivere $	\int_\gamma f(z)\,dz= -\int_{-\gamma} f(z)\,dz$
+	\end{oss}
+	\begin{oss}
+		L'integrale è indipendente dalla parametrizzazione scelta per la curva $\gamma$
+	\end{oss}
+	\begin{Def}[\textbf{Lunghezza curva}]
+		\begin{equation*}
+			L=\int_{a}^{b} \abs{\gamma'(t)}\,dt = \int_{a}^{b} \sqrt{(x'(t))^2+(y'(t))^2}\,dt
+		\end{equation*}
+	\end{Def} 
+	\begin{teo}[\textbf{Disuguaglianza di Darboux}]\hfil\\
+		Data una curva regolare a tratti $\gamma(t)$ di lunghezza L e una funzione $f(z)$ continua e limitata su $\gamma$
+		\begin{equation}
+			\abs{f(z)}\le M \quad \forall z \in \gamma \Rightarrow \abs*{\int_\gamma f(z)\,dz}\le LM
+		\end{equation}
+	\end{teo}
+
+\section{Valore principale integrale}
+	Generalizzo il concetto di integrale improprio \newline
+	se $f(z)$ è continua su una curva $\gamma(t)$ con $t\in [a,b]$ ad eccezione di un punto $\xi \in \gamma(t)$ \newline
+	Posso considerare una circonferenza di raggio $\epsilon$ intorno a $\xi$ \newline
+	Definisco 
+	\begin{equation*}
+		I_a = \int_{a}^{\xi'} f(\gamma(t))\gamma'(t)\,dt \text{ e } I_b = \int_{\xi''}^{b} f(\gamma(t))\gamma'(t)\,dt \quad \forall \epsilon>0	
+	\end{equation*}
+	Se esistono $I_a, I_b \mbox{ per } \epsilon\to 0 \Rightarrow I_a + I_b$ è integrale improprio di $f(z)$ lungo $\gamma$ \newline
+	Se $I_a \mbox{ o } I_b \to\pm\infty \mbox{ quando } \epsilon \to 0 \mbox{ ma } \displaystyle \lim_{\epsilon\to 0} I_a + I_b = a (finito) \in \mathbb{C}
+	\Rightarrow$ si definisce il valore principale 
+	\begin{equation*}
+		P.V. \int_\gamma f(z)\,dz = \lim_{\epsilon \to 0} \Bigl(\int_{a}^{\xi'(t)} f(z)\,dz + \int_{\xi''(t)}^{b} f(z)\,dz\Bigr)
+	\end{equation*}
+
+	\begin{nb}
+		Se le singolarità sono più di una si può scrivere
+		\begin{equation*}
+			P.V. \int_\gamma f(z)\,dz =\lim_{\epsilon \to 0} \Bigl(\sum_{j=0}^{n} \int_{\xi''_j}^{\xi''_{j+1}} f(z)\,dz\Bigr) \quad \text{con } \xi''_0=a \quad \xi'_{n+1}=b
+		\end{equation*} 
+	\end{nb}
+ 
+\chapter{Forme differenziali}
+	\begin{Def}[\textbf{Forma differenziale}]\hfil\\
+		$\omega = P(x,y)dx + Q(x,y)dy \quad$ con P,Q funzioni $C^1 \mbox{ su } D \subseteq \mathbb{R}^2$
+	\end{Def}
+
+	\begin{Def}[\textbf{Integrale di una forma differenziale}]\hfil\\
+		L'integrale di una forma differenziale su una curva $\gamma(t)$ regolare a tratti è:
+		\begin{equation*}
+			\int_\gamma \omega = \int_{a}^{b} \bigl[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)\bigr]\,dt \Rightarrow \int_\gamma \omega = \int_\gamma f(z)
+		\end{equation*} 
+	\end{Def}
+	
+	\begin{teo}[\textbf{Green}]\hfil\\
+		Data una forma differenziale definita su S racchiuso da una curva di Jordan $\gamma$ con orientazione positiva 
+		\begin{equation}
+			\int_\gamma P(x,y)dx + Q(x,y)dy\,dt = \iint_S \bigl[\delta_x Q(x,y)- \delta_y P(x,y)\bigr]\,dx\,dy
+		\end{equation}
+	\end{teo}
+
+	\begin{teo}[\textbf{Cauchy}]\hfil\\
+		Sia $f(z)$ olomorfa su D semplicemente connesso e $\gamma$ una curva chiusa in D 
+		\begin{equation*}
+			\int_\gamma f(z)\,dz = 0
+		\end{equation*}
+	\end{teo}
+
+	\begin{oss}
+		Esiste un'estensione dovuta a Goursat che non richiede che $f(z)$ sia derivabile su un dominio semplicemente connesso, ma basta chiedere che $f(z)$ sia omotopa ad un punto.
+	\end{oss}
+
+	\begin{coro}
+		L'integrale di una funzione $f(z)$ olomorfa su D semplicemente connesso non dipende dal cammino $\gamma$
+	\end{coro}
+
+	\begin{oss}
+		In generale se D non è semplicemente connesso il teorema fallisce.
+	\end{oss}
+	\begin{teo}\hfil\\
+		Sia $f(z)$ olomorfa su un dominio D. Per un punto arbitrario $z_0 \in D $ possiamo sempre definire la primitiva 
+		\begin{equation*}
+			F(z)=\int_{z_0}^{z} f(z')dz
+		\end{equation*}
+		$F(z)$ è anch'essa olomorfa e si ha che $F'(z)= f(z)$
+	\end{teo}
+
+	\begin{coro}\hfil
+		\begin{enumerate}
+			\item Due diverse primitive di $f(z)$ possono differire solo per una costante.
+			\item $\int_{A}^{B} f(z)\,dz = F(B)-F(A)$
+		\end{enumerate}
+	\end{coro}
+
+\section{Relazione tra forme differenziali e campi vettoriali}
+	Usando le condizioni di Cauchy-Riemann la forma differenziale su può scrivere come:
+	\[\omega = f(z)dz = (u+iv)dx + (-v+iu)dy\]
+
+	\begin{Def}[\textbf{Forma differenziale chiusa}]\hfil\\
+		$\omega = P(x,y)dx + Q(x,y)dy$ \quad si dice chiusa se $\delta_y P = \delta_x Q$
+	\end{Def}
+
+	\begin{Def}[\textbf{Forma differenziale esatta}]\hfil\\
+		$\omega = dg = \delta_x g(x,y)dx + \delta_y g(x,y)dy$
+	\end{Def}
+
+	\begin{oss}
+		Ogni forma differenziale esatta è anche chiusa: $\delta_x\delta_y g(x,y) = \delta_y\delta_x g(x,y)$
+	\end{oss}
+\section{Formula integrale di Cauchy}
+
+	\begin{teo}\hfil\\
+		Data $f(z)$ olomorfa su D semplicemente connesso e data $\gamma$ di Jordan con orientazione positiva 
+		\[\Rightarrow \forall z_0 \mbox{ interno a } \gamma \text{ si ha: } \quad 
+		f(z_0) = \int_\gamma \frac {f(z_0)}{z-z_0} \,dz\]
+	\end{teo}
+
+	\begin{oss}
+		Questo permette di costruire il valore di $f(z)$ all'interno di $\gamma$ partendo dai valori di $\gamma$ che sono il bordo della regione $\Rightarrow$ OLOGRAFIA
+	\end{oss}
+
+	\begin{coro}
+		Se $f(z)$ è olomorfa in $z_0$ $\Rightarrow$ è differenziabile infinite volte e ha derivate che si possono scrivere come: 
+		\[f^{(n)}(z_0)= \frac{n!}{2\pi i} \int_\gamma \frac{f(z)}{(z-z_0)^{n+1}} \, dz\]
+		La formula integrale di Cauchy è un caso particolare per curve semplici e chiuse. Se la curva non è semplice si può avvolgere più volte attorno a $z_0$
+	\end{coro}
+
+	\begin{Def}[\textbf{Numero avvolgimenti}]
+		\[n(\gamma,z_0) = \frac{1}{2 \pi i} \int_\gamma \frac{1}{z-z_0}\,dz \quad
+		\Rightarrow \quad n(\gamma,z_0)f(z_0) = \frac{1}{2 \pi i} \int_\gamma \frac{f(z)}{z-z_0}\,dz\]
+	\end{Def}
+
+	\begin{teo}\hfil\\
+		Data $\gamma(t)$ con $t \in [a,b]$ curva chiusa e dato $z_0 \notin \gamma$ si ha che $n(\gamma,z_0) \in \mathbb{Z}$
+	\end{teo}
+
+	\begin{Def}[\textbf{Funzione analitica}]\hfil\\
+		Se $F(z)$ è olomorfa su un cerchio $D_R$ di raggio R attorno a $z_0 \in \mathbb{C}$ è anche analitica, cioè si può espandere in serie di potenze ed è derivabile infinite volte 
+		\[f(z) =\sum_{n=0}^{\infty} a_n (z-z_0)^n \quad \mbox{con } a_n = \Bigl[\frac{d^n f(z)}{dz^n}\Bigr]_{z=z_0}\frac{1}{n!} = \frac{1}{2\pi i} \int_{D_R} \frac{f(z)}{(z-z_0)^{n+1}}\,dz\]
+		R è il raggio di convergenza della serie.
+	\end{Def}
+
+	\noindent Il teorema di Cauchy mostra che $f(z)$ olomorfa su D semplicemente connesso implica che $\int_\gamma f(z)\,dz = 0$ con $\gamma$ curva di Jordan. \newline
+	Il teorema di Morera afferma che le sole funzioni con queste proprietà sono le funzioni olomorfe.
+	
+	\begin{teo}{\textbf{Morera}}\hfil\\
+		Data $f(z)$ su D semplicemente connesso tale che $\int_\gamma f(z)\,dz = 0$ con $\gamma$ curva semplice e chiusa \newline $\Rightarrow f(z)$ è olomorfa
+	\end{teo}
+
+	\paragraph{Ulteriori proprietà delle funzioni olomorfe}
+	
+	\begin{teo}[\textbf{valor medio}]\hfil\\
+		Sia $f(z)$ olomorfa su $D \subset \mathbb{C}$ semplicemente connesso è possibile calcolare il vaolore di $f(a)$ tramite un integrale su di una qualsiasi circonferenza centrata in a e contenuta in D
+		\[f(a)= \frac{1}{2\pi} \int_{0}^{2\pi} f(a+re^{i\theta})\,d\theta\]
+		Cioè calcolando il valor medio della funzione sulla circonferenza
+	\end{teo}
+
+	\begin{Def}[\textbf{Bordo}]\hfil\\
+		Dato uno spazio topologico S ed un punto $z_0 \in S$. Si dice che $z_0$ è un punto di bordo di S se ogni intorno di $z_0$ contiene sia punti di S che punti del suo complementare. \newline
+		L'insieme dei punti di bordo si chiama BORDO e si indica con $\delta S$
+	\end{Def}
+
+	\begin{teo}[\textbf{massimo modulo}]\hfill\\
+		Sia $f(z)$ olomorfa e non costante su un dominio D limitato tale che $f(z)$ sia continua sul bord $\delta D$ \newline $\Rightarrow$ $\abs{f(z)}$ raggiunge il massimo per un punto $z_0 \in \delta D$. Se $f(z) \neq 0 \Rightarrow$ anche il minimo è sul bordo.
+	\end{teo}
+
+	\begin{nb}
+		Bisogna richiedere che f(z) sia diverso da zero perchè se $f(z_0) = 0 \mbox{ per } z_0 \in D \Rightarrow$ il minimo sarebbe $z_0$
+	\end{nb}
+
+	\begin{teo}[\textbf{Liouville}]\hfil\\
+		Una funzione $f(z)$ olomorfa e limitata su $\mathbb{C}$ è una costante
+	\end{teo}
+
+	\begin{teo}[\textbf{fondamentale dell'algebra}]\hfil\\
+		Un polinomio complesso di grado n ha esattamente n zeri sul piano complesso
+	\end{teo}
+
+	\begin{teo}[\textbf{unicità}]\hfil\\
+		Sia $f(z)$ olomorfa su $D \subseteq \mathbb{C}$ non necessariamente semplicemente connesso tale che $f(z_n)=0 \forall$ elemento della successione ${z_n} \in D \mbox{ con } z_n \neq z_0$ punto di convergenza della serie allora:
+		\[f(z)=0 \quad \forall z \in D\]
+		Quindi tutti gli zeri di una funzione olomorfa sono punti isolati
+	\end{teo}
+
+	\begin{oss}
+		è cruciale che $z_0 \in D$
+	\end{oss}
+
+	\begin{coro}
+		Se $f(z)$ olomorfa è nulla su un aperto contenuto in D $\Rightarrow$ è nulla su tutto D
+	\end{coro} 
+
+	\section{Serie di Laurent}
+	Olomorfie e analiticità sono proprietà che sui complessi sono connesse; una funzione olomofa è scrivibile in serie di Taylor
+	\[ \label{eq:taylor}
+	f(z) =\displaystyle \sum_{n=0}^{\infty} a_n(z-z_0)^n
+	\]
+	$\forall z_0 \in D \mbox{ in } f(z_0)$ sia olomorfa e $\forall$ disco $|z-z_0|<R$ interamente contenuto in D
+	\[a_n = \Bigl[\frac{1}{n!} f^{(n)}(z)\Bigr]_{z=z_0} = \int_\gamma \frac{1}{2\pi i} \frac{f(z)}{(z-z_0)^n} \,dz\] 
+	con $\gamma$ curva chiusa e semplice che contiene $z_0$
+	
+	\begin{oss}
+		$f(z)$ è analitica perchè può essere differenziata infinite volte
+	\end{oss}
+
+	\begin{nb}
+		Questa cosa non succede invece sui reali
+	\end{nb}
+
+	\noindent Per domini non semplicemente connessi è possibile dare una rappresentazione in serie di una funzione olomorfa su un anello \newline
+	Applicazione $\rightarrow$ quando ci sono singolarità isolate \newline
+	La serie che si ottiene è uan serie bilatera e si chiama SERIE DI LAURENT
+	
+	\begin{teo}\hfil\\
+		Data $f(z)$ olomorfa su un anello $k = \{{z \in \mathbb{C} \mbox{ }| \mbox{ } r< |z-z_0|<R}\} \mbox{ con } z_0$ centro e r<R raggi \newline
+		Si può allora scrivere la serie di Laurent 
+		\begin{equation}
+			f(z) = \sum_{n=-\infty}^{+\infty} d_n (z-z_0)^n = \underbrace{\sum_{n=0}^{+\infty} d_n(z-z_0)^n}_{parte regolare}  + \underbrace{\sum_{n=1}^{+\infty} \frac{d_n}{(z-z_0)^n}}_{parte principale}
+		\end{equation}
+		$d_n = \frac{1}{2\pi i } \int_\gamma \frac{f(z)}{(z-z_0)^{n+1}}\,dz \qquad$ con $\gamma$ curva semplice e chiusa su k con orientazione positiva
+	\end{teo}
+
+	\begin{nb}
+		$ d_n \neq \bigl[\frac{1}{n!} f^{(n)}(z)\bigr]_{z=z_0}$ perchè la serie non contiene più solo potenze positive. \newline
+		Quindi i coefficienti non si possono più scrivere in termini di semplici derivate perche $z_0$ uò essere una singolarità
+	\end{nb}
+
+	\begin{oss}
+		I valori massimi e minimi dei raggi r e R sono:
+		\[R =\Bigl(\lim_{n \to \infty} \sup_{k\ge n} |d_k|^{\frac{1}{k}}\Bigr)^{-1} \quad \mbox{con } n \ge 0\] 
+		Cioè la parte regolare è una serie di potenze con n positiva che converge su $\abs{z-z_0}<R$
+		\[ r =\Bigl(\lim_{n \to \infty} \sup_{k\ge n} |d_k|^{\frac{1}{k}}\Bigr) \quad \mbox{con } n > 1\]
+		Cioè la parte principale è una serie di potenze $\omega = \frac{1}{z-z_0}$ che converge sul disco $\abs{\omega}<\frac{1}{r}$ \newline
+		\noindent L'intersezione delle due regioni dà $r< \abs{z-z_0}<R$; quindi la serie converge uniformemente sull'anello k e su ogni suo sottoanello
+	\end{oss}
+
+	\noindent Data una singolarità isolata $z_0$ di $f(z)$ esiste un anello $k = \{z \in \mathbb{C} \mbox{ | } 0< |z-z_0|<\delta\}$ su $f(z)$  è olomorfa  e quindi esiste la sua espansione in serie di Laurent \newline
+	\noindent La forma della serie dà informazioni su natura della singolarità
+	
+	\begin{enumerate}
+		\item se $z_0$ è rimovibile $\Rightarrow$ la parte principale è assente e la serie coincide con la serie di Taylor (sostituisco la funzione con la sua serie di Taylor e rimuovo la singolarità)
+		\item se $z_0$ è un polo di ordine k $\Rightarrow$ la parte principale contiene solo i primi k termini 
+		\[f(z) = \sum_{n = -k}^{\infty} d_n (z-z_0)^n\]
+		$d_{-k} = 0 \mbox{ } \forall k>n \mbox{ e } d_{-n} \neq 0$ solo polo più alto
+		\item se $z_0$ è una singolarità essenziale la serie di Laurent contiene infiniti termini nella parte principale con potenze negative
+	\end{enumerate}
+	
+\section{Prolungamento analitico}
+	Data $f(z)$ olomorfa su $D \subset \mathbb{C}$ è possibile estendere estenderla su $D' \mbox{ con } D \subset D'$. Questo significa che data $f(z)$ con $z \in D$ si può trovare una funzione olomorfa $g(z)$ con $z \in D'$ tale che $f(z) = g(z) \mbox{ in } D \cap D'$ 
+	$\Rightarrow$ si può definire $\tilde{f}(z)$ tale che:
+	\[\tilde{f}(z) =
+	\begin{cases}
+			f(z) & \forall z \in D\\
+			g(z) & \forall z \in D'
+	\end{cases}\]
+	Si ha che  $\tilde{f}(z)$ è olomorfa su $D \cup D'$ e si riduce a $f(z)$ su 
+	
+	\begin{Def}[\textbf{Prolungamento analitico}]\hfil\\
+		La funzione  $\tilde{f}(z)$ è detto PROLUNGAMENTO ANALITICO di f
+	\end{Def}
+
+	\begin{teo}\hfil\\
+		Se  $\tilde{f}(z)$ esiste $\Rightarrow$ è unico
+	\end{teo}
+
+\subsection{Massimo dominio di olomorfia}
+	Ci sono diversi modi per calcolare la continuazione analitica; ognuno di questi metodi è valido in un sottodominio del massimo possibile
+	
+	\begin{enumerate}
+		\item ESTENSIONE PER SERIE DI POTENZE \newline
+		Si usa il metodo di Weierstrass (estensione per cerchi)
+		
+		\noindent Supponiamo di avere $f$ olomorfa su $D_0$ disco centrato nell'origine 0 con una singolarità $z_0$ sul bordo $\delta D_0$ \newline
+		Preso $z_1 \in D_0$ posso espandere in serie di Taylor attorno a $z_1$ con raggio di convergenza  \newline $R_1 = \abs{z_1 - z_0}$ \newline
+		Chiamo la serie di Taylor $f_1(z)$ e per costruzione $f(z) = f_1(z) \qquad \forall D_0 \cap D_1$ \newline
+		Se $D_1$ non è interamente contenuto in $D_0$ $\Rightarrow f_1(z)$ è prolungamento analitico di $f$
+		\begin{equation*}
+			f_1(z) = \sum_{n=0}^{\infty} {\frac{1}{n!} f^n(z)\Big|_{z=z_1}(z-z_1)^n}
+		\end{equation*}  
+		Posso ripetere l'operazione e definire
+		\begin{equation*}
+			f_2(z) = \sum_{n=0}^{\infty} {\frac{1}{n!} f^n(z)\Big|_{z=z_2}(z-z_2)^n}
+		\end{equation*}  
+		Posso continuare fino al massimo dominio di olomorfia
+		
+		\item RAPPRESENTAZIONE INTEGRALE \newline
+		Scrivo le funzioni in termini di un integrale
+		\begin{equation}
+			\Gamma(z) = \int_{0}^{\infty} e^{-t} t^{z-1}\,dt \quad \mbox{ FUNZIONE GAMMA DI EULERO}
+		\end{equation}
+		La funzione $\Gamma(z)$ generalizza il fattoriale ai numeri complessi
+		
+		\item ESPRESSIONE ANALITICA
+	\end{enumerate}
+
+\section{Residui}
+	Vogliamo generalizzare il teorema di Cauchy al caso in cui $\int_\gamma f(z)\,dz$ sia su una curva chiusa che racchiude una singolarità di $f(z)$
+	\begin{Def}[\textbf{Residuo}]\hfil\\
+		Il residui di $f(z)$ nel punto $z_0$ di singolarità isolata con $f(z)$ altrimenti olomorfa su $D - \{z_0\}$ è definito come:
+		\begin{equation*}
+			Res[f,z_0] = d_{-1} 
+		\end{equation*}
+		con $d_{-1}$ coefficiente del termine $\frac{1}{z-z_0}$ nell'espansione di Laurent di $f(z)$ attorno a $z_0$. Cioè:
+		\begin{equation*}
+			Res[f,z_0] = \frac{1}{2 \pi i} \int_\gamma f(z)\,dz
+		\end{equation*}
+		con $\gamma$ semplice e chiusa con orientazione positiva che racchiude $z_0$
+	\end{Def}
+
+	\begin{oss}
+		Il residuo può essere 0, per esempio $d_{-1} = 0 \mbox{ ma } d_{-n} \neq 0 \quad n>1$
+	\end{oss}
+
+	\begin{oss}
+		Se $z_0$ è un polo di ordine k allora si ha:
+		\begin{equation*}
+			Res[f,z_0] = \frac{1}{(k-1)!} \lim_{z \to z_0} \frac{d^{k-1}}{dz^{z-k}} [(z-z_0)^kf(z)]
+		\end{equation*}
+	\end{oss}
+
+	\begin{oss}
+		Quando $f(z) = \frac{h(z)}{g(z)} \quad$ con $h(z)$ olomorfa e $g(z)$ ha unico zero semplice in $z_0$ dove $h(z_0) \neq 0$ allora:
+		\begin{equation*}
+			Res[f,z_0] = \frac{h(z_0)}{g'(z_0)}
+		\end{equation*}
+	\end{oss}
+
+\subsection{Residuo all'infinito}
+	Abbiamo visto che $f(z)$ può avere una singolarità isolata in $ z=\infty$. Si definisce allora il residuo all'infinito prendendo una circonferenza $\gamma = \{z \in \mathbb{C} \quad \vert \quad \abs{z}=R \} \quad$ con R grande a sufficienza a contenere tutte le singolarità al finito
+	\begin{equation*}
+		Res[f,\infty] = \frac{1}{2 \pi i } \int_{-\gamma} f(z)\,dz  
+	\end{equation*} 
+	$z=\infty$ può essere mappato in $w=0$ tramite $ w = \frac{1}{z}$
+	\begin{equation*}
+		Res[f,\infty] = \frac{1}{2 \pi i } \int_{-\gamma} f(z)\,dz = -\int_{\gamma'} \frac{1}{w^2}f\Bigl(\frac{1}{w}\Bigr)\,dw 
+	\end{equation*} 
+	con $\gamma'$ una circonferenza centrata in $w=0$ con raggio $\frac{1}{R}$ con orientazione positivaù
+	\begin{equation*}
+		Res[f,\infty] = 	Res\Bigl[g(w) = -\frac{1}{w^2} f\Bigl(\frac{1}{w}\Bigr),0\Bigr]
+	\end{equation*}
+
+	\begin{oss}
+		Il $Res[f,\infty] \neq 0$ anche se $f(z=\infty)$ non è singolare
+	\end{oss}
+
+	\begin{teo}[\textbf{residui}]\hfil\\
+		Data $f(z)$ olomorfa su D eccetto un numero finito di singolarità isolate $z_1,\dots,z_n$ e data una curva chiusa e semplice $\gamma \subset D$ con orientazione positiva si ha: 
+		\begin{equation}
+			\int_\gamma f(z)\,dz = 2 \pi i \sum_{k=1}^{n}Res[f,z_k] 
+		\end{equation}
+	\end{teo}
+
+	\begin{coro}
+		Quando $\gamma$ non è semplice o non è orientata positivamente si ha in generale:
+		\begin{equation*}
+			\int_\gamma f(z)\,dz = 2 \pi i \sum_{k=1}^{n} n(\gamma, z_k)Res[f,z_k] \qquad \textrm{n: indice con segno}
+		\end{equation*}
+	\end{coro}
+
+	\begin{oss}
+		Il teorema dei residui è utile perchè permette di calcolare l'integrale di funzioni olomorfe lungo una curva chiusa sapendo solo i valori della funzione alle singolarità racchiuse dalla curva
+	\end{oss}
+
+	\begin{coro}
+		La somma di tutti i residui incluso il punto all'infinito è zero
+	\end{coro}
+
+	\begin{nb}
+		Il teorema dei residui si può applicare solo quando $\gamma$ racchiude un numero finito di singolarità. Se fossero infinite ci potrebbe essere un punto di accumulazione per le singolarità che quindi non sarebbero più isolate. Per questo motivo il teorema dei residui non si può applicare direttamente alle funzioni multi-valued. Si può però applicare ad ogni brach basta stare attenti che $\gamma$ non attraversi il branch-cut
+	\end{nb}
+
+\section{Valore principale di Cauchy}
+
+	Se abbiamo singolarità sul cammino di integrazione $\int_{-\infty}^{\infty} \frac{f(x)}{x-x_0}\,dx$ con $x_0 \in \R \text{ e } f(x)$ regolare in $x_0$ tale che $\displaystyle \lim_{x \to \pm\infty} f(x) \to 0$ sufficientemente rapido. \newline
+	Si può definire il valore principale di Cauchy 
+	\[P.V. \int_{-\infty}^{\infty} \frac{f(x)}{x-x_0}\,dx = \lim_{\epsilon \to 0^+} \Bigl[\int_{-\infty}^{x_0-\epsilon}\frac{f(x)}{x-x_0} + \int_{x_0+\epsilon}^{\infty} \frac{f(x)}{x-x_0}\Bigr]\]
+	I due integrali sono separatamente divergenti, ma nella somma la divergenza in $\epsilon$ si cancella. \newline
+	Calcolo integrale usando $\Gamma_R$
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\linewidth]{immagini/fig1}
+		\label{fig:fig1}
+	\end{figure}
+
+	\[I(R) = \int_{\Gamma_R} \frac{f(z)}{z-x_0}\,dz = 2\pi i \sum_k Res\Bigl[\frac{f(z)}{z-x_0},z_k\Bigr]\]
+	Allora
+	\begin{equation}
+		P.V. \int_{-\infty}^{\infty} \frac{f(x)}{x-x_0}\,dx = \pi i f(x_0) + 2\pi i \sum_k Res\Bigl[\frac{f(z)}{z-x_0},z_k\Bigr]
+	\end{equation}
+
+\chapter{Proprietà mapping}
+
+	Una funzione $f(z)$ può essere vista come una mappa da $\C \rightarrow \C$ \newline
+	Dato un aperto $\Omega \subseteq D$ dominio di olomorfia, studio comportamento locale di $f$ per capire cosa succede a $f(\Omega) = \{f(z) \quad \vert \quad z \in \Omega\}$: \newline
+	f è olomorfa $\Rightarrow$ f è analitica $\Rightarrow$ f è sviluppabile in serie di Taylor attorno a $z_0 \in \Omega$ \newline
+	Il comportamento locale di f ha determinato dai primi termini della \hyperref[eq:taylor]{serie di taylor} \newline
+	m è il primo indice tale che $a_m \neq 0$ $\Rightarrow$ il comportamento locale è determinato da 
+	\[f(z)-f(z_0) \simeq a_m(z-z_0)^m\]
+	Ci sono due casi:
+	
+	\begin{enumerate}
+		\item $m=1$ \quad cioè \quad $a_1=f'(z_0)\neq0$
+		
+		\begin{teo}\hfil\\
+			Esiste un aperto $U$ in un intorno di $z_0$ tale che:
+			\begin{itemize}
+				\item $f \text{ mappa } U$ in un intorno di $f(U)$ in maniera biunivoca
+				\item $f(U)$ è un aperto $\Rightarrow$ f è una mappa aperta
+				\item $f$ ha una funzione inversa $f^{-1}$ olomorfa e manda $f(U) \rightarrow U$
+				\item $f$ è una mappa CONFORME, cioè converva gli ancoli tra le linee
+			\end{itemize}
+		\end{teo}
+	
+		\begin{Def}
+			Dire che gli angoli si preservano significa che se le rette L e L' hanno angolo $\theta$ fra loro su U $\Rightarrow$ $f(L)$ e $f(L')$ hanno tangenti che si intersecano con angolo $\theta$ su $f(U)$ 
+		\end{Def}
+	
+		$f$ manda rette in curve, ma le tangenti preservano gli angoli
+		
+		\begin{oss}
+			Dato che $f^{-1}$ è olomorfa allora si può espandere in serie di Taylor attorno a $w_0=f(z_0)$
+			\[f^{-1}(w) = \sum_{k=0}^{\infty} b_k (w-w_0)^k\]
+			con i $b_k$ dati dalla formula di Lagrange
+			\[b_0 = z_0 \qquad b_n = \frac{1}{n!} \frac{d^{n-1}}{dz^{n-1}} {\Bigl(\frac{z-z_0}{f(z)-f(z_0)}\Bigr)}^n \Bigr|_{z=z_0} \, n\geq 1\]
+		\end{oss}
+	
+		\item $m>1$ si può dimostrare che esiste un aperto $U$ tale che 
+		\begin{itemize}
+			\item $f$ è una mappa m a 1 
+			\item $f(U)$ è un aperto
+			\item $f$ ingrandisce gli angoli di un fattore m
+		\end{itemize}
+	
+	\end{enumerate}
+
+	\begin{teo}[\textbf{Open Mapping}]\hfil\\
+		Ogni funzione $f$ olomorfa non costante mappa aperti in aperti
+	\end{teo}
+
+	\begin{nb}
+		Questo non vale se la funzione è costante perchè $f$ mappa $\C$ in un punto
+	\end{nb}
+
+	\begin{teo}\hfil\\
+		Se $f$ è olomorfa e biunivoca si ha: 
+		\[f'(z_0) \neq 0\ \; \forall z  \qquad \exists \, f^{-1} \text{ olomorfa }\]
+		Si dice che $f$ è una MAPPA CONFORME
+	\end{teo}
+
+\section{Trasformazioni lineari fratte}
+	Trasformazioni lineari conformi del tipo:
+	\[F(z) = \frac{az + b}{cz + d} \qquad a,b,c,d \in \C\]
+	con $ad-cb \neq 0$ sono mappe conformi $\forall z_0$ tali che $z_0 \neq -\frac{b}{c}$ \newline
+	Inoltre
+	\[F'(z) = \frac{ad-bc}{{cz+d}^2} \neq 0 \]
+	Casi particolari:
+	\begin{enumerate}
+		\item Traslazioni: \qquad $w = z + \alpha$
+		\item Dilatazioni: \qquad $w = \beta z$
+		\item Inversioni:  \qquad $w = \frac{1}{z}$
+	\end{enumerate}
+	Qualsiasi $f$ lineare fratta può essere scitta come combinazione di queste 3 trasformazioni
+	\begin{oss}
+		Spesso conviene esprimere $F(z)$ sulla sfera di Riemann $\hat{\C} = \C \cup \{\infty\}$
+		\[F\left(-\frac{d}{c}\right) = \infty \quad F(\infty) = \frac{a}{c} \qquad \text{quando } c=0 \to \infty\]
+		Allora le trasformazioni lineari fratte sono le uniche mappe biunivoche e olomorfe di $\hat{\C} \rightarrow \hat{\C}$ \newline
+		Sono AUTOMORFISMI  di $\hat{\C}$ \newline
+		Mappano rette e cerchi in se stessi (in realtà su $\hat{\C}$ le rette sono cerchi che passano da $\infty$) \newline
+		Inoltre dati 3 punti $z_1,z_2,z_3$ e dati $w_1,w_2,w_3$ esiste una sola trasformazione F che abbia 
+		\[w_i = F(z_i) \; i=1,2,3\]	
+	\end{oss}
+	\begin{nb}
+		\[B(z,z_1,z_2,z_3) = \frac{(z-z_1)(z_2-z_3)}{(z-z_3)(z_2-z_1)}\]
+		è invariante sotto trasformazioni lineari fratte
+		\[B(F(z),F(z_1),F(z_2),F(z_3)) = B (z,z_1,z_2,z_3)\]
+	\end{nb}
+	\begin{oss}
+		L'insieme delle trasformazioni $F$ forma un gruppo. Associamo a $F$ la matrice 
+		\[
+		\hat{F} = 
+		\left(\begin{matrix}
+			a & b \\ c & d
+		\end{matrix}\right)
+		\qquad F = \frac{az + b}{cz+d}
+		\]
+		Inversa e composizione di $F$ seguono dalle regole delle matrici \newline
+		Dato che si può riscalare $\hat{F} \rightarrow \lambda \hat{F}$ con $\lambda \in \C$ senza cambiare trasformazione allora si può normalizzare $\hat{F}$ in modo che $ ad-cb = 1$ \newline
+		Quindi il gruppo delle trasformazioni $F$ è $SL(2, \C)$ gruppo di matrici $2 \times 2$ complesse e determinante unitario \newline
+		Dato che $\det \hat{F} = 1$ non fissa il segno di $a,b,c,d$ ho che il gruppo è:
+		\[\frac{Sl(2,\C)}{\mathbb{Z}_2} \qquad \mathbb{Z}_2 = \{\mathbb{I}, - \mathbb{I}\}\] 
+	\end{oss}
+	\begin{teo}[\textbf{Riemann mapping}]\hfill\\
+		Ogni aperto semplicemente connesso $\omega \subset \C$ può essere mappato conformemente (cioè usando $f$ bi-olomorfa) sul cerchio unitario aperto
+	\end{teo}
+	\begin{coro}
+		Tutte le regioni aperte di $\C$ semplicemente connesse sono uniformemente equivalenti 
+	\end{coro}
+
+\part{Spazi funzionali}
+\end{document}
