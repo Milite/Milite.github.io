@@ -17,3 +17,5 @@
 \contentsline {subsection}{\numberline {2.5.4}Binomiale standardizzata}{16}{subsection.2.5.4}%
 \contentsline {section}{\numberline {2.6}Stime parametri}{17}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Funzione di verosimiglianza}{17}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Metodo dei minimi quadrati}{18}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Test del Chi-Quadro}{19}{section.2.9}%

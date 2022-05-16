@@ -615,10 +615,38 @@ La funzione di verosimiglianza permette:
  \item di realizzare un metodo per costruire uno stimatore 
 \end{itemize}
 
-
 \begin{teo}[Rao-Cramer]\label{teo:Rao}
 	Una qualsiasi stima imaparziale $\bar{\theta}$ del parametro ha una varianza che non può essere inferiore ad un valore limite
 	\[Var(\bar{\theta}) \ge \frac{\left[1+\frac{\delta b_n}{\delta\theta}\right]}{E\left[-\frac{\delta^2 \ln(\mathcal{L}(\vec{x};\theta))}{\delta\theta^2}\right]}\] 
 	Uno stimatore si dice efficiente se vale l'uguale nella relazione; in questo caso lo stimatore di minima varianza rende massima la funzione di verosimiglianza
 \end{teo}
+
+\section{Metodo dei minimi quadrati}
+Abbiamo un modello che definisce relazione tra due grandezze fisiche X e Y; con metodo minimi quadrati cerchiamo parametri che rendono minima la distanza tra parametri e modello, a differenza del metodo della maximum likelihood che rende massima la probabilità, dato un modello, di osservare i nostri dati campionati
+\[Q^2(\theta) = \sum_{i=1}^N \frac{{[y_i - f(\vec{\theta},x_i)]}^2}{\sigma^2_i}\]
+$Q^2$ è la somma dei quadrati delle distanze tra i punti campionati e la funzione $Y = f(\vec{\theta}, X)$; ciascuna distanza è normalizzata alla larghezza della $pdf(y_i)$ \newline
+Quando le $pdf_i(y_i)$ sono gaussiane i due stimatori (ML e LQ) coincidono 
+\begin{teo}[di Gauss-Markov]
+	Considero due grandezze fisiche X e Y legate da una relazione lineare nei parametri; i dati sono N misure $y_i$ del valore della granezza Y effettuate in corrispondeza di uno specifico valore $x_i$ della gandezza X. Non c'è errore sulle $x_i$ mentre le variabili $y_i$ sono variabili casuali indipendenti tra di loro. \newline
+	Sotto queste ipotesi, nel caso di un modello lineare nei paramtrei, lo stimatore dei minimi quadrati è unbiased e, tra tutti gli stimatori unbiased e lineari nei parametri, è quello con varianza minima
+\end{teo}
+
+\section{Test del Chi-Quadro}
+Nel caso di pdf gaussiane, il valore assunto dal funzionale nel minimo è usato per verificare la compatibilità dati-modello
+\[\chi^2_{min} = \sum_{i=1}^N \frac{{(y_i-\mu_i)}^2}{\sigma^2_i}\]
+Questa è l'espressione di un $\chi^2$ a N-K gradi di libertà \newline
+Il test del $\chi^2$ è uno dei possibili test di ipotesi per validare o confutare la validità di un modello
+\[\chi^2_{rid} \frac{\chi^2}{N-K} \sim 1\]
+Si scegli un criterio per il rigetto delle ipotesi: quando il $\chi^2$ cade nella coda di destra della distribuzione di probabilità che corrisponde al 5\% 
+\[\int_{\chi^2_{min}}^\infty pdf(\chi^2)\, d\chi^2 > 0.05\]
+Il test del $\chi^2$ valuta la bontà del fit riassumendo il risultato in un singolo valore. Per analizzare in dettaglio quanto è buono o meno l'accordo tra modello e dati si posso studiare:
+\begin{itemize}
+	\item i residui
+		\[res_i = y_i - f(x_i,\vec{\theta^*_{LS}})\]
+		questi sono una r.v. distribuita in modo gaussiano attorno al valore medio nullo con deviazione standard $\sigma_i$
+	\item i residui normalizzati 
+		\[res_i = \frac{y_i - f(x_i,\vec{\theta^*_{LS}})}{\sigma_i}\]
+		questi ssono una r.v. distribuita in modo gaussiano attorno ad un valore medio nullo con deviazione standard 1
+\end{itemize}
+
 \end{document}
