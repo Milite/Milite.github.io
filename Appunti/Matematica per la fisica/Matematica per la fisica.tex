@@ -1146,4 +1146,67 @@ e ha elemento neutro prodotto $1\in F$
 
 \chapter{Spazi normati}
 
+\begin{Def}
+	La \textbf{norma} di un vettore $\in V$ spazio vettoriale è una mappa
+	\[||\,||: \; V \to \R^+\]
+	che soddisfa $\forall \; \vec{v},\vec{w}\in V \quad \forall\lambda \in \C,\R$
+	\begin{enumerate}
+		\item $||\vec{v}||\ge 0 \qquad ||{\vec{v}}||=0 \iff \; \vec{v} = \vec{0}$ \qquad condizione di positività
+	  	\item $||\lambda\vec{v}|| = \abs{\lambda}||\vec{v}||$
+    \item $||\vec{v}+\vec{w}|| \le ||\vec{v}|| + ||\vec{w}||$ \qquad disuguaglianza triangolare
+	\end{enumerate}
+\end{Def}
+
+\begin{Def}
+	Uno spazio vettoriale dotato di norma si dice \textbf{spazio normato}
+\end{Def}
+
+\begin{coro}
+	Gli spazi normati sono sempre degli spazi metrci dato che si può sempre definire
+	\[d(\vec{v},\vec{w})= ||\vec{v}-\vec{w}||\]
+\end{coro}
+
+\begin{coro}
+	Per la convergenza in uno spazio normato si può usare 
+	\[\lim_{n\to\infty} ||\vec{v}_n - \vec{v}|| =0\]
+\end{coro}
+
+\begin{Def}
+	Un \textbf{isomorfismo} tra spazi normati è una mappa biunivoca
+	\[f: \; (X, ||\,||_x) \to (Y, ||\, ||_y)\]
+	che preserva la struttura lineare e la norma, cioè
+	\begin{itemize}
+		\item $f(\lambda\vec{v}+\mu\vec{w}) = \lambda f(\vec{v})+ \mu f(\vec{w})$ 
+  \item $||f(\vec{v})||_y = ||\vec{v}||_x \qquad \forall \;\vec{v},\vec{w} \in X \quad \lambda,\mu \in F$
+	\end{itemize}
+\end{Def}
+
+\begin{oss}
+	Tramite la norma superiore 
+	\[||f||_{sup} = \sup_{x\in K} \abs{f(x)}\]
+	possiamo definire il concetto di convergenza uniforme
+\end{oss}
+
+\begin{Def}
+	$\{f_n\} \to f$ converge uniformemente su K se 
+	\[\lim_{n\to\infty} \underbrace{\sup_{x\in K} \abs{f_n(x)-f(x)}}_{||f_n-f||_{sup}} =0\]
+\end{Def}
+
+\begin{oss}
+	La convergenza uniforme inplica la convergenza puntuale
+\end{oss}
+
+\begin{Def}
+	Norma $L_1$
+	\[||f||_1 = \int_0^1 \abs{f(x)}\, dx\]
+\end{Def}
+
+\begin{oss}
+	Si può dimostrare che la convergenza in norma sup implica convergenza in norma $L_1$
+\end{oss}
+
+\begin{Def}
+	Uno \textbf{spazio di Banach} è uno spazio vettoriale normato e completo
+\end{Def}
+
 \end{document}
