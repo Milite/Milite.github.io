@@ -1209,4 +1209,118 @@ e ha elemento neutro prodotto $1\in F$
 	Uno \textbf{spazio di Banach} è uno spazio vettoriale normato e completo
 \end{Def}
 
+\begin{Def}
+	Il \textbf{prodotto scalare (o interno)} su uno spazio vettoriale complesso è una mappa 
+	\begin{align*}
+		(\vec{a},\vec{b}): \; V\times V &\to \C \\
+		\vec{v},\vec{w} &\mapsto (\vec{v},\vec{w})
+	\end{align*}
+	che soddisfa le seguenti proprietà:
+	\begin{enumerate}
+		\item Linearità
+		\[(\vec{u}, \lambda\vec{v}+\mu\vec{w}) = \lambda(\vec{u}, \vec{v}) + \mu(\vec{v},\vec{w}) \qquad \forall\lambda,\mu \in \C\]
+		\item Hermiticità \label{2}
+		\[(\vec{v}, \vec{w}) = \overline{(\vec{w},\vec{v})} \quad \text{ simmetria su $\R$}\]
+		\item Positività
+		\[(\vec{v},\vec{v})\ge 0 \qquad (\vec{v},\vec{v})=0 \iff \vec{v} = \vec{0}\]
+	\end{enumerate}
+\end{Def}
+
+\begin{oss}
+	La prop \hyperref[2]{2} implica anti-linearità nel primo argomento
+	\[(\lambda\vec{u}+\mu\vec{v}, \vec{w}) = \bar{\lambda}(\vec{u},\vec{w})+\bar{\mu}(\vec{v},\vec{w})\]
+\end{oss}
+
+\begin{Def}
+	Uno spazio vettoriale dotato di prodotto scalare è detto \textbf{pre-Hilbert}
+\end{Def}
+
+\begin{oss}
+	Pre-Hilbert è anche uno spazio normato; si può sempre definire
+	\[||\vec{v}|| = \sqrt[]{(\vec{v}, \vec{v})}\]
+\end{oss}
+
+\begin{oss}
+	Il prodotto scalare soddisfa la disuguaglianza di Schwarz
+	\[{\abs{(\vec{v},\vec{w})}}^2 \le (\vec{v},\vec{v})(\vec{w},\vec{w})\]
+\end{oss}
+
+\begin{Def}
+	Uno \textbf{spazio di Hilbert finito dimensionale} è uno spazio vettoriale dotato di prodotto scalare e completo 
+\end{Def}
+
+\begin{Def}
+	Due vettori sono \textbf{ortogonali} se il loro prodotto scalare è nullo
+	\[(\vec{v},\vec{w})=0\]
+\end{Def}
+
+\begin{oss}
+	I vettori ortogonali sono linearmente indipendenti 
+\end{oss}
+
+\begin{oss}
+	Gli elementi di una base (set massimale di vettori linearmenti indipendenti) sono \textbf{ortomormali}
+	\[(\vec{e}_i,\vec{e}_j) = \delta_{ij} \quad \forall \; i,j = 1,\dots,n\]
+	\begin{enumerate}
+		\item $\vec{v} = \displaystyle \sum_{k=1}^n v_k \vec{e}_k \qquad v_k = (\vec{e}_k,\vec{v})$
+  \item $(\vec{v},\vec{w})= \displaystyle \sum_{k=1}^n \bar{v}_k\vec{w}_k \qquad \bar{v}_k = (\vec{v}, \vec{e}_k) \quad \vec{w}_k = (\vec{e}_k,\vec{w})$
+  \item ${||\vec{v}||}^2 = \displaystyle \sum_{k=1}^n {\abs{v_k}}^2$ identità di Parseval
+	\end{enumerate}
+\end{oss}
+
+\begin{oss}
+	In ogni spazio di Hilbert finito dimensionale è sempre possibile costruire una base ortonormale a partire da qualsiasi base 
+\end{oss}
+
+\chapter{Spazi di Hilbert infinito dimensionali}
+Ci concentriamo sugli spazi separabili, cioè che hanno un sottoinsieme denso che è contabile \newline
+Diciamoc che il set $\{\vec{l}_k\}$ con $k\in \mathbb{N}$ in uno spazio di Hilbert infinito dimensionale è un sistema ortonormale Se
+\[(\vec{e}_i,\vec{e}_j) = \delta_{ij} \quad \forall \, i,j \in \mathbb{N} \]
+Se inoltre $\forall \vec{v}$ si può scrivere
+\[\vec{v} = \sum_[i=1]^\infty v_i\vec{e}_i \qquad v_i = (\vec{e}_i,\vec{v})\in \C\]
+allora il sistema $\{\vec{e}_k\}$ è un \textbf{sistema ortonormale completo} [S.O.N.C] o base di Hilbert
+
+\begin{oss}
+	Abbiamo generalizzato la nozione di base usando $\infty$ elementi; ciò è possibile perchè abbiamo la nozione di limite
+	\[\vec{v} = \lim_{n\to\infty} \sum_{i=1}^n v_i\vec{e}_i \qquad \vec{v} = \lim_{n\to\infty} \left|\left| \sum_{i=1}^n v_i\vec{e}_i - \vec{v}\right| \right| =0\] 
+\end{oss}
+
+\begin{Def}
+	L'espansione 
+	\[\vec{v} = \sum_{i=1}^\infty (\vec{e}_i,\vec{v})\vec{e}_i\]
+	è chiamata \textbf{serie di Fourier} e i coefficienti $v_i$ sono detti coefficienti di Fourier
+\end{Def}
+
+\begin{teo}
+	La serie $\displaystyle \sum_{i=1}^n \alpha_i\vec{e}_i$ converge $\iff \displaystyle \sum_{i=1}^\infty {\abs{\alpha_i}}^2$ converge 
+\end{teo}
+
+\begin{oss}
+	Come nel caso finito dimensionale valgono
+	\begin{itemize}
+		\item $(\vec{v},\vec{e}_i) = 0 \quad \forall i \Rightarrow \vec{v}=0$
+  \item $||\vec{v}|| = \displaystyle \sum_{k=1}^\infty {\abs{v_k}}^2 \quad \forall\vec{v}$
+  \item $\forall \; \vec{v},\vec{w} \in V \Rightarrow (\vec{v},\vec{w}) = \displaystyle \sum_{k=1}^\infty \bar{v}_kw_k$
+	\end{itemize}
+\end{oss}
+
+\begin{Def}
+	Lo spazio $l^2(\C)$
+	\[\sum_{n=1}^\infty {\abs{z_n}}^2 < \infty\]
+	è uno spazio di Hilbert con il prodotto scalare \newline
+	In generale gli spazi $l^p(\R)$ o $l^p(\C)$ con $1 \le p <\infty$
+	\[\sum_{n=0}^\infty {\abs{x_n}}^p < \infty\]
+	sono solamente dotati di norma, quindi sono spazi di Banach 
+\end{Def}
+
+\begin{oss}
+	Si può dimostrare utilizzando la disuguaglianza di Minkowski per le serie 
+	\[{\left(\sum_{n=0}^\infty {\abs{x_n+y_N}}^p\right)}^{\frac{1}{p}} \le {\left(\sum_{n=0}^\infty {\abs{x_n}}^p\right)}^{\frac{1}{p}} + {\left(\sum_{n=0}^\infty {\abs{y_n}}^p\right)}^{\frac{1}{p}}\]
+\end{oss}
+
+\begin{Def}
+	Gli spazi $l^\infty(\R/\C)$ sono anch'essi spazi di Banach formati da successioni limitate e dotati di norma superiore
+	\[\sup_{0\le n \le \infty} \abs{x_n} < \infty\]
+\end{Def}
+
 \end{document}

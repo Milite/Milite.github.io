@@ -762,6 +762,10 @@ INPUT .\immagini\fig1.png
 INPUT .\immagini\fig1.png
 INPUT .\immagini\fig1.png
 INPUT .\immagini\fig1.png
+INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx5.tfm
+INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 INPUT Matematica per la fisica.aux
 INPUT .\Matematica per la fisica.out
 INPUT .\Matematica per la fisica.out
