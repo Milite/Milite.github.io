@@ -999,4 +999,151 @@ Se $f(z)$ è olomorfa in un intono di $D(z_0,\epsilon) =\{z \; | \; \abs{z-z_0}<
 	\end{coro}
 
 \part{Spazi funzionali}
+
+Vogliamo estendere la definizione di spazi euclidei $\R^3$ in maniera astratto in mdo da poterli usare anche per spazi$\infty-$dimensionali
+
+\begin{Def}
+	Uno \textbf{SPAZIO VETTORIALE V} su uno campo F è un insieme con 3 operazioni, chiuso rispetto:
+	\begin{enumerate}
+		\item somma per elementi dello spazio (vettori)
+		\[\forall \, \vec{v},\vec{w} \in V \Rightarrow \vec{v}+\vec{w} \in V\]
+		\item moltiplicazione per un elemento di F (scalari)
+		\[\forall \lambda \in F \; \forall \, \vec{v}\in V \Rightarrow \lambda\vec{v} \in V\]
+	\end{enumerate}
+\end{Def}
+
+\noindent La somma di vettori è associativa, commutativa, con elemento neutro $\vec{0}$ e inverso -$\vec{v}$; inoltre è distributiva sul prodotto con $\lambda \in F$ 
+\[\lambda (\vec{v}+\vec{w}) = \lambda\vec{v}+\lambda\vec{w}\]
+e ha elemento neutro prodotto $1\in F$
+
+\begin{Def}
+	$W \subset V$ è un \textbf{SOTTOSPAZIO} di V se è chiuso rispetto alla somma e moltiplicazione per uno scalare
+	\begin{gather*}
+		\forall\, \vec{v}, \vec{w} \in W \Rightarrow \vec{v}+\vec{w}\in W \subset v \\
+		\forall \, \vec{v} \in W \; \forall \lambda \in F \Rightarrow \lambda \, \vec{v} \in W \subset V 
+	\end{gather*}
+\end{Def}
+
+\begin{Def}
+	n vettori $\vec{u}_k \; k = 1, \dots , n$ sono \textbf{lineramente indipendenti} se 
+	\[\sum_{k=1}^n a_k \vec{u}_k = 0 \Rightarrow \forall k = 1,\dots,n 	\; a_k=0\]
+\end{Def}
+
+\begin{Def}
+	Invece sono \textbf{lineramente dipendenti} se 
+	\[\sum_{k=1}^n a_k\vec{u}_k = 0 \qquad \text{con qualche } a_k \ne 0\]
+\end{Def}
+
+\begin{Def}
+	Un insieme di vettori linearmente indipendenti è detto \textbf{massimale} se l'insieme dei vettori linearmente indipendeti + uno qualsiasi altro vettore è linearmente dipendente \newline
+	\{$u_k$\} è chiamata \textbf{base} di V
+\end{Def}
+
+\begin{oss}
+	Data una base posso scrivere un qualsiasi vettore $\vec{v}\in V$ in coordinate o componenti
+	\[\vec{v} = \sum_{k=1}^n v_k\vec{u}_k \qquad v_k \in F\]
+\end{oss}
+
+\begin{oss}
+	n può essere finito o infinito; se è finito tutte le basi hanno lo stesso numero di vettori e si chiama \textbf{dimensione} dello spazio \newline
+	Gli spazi di funzioni sono un esempio di spazio $\infty-$dimensionali
+\end{oss}
+
+\noindent Sugli spazi vettoriali astratti è possibile aggiungere strutture che permettorno di specificare il concetto di lunghezza o distanza, il concetto di limite e di continuità in maniera astratta
+
+\begin{Def}
+	Una \textbf{metrica o distanza} è una mappa 
+	\[d(,): \, M \to \R\]
+	con le seguenti proprietà valide $\forall a,b \in M$
+	\begin{gather*}
+		d(a,b) = d(b,a) \\
+		d(a,b) = 0 \iff a=b \\
+		\forall c \in M \quad d(a,b)+d(b,c) \ge d(a,c)
+	\end{gather*}
+\end{Def}
+
+\begin{Def}
+	Uno spazio vettoriale i cui è possibile definire una matrica è uno \textbf{spazio metrico}
+\end{Def}
+
+\begin{Def}
+	Una \textbf{topologia} su un insieme X è una collezione $\tau$ di sottoinsiemi di X che contiene l'insieme vuoto, X stesso e che deve essere chiusa rispetto ad un numero finito di iterazioni e ad un numero arbitrario di interazioni, cioè
+	\begin{itemize}
+		\item $\emptyset \in \tau$
+ 		\item $X in \tau$
+		\item $\forall \, V_i \in Z \quad V_1 \cap V_2 \cap \dots \cap V_n \in \tau $
+		\item $\cup_\alpha \quad V_\alpha \in \tau$ \; con $\alpha$ finito o infinito
+	\end{itemize} 
+	Gli elementi di $\tau$ sono gli insiemi aperti 
+\end{Def}
+
+\begin{oss}
+	La topologia non è unica
+\end{oss}
+
+\begin{Def}
+	Una \textbf{sfera aperta} di raggio r centrata in $a \in M$ è
+	\[B(a,r) = \{b \in M \; | \; d(a,b)<r\}\]
+\end{Def}
+
+\begin{Def}
+	Ogni sottoinsieme di $X\subset M$ è aperto se 
+	\[\forall \, a_o \in X \quad \exists \, B(a_o,r) \subset X\]
+\end{Def}
+
+\begin{oss}
+	Ogni spazio metrico è uno spazio topologico, basta definire la topologia degli aperti tramite sfere aperte
+\end{oss}
+
+\begin{Def}
+	Un insieme è \textbf{chiuso} se il suo complementare è aperto
+\end{Def}
+
+\begin{oss}
+	L'esistenza di una topologia metrica permette di definire la nozione di limite di una successione \;
+	Diciamo che \{$a_n$\} converge ad $a\in M$ se 
+	\[\forall \varepsilon>0 \quad \exists \, n_o \text{ tale che } d(a_n, a)<\varepsilon \quad \forall \, n>n_o\]
+	oppure usando la definizione di limite di $\R$
+	\[\lim_{n\to \infty} d(a_n,a) =0\]
+\end{oss}
+
+\begin{oss}
+	La convergenza di una serie si prova con la convergenza delle somme parziali
+\end{oss}
+
+\begin{oss}
+	Un insieme chiuso contiene tutti i suoi punti di accumulazione ed il più piccolo insieme chiuso che contiene X è detto \textbf{chiusura} di X ($\bar{X}$)
+\end{oss}
+
+\begin{Def}
+	Un insieme Z si dice \textbf{denso} in Y se la sua chiusura corrisponde a $Y = \bar{Z}$
+\end{Def}
+
+\begin{Def}
+	Un insieme K in uno spazio metrico X è \textbf{compatto} $\iff$ ogni succesione \{$X_k$\} interamente contenuta in K ha una sottosuccesione convergente ad un elemento di K
+\end{Def}
+
+\begin{Def}
+	Una mappa
+	\[f: \; X\to Y\]
+	tra due spazi topologici è \textbf{continua} se la controimmagine di ogni aperto in Y contenente f($X_0$) è un aperto in X contenente $X_0$ \newline
+	Per spazi metri è possibile formulare ciò con sfere aperte
+	\[\forall\varepsilon> 0 \quad \forall \delta> 0 \text{ tale che } d(f(x),f(x_0))<\varepsilon \qquad \text{ se } d(x,x_0)<\delta\]
+\end{Def}
+
+\begin{Def}
+	Una \textbf{successione di Cauchy} è una succesione \{$x_n$\} tale che 
+	\[\forall \varepsilon>0 \quad \exists \; N_\varepsilon >0 \text{ tale che } \forall \; n,m \ge N_\varepsilon \qquad d(x_n,x_m)< \varepsilon\]
+\end{Def}
+
+\begin{teo}
+	In uno spazio metrico ogni successione convergente è una successione di Cauchy 
+\end{teo}
+
+\begin{Def}
+	Uno spazio metrico si dice \textbf{completo} se tutte le successioni di Cauchy sono convergenti 
+\end{Def}
+
+\chapter{Spazi normati}
+
 \end{document}

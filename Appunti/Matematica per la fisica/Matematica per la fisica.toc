@@ -25,3 +25,4 @@
 \contentsline {chapter}{\numberline {6}Proprietà mapping}{23}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Trasformazioni lineari fratte}{24}{section.6.1}%
 \contentsline {part}{II\hspace {1em}Spazi funzionali}{26}{part.2}%
+\contentsline {chapter}{\numberline {7}Spazi normati}{29}{chapter.7}%
