@@ -1337,4 +1337,63 @@ Quando esiste finito il limite per $n \to \infty \; x_{i+1}-x_i \to \infty$ si d
 con $f_i$ una partizione del range di f e con $\mu(x)$ misura di X \newline
 La controimmagine di un intervallo non è necessariamente un intervallo 
 
+\chapter{Spazio \texorpdfstring{$L^1_w (\Omega)$}{U}}
+\begin{Def}
+	Lo spazio $L^1_w(\Omega)$ è uno spazio di funzioni definite su un insieme $\Omega\subset \R/\C$, Lebesgue-integrabili con norma
+	\[||f||_1 = \int_\Omega \abs{f(x)}\underbrace{w(x)}_{misura} \, dx <\infty\]
+\end{Def}
+
+\noindent Questi spazi $L^1_w(\Omega)$ sono spazi di Banach 
+
+\begin{oss}
+	Lo spazio delle funzioni continue su un intervallo $C([a,b])$ con norma 
+	\[L^1 = \int_a^b f(x) \, dx \]
+	non è uno spazio di Banach, perchè non è completo 
+\end{oss}
+
+\begin{oss}
+	Se vogliamo che lo spazio $L^1_w(\Omega)$ sia uno spazio di Banach dobbiamo provare linearità, positività e disuguaglianza triangolare nella norma $L^1_w$ \newline
+	La linearità e la disuguaglianza trinagolare seguono facilmente dalle proprietà degli integrali, la positività vera per integrale di Riemann, ma non è più vera in generale per integrale di Lebesgue; dobbiamo allora definire $f(x)=0$ quasi ovunque
+\end{oss}
+
+\begin{teo}[Riesz-Fischer] \label{teo:riesz}
+	$L^1_w$ è completo e quindi di Banach 	
+\end{teo}
+
+\begin{nb}
+	Per dimostrare che questo spazio è completo, bisogna usare ben due teoremi dell'integrale di Lebesgue $\Rightarrow$ questo vale solo per funzioni Lebesgue-integrabili 
+\end{nb}
+
+\section{Spazi \texorpdfstring{$L^p_w(\Omega)$}{U}}
+Spazio delle funzioni a valori complessi du regione $\Omega \subset \R^n/\C^n$ tale che 
+\[\int_\Omega {\abs{f(x)}}^p w(x)\, dx < \infty \qquad p \ge 1 \in \R \]
+
+\begin{oss}
+	Le funzioni uguali quasi ovunque sono considerate identiche
+\end{oss}
+
+\begin{oss}
+	Gli spazi $L^p_w(\Omega)$ sono spazi di Banach con norma $L^p_w$
+	\[||f||_p = {\left(\int_\Omega {\abs{f(x)}}^p w(x) \, dx \right)}^{\frac{1}{p}}\]
+	La completezza di questi spazi si può dimostrare generalizzando il \hyperref[teo:riesz]{teorema di Riesz-Fischer}
+\end{oss}
+
+\begin{oss}
+	Ci sono due ulteriori disuguaglianze notevoli; se assumiamo che p e q siano coniugati, cioè $\frac{1}{p} + \frac{1}{q} = 1$ allora valgono
+	\begin{enumerate}
+		\item Disuguaglianza di Holder
+		\[||fg||_p \le ||f||_p ||g||_p\]
+		\item Disuguaglianza di Minkowski
+		\[||f+g||_p \le ||f||_p + ||g||_p\]
+	\end{enumerate}
+\end{oss}
+
+\begin{oss}
+	Tra tutti i p possibili, il caso p=2 è particolare; $L^2_w(\Omega)$ non è solo uno spazio di Banach, ma anche uno spazio di Hilbert. E\' infatti l'unico su cui si può definire il prodotto scalare 
+	\[(f,g) = \int_\Omega \bar{f}(x)g(x)w(x) \, dx \]
+	che induce norma $L^2_w$
+	\[||f||_2 = {((f,f))}^{\frac{1}{2}} = {\left(\int_\Omega {\abs{f(x)}}^2 w(x) \, dx\right)}^{\frac{1}{2}}\]
+	$L^2_w(\Omega)$ è lo spazio delle funzioni a quadrato integrabile e contiene sia funzioni continue $C(\Omega)$ sia funzioni con singolarità  
+\end{oss}
+
 \end{document}

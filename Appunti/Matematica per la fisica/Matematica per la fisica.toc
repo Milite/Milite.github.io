@@ -28,3 +28,5 @@
 \contentsline {chapter}{\numberline {7}Spazi normati}{29}{chapter.7}%
 \contentsline {chapter}{\numberline {8}Spazi di Hilbert infinito dimensionali}{31}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Integrali}{32}{section.8.1}%
+\contentsline {chapter}{\numberline {9}Spazio $L^1_w (\Omega )$}{33}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Spazi $L^p_w(\Omega )$}{33}{section.9.1}%
