@@ -27,3 +27,4 @@
 \contentsline {part}{II\hspace {1em}Spazi funzionali}{26}{part.2}%
 \contentsline {chapter}{\numberline {7}Spazi normati}{29}{chapter.7}%
 \contentsline {chapter}{\numberline {8}Spazi di Hilbert infinito dimensionali}{31}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Integrali}{32}{section.8.1}%

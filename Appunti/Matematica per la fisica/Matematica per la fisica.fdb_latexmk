@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1652885057 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Matematica per la fisica/Matematica per la fisica.tex" "Matematica per la fisica.pdf" "Matematica per la fisica" 1652885063
+["pdflatex"] 1652945602 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Matematica per la fisica/Matematica per la fisica.tex" "Matematica per la fisica.pdf" "Matematica per la fisica" 1652945610
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1651307568 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1648037088 28976 d56dca20927a79c4468ac39f2cb67e88 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1648037073 31952 aef68ca89a05b961636a6e8f295f9836 ""
@@ -132,11 +132,11 @@
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1636713860 10214 00ce62e730d0cfe22b35e8f1c84949c7 ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044406800 26220 3701aebf80ccdef248c0c20dd062fea9 ""
-  "Matematica per la fisica.aux" 1652885062 5659 a70684a15e7a3a3f9454172a583a7d9b "pdflatex"
-  "Matematica per la fisica.out" 1652885062 4559 1081d13dc219d68e3f8f57a1f2363154 "pdflatex"
-  "Matematica per la fisica.tex" 1652885053 60790 186cf30875bdb4eca3141349d79d05a9 ""
-  "Matematica per la fisica.toc" 1652885062 2298 de0515801bd80d7788d087efa37850d8 "pdflatex"
-  "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Matematica per la fisica/Matematica per la fisica.tex" 1652885053 60790 186cf30875bdb4eca3141349d79d05a9 ""
+  "Matematica per la fisica.aux" 1652945609 5770 0317bcdfbcd7803ff6c5e86734a50ae3 "pdflatex"
+  "Matematica per la fisica.out" 1652945609 4659 f5fb28e7fc2e7720bfa1e22fdf509f51 "pdflatex"
+  "Matematica per la fisica.tex" 1652945588 61521 f25d41bcb8d658415d289af4320aa60a ""
+  "Matematica per la fisica.toc" 1652945609 2368 13bd63bfbe23e5b640a4bc6c83d6d73b "pdflatex"
+  "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Matematica per la fisica/Matematica per la fisica.tex" 1652945588 61521 f25d41bcb8d658415d289af4320aa60a ""
   "immagini/fig1.png" 1650370689 12526 d3e95e0799f704e599cc62e862401b7d ""
   "immagini/piano_gauss.png" 1650371784 6755 2bc9dd02519fcf2408ddd8e5396194aa ""
   "immagini/riemann.jpg" 1648054242 182651 f9ca3de3b521e2a4a8b8b6b1b9246de1 ""
