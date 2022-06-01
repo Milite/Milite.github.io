@@ -30,3 +30,4 @@
 \contentsline {section}{\numberline {8.1}Integrali}{32}{section.8.1}%
 \contentsline {chapter}{\numberline {9}Spazio $L^1_w (\Omega )$}{33}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Spazi $L^p_w(\Omega )$}{33}{section.9.1}%
+\contentsline {chapter}{\numberline {10}Basi di Hilbert ed espansione di Fourier}{35}{chapter.10}%
