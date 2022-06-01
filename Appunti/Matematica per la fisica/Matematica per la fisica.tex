@@ -1398,6 +1398,170 @@ Spazio delle funzioni a valori complessi du regione $\Omega \subset \R^n/\C^n$ t
 
 \chapter{Basi di Hilbert ed espansione di Fourier}
 
-Applicando la 
+Applicando la teoria generale degli spazi di Hilbert a $L^2_w(\Omega)$ si arriva alla conclusione che è possibile definire una base contabile di funzioni in $L^2_w(\Omega)$ \newline
+Quindi una qualsiasi funzione $f\in L^2_w(\Omega)$ può essere espressa come combinazione degli infiniti elementi della base ortogonale
+
+\section{Basi ortonormali}
+
+Una funzione si dice normalizzata se la sua norma è 1; in particolare per $L^2_w(\Omega)$
+
+\begin{equation*}
+	\label{eq:1.1}
+	{||f||}_2 = \int_\Omega \abs{f(x)}^2w(x) \, dx = 1
+\end{equation*}
+
+\begin{Def}
+	\label{def:ortogonali}
+	Due funzioni sono \textbf{ortogonali} se 
+	\begin{equation*}
+		(f,g) = \int_\Omega \overline{f(x)}g(x)w(x) \, dx = 0
+	\end{equation*}
+\end{Def}
+
+\begin{Def}
+	\label{def: base ortonormale}
+	Una \textbf{base ortonormale} è un set di funzioni $\Psi_n(x)$ con $n = 0,1,\dots,N$ su $L^2_w(\Omega)$ che soddisfano
+	\begin{equation*}
+		(\Psi_n,\Psi_m) = \delta_{m,n} \qquad \forall \; m,n = 0,1,\dots,N 
+	\end{equation*}
+\end{Def}
+
+\begin{oss}
+	Se non ci sono altre funzioni ortogonali a tutti $\Psi_n$ allora il sistema è completo. Quindi \{$\Psi_n$\} è una base di Hilbert di $L^2_w(\Omega)$
+\end{oss}
+
+\noindent Per la teoria generale degli spazi di Hilbert si può perciò espandere qualsiasi funzione $f\in L^2_w(\Omega)$ sulla base 
+\begin{equation*}
+	\sum_{n=0}^\infty C_n \Psi_n \qquad \text{serie di Fourier}
+\end{equation*}
+I coefficienti di Fourier $C_n$ si calcolano
+\begin{equation*}
+	C_n = (\Psi_n,f) = \int_\Omega \overline{\Psi_n(x)}f(x)w(x) \, dx 
+\end{equation*}
+
+\begin{oss}
+	La convergenza della serie di Fourier non implica che 
+	\begin{equation*}
+		\sum_{n=0}^\infty C_n\Psi_n
+	\end{equation*}
+	converga puntualmente (cioè $\forall \, x$) ad f, ma va intesa come convergenza in norma $L^2_w(\Omega)$, cioè
+	\begin{equation*}
+		\lim_{n\to\infty} \int_\Omega {\abs{f(x) - \sum_{n=0}^n C_n\Psi_n}}^2 w(x) \, dx =0
+	\end{equation*}
+\end{oss}
+
+\begin{oss}
+	La serie di Fourier di una qualsiasi funzione a quadrato integrabile definita su $[a,b]$ converge alla funzione stessa in norma $L_2$
+	\begin{equation*}
+		\lim_{n\to\infty} {||\sum{k=-n}^n c_k \Psi_k - f||}_2 =0
+	\end{equation*}
+\end{oss}
+
+\begin{oss}
+	Se $f(x)\in\R \Rightarrow c_k = \overline{c}_{-k}$
+\end{oss}
+
+\begin{oss}
+	La serie di Fourier su $L^2_{[a,b]}$ può essere anche scritta in forma trigonometrica usando 
+	\begin{equation*}
+		e^{\pm 2\pi in \frac{x}{L}} = \cos{\left(\frac{2\pi nx}{L}\right)} \pm i\sin{\left(\frac{2\pi nx}{L}\right)}
+	\end{equation*}
+	per cui 
+	\begin{equation*}
+		f(x) = \frac{a_0}{2} + \sum_{n=1}^\infty a_n \cos{\left(\frac{2\pi nx}{L}\right)} + \sum_{n=1}^\infty \sin{\left(\frac{2\pi nx}{L}\right)}
+	\end{equation*}
+	In questa formulazione i coefficienti sono dati da 
+	\begin{gather*}
+		a_n = \frac{c_n + c_{-n}}{\sqrt[]{2}} \qquad b_n = \frac{i(c_n - c_{-n})}{\sqrt[]{2}} \\
+		a_n = \frac{2}{L} \int_a^b f(x) \cos{\left(\frac{2\pi nx}{L}\right)} \, dx \qquad  b_n = \frac{2}{L} \int_a^b f(x) \sin{\left(\frac{2\pi nx}{L}\right)} \, dx 
+	\end{gather*}
+	Quindi la base della forma trigonometrica è data da 
+	\begin{equation*}
+		\left\{\frac{1}{\sqrt[]{L}}, \sqrt[]{\frac{2}{L}} \cos{\left(\frac{2\pi nx}{L}\right)}, \sqrt[]{\frac{2}{L}} \sin{\left(\frac{2\pi nx}{L}\right)}\right\} \qquad n>1
+	\end{equation*}
+	Le funzioni della base trigonometrica si chiamano \textbf{armoniche} e il numero $\frac{n}{L}$ si dice frequenza dell'armonica
+\end{oss}
+
+\begin{oss}
+	Per definire i coefficienti della serie di Fourier 
+	\begin{equation*}
+		c_n = \frac{1}{\sqrt[]{L}} \int_a^b e^{-2\pi i \frac{nx}{L}} f(x) \, dx
+	\end{equation*}
+	basta che $f(x)\in L^1_{[a,b]}$ e non per forza in $L^2_{[a,b]}$
+\end{oss}
+
+\section{Convergenza puntuale}
+
+Per semplicità assumiamo $[a,b] = [0,2\pi]$ \newline
+Se prendo $f(x)\in L^1_{[0,2\pi]}$ allora 
+\begin{equation*}
+	c_n =(\Psi_n,f) = \frac{1}{\sqrt[]{2\pi}}\int_0^{2\pi} e^{-inx} f(x)
+\end{equation*}
+sono ben definiti e si può costruire la serie di Fourier
+\begin{equation*}
+	\frac{1}{\sqrt[]{2\pi}} \sum_{n=-\infty}^\infty c_n e^{inx}
+\end{equation*}
+Osservo che la serie di Fourier ha termini che sono periodici con periodo $2\pi$
+\begin{equation*}
+	e^{inx} = e^{i(nx+2\pi)}
+\end{equation*}
+Quindi posso estendere le funzioni f da $[0,2\pi]$ a tutto $\R$ usando le condizioni periodiche per l'estensione
+\begin{equation*}
+	f(x+2\pi) = f(x)
+\end{equation*}
+Allora posso studiare su tutto $\R$ la convergenza delle somme parziali
+\begin{equation*}
+	S_n(x) = \frac{1}{\sqrt[]{2\pi}} \sum_{k=-n}^n c_ke^{-ikx} = \sum_{k=-n}^n \frac{1}{2\pi} \left[\int_0^{2\pi} e^{-iky}f(y) \, dy\right] e^{-ikx} = \frac{1}{2\pi}\int_0^{2\pi} \sum_{k=-n}^n e^{ik(x-y)}f(y) \, dy 
+\end{equation*}
+ora sfrutto la periodicità di f per cambiare variabile $z = x-y$ dato che 
+\begin{equation*}
+	\int_{a+2\pi}^{b+2\pi} f(x)\, dx = \int_a^b f(x) \, dx 
+\end{equation*}
+Allora ottengo
+\begin{equation*}
+	S_n(x) = \frac{1}{2\pi} \int_0^{2\pi} \sum_{k=-n}^n e^{ikz}f(x+z) \, dz
+\end{equation*}
+introduco KERNEL DI DIRICHLET
+\begin{equation*}
+	D_n(z) = \sum_{k=-n}^n e^{ikz} = \frac{\sin{\left(\frac{2n+1}{2}z\right)}}{\sin{\left(\frac{z}{2}\right)}}
+\end{equation*}
+per riscrivere
+\begin{equation*}
+	S_n = \frac{1}{2\pi} \int_0^{2\pi} f(x+z)D_n(z) \, dz
+\end{equation*}
+dividendo integrale ottengo
+\begin{equation*}
+	S_n(x) = \frac{1}{\pi} \int_0^\pi \frac{f(x+z)-f(x-z)}{2}D_n(z)
+\end{equation*}
+
+\begin{teo}[Dirichlet]\hfill\\
+	Data f con periodo $2\pi$  che sia $L^1_{[0,2\pi]}$ tale che 
+	\begin{equation*}
+		\lim{y\to x^{\pm}} f(y) = f(x^{\pm})	
+	\end{equation*}
+	e tale che esista integrale 
+	\begin{equation*}
+		\int_0^\delta \frac{f(x\pm y)-f(x^{\pm})}{y} \, dy
+	\end{equation*}	
+	per qualche valore di $\delta$, allora la serie di Fourier 
+	\begin{equation*}
+		\frac{1}{\sqrt[]{2\pi}} \sum_{n=-\infty}^\infty c_n e^{inx}
+	\end{equation*}
+	converge a 
+	\begin{equation*}
+		\begin{cases}
+			f(x) \qquad &\text{se f è continua}\\
+			\frac{1}{2}[f(x^+)+f(x^-)] \qquad & \text{se f è discontinua}
+		\end{cases}
+	\end{equation*}
+\end{teo}
+
+\begin{oss}
+	Il teorema di Dirichlet si applica a tutte le funzioni $C^1$ a pezzi 
+\end{oss}
+
+\section{Polinomi ortonormali}
+
+
 
 \end{document}
