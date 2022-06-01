@@ -1560,10 +1560,145 @@ dividendo integrale ottengo
 	Il teorema di Dirichlet si applica a tutte le funzioni $C^1$ a pezzi 
 \end{oss}
 
-\section{Polinomi ortonormali}
+\chapter{Polinomi ortonormali}
 
 Si può applicare metodo ortogonalizzazione di Gram-Schmidt anche a basi $\infty-$dimensionale. \newline
 Solitamente si parte da monomi con potenze diverse: $1,x,x^2,x^3,\dots$ eventualmente moltiplicati per funzioni a decrescenza rapida per renderle integrabili a $\pm\infty$ \newline
-Queste sono soluzioni linearmente indipendenti e tramite Gram-Schimdt si può arriavre a sestema ortormale completo su $L^2_w [a,b]$
+Queste sono soluzioni linearmente indipendenti e tramite Gram-Schimdt si può arriavre a sestema ortormale completo su $L^2_w [a,b]$ \newline
+Ci sono vari esempi di polinomi ortogonali, la cui forma dipende principalmente dall'intervallo $[a,b]$ e dalla misura $w(x)$
+\begin{enumerate}
+	\item $[a,b]$ finito, $w(x)=1 \Rightarrow$ $[-1,1]$ polinomi di Legendre
+ \item $[0,\infty], \, w(x)=e^{-x} \Rightarrow$ polinomi di Laguerre
+ \item $[-\infty,\infty], \, w(x) = e^{-x^2} \Rightarrow$ polinomi di Hermite
+\end{enumerate}
+
+\section{Polinomi di Legendre}
+Ci focalizziamo sull'intervallo $[-1,1]$ (viene dal fatto che sono associati a soluzioni a simmetria sferica e rappresentano la dipendenza da $-1<\cos{\theta}<1$) \newline
+I polinomi di Legendre si indicano con $P_l(x)$ o $P_l(\cos{(\theta)})$ e si possono ricavare dalla formula di Rodrigues
+\begin{equation*}
+	P_l(x) = \frac{1}{2^ll!}\frac{d^l}{dx^l}{(x^-1)}^l \qquad l\in \mathbb{N}
+\end{equation*}
+Si possono anche ricavare anche dalla funzione generatrice
+\begin{equation*}
+	F(x,t) = \frac{1}{\sqrt[]{1-2xt+t^2}} = \sum_{l=0}^\infty P_l(x)t^l
+\end{equation*}
+I polinomi di Legendre sono normalizzati in modo che 
+\begin{equation*}
+	P_l(1)=1
+\end{equation*}
+Si ha che i primi polinomi sono
+\begin{equation*}
+	P_0(x)=1 \qquad P_1(x)=x \qquad P_2(x)= \frac{1}{2}(3x^2-1)
+\end{equation*}
+in generale si ha $P_l(x)$ è un polinomio di grado massimo l in x \newline
+Vale la relazione di parità
+\begin{equation*}
+	P_l(-x) = -1^lP_l(x)
+\end{equation*}
+I polinomi di Legendre soddisfano le seguenti relazioni ricorsive
+\begin{align*}
+	P'_{l+1}(x) &= (l+1)P_l(x)+xP'_l(x)\\
+	P'_{l-1}(x) &= -lP_l(x)+xP'_l(x)\\
+	(l+1)P_{l+1}(x) &= (2l+1)xP_l(x)-lP_{l-1}(x)
+\end{align*}
+Questi polinomi soddisfano un'equazione differenziale particolare che si chiama equazione di Legendre
+\begin{equation*}
+	(1+x^2)P''_l(x) - 2xP'_l(x)+l(l+1)P_l(x) =0
+\end{equation*}
+Ma la loro vera utilità è la condizione di ortogonalità
+\begin{equation*}
+	(P_l,P_m) = \int_{-1}^1 P_l(x)P_m(x) \, dx = \frac{2}{2l+1}\delta_{lm}
+\end{equation*}
+quindi posso definire le funzioni ortonormali
+\begin{equation*}
+	u_l(x)=\sqrt[]{\frac{2l+1}{2}}P_l(x)
+\end{equation*}
+tali che $\{u_l\}$ forma un sistema ortonormale completo, cioè una base di Hilbert di $L^2[-1,1]$
+
+\begin{teo}[Approssimazione di Weierstrass]\hfill\\
+	Ogni funzione continua f(x) su [a,b] limitato è il limite uniforme di una successione di polinomi $\{Q_n(x)\}$
+\end{teo}
+
+\begin{oss}
+	Dato che i polinomi di Legendre sono una base di Hilbert di $L^2[-1,1]$ si può espandere una qualsiasi funzione su [-1,1] in serie di Fourier usando come base $u(x) = \sqrt[]{\frac{2l+1}{2}}P_l(x)$
+	\begin{equation*}
+		f(x) = \sum_{l=0}^\infty a_l u_l(x) = \sum_{l=0}^\infty a_l\,  \sqrt[]{\frac{2l+1}{2}}P_l(x) \qquad a_l = (u_l,f) = \sqrt[]{\frac{2l+1}{2}}\int_{-1}^1 P_l(x)f(x)\, dx 
+	\end{equation*}
+	si chiama sviluppo di Legendre di una funzione 
+\end{oss}
+
+\section{Polinomi di Laguerre}
+
+I polinomi di Laguerre sono un S.O.N.C  per $L^2[0,\infty]$ con misura $w(x)= e^{-x}$. Si costruiscono ortogonalizzando con Gram-Schmidt i monomi $1,x,x^2,\dots$ e si ottiene
+\begin{equation*}
+	L_n(x) = \frac{e^x}{n!}\frac{d^n}{dx^n}[e^{-x}x^n] \qquad n\in \mathbb{N}
+\end{equation*}
+si possono anche definire tramite funzione generatrice 
+\begin{equation*}
+	F(x,t) = \frac{e^{-\frac{xt}{1-t}}}{1-t} = \sum_{n=0}^\infty L_n(x)t^n
+\end{equation*}
+I primi polinomi sono
+\begin{equation*}
+	L_0(x)=1 \qquad L_1(x)=1-x \qquad L_2(x)=\frac{1}{2}(x^2-4x+2)
+\end{equation*}
+in generale $L_n(x)$ è un polinomio di grado massimo n in x \newline
+Gli $L_n(x)$ soddisfano le seguenti relazioni di ricorrenza
+\begin{align*}
+	L_{n-1}(x)&=L'_{n-1}(x)-L'_n(n)\\
+	xL'_n(x) &= nL_n(x)- nL_{n-1}(x)\\
+	(n+1)L_{n+1}(x) &= (2n+1-x)L_n(x)-nL_{n-1}(x)
+\end{align*}
+soddisfano inoltre l'equazione differenziale di Laguerre 
+\begin{equation*}
+	xL''_n(x) + (1-x)L'_n(x) + nL_n(x) =0
+\end{equation*}
+I polinomi sono ortogonali con misura $w(x)=e^{-x}$
+\begin{equation*}
+	(L_n,L_m) = \int_0^\infty L_n(x)L_m(x)e^{-x} \, dx = \delta_{nm}
+\end{equation*}
+Quindi le funzioni $L_n(x)$ sono un S.O.N.C. di $L^2_w[0,\infty]$ con $w = e^{-x}$, oppure si possono usare le funzioni $L_n(x)e^{-\frac{x^2}{2}}$ per fare un S.O.N.C. $L^2[0,\infty]$ con $w=1$
+
+\section{Polinomi di Hermite}
+
+Sono un S.O.N.C. per $L^2_w[-\infty,\infty]$ con $w(x) = e^{-x^2}$. Sono definiti da 
+\begin{equation*}
+	H_n(x) = {(-1)}^ne^{x^2}\frac{d^n}{dx^n}e^{-x^2} \qquad n\in \mathbb{N}
+\end{equation*}
+oppure tramite la funzione generatrice 
+\begin{equation*}
+	F(x,t) = e^{2xt-t^2}=\sum_{n=0}^\infty \frac{H_n(x)}{n!}t^n
+\end{equation*}
+I primi polinomi sono
+\begin{equation*}
+	H_0(x)=1 \qquad H_1(x) = 2x \qquad H_2(x)= 4x^2
+\end{equation*}
+In generale $H_n(x)$ sono polinomi di grado massimo n in x \newline
+La parità dipende da n
+\begin{equation*}
+	H_N(-x)= {(-1)}^nH_n(x) 
+\end{equation*}
+Soddisfano le relazioni di ricorrenza
+\begin{align*}
+	H'_n(x) &= 2nH_{n-1}(x)\\
+	H{n+1}(x) &= 2xH_n(x)-2nH_{n-1}(x)
+\end{align*}
+e soddisfano l'equazione differenziale di Hermite
+\begin{equation*}
+	H''_n(x)-2xH'_n(x)+2nH_n(x)=0
+\end{equation*}
+Per $n\ne m$ ho
+\begin{equation*}
+	(H_n,H_m) = \int_{-\infty}^\infty H_n(x)H_m(x)e^{-x^2} \, dx = 2^nn!\sqrt[]{\pi} \delta_{n,m}
+\end{equation*}
+Se voglio avere una base ortonormale devo normalizzare gli $H_n(x)$ tramite
+\begin{equation*}
+	h_n(x) = \frac{H_n(x)}{\sqrt[]{2^nn!\;\sqrt[]{\pi}}}
+\end{equation*}
+che sono un S.O.N.C. per $L^2[-\infty,\infty]$ \newline
+Allo stesso modo si possono definire 
+\begin{equation*}
+	w_n(x)= h_n(x)e^{-\frac{x^2}{2}}
+\end{equation*}
+che sono un S.O.N.C. su $L^2[-\infty,\infty]$ con $w(x)=1$
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  1 JUN 2022 13:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  1 JUN 2022 15:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -431,99 +431,103 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/m2001/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (Matematica per la fisica.toc)
-\tf@toc=\write4
-\openout4 = `"Matematica per la fisica.toc"'.
-
-
+{C:/Users/m2001/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (Matematica per la fisica.toc
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.47 	\newpage
-               [1
+l.36 ... {11}Polinomi ortonormali}{39}{chapter.11}
+                                                  % [1
 
-] [2
+])
+\tf@toc=\write4
+\openout4 = `"Matematica per la fisica.toc"'.
+
+ [2] [3
 
 ]
 Capitolo 1.
-<immagini/piano_gauss.png, id=192, 263.48438pt x 149.05687pt>
+<immagini/piano_gauss.png, id=211, 263.48438pt x 149.05687pt>
 File: immagini/piano_gauss.png Graphic file (type png)
 <use immagini/piano_gauss.png>
 Package pdftex.def Info: immagini/piano_gauss.png  used on input line 100.
 (pdftex.def)             Requested size: 193.47578pt x 109.45654pt.
-[3
+[4
 
-] [4 <./immagini/piano_gauss.png>] [5] [6]
+] [5 <./immagini/piano_gauss.png>] [6] [7]
 Capitolo 2.
-[7
+[8
 
 ]
-<immagini/sfera.png, id=240, 227.34938pt x 176.91093pt>
+<immagini/sfera.png, id=259, 227.34938pt x 176.91093pt>
 File: immagini/sfera.png Graphic file (type png)
 <use immagini/sfera.png>
 Package pdftex.def Info: immagini/sfera.png  used on input line 328.
 (pdftex.def)             Requested size: 290.22107pt x 225.83783pt.
- [8] [9 <./immagini/sfera.png>] [10] [11]
+ [9] [10 <./immagini/sfera.png>] [11] [12]
 Capitolo 3.
-<immagini/riemann.jpg, id=266, 602.25pt x 401.5pt>
+<immagini/riemann.jpg, id=286, 602.25pt x 401.5pt>
 File: immagini/riemann.jpg Graphic file (type jpg)
 <use immagini/riemann.jpg>
 Package pdftex.def Info: immagini/riemann.jpg  used on input line 423.
 (pdftex.def)             Requested size: 338.58632pt x 225.73291pt.
-[12
+[13
 
  <./immagini/riemann.jpg>]
 Capitolo 4.
-[13
+[14
 
-] [14] [15]
+] [15] [16]
 Capitolo 5.
-[16
+[17
 
-] [17] [18] [19] [20]
-<immagini/fig1.png, id=319, 431.36156pt x 273.27094pt>
+] [18] [19] [20] [21]
+<immagini/fig1.png, id=338, 431.36156pt x 273.27094pt>
 File: immagini/fig1.png Graphic file (type png)
 <use immagini/fig1.png>
 Package pdftex.def Info: immagini/fig1.png  used on input line 883.
 (pdftex.def)             Requested size: 241.84843pt x 153.20996pt.
- [21] [22 <./immagini/fig1.png>]
+ [22] [23 <./immagini/fig1.png>]
 Capitolo 6.
-[23
+[24
 
-] [24] [25] [26
+] [25] [26] [27
 
-] [27] [28]
+] [28] [29]
 Capitolo 7.
-[29
+[30
 
-] [30]
+] [31]
 Capitolo 8.
-[31
+[32
 
-] [32]
+] [33]
 Capitolo 9.
-[33
+[34
 
-] [34]
+] [35]
 Capitolo 10.
-[35
+[36
 
-] [36] [37] (Matematica per la fisica.aux)
+] [37] [38]
+Capitolo 11.
+[39
+
+] [40] [41] (Matematica per la fisica.aux)
 Package rerunfilecheck Info: File `"Matematica per la fisica".out' has not changed.
-(rerunfilecheck)             Checksum: 50E94766B1E935EA6A7FADE0BDB1DECE;5574.
+(rerunfilecheck)             Checksum: 9079179B44B2B314EF6EE179F854A111;6052.
  ) 
 Here is how much of TeX's memory you used:
- 12722 strings out of 478582
- 200727 string characters out of 2844344
- 518891 words of memory out of 3000000
- 30578 multiletter control sequences out of 15000+600000
+ 12735 strings out of 478582
+ 200850 string characters out of 2844344
+ 518895 words of memory out of 3000000
+ 30581 multiletter control sequences out of 15000+600000
  497477 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,14n,76p,569b,473s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 68i,14n,76p,569b,527s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Matematica per la fisica.pdf" (38 pages, 643049 bytes).
+Output written on "Matematica per la fisica.pdf" (42 pages, 657602 bytes).
 PDF statistics:
- 866 PDF objects out of 1000 (max. 8388607)
- 127 named destinations out of 1000 (max. 500000)
- 285 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 904 PDF objects out of 1000 (max. 8388607)
+ 137 named destinations out of 1000 (max. 500000)
+ 309 words of extra memory for PDF output out of 10000 (max. 10000000)
 
