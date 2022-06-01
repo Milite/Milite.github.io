@@ -33,3 +33,4 @@
 \contentsline {chapter}{\numberline {10}Basi di Hilbert ed espansione di Fourier}{35}{chapter.10}%
 \contentsline {section}{\numberline {10.1}Basi ortonormali}{35}{section.10.1}%
 \contentsline {section}{\numberline {10.2}Convergenza puntuale}{36}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Polinomi ortonormali}{37}{section.10.3}%
