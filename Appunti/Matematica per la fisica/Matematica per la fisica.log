@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  1 JUN 2022 15:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  2 JUN 2022 16:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -446,7 +446,7 @@ l.36 ... {11}Polinomi ortonormali}{39}{chapter.11}
 
 ]
 Capitolo 1.
-<immagini/piano_gauss.png, id=211, 263.48438pt x 149.05687pt>
+<immagini/piano_gauss.png, id=262, 263.48438pt x 149.05687pt>
 File: immagini/piano_gauss.png Graphic file (type png)
 <use immagini/piano_gauss.png>
 Package pdftex.def Info: immagini/piano_gauss.png  used on input line 100.
@@ -458,14 +458,14 @@ Capitolo 2.
 [8
 
 ]
-<immagini/sfera.png, id=259, 227.34938pt x 176.91093pt>
+<immagini/sfera.png, id=309, 227.34938pt x 176.91093pt>
 File: immagini/sfera.png Graphic file (type png)
 <use immagini/sfera.png>
 Package pdftex.def Info: immagini/sfera.png  used on input line 328.
 (pdftex.def)             Requested size: 290.22107pt x 225.83783pt.
  [9] [10 <./immagini/sfera.png>] [11] [12]
 Capitolo 3.
-<immagini/riemann.jpg, id=286, 602.25pt x 401.5pt>
+<immagini/riemann.jpg, id=336, 602.25pt x 401.5pt>
 File: immagini/riemann.jpg Graphic file (type jpg)
 <use immagini/riemann.jpg>
 Package pdftex.def Info: immagini/riemann.jpg  used on input line 423.
@@ -481,7 +481,7 @@ Capitolo 5.
 [17
 
 ] [18] [19] [20] [21]
-<immagini/fig1.png, id=338, 431.36156pt x 273.27094pt>
+<immagini/fig1.png, id=388, 431.36156pt x 273.27094pt>
 File: immagini/fig1.png Graphic file (type png)
 <use immagini/fig1.png>
 Package pdftex.def Info: immagini/fig1.png  used on input line 883.
@@ -512,22 +512,40 @@ Capitolo 10.
 Capitolo 11.
 [39
 
-] [40] [41] (Matematica per la fisica.aux)
+] [40] [41] [42
+
+] [43]
+Capitolo 12.
+[44
+
+] [45]
+Capitolo 13.
+[46
+
+]
+Capitolo 14.
+[47
+
+] [48]
+Capitolo 15.
+[49
+
+] (Matematica per la fisica.aux)
 Package rerunfilecheck Info: File `"Matematica per la fisica".out' has not changed.
-(rerunfilecheck)             Checksum: 9079179B44B2B314EF6EE179F854A111;6052.
+(rerunfilecheck)             Checksum: CF6FC7192E4B6DD5DEB303EC9C10C6C8;7567.
  ) 
 Here is how much of TeX's memory you used:
- 12735 strings out of 478582
- 200850 string characters out of 2844344
- 518895 words of memory out of 3000000
- 30581 multiletter control sequences out of 15000+600000
+ 12768 strings out of 478582
+ 201181 string characters out of 2844344
+ 518932 words of memory out of 3000000
+ 30592 multiletter control sequences out of 15000+600000
  497477 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,14n,76p,569b,527s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Matematica per la fisica.pdf" (42 pages, 657602 bytes).
+Output written on "Matematica per la fisica.pdf" (50 pages, 688022 bytes).
 PDF statistics:
- 904 PDF objects out of 1000 (max. 8388607)
- 137 named destinations out of 1000 (max. 500000)
- 309 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1002 PDF objects out of 1200 (max. 8388607)
+ 159 named destinations out of 1000 (max. 500000)
+ 389 words of extra memory for PDF output out of 10000 (max. 10000000)
 

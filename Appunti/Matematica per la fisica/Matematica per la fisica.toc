@@ -37,3 +37,13 @@
 \contentsline {section}{\numberline {11.1}Polinomi di Legendre}{39}{section.11.1}%
 \contentsline {section}{\numberline {11.2}Polinomi di Laguerre}{40}{section.11.2}%
 \contentsline {section}{\numberline {11.3}Polinomi di Hermite}{41}{section.11.3}%
+\contentsline {section}{\numberline {11.4}Trasformata di Fourier}{41}{section.11.4}%
+\contentsline {part}{III\hspace {1em}Distribuzioni}{42}{part.3}%
+\contentsline {chapter}{\numberline {12}Lo spazio delle funzioni di prova}{44}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Spazio $D(\mathbb {R})$}{44}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Spazio $S(\mathbb {R})$}{45}{section.12.2}%
+\contentsline {chapter}{\numberline {13}Distribuzioni regolari}{46}{chapter.13}%
+\contentsline {chapter}{\numberline {14}Distribuzioni singolari}{47}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Delta di Dirac}{47}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Principal value}{47}{section.14.2}%
+\contentsline {chapter}{\numberline {15}Limiti di distribuzioni }{49}{chapter.15}%

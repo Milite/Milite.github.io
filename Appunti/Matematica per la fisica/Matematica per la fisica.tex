@@ -1701,4 +1701,282 @@ Allo stesso modo si possono definire
 \end{equation*}
 che sono un S.O.N.C. su $L^2[-\infty,\infty]$ con $w(x)=1$
 
+\section{Trasformata di Fourier}
+
+\part{Distribuzioni}
+
+\noindent  Distribuzione: concetto che generalizza ed estende il concetto di funzione
+
+\begin{Def}
+	Una \textbf{distribuzione} è un funzionale lineare, cioè una mappa
+	\begin{equation*}
+		T: \; \phi(x) \to T(\phi) \in \phi
+	\end{equation*}
+	da uno spazio di funzioni di prova $\phi(x)\in F$ (spazio delle funzioni di prova) al campo dei numeri complessi
+\end{Def}
+
+\noindent Ad ogni funzione f(x) si può associare il funzionale $T_f$ tale che 
+\begin{equation*}
+	\forall \phi(x) \in F \qquad T_f (\phi) = \int_{-\infty}^\infty f(x)\phi(x)\, dx 
+\end{equation*}
+
+\begin{oss}
+	In generale si può usare funzionale lineare generale e possiamo definire su quest'ultimo operazioni che non possono essere ben definite sulla funzione di partenza 	 
+\end{oss}
+
+\chapter{Lo spazio delle funzioni di prova}
+
+Vogliamo test functions di una sola variabile (estensione a più dimensioni è banale) e vogliamo inoltre che $\phi(x)\in F$ sia il più regolare possibile, quindi
+\begin{equation*}
+	\phi \in C^\infty(\R)
+\end{equation*}
+inoltre per garantire che per esempio
+\begin{equation*}
+	\int_{-\infty}^\infty f(x)\phi(x)\, dx < \infty
+\end{equation*}
+chiediamo che le $\phi$ siano soppresse a $\pm \infty$; come viene implementata questa richiesta determina lo spazio F 
+
+\begin{enumerate}
+	\item Spazio $D(\R)$ delle funzioni $C^\infty(\R)$ a supporto compatto
+	\begin{Def}
+		Il \textbf{supporto} è la chiusura dei punti in cui la funzione non è nulla
+		\begin{equation*}
+			supp\{f\}= \overline{\{x \in \R \; |\; f(x) \ne 0 \}}
+		\end{equation*}
+	\end{Def}
+	\item Spazio $S(\R)$ delle funzioni $C^\infty(\R)$ a decrescenza rapida
+\end{enumerate}
+
+\section{Spazio \texorpdfstring{$D(\R)$}{U}}
+
+\begin{equation*}
+	D(\R) = \{\phi(x) \; | \; \phi \in C^\infty(\R) \text{ con supporto compatto}\}
+\end{equation*}
+Compatto in $\R$ significa chiuso e limitato
+
+\begin{oss}
+	$D(\R)$ è uno spazio vettoriale, ma è anche uno spazio topologico; tuttavia la topologia non è indotta dalla metrica. A noi interessa solo capire come definire la nozione di convergenza nello spazio topologico di $D(\R)$
+\end{oss}
+
+\begin{Def} \label{def: sequenza}
+	Una \textbf{sequenza} di test functions \{$\phi_n\} \in D(\R)$ converge a $\phi \in D(\R)$ se valgono
+	\begin{itemize}
+		\item esiste un intervallo limitato $\hat{I} \subset \R$ che contiene il supporto di tutte le $\phi_n$
+  		\item esiste un numero reale $r$ tale che 
+		\begin{equation*}
+			\phi_n(x) = \phi(x) =0 \qquad \forall \, \abs{x}>r 
+		\end{equation*}
+		\item la sequenza delle derivate p-esime di $\phi_n(x)$ converge uniformemente alla derivata p-esima di $\phi(x)$
+		\begin{equation*}
+			\lim_{n\to\infty} \sup_{x\in\R} \left|\frac{d^p\phi_n(x)}{dx^p}- \frac{d^p\phi(x)}{dx^p}\right| =0 \qquad \forall \, p=1,2,3,\dots
+		\end{equation*}
+	\end{itemize} 
+\end{Def}
+
+\begin{nb}
+	$p=0$ significa $\phi_n \to \phi $ uniformemente
+\end{nb}
+
+\begin{oss}
+	Tutte le funzioni $\phi(x)$ in $D(\R)$ non sono analitiche
+\end{oss}
+
+\begin{oss}
+	$D(\R)\subset L^2(\R)$ perchè le $\phi$ sono a quadrato sommabile; inoltre $D(\R)$ è denso in $L^2(\R)$
+\end{oss}
+
+\section{Spazio \texorpdfstring{$S(\R)$}{U}}
+
+\begin{equation*}
+	S(\R) = \left\{\phi(x) \;| \; \phi \in C^\infty(\R) \text{ e } \lim_{x\to \pm\infty} x^p \frac{d^p}{dx^p}f(x)=0 \quad  \forall \, p,q = 0,1,2,\dots \right\}
+\end{equation*}
+
+\begin{Def}
+	Una sequenza $\{\phi_n\} \in S(\R)$ \textbf{converge} a $\phi \in S(\R)$ se una qualsiasi potenza di x moltiplicata per una qualsiasi derivata di $\phi_n$ converge uniformemente ala stessa combinazione di x e derivate di $\phi$, cioè
+	\begin{equation*}
+		\forall \, p,q \qquad \lim_{n\to\infty} \sup_{x\in\R} \left|x^p \frac{d^p}{dx^p}\phi_n(x - x^p\frac{d^p}{dx^p}\phi(x))\right| =0
+	\end{equation*}
+\end{Def}
+
+\begin{oss}
+	Ogni $\phi\in S(\R)$ è a quadrato sommabile, quindi 
+	\begin{equation*}
+		S(\R) \subset L^2(\R)
+	\end{equation*}
+	in effetti $S(\R)$ è denso in $L^2(\R)$, cioè ogni elemento di $L^2(\R)$ può essere visto come limite di una successione di elementi di $S(\R)$
+\end{oss}
+
+\begin{Def}
+	Chiamiamo \textbf{distribuzione} un funzionale che associa un numero complesso ad una test function
+	\begin{equation*}
+		\phi(x) \to T(\phi) \in \C
+	\end{equation*}
+	che ha le seguenti proprietà
+	\begin{enumerate}
+		\item è lineare
+		\begin{equation*}
+			T(\lambda_1\phi_1 + \lambda_2\phi_2) = \lambda_1T(\phi_1)+ \lambda_2T(\phi_2) \qquad \forall\phi_1,\phi_2 \in D(\R)\text{ o } S(\R) \quad \forall \lambda_1,\lambda_2 \in \C 
+		\end{equation*}
+		\item è continua, nel senso che data una sequenza di test functions $\{\phi_n\}\in F$ che converge a $\phi\in F$ si ha
+		\begin{equation*}
+			\lim_{n\to\infty} T(\phi_n) = T(\phi)
+		\end{equation*}
+	\end{enumerate}
+\end{Def}
+
+\begin{Def}
+	Se $\phi\in D(\R)$ allora $T(\phi)$ si chiama \textbf{distribuzione} e lo spazio vettoriale definito dai T è chiamato $D'(\R)$ \newline
+	Se $\phi\in S(\R)$ allora $T(\phi)$ si chiama \textbf{distribuzione temperata} e lo spazio associato $S'(\R)$
+\end{Def}
+
+\begin{oss}
+	Gli spazi vettoriali delle distribuzione $D'(\R)$ e $S'(\R)$ sono a loro volta spazi vettoriali
+	\begin{gather*}
+		(T_1+T_2)(\phi) = T_1(\phi) + T_2(\phi) \qquad \forall \phi\in F \\
+		(\lambda T)(\phi) = \lambda T(\phi) \qquad \forall\phi \in F \quad \forall \lambda \in \C 
+	\end{gather*}
+\end{oss}
+
+\begin{nb}
+	Dato che $D(\R)\subset S(\R)$ si ha che lo spazio delle distribuzioni , cioè dei funzionali che si possono definire su tutte le funzioni in F, avrà la relazione opposta, cioè
+	\begin{equation*}
+		S'(\R) \subset D'(\R)
+	\end{equation*}
+	lo spazio delle distribuzioni temperate è un sottospazio delle distribuzioni
+\end{nb}
+
+\chapter{Distribuzioni regolari}
+
+\begin{Def}
+	Diciamo che una funzione f(x) è \textbf{localmente integrabile} 
+	\begin{equation*}
+		f \in L^1_{loc}(\R) 
+	\end{equation*}
+	se l'integrale del modulo di un qualsiasi sottoinsieme k compatto di $\R$ è finito
+	\begin{equation*}
+		\int_k \abs{f(x)}\, dx < \infty
+	\end{equation*}
+\end{Def}
+
+\begin{teo}
+	Ad ogni $f(x) \in L^1_{loc}(\R)$ posso associare una distribuzione regolare
+	\begin{equation*}
+		T_f(\phi) = \int_{-\infty}^\infty f(x)\phi(x) \, dx
+	\end{equation*}
+	e si ha che 
+	\begin{equation*}
+		T_f(\phi)\in D'(\R)
+	\end{equation*}
+\end{teo}
+
+\begin{oss}
+	Il $T_f$ così definito è molto simile al prodotto scalare di $L^2(\R)$ e coincide con esso quando $f(x)\in \R$
+	\begin{equation*}
+		T_f(\phi) = <T,\phi> = (f^*,\phi) \qquad (f,\phi) = \int_{-\infty}^\infty f^* \phi \, dx 
+	\end{equation*}
+\end{oss}
+
+\begin{oss}
+	Qualsiasi funzione $C^\infty$ può essere vista come una distribuzione
+	\begin{equation*}
+		\sin{x} \; \cos{x} \; \log{x} \; P(x)
+	\end{equation*}
+	hanno tutte
+	\begin{equation*}
+		T_{\sin{}} \; T_{\cos{}} \; T_{\log{}} \; T_p \in S'(\R)
+	\end{equation*}
+	invece $T_{e^x}\not\in S'(\R)$ perchè non basta $\phi\in S(\R)$ per sopprimere $e^x$, ma devo richiedere $\phi\in D(\R)$, allora
+	\begin{equation*}
+		T_{e^x} \in D'(\R)
+	\end{equation*}
+\end{oss}
+
+\begin{nb}
+	\[D(\R)\subset S(\R) \subset L^2(\R) \subset S'(\R) \subset D'(\R)\] 
+	Ogni spazio è denso in quelli che lo includono
+\end{nb}
+
+\chapter{Distribuzioni singolari}
+
+La maggior parte delle distribuzioni non può essere scritta come 
+\begin{equation*}
+	T_f= \int_{-\infty}^\infty f(x)\phi(x)\, dx 
+\end{equation*}
+Quindi sono nuovi oggetti che chiamiamo \textbf{distribuzioni singolari}
+
+\section{Delta di Dirac}
+
+Associa ad una test function $\phi(x)$ il suo valore $x_0$
+\begin{equation*}
+	\delta_{x_0}(\phi) = \phi(x_0)
+\end{equation*}
+Il funzionale $\delta_{x_0}$ è lineare 
+\begin{equation*}
+	\delta_{x_0}(\phi-1+\phi_2) = \phi_1(x_0) + \phi_2(x_0)
+\end{equation*}
+è anche continuo, infatti una sequenza $\{\phi_L\}\in D(\R)$ tale che $\phi_n \to \phi$ uniformemente
+\begin{equation*}
+	\abs{\delta_{x_0}(\phi_n)-\delta_{x_0}(\phi)} = \abs{\phi_n(x_0)-\phi(x)}
+\end{equation*} 
+ma dato che $\phi_n \to \phi$ uniformemente implica convergenza puntuale
+\begin{equation*}
+	\phi_n(x_0)-\phi(x_0) = 0
+\end{equation*}
+Quindi $\delta_{x_0}(\phi)$ è anche ben definita sulle $\phi\in S(\R)$, allora è una distribuzione temperata
+\begin{equation*}
+	\delta_{x_0}\in S'(\R)
+\end{equation*}
+In fisica si usa notazione 
+\begin{equation*}
+	\delta_{x_0}(\phi) = \int_{-\infty}^\infty \delta (x-x_0)\phi(x) \, dx = \phi(x_0)
+\end{equation*}
+sembra che esista funzione $\delta(x-x_0)$ che estrae $\phi(x_0)$ , ma una funzione che realizzi ciò $\forall \phi$ non è possibile, quindi $\delta_{x_0}(\phi)$ è una distribuzione 
+
+\begin{nb}
+	Quando $x=0$ si scrive $\delta(x)$ , ma si intende $\delta_0(\phi)$
+\end{nb}
+
+\section{Principal value}
+
+Se considere $f(x) = \frac{1}{x} \not\in L^1_{loc}(\R)$ quindi non è possibile considerarla una distribuzione tramite la $T_f$ associata. Possiamo definire una dstribuzione temperata che si comporta quasi ovunque come $\frac{1}{x}$
+\begin{equation*}
+	T(\phi) = \int_0^\infty \frac{\phi(x)-\phi(-x)}{x} \, dx = P\left(\frac{1}{x}\right) \text{ o } P.V. \left(\frac{1}{x}\right)
+\end{equation*}
+questo è un modo per regolarizzarla; alternativamente possiamo definire 
+\begin{equation*}
+	T_{\pm} (\phi) = \lim_{\varepsilon\to 0} \int_{-\infty}^\infty \frac{\phi(x)}{x\pm i\varepsilon} \, dx
+\end{equation*}
+e ottenere una relazione valida per qualsiasi $\phi$ test function
+\begin{equation*}
+	\frac{1}{x\pm i0} = P\left(\frac{1}{x}\right) \mp i\pi\delta(x)
+\end{equation*}
+
+\begin{oss}
+	Il principal value o la $T_\pm$ non sono ben definite per $\frac{1}{x^2} \in L^1_{loc}(\R)$. In quel caso si usa la finite part
+	\begin{equation*}
+		f.p.(\phi) = T(\phi) = \int_0^\infty \frac{\phi(x)+\phi(-x)-2\phi(0)}{x^2}
+	\end{equation*}
+	questa regolarizza anche $\frac{1}{x^2}$
+\end{oss}
+
+\begin{oss}
+	Anche se le si denotano le distribuzioni come funzioni, esse non lo sono e il loro effetto è unicamente determinato dal modo in cui agiscono sulle test function
+\end{oss}
+
+\begin{oss}
+	A volte si parla di supporto di una distribuzione come la chiusura dei punti in cui $T_f(\phi)\ne 0$
+\end{oss}
+
+\chapter{Limiti di distribuzioni }
+
+La successione di distribuzione $\{T_n\}\in D'(\R)$ converge a $T\in D'(\R)$ e si scrive
+\begin{equation*}
+	\lim_{n\to\infty}T_n = T
+\end{equation*}
+se $\forall \phi \in D(\R)$ si ha che 
+\begin{equation*}
+	\lim_{n\to\infty}T_n (\phi)= T(\phi)
+\end{equation*}
+Questo si chiama limite in senso debole, perchè è definito considerando l'azione sulle test function. Ciò vuol dire che tale limite non implica nè convergenza puntuale, nè convergenza uniforme e neanche convergenza in qualsiasi norma $L^p$
+
 \end{document}
