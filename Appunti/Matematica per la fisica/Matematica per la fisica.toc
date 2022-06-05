@@ -47,3 +47,13 @@
 \contentsline {section}{\numberline {14.1}Delta di Dirac}{47}{section.14.1}%
 \contentsline {section}{\numberline {14.2}Principal value}{47}{section.14.2}%
 \contentsline {chapter}{\numberline {15}Limiti di distribuzioni }{49}{chapter.15}%
+\contentsline {chapter}{\numberline {16}Operazioni sulle distribuzioni}{50}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Cambio di variabili}{50}{section.16.1}%
+\contentsline {section}{\numberline {16.2}Moltiplicazione distribuzione per una funzione $C^\infty $}{51}{section.16.2}%
+\contentsline {section}{\numberline {16.3}Complesso coniugato distribuzione}{51}{section.16.3}%
+\contentsline {section}{\numberline {16.4}Derivata di una distribuzione}{51}{section.16.4}%
+\contentsline {section}{\numberline {16.5}Convoluzione di distribuzioni}{51}{section.16.5}%
+\contentsline {chapter}{\numberline {17}Operatori su spazi finito dimensionali}{53}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Spazio duale}{54}{section.17.1}%
+\contentsline {section}{\numberline {17.2}Teoria spettrale}{56}{section.17.2}%
+\contentsline {section}{\numberline {17.3}Funzioni di operatori}{57}{section.17.3}%

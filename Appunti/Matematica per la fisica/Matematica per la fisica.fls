@@ -72,17 +72,17 @@ INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.s
 INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
 INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
 INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
-INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\latex\wrapfig\wrapfig.sty
-INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\latex\wrapfig\wrapfig.sty
-INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\latex\wrapfig\wrapfig.sty
-INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\latex\wrapfig\wrapfig.sty
-INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\latex\wrapfig\wrapfig.sty
-INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\latex\wrapfig\wrapfig.sty
-INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\latex\wrapfig\wrapfig.sty
-INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\latex\wrapfig\wrapfig.sty
-INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\latex\wrapfig\wrapfig.sty
-INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\latex\wrapfig\wrapfig.sty
-INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\latex\wrapfig\wrapfig.sty
+INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\generic\mathdots\mathdots.sty
+INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\generic\mathdots\mathdots.sty
+INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\generic\mathdots\mathdots.sty
+INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\generic\mathdots\mathdots.sty
+INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\generic\mathdots\mathdots.sty
+INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\generic\mathdots\mathdots.sty
+INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\generic\mathdots\mathdots.sty
+INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\generic\mathdots\mathdots.sty
+INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\generic\mathdots\mathdots.sty
+INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\generic\mathdots\mathdots.sty
+INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\generic\mathdots\mathdots.sty
 INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\latex\mathtools\mathtools.sty
 INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\latex\mathtools\mathtools.sty
 INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex\latex\mathtools\mathtools.sty
@@ -804,6 +804,8 @@ INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT Matematica per la fisica.aux
 INPUT .\Matematica per la fisica.out
 INPUT .\Matematica per la fisica.out
+INPUT C:\Users\m2001\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
+INPUT C:\Users\m2001\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
 INPUT C:\Users\m2001\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
 INPUT C:\Users\m2001\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
 INPUT C:\Users\m2001\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1095.pk

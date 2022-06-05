@@ -4,7 +4,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[italian]{babel}
 
-\usepackage{wrapfig}
+\usepackage{mathdots}
 \usepackage{mathtools}
 \usepackage{graphicx}
 \usepackage{amsfonts}
@@ -1978,5 +1978,497 @@ se $\forall \phi \in D(\R)$ si ha che
 	\lim_{n\to\infty}T_n (\phi)= T(\phi)
 \end{equation*}
 Questo si chiama limite in senso debole, perchè è definito considerando l'azione sulle test function. Ciò vuol dire che tale limite non implica nè convergenza puntuale, nè convergenza uniforme e neanche convergenza in qualsiasi norma $L^p$
+
+\begin{oss}
+	La delta di Dirac si può rappresentare in diversi modi equivalenti come distribuzioni regolari
+	\begin{equation*}
+		f_n(x) = \left\{\frac{n}{\sqrt[]{\pi}}e^{-n^2x^2}, \frac{1}{n\pi}{\left(\frac{\sin{(nx)}}{x}\right)}^2, \frac{1}{n\; \sqrt[]{\pi}}\frac{1}{x^2+\frac{1}{n^2}},\dots \right\}
+	\end{equation*}
+	sono tutte rapresentazioni equivalenti di $\delta_{x_0}$; partono tutte da funzioni con area unitaria
+	\begin{equation*}
+		f(x) = \left\{\frac{e^{-x^2}}{\sqrt[]{\pi}}, \frac{1}{\pi}{\left(\frac{\sin{(x)}}{x}\right)}^2, \frac{1}{\pi}\frac{1}{x^2+1}\right\}
+	\end{equation*}
+	tramite riscalamento 
+	\begin{equation*}
+		f_n(x) = nf(nx)
+	\end{equation*}
+	Posso costruire la delta come limite di una qualsiasi funzione ad area unitaria
+\end{oss}
+
+\chapter{Operazioni sulle distribuzioni}
+
+L'idea è di agire con funzioni con operazioni su funzioni di prova: si parte da distribuzioni regolare, si muove l'operazione sulle funzioni di prova, poi si usa lo stasso approccio anche per distribuzioni singolari
+
+\section{Cambio di variabili}
+
+Le distribuzioni non sono definite puntualmente, ma per distribuzioni regolari $T_f(\phi)$ posso considerare $g(x)= f(u(x))$, anche scritta come composizione $g= f \circ u$ con $u(x)\in C^\infty$ tale che $u'(x)\ne 0$, cioè una mappa 1 a 1 di $\R$ in se stesso \newline
+Allora abbiamo
+\begin{equation*}
+	T_g(\phi) = \int_{-\infty}^\infty g(x)\phi(x) = \int_{-\infty}^\infty f(u(x))\phi(x) \, dx  
+\end{equation*}
+Cambio di variabile
+\begin{equation*}
+	y = u(x) \Rightarrow dy=u'(x)dx \quad x = u^{-1}(y)
+\end{equation*}
+Allora
+\begin{equation*}
+	T_g(\phi) =\int_{-\infty}^\infty \frac{dy}{\abs{u'(x)}} \, f(y)\phi(x) = \int_{-\infty}^\infty \frac{dy}{\abs{u'(u^{-1}(y))}} \, f(y)\phi(u{-1}(y)) = \int_{-\infty}^\infty dy \, f(y) \underbrace{\left[\frac{\phi(u{-1}(y))}{\abs{u'(u^{-1}(y))}}\right]}_{\text{Nuova test function}} 
+\end{equation*}
+quindi
+\begin{equation*}
+	T_g = T_{f\circ u} (\phi) = T_f\left(\frac{\phi \circ u{-1}(y)}{\abs{u' \circ u^{-1}(y)}}\right) 
+\end{equation*}
+Questo spostare l'operazione da f a $\phi$ è ben definito perchè $\phi\in D(\R)$ e allora 
+\begin{equation*}
+	\frac{\phi \circ u^{-1}(y)}{\abs{u' \circ u^{-1}(y)}} \in D(\R)
+\end{equation*}
+In generale estendendo il concetto alle distribuzioni, anche singolari si ha
+\begin{equation*}
+	(T \circ u)(\phi) = T\left(\frac{\phi \circ u^{-1}(y)}{\abs{u' \circ u^{-1}(y)}}\right)
+\end{equation*}
+
+\subsection*{Traslazione delta di Dirac}
+
+Dato $x_0 \in\R$ e $\delta_{x_0}$ vogliamo applicare traslazione 
+\begin{equation*}
+	R_a(x) = x+a
+\end{equation*}
+La traslazione di $\delta(x-x_0)$ di una quantità $a$ è data da 
+\begin{equation*}
+	\delta(x-(x_0-a)) = \delta(x+a-x_0)
+\end{equation*}
+
+\subsection*{Dilatazione delta di Dirac}
+
+Dato $\lambda\in\R$ e $\delta_0$ vogliamo applicare dilatazione
+\begin{equation*}
+	D_\lambda(x)=\lambda x 
+\end{equation*}
+si ottiene
+\begin{equation*}
+	\delta(\lambda x) = \frac{\delta_x}{\abs{\lambda}}
+\end{equation*}
+In generale, per un qualsiasi cambio di variabile alla distribuzione $\delta_{x_0}$ ( se ci sono più zeri di $u(x)$) si ha 
+\begin{equation*}
+	\delta(u(x)) = \sum_i \frac{\delta({x_i})}{\abs{u'(x_i)}}
+\end{equation*}
+
+\section{Moltiplicazione distribuzione per una funzione \texorpdfstring{$C^\infty$}{U}}
+
+Data $g(x)\in c\infty(\R)$ si ha 
+\begin{equation*}
+	(gT)(\phi) = T(g\phi)
+\end{equation*}
+
+\section{Complesso coniugato distribuzione}
+\begin{equation*}
+	\overline{T}(\phi) = (\overline{T(\overline{\phi})})
+\end{equation*}
+si può vedere anche per distribuzioni regolari
+\begin{equation*}
+	T_{\bar{f}}(\phi) = \int_{-\infty}^\infty \bar{f}(x)\phi(x) \, dx = (\overline{T(\overline{\phi})})
+\end{equation*}
+
+\section{Derivata di una distribuzione}
+Se $f\in L^1_{loc}(\R)$ tale che $f'\in L^1_{loc}(\R)$ si può definire per distribuzioni regolari
+\begin{equation*}
+	T_{f'}(\phi) = \int_{-\infty}^\infty f'(x)\phi(x) \, dx = -T_f(\phi')
+\end{equation*}
+estendendolo anche a distribuzioni singolari
+\begin{equation*}
+	T'(\phi) = - T(\phi')
+\end{equation*}
+Dato che $\phi\in C^\infty$ posso fare tutte le derivate che voglio in senso distribuzioni
+\begin{equation*}
+	T^{(n)}(\phi) = (-1)^n T(\phi^{(n)})
+\end{equation*}
+
+\begin{oss}
+	In generale la derivata in senso distribuzionale si può applicare a una qualsiasi funzione con discontinuità f in $x_0$
+	\begin{equation*}
+		T'_f = T_{f'} + disc(f,x_0)\delta_{x_0} \qquad disc(f,x_0) = f(x^+_0)-f(x^-_0)
+	\end{equation*}
+\end{oss}
+
+\section{Convoluzione di distribuzioni}
+
+Non si possono moltiplicare 2 distribuzioni perchè non sono definite puntualmente; il prodotto più naturale tra distribuzioni è la convoluzione, che per funzioni è definita da 
+\begin{equation*}
+	(f*g) (x)= \int_{-\infty}^\infty f(x')g(x-x')\, dx'
+\end{equation*}
+se $f\in L^1_{loc}(\R)$ e $g\in L^1_{loc}(\R)$ allora $f*g \in L^1_{loc}(\R)$ \newline
+Valgono le seguenti proprietà
+\begin{gather*}
+	f_1*f_2 = f_2*f_1 \\
+	(f_1*f_2)*f_3 = f_1*(f_2*f_3)\\
+	f_1*(\lambda f_2 * \mu f_3) = \lambda(f_1*f_2) + \mu(f_1*f_3) \\
+	(f_1*f_2)' = f'_1*f_2 - f_1*f'_2
+\end{gather*}
+Se applichiamo la convoluzione a distribuzioni regolari abbiamo
+\begin{equation*}
+	T_{f*g} (\phi)= T_f(g*\phi) 
+\end{equation*}
+Generalizzando a due distribuzioni T e S anche singolari, di cui almeno una delle due in $D'(\R)$, cioè a support compatto, abbiamo
+\begin{equation*}
+	(T*S)(\phi) = <T(y), \underbrace{<S(x),\phi(x+y)>}_{\text{ottengo funzione $C^\infty$ di y}}>
+\end{equation*}
+La convoluzione di distribuzioni così definita soddisfa le proprietà
+
+\begin{oss}
+	L'identità per le distribuzioni è data da
+	\begin{equation*}
+		<\delta*T,\phi> = \int_{-\infty}^\infty \, dy \int_{-\infty}^\infty \delta(y)T(x)\phi(x+y) \, dx = <T,\phi>
+	\end{equation*}
+\end{oss}
+
+\chapter{Operatori su spazi finito dimensionali}
+
+Dati due spazi vettoriali complessi X e Y con $dim(X),dim(Y)<\infty$, si deinisce \textbf{operatore lineare} A un mappa 
+\begin{equation*}
+	A: \; X \mapsto Y
+\end{equation*}
+che soddisfi 
+\begin{equation*}
+	A(\lambda\vec{v}+\mu\vec{w}) = \lambda A(\vec{v})+ \mu A(\vec{w}) \qquad \forall \lambda,\mu \in \C \quad \forall \vec{v},\vec{w}\in X
+\end{equation*}
+si usa la notazione A(x) per indicare l'effetto dell'operatore di $x\in X$; si usa anche la notazione Ax perchè ogni operatore lineare A su spazi finito dimensionali si può rappresentare come una matrice
+
+\begin{Def}[Kernel]
+	\begin{equation*}
+		\ker{A} = \{x \in X \; |\; Ax=0\} \quad \text{sottospazio di X}
+	\end{equation*}
+\end{Def}
+
+\begin{Def}[Immagine]
+	\begin{equation*} \quad \text{sottospazio di Y}
+	\end{equation*}
+\end{Def}
+
+Una qualsiasi matrice $m\times n \; A_{ij}$ è un operatore lineare da $\C^n \to \C^m$; gli elementi di $X=\C^n$ sono $(x_1,\dots,x_n)\in \C^n$ sono mappati in $(y_1,\dots,y_n)\in\C^m$ tramite relazione
+\begin{equation*}
+	y_i = \sum_{j=1}^m A_{ij}x_j = A_{ij}x_j \qquad \text{notazione di Einstein: gli indici ripetuti sono sommati}
+\end{equation*}
+Se adesso prendiamo base di X $\{u_i\}$ con $i=1,\dots,n$ e prendiamo base di Y $\{u'_i\}$ con $i=1,\dots,m$ si ha che $\forall \, x,y$ si può scrivere
+\begin{gather*}
+	x =x_iu_i \quad y=y_iu'_i \\
+	x = \sum_{i=1}^n x_iu_i \quad y = \sum_{i=1}^m y_iu'_i
+\end{gather*}
+Quindi se applichiamo operatore A su elemento della base di X troviamo un vettore in Y 
+\begin{equation*}
+	A(u_i) \in Y
+\end{equation*}
+Se appartiene a Y lo posso espandere su $\{u'_i\}$ tramite 
+\begin{equation*}
+	A(u_i) = A_{ij}u'_j = \sum_{j=1}^m A_{ij}u'_j
+\end{equation*}
+Applicando lo stesso ad un generico vettore $x\in X$
+\begin{equation*}
+	A(x) = A(x_iu_i) = \underbrace{x_iA_ij}_{y_i}u'_j = y_iu'_j
+\end{equation*}
+quindi
+\begin{equation*}
+	y_i = A_{ij}x_j
+\end{equation*}
+Se X e Y sono anche spazi di Hilbert si possono definire le basi ortonormali $\{e_j\},\{e'_j\}$ e si può trovare la matrice A come proiezione sugli elementi della base 
+\begin{equation*}
+	A_{ij} = (e_j,Ae_j)
+\end{equation*}
+Lo spazio degli operatori lineari da X a Y è anch'esso uno spazio vettoriale complesso e vale
+\begin{equation*}
+	(\mu_1A_1+\mu_2A_2)(x)=\mu_1 A_1(x)+\mu_2 A_2(x) \qquad \forall\mu_1,\mu_2 \in \C \quad A_1,A_2 \text{ operatori lineari}
+\end{equation*}
+Questo spazio degli operatori linaeri si chiama \textbf{endomorfismo} di X e Y
+\begin{equation*}
+	End(X,Y)
+\end{equation*}
+è isomorfo dello spazio Mat(m,n) di tutte le matrici $m\times n$ con $m = dim(Y)$ e $n = dim(X)$
+
+\section{Spazio duale}
+
+\begin{Def}
+	\textbf{Funzionale lineare} è un operatore lineare $\alpha$ da spazio vettoriale X a $\C$; associa a $x\in X$ un valore $\alpha(x) \in \C \; \forall \, x\in X$
+\end{Def}
+\begin{Def}
+	Lo spazio vettoriale di tutti i funzionali lineari in X si chiama \textbf{spazio duale} di X e si indica con $X^*$
+\end{Def}
+
+\begin{oss}
+	$\forall$ base $\{u_i\}$ su X esiste una base $\{u^*_k\}$ su $X^*$; si ha che $dim{X^*} = dim {X}$ e $X, X^*$ sono isomorfi
+\end{oss}
+\begin{oss}
+	Se $x \in X$ è rappresentato da $\left(\begin{array}[]{ccc}
+		x_1 \\
+		\vdots \\
+		x_n
+	\end{array}\right)$ vettore colonna che è necessario per prodotto matrice per colonna, allora $x^* \in X^*$ è un vettore riga $(\bar{x}_1,\dots, \bar{x}_n)$ dei complessi coniugati; si ha inoltre che gli elementi delle basi danno
+	\begin{equation*}
+		(u^*_j,u_i) = \delta_{ij}
+	\end{equation*}
+	ogni volta che X ammette prodotto scalare
+\end{oss}
+
+\noindent L'insieme dei funzionali lineari è a sua volta uno spazio vettoriale
+\begin{equation*}
+	X^* = End (X, \C)
+\end{equation*}
+isomorfo a Mat(1,n)
+
+\begin{oss}
+	Se X è anche uno spazio di Hilbert possiamo definire un funzionale lineare associato $\forall \, x\in X$ tramite 
+	\begin{equation*}
+		\alpha_x(x') = (x,x') = \underbrace{x^*_1,\dots,x^*_n}_{\in X^*}\underbrace{\left(\begin{array}[]{ccc}
+			x'_1 \\
+			\vdots \\
+			x'_n
+		\end{array}\right)}_{\in X}
+	\end{equation*}
+	Se espamndo x rispetto alla base ortonormale $\{e_k\}$ trovo
+	\begin{equation*}
+		(x,x') = \bar{x}_kx_k = \sum_k \bar{x}_ke^*_kx_{k'}e_{k'}
+	\end{equation*}
+	quindi
+	\begin{equation*}
+		{(\alpha_x)}_k = \bar{x}_k
+	\end{equation*}
+\end{oss}
+
+\begin{Def}
+	Dato A su H di Hilbert definiamo \textbf{operatore aggiunto} $A^+$ come operatore che soddisfa 
+	\begin{equation*}
+		(v,A^+w)= (Av,w) \qquad \forall \, v,w \in H
+	\end{equation*}
+\end{Def}
+
+\noindent Se scegliamo una base ortogonale su H allora A è una matrice e si ha 
+\begin{equation*}
+	(Av)_i = A_{ij}v_j
+\end{equation*}
+allo stesso modo
+\begin{equation*}
+	{(A^+w)}_i = A^+_{ij}w_j
+\end{equation*}
+quindi si ottiene
+\begin{equation*}
+	A^+_{ij} = \bar{A}_ji
+\end{equation*}
+L'operatore aggiunto è il complesso coniugato del trasposto
+\begin{equation*}
+	A^+ = {(A^T)}^*
+\end{equation*}
+Proprietà:
+\begin{align*}
+	{(A^+)}^+ &= A \\
+	{(A^+)}^{-1} &= {(A^{-1})}^+ \\
+	{(AB)}^+ &= B^+A^+ \qquad \forall \, A,B \in H^* \\
+	{(\alpha A + \beta B)}^+ &= \bar{\alpha}A^+ + \bar{\beta}B^+ \qquad \forall \, B,A \quad \forall \alpha,\beta \in \C
+\end{align*}
+
+\begin{Def}
+	A è \textbf{autoaggiunto o hermitiano} se $A^+=A$ cioè se 
+	\begin{equation*}
+		(Av,w) = (v,A^+w ) \qquad \forall \, v,w \in H
+	\end{equation*}
+	A è \textbf{antihermitiano} se $A^+ = -A$
+\end{Def}
+
+\begin{oss}
+	Se a è reale allora $A^*=A$ quindi
+	\begin{equation*}
+		A^+ = A
+	\end{equation*}
+	questo vuol dire che $A^T = A$ allora A è simmetrica
+\end{oss}
+
+\begin{Def}
+	Gli \textbf{operatori unitari} sono operatori invertibili tali che 
+	\begin{equation*}
+		U^+ = U^{-1}
+	\end{equation*}
+	l'aggiunto è uguale all'inverso, cioè
+	\begin{equation*}
+		UU^+ = UU^{-1} = \mathbb{I}
+	\end{equation*}
+\end{Def}
+
+\begin{oss}
+	Gli operatori unitari preservano i prodotti scalari e quindi le norme
+	\begin{equation*}
+		(Uv, Uw) = (v,w)
+	\end{equation*}
+	Sono quindi isomorfismi di H in se stesso
+\end{oss}
+
+\begin{teo}
+	Gli operatori unitari mappano basi ortonormali in basi ortonormali
+\end{teo}
+
+\section{Teoria spettrale}
+
+Studia autovalori e autovettori degli operatori lineari su spazi di Hilbert. Nel caso finito-dimensionale questa è l'algebra lineare
+
+\begin{Def}
+	Dato 
+	\begin{equation*}
+		A: \; x \mapsto X
+	\end{equation*}
+	si dice \textbf{autovalore} di A un numero $\lambda \in \C$ tale che esiste $u\ne 0 \in X$ per cui valga 
+	\begin{equation*}
+		Au = \lambda u
+	\end{equation*}
+\end{Def}
+\begin{Def}
+	L'insieme degli autovalori di A è detto \textbf{spettro} di A e si indica con
+	\begin{equation*}
+		\sigma(A)
+	\end{equation*}
+\end{Def}
+\begin{Def}
+	Gli $u\in X$ per cui vale 
+	\begin{equation*}
+		Au = \lambda u
+	\end{equation*}
+	si chiamano \textbf{autovettori}
+\end{Def}
+
+\begin{oss}
+	Gli autovettori non sono unici: posso sempre riscalarli o prendere una combinazione lineare di due o più autovettori che corrispondono allo stesso autovalore e trovare un autovettore
+	\begin{equation*}
+		A(\alpha_1 u_1 + \alpha_2u_2) = \alpha_1Au_1 + \alpha_2Au_2 = \lambda(\alpha_1u-1+\alpha_2u_2)
+	\end{equation*}
+\end{oss}
+\begin{oss}
+	Autovettori corrispondenti ad autovalori diversi sono linearmente indipendenti
+\end{oss}
+
+\begin{Def}
+	L'\textbf{autospazio} $L_\lambda$ è uno spazio vettoriale degli autovettori associati ad un autovalore $\lambda$
+	\begin{equation*}
+		L_\lambda = \{u \in X \; | \; Au=\lambda u\}
+	\end{equation*}
+\end{Def}
+
+\noindent Per trovare autovalori e autovettori si risolve equazione
+\begin{equation*}
+	\det{(A-\lambda \mathbb{I})} =0
+\end{equation*}
+questa equazione è un polinomio di grado n in $\lambda$ 
+
+\subsection*{Polinomio caratteristico}
+\begin{equation*}
+	P_A(\lambda) = \det{(A-\lambda\mathbb{I})} = 0
+\end{equation*}
+Per il teorema fondamentale dell'algebra il polinomio di grado n su $\C$ ha esattamente n soluzioni (naturalmente contate con la loro molteplicità) \newline
+
+Se ora assumiamo che gli autovalori siano diversi tra loro allora questi determinano $\{u_i\}$ autovettori linearmente indipendenti con
+\begin{equation*}
+	\dim{\{u_i\}} = n
+\end{equation*}
+gli autovettori sono una base di X, su quella base A si scrive come
+\begin{equation*}A = \left(
+	\begin{array}[]{ccc}
+		\lambda_1 &&  0 \\
+		&\ddots  &\\
+		0  &&\lambda_n
+	\end{array}\right)
+\end{equation*} 
+abbiamo diagonalizzato la matrice associata all'operatore A \newline
+Quando il polinomio caretteristico ha autovalori con molteplicità maggiore di 1 si hanno 2 possibili casi
+\begin{enumerate}
+	\item Ordine dello zero in $P_A(\lambda)>1 \Rightarrow$ molteplicità algebrica $m_a(\lambda)$
+ \item Dimensione dell'autospazio $L_{\lambda_i}$ associata a$\lambda \Rightarrow$ molteplicità geometrica $m_g(\lambda)=\dim{L_\lambda}$
+\end{enumerate}
+
+\begin{Def}
+	Se $m_a(\lambda)> 1$ allora si dice che l'autovalore è degenere
+\end{Def}
+
+\begin{oss}
+	Per teorema fondamentale dell'algebra
+	\begin{equation*}
+		\sum_{\lambda} m_a(\lambda)=n=\dim{X}
+	\end{equation*}
+	però $m_a(\lambda)$ e $m_g(\lambda)=\dim{L_\lambda}$ non devono per forza coincidere  per ogni $\lambda$; in generale 
+	\begin{equation*}
+		1 \le m_g(\lambda) \le m_a(\lambda) \le n 
+	\end{equation*}
+\end{oss}
+
+\begin{teo}
+	A si dice diagonalizzabile se e solo se 
+	\begin{equation*}
+		m_a(\lambda) = m_g(\lambda)
+	\end{equation*}
+	esiste cioè una base in cui A si può scrivere in forma diagonale
+\end{teo}
+
+\begin{teo}
+	Per operatore A hermitiano se H è di Hilbert abbiamo
+	\begin{enumerate}
+		\item gli autovalori di A sono reali
+  \item gli autovettori di A associati ad autovalori diversi sono ortogonali
+  \item gli autovettori di A (opportunamente normalizzati) formano una base ortonormale
+	\end{enumerate}
+\end{teo}
+
+\begin{teo}
+	In maniera analoga si può provare che per operatore U unitario valgono
+	\begin{enumerate}
+		\item gli autovalori sono complessi $\lambda \in \C $ ma con $\abs{\lambda} =1$
+  \item gli autovettori corrispondenti ad autovalori diversi sono ortogonali
+  \item esiste una base ortonormale costituita dagli autovettori
+	\end{enumerate}
+\end{teo}
+
+\begin{oss}
+	Gli operatori hermitiani e unitari appartengono alla stessa classe di operatori normali, coè
+	\begin{equation*}
+		AA^+ = A^+A
+	\end{equation*}
+	tali operatori ammettono sempre una base di autovettori e quindi sono diagonalizzabili
+\end{oss}
+
+\section{Funzioni di operatori}
+
+Dati due operatori lineari
+\begin{equation*}
+	A_1,A_2: \; X \mapsto X
+\end{equation*}
+spazio vettoriale, possiamo definire somma e prodotto
+\begin{gather*}
+	\forall \alpha_1,\alpha_2 \in \C \qquad (\alpha_1 A_1+\alpha_2 A_2)v = \alpha_1A_1v + \alpha_2 A_2v \\
+	\forall \; v \in X \qquad (A_1 A_2) v = A_1(A_2v)
+\end{gather*}
+quindi posso definire polinomi di operatori
+\begin{equation*}
+	P_n(X) = \sum_{k=0}^n \alpha_kA^k \qquad A^0 = \mathbb{I}
+\end{equation*}
+Lo stesso approccio si può usare per qualsiasi funzione che sia scrivibile come serie di potenze
+\begin{nb}
+	La definizione ha senso solo se la serie converge
+\end{nb}
+Per operatore finito dimensionale A è sempre limitato, quindi se il raggio di convergenza della serie è R si avrà che la serie converge se 
+\begin{equation*}
+	||A||< R
+\end{equation*}
+Per operatori diagonalizzabili è ancora più semplice
+\begin{equation*}
+	A = U^{-1}A_{diag}U \qquad f(A_{diag}) = \left(\begin{array}[]{ccc}
+		f(\lambda_1) && 0 \\
+		& \ddots & \\
+		0 && f(\lambda_n)
+	\end{array}\right)
+\end{equation*}
+quindi
+\begin{equation*}
+	f(A) = U^{-1}A_{diag}U = U^{-1} \left(\begin{array}[]{ccc}
+		f(\lambda_1) && 0 \\
+		& \ddots & \\
+		0 && f(\lambda_n)
+	\end{array}\right)U
+\end{equation*}
+
+\begin{oss}
+	Se la funzione f è olomorfa su tutto $\C$ si può definire f(A) tramite \textbf{formula di Dunford}
+\end{oss}
 
 \end{document}
