@@ -2470,5 +2470,50 @@ quindi
 \begin{oss}
 	Se la funzione f è olomorfa su tutto $\C$ si può definire f(A) tramite \textbf{formula di Dunford}
 \end{oss}
+Dato A operatore lineare e f(z) olomorfa su D tale che $\forall i \quad \lambda_i \in D$ allora
+\begin{equation*}
+	f(A) = \frac{1}{2\pi i }\int_\gamma f(z)R_z(A) \, dz = \frac{1}{2\pi i} \int_\gamma f(z){(z\mathbb{I}-A)}^{-1}
+\end{equation*}
+con $\gamma$ curva chiusa e semplice con orientazione positiva e con
+\begin{equation*}
+	R_z(A) = {(z\mathbb{I}-A)}^{-1} 
+\end{equation*}
+operatore risolvente di A, che è una funzione di $z \in \C $ \newline
+$R_z(A)$ è ben definito e olomorfo su insieme risolvente
+\begin{equation*}
+	\rho(A) = \{z \in \C \; | \; \ker{(z\mathbb{I}-A)}= 0\}
+\end{equation*}
+che è il completamento dello spettro $\sigma(A)$; $R_z(A)$ è invece singolare per $z = \lambda_i$ autovalori di A.
+\newline
+La forma matriciale del risolvente è
+\begin{equation*}
+	{(R_z(A))}_{ij} = \frac{C_{ij}}{\det{(z\mathbb{I}-A)}}
+\end{equation*}
+
+\begin{oss}
+	\'E possibile dimostare che qualsiasi operatore lineare A ammette una \textbf{degenerazione spettrale} (anche se non diagonalizzabile)
+	\begin{gather*}
+		A = \sum_{k=0}^m (\lambda_i P_{\lambda_i}+ J_{\lambda_i})= P^{(k=1)}_{\lambda_1} \qquad J_{\lambda_i} = \frac{1}{2\pi i} \int_{\gamma_i} {(z\mathbb{I}-A)}^{-1} {(z-\lambda_i)^k} \, dz \\
+		P^2_{\lambda_i} = P_{\lambda_i} \text{ proiettore idempotente}
+	\end{gather*}
+	Se A è diagonalizzabile $\Rightarrow J_{\lambda_i} = 0$
+\end{oss}
+
+\begin{teo}
+	Se $A = A^+$ è hermitiano allora $U=e^{iA}$ è unitario; vale anche l'inverso, cioè se U è operatore unitario allora esiste operatore hermitiano A che ci permette di scrivere 
+	\begin{equation*}
+		U=e^{iA} \quad A = A^+
+	\end{equation*}
+\end{teo}
+
+\chapter{Operatori lineari su spazi di Hilbert infinito dimensionali}
+
+L'estensione al caso infinito dimensionale è subsola: gli operatori non sono necessariamente definiti su tutto lo spazio H e possono non essere continui; bisogna inoltre estendere lo spettro aggiungendo una nuova classe di autovalori continui o anche detti impropri
+
+\begin{gather*}
+	q: \; qf(x) 0 xf(x) \qquad \text{operatore posizione} \\
+	p: \; pf(x) = -i\frac{\delta}{\delta x }f(x) \qquad \text{operatore impulso (momento)}
+\end{gather*}
+
 
 \end{document}
