@@ -37,24 +37,30 @@
 \contentsline {section}{\numberline {11.1}Polinomi di Legendre}{39}{section.11.1}%
 \contentsline {section}{\numberline {11.2}Polinomi di Laguerre}{40}{section.11.2}%
 \contentsline {section}{\numberline {11.3}Polinomi di Hermite}{41}{section.11.3}%
-\contentsline {section}{\numberline {11.4}Trasformata di Fourier}{41}{section.11.4}%
-\contentsline {part}{III\hspace {1em}Distribuzioni}{42}{part.3}%
-\contentsline {chapter}{\numberline {12}Lo spazio delle funzioni di prova}{44}{chapter.12}%
-\contentsline {section}{\numberline {12.1}Spazio $D(\mathbb {R})$}{44}{section.12.1}%
-\contentsline {section}{\numberline {12.2}Spazio $S(\mathbb {R})$}{45}{section.12.2}%
-\contentsline {chapter}{\numberline {13}Distribuzioni regolari}{46}{chapter.13}%
-\contentsline {chapter}{\numberline {14}Distribuzioni singolari}{47}{chapter.14}%
-\contentsline {section}{\numberline {14.1}Delta di Dirac}{47}{section.14.1}%
-\contentsline {section}{\numberline {14.2}Principal value}{47}{section.14.2}%
-\contentsline {chapter}{\numberline {15}Limiti di distribuzioni }{49}{chapter.15}%
-\contentsline {chapter}{\numberline {16}Operazioni sulle distribuzioni}{50}{chapter.16}%
-\contentsline {section}{\numberline {16.1}Cambio di variabili}{50}{section.16.1}%
-\contentsline {section}{\numberline {16.2}Moltiplicazione distribuzione per una funzione $C^\infty $}{51}{section.16.2}%
-\contentsline {section}{\numberline {16.3}Complesso coniugato distribuzione}{51}{section.16.3}%
-\contentsline {section}{\numberline {16.4}Derivata di una distribuzione}{51}{section.16.4}%
-\contentsline {section}{\numberline {16.5}Convoluzione di distribuzioni}{51}{section.16.5}%
-\contentsline {chapter}{\numberline {17}Operatori su spazi finito dimensionali}{53}{chapter.17}%
-\contentsline {section}{\numberline {17.1}Spazio duale}{54}{section.17.1}%
-\contentsline {section}{\numberline {17.2}Teoria spettrale}{56}{section.17.2}%
-\contentsline {section}{\numberline {17.3}Funzioni di operatori}{57}{section.17.3}%
-\contentsline {chapter}{\numberline {18}Operatori lineari su spazi di Hilbert infinito dimensionali}{59}{chapter.18}%
+\contentsline {chapter}{\numberline {12}Trasformata di Fourier}{42}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Gaussiana}{42}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Funzione caratteristica}{42}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Lorenztiana}{42}{section.12.3}%
+\contentsline {section}{\numberline {12.4}Proprietà trasformata di Fourier}{43}{section.12.4}%
+\contentsline {section}{\numberline {12.5}Trasformata di Fourier inversa}{43}{section.12.5}%
+\contentsline {section}{\numberline {12.6}Trasformata di Fourier in $S(\mathbb {R})$ ed in $L^2(\mathbb {R})$}{44}{section.12.6}%
+\contentsline {part}{III\hspace {1em}Distribuzioni}{45}{part.3}%
+\contentsline {chapter}{\numberline {13}Lo spazio delle funzioni di prova}{47}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Spazio $D(\mathbb {R})$}{47}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Spazio $S(\mathbb {R})$}{48}{section.13.2}%
+\contentsline {chapter}{\numberline {14}Distribuzioni regolari}{49}{chapter.14}%
+\contentsline {chapter}{\numberline {15}Distribuzioni singolari}{50}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Delta di Dirac}{50}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Principal value}{50}{section.15.2}%
+\contentsline {chapter}{\numberline {16}Limiti di distribuzioni }{52}{chapter.16}%
+\contentsline {chapter}{\numberline {17}Operazioni sulle distribuzioni}{53}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Cambio di variabili}{53}{section.17.1}%
+\contentsline {section}{\numberline {17.2}Moltiplicazione distribuzione per una funzione $C^\infty $}{54}{section.17.2}%
+\contentsline {section}{\numberline {17.3}Complesso coniugato distribuzione}{54}{section.17.3}%
+\contentsline {section}{\numberline {17.4}Derivata di una distribuzione}{54}{section.17.4}%
+\contentsline {section}{\numberline {17.5}Convoluzione di distribuzioni}{54}{section.17.5}%
+\contentsline {chapter}{\numberline {18}Operatori su spazi finito dimensionali}{56}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Spazio duale}{57}{section.18.1}%
+\contentsline {section}{\numberline {18.2}Teoria spettrale}{59}{section.18.2}%
+\contentsline {section}{\numberline {18.3}Funzioni di operatori}{60}{section.18.3}%
+\contentsline {chapter}{\numberline {19}Operatori lineari su spazi di Hilbert infinito dimensionali}{62}{chapter.19}%

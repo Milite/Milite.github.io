@@ -18,7 +18,7 @@
 \usepackage{hyperref}
 \hypersetup{
 	colorlinks=true,
-	linkcolor=black,
+	linkcolor=blue,
 	filecolor=blue,
 	citecolor = black,      
 	urlcolor=cyan,
@@ -1285,7 +1285,7 @@ allora il sistema $\{\vec{e}_k\}$ è un \textbf{sistema ortonormale completo} [S
 	\[\vec{v} = \lim_{n\to\infty} \sum_{i=1}^n v_i\vec{e}_i \qquad \vec{v} = \lim_{n\to\infty} \left|\left| \sum_{i=1}^n v_i\vec{e}_i - \vec{v}\right| \right| =0\] 
 \end{oss}
 
-\begin{Def}
+\begin{Def} \label{Fourier}
 	L'espansione 
 	\[\vec{v} = \sum_{i=1}^\infty (\vec{e}_i,\vec{v})\vec{e}_i\]
 	è chiamata \textbf{serie di Fourier} e i coefficienti $v_i$ sono detti coefficienti di Fourier
@@ -1701,7 +1701,121 @@ Allo stesso modo si possono definire
 \end{equation*}
 che sono un S.O.N.C. su $L^2[-\infty,\infty]$ con $w(x)=1$
 
-\section{Trasformata di Fourier}
+\chapter{Trasformata di Fourier}
+
+Richiamo \hyperref[Fourier]{serie di Fourier}
+
+\noindent Si può definire la traformata di Fourier  $\forall \, f(x)\in L^1(\R)$ e si indica con
+\begin{equation*}
+	F(f)(p) \qquad \hat{f}(p)
+\end{equation*}
+ed è definita da
+\begin{equation*}
+	\hat{f}(p) = \frac{1}{\sqrt[]{2\pi}} \int_{-\infty}^\infty f(x)e^{-ipx} \, dx 
+\end{equation*}
+$\frac{1}{\sqrt[]{2\pi}}$ è un fattore di normalizzazione abbastanza arbitrario, ma l'importante è che sia consistente con l'antitrasformata \newline
+Questa espressione è ben definta perchè se $f(x)\in L^1(\R)$ allora $f(x)e^{-ipx}\in L^1(\R)$ se $p\in\R$
+
+\begin{oss}
+	Nel caso di più variabili
+	\begin{equation*}
+		f(\vec{x}) = f(x_1,\dots,x_n) \Rightarrow \hat{f}(\vec{p}) = \frac{1}{{(2\pi)}^{\frac{N}{2}}}\int f(\vec{x})e^{-i(\vec{p},\vec{x})} \, dx_1,\dots,dx_n
+	\end{equation*}
+\end{oss}
+
+\noindent Lo spazio di p si chiama \textbf{spazio coniugato allo spazio delle x} o anche \textbf{spazio duale}; in fisica si chiama spazio degli impulsi duale allo spazio delle posizioni ( o spazio di Fourier)
+
+\section{Gaussiana}
+
+\begin{equation*}
+	\hat{f}(p) = \frac{1}{\sqrt[]{2\pi}} \int_{-\infty}^\infty e^{-ipx}e^{-\frac{x^2}{2a^2}}\, dx = ae^{-\frac{p^2}{2{\left(\frac{1}{a}\right)}^2}}
+\end{equation*}
+
+\noindent Quindi la trasformata di Fourier di una gaussina di larghezza a è ancora una gaussiana, ma di larghezza $\frac{1}{a}$; più la gaussiana originale è piccata attorno al suo valor medio, più la sua trasformata si allarga
+
+\section{Funzione caratteristica}
+
+Trasformata di Fourier della funzione caratteristica dell'intervallo $(-a,a)$
+\begin{equation*}
+	\hat{\chi}_a(x) = \,  \sqrt[]{\frac{2}{\pi}} \frac{\sin{(pa)}}{p}
+\end{equation*}
+la larghezza è proporzionale a $\frac{1}{a}$; più f(x) è piccata attorno al suo valor medio, più la trasformata si allarga
+
+\section{Lorenztiana}
+
+\begin{equation*}
+	\hat{f}(p) = \, \sqrt[]{\frac{\pi}{2}}\frac{1}{a} e^{-\abs{p}a}
+\end{equation*}
+
+\section{Proprietà trasformata di Fourier}
+
+\begin{enumerate}
+	\item Linearità
+	\begin{equation*}
+		F(\alpha f + \beta g) = \alpha F(f) + \beta F(g)
+	\end{equation*}
+	\item F(f) è limitata, continua e si annulla all'infinito
+ \item Derivata: se $f^{(k)}\in L^1(\R)$ allora la trasformata di Fourier della derivata k-esima esiste e vale
+\begin{equation*}
+	F(f^{(k)})(p) = {(ip)}^k F(f)(p)
+\end{equation*}
+\item Moltiplicazione per x: se $\abs{x}^kf(x) \in L^1(\R)$ allora la trasformata di Fourier esiste e vale 
+\begin{equation*}
+	F(x^kf)(p) = \int_{-\infty}^\infty \frac{1}{\sqrt[]{2\pi}} x^k f(x)e^{-ipx} \, dx 
+\end{equation*}
+quindi c'è una corrispondenza tra lo spazio delle posizioni e lo spazio degli impulsi
+\begin{center}
+\begin{tabular}[H]{|c|c|}
+	\hline
+	Spazio x & Spazio p \\
+	\hline
+	$\frac{d}{dx}$ & ip \\
+	x & $i\frac{\delta}{\delta p}$ \\
+	\hline
+\end{tabular}
+\end{center}
+\item Trasformata di Fourier come convoluzione: se $f,g \in L^1(\R)$ allora $f*g \in L^1(\R)$ e la trasformata di Fourier esiste e vale
+\begin{equation*}
+	F(f*g)(p) = \int_{-\infty}^\infty f(y)g(x-y) \, dy = \sqrt[]{2\pi} F(f)F(g)
+\end{equation*}
+\end{enumerate}
+
+\section{Trasformata di Fourier inversa}
+
+\begin{teo}
+	Data $f(x)\in L^1(\R)$ tale che $\hat{f}(p) \in L^1(\R)$ allora si può costruire f(x) data $\hat{f}(p)$ con la formula di inversione
+	\begin{equation*}
+		f(x) 0 \frac{1}{\sqrt[]{2\pi}} \int_{-\infty}^\infty e^{ipx}\hat{f}(p) \, dp
+	\end{equation*}
+	questa è l'estesione al continio della di Fourier per $p\in\R$
+\end{teo}
+
+\begin{oss}
+	\'E sufficiente che $\hat{f}(p)$ si possa antitrasformare quai ovunque per definire f(x) quasi ovunque, cioè nel senso della norma $L^1$
+\end{oss}
+
+\begin{oss}
+	Dato che gli elementi di $L^1(\R)$ sono classi di equivalenza di funzioni uguali quasi ovunque non ha senso affermare che il teorema di inversione valga puntualmente. Tuttavia la formula di inversione è una funzione continua in x, quindi data $f\in L^1(\R)$ tale che $\hat{f}p \in L^1(\R)$ allora esiste una funzione continua nella stessa classe di equivalenza ; se scegliamo f continua allora il teorema di inversione diventa valido puntualmente. In generale però se $ f \in L^1(\R)$ si può avere che $\hat{f}(p) \not\in L^1(\R)$; bisogna quindi modificare teorema di inversione e vederlo come limite
+	\begin{equation*}
+		\lim_{R\to\infty} \frac{1}{\sqrt[]{2\pi}} \int_{-R}^R \hat{f}(p)e^{ipx} \, dp
+	\end{equation*}
+	Tale limite può esistere anche quando $\hat{f}$ non è integrabile su tutto $\R$; inoltre si può dimostare che tale se $f \in L^1(\R)$ ed è continua a pezzi, allora si può dimostare che tale definizione porta a 
+	\begin{equation*}
+		\lim_{R\to\infty} \frac{1}{\sqrt[]{2\pi}} \int_{-R}^R \hat{f}(p) e^{ipx} \, dp = \begin{cases}
+			f(x) & \forall\, x \text{ dove f è continua} \\
+			\frac{f(x^+)+f(x^-)}{2} & \text{ dove f è discontinua}
+		\end{cases}
+	\end{equation*}
+	notare similitudine con serie di Fourier per funzioni a pezzi
+\end{oss}
+
+\section{Trasformata di Fourier in \texorpdfstring{$S(\R)$ ed in $L^2(\R)$}{U}}
+
+Data $f(x) \in L^2(\R)$ non si ha necessariamente $f \in L^1(\R)$ quindi la trasformata può non esistere, ma data $f \in S(\R)$ la trasformata esiste sempre perchè 
+\begin{equation*}
+	S(\R) \subset L^1(\R) 
+\end{equation*}
+
 
 \part{Distribuzioni}
 
