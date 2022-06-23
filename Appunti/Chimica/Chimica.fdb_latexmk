@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1652973181 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Chimica/Chimica.tex" "Chimica.pdf" "Chimica" 1652973192
-  "C:/Users/m2001/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1652965402 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["pdflatex"] 1655975928 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Chimica/Chimica.tex" "Chimica.pdf" "Chimica" 1655975940
+  "C:/Users/m2001/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1654335452 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1648037088 28976 d56dca20927a79c4468ac39f2cb67e88 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1648037073 31952 aef68ca89a05b961636a6e8f295f9836 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1648036254 40136 e8835f4d61a33ebc02bb05493131a4d3 ""
@@ -227,11 +227,11 @@
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/units/nicefrac.sty" 1469029150 4163 0462ee5ab265cf59dc15a41a3b883101 ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1636288472 56029 3f7889dab51d620aa43177c391b7b190 ""
-  "Chimica.aux" 1652973190 2813 0e5d0f100046f5b49fb6d7454b9d149f "pdflatex"
-  "Chimica.out" 1652973190 1715 6d53b1e2420ea23deff65ae425b23f91 "pdflatex"
-  "Chimica.tex" 1652973168 14087 92d9f7ae4c6a77778eed71f337b62511 ""
-  "Chimica.toc" 1652973190 879 f1c0707ceeead291b123490023b86988 "pdflatex"
-  "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Chimica/Chimica.tex" 1652973168 14087 92d9f7ae4c6a77778eed71f337b62511 ""
+  "Chimica.aux" 1655975938 3207 29310c73c99431b94ca79349da2fad47 "pdflatex"
+  "Chimica.out" 1655975938 2357 1da661378d94f8d8ea52be9126077d0f "pdflatex"
+  "Chimica.tex" 1655975925 17186 7246554dc952e4bee19c6ac582dbeb1d ""
+  "Chimica.toc" 1655975938 1150 ca8a40aa849123abc092fbdc678c06ba "pdflatex"
+  "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Chimica/Chimica.tex" 1655975925 17186 7246554dc952e4bee19c6ac582dbeb1d ""
   "immagini/Millikan.png" 1650101010 135045 33c1db9a3d1ecbfc72fbb9556798b903 ""
   "immagini/atomo.png" 1650100828 204277 dfe9009aa62ce9aca3133fe2e105f7a2 ""
   "immagini/atomo1.png" 1650101116 206985 02a6384fbc13cb6a1559f8ed79a4d5ba ""

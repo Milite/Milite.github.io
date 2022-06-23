@@ -10,3 +10,6 @@
 \contentsline {section}{\numberline {2.3}Atomi e molecole}{6}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Stechiometri}{7}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Equazioni chimiche}{8}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Percentuale in massa dalla formula chimica}{9}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Formule empiriche e molecolari}{9}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Equazioni chimiche}{10}{section.2.8}%
