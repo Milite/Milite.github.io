@@ -1,0 +1,89 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{circuitikz}
+\usepackage{geometry}
+\geometry{a4paper, top=2.5cm, bottom=2cm, left=2cm, right=2cm}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=blue,
+	citecolor = black,      
+	urlcolor=cyan,
+}
+
+\begin{document}
+	\date{}
+	\author{Marco Militello}
+	\title{Appunti Laboratorio}
+	\maketitle
+	\newpage
+	
+\section*{Circuiti 1}
+
+\subsection*{Legge di Ohm}
+\begin{equation*}
+    V = RI
+\end{equation*}
+
+\subsection*{Leggi di Kichhoff}
+
+\begin{enumerate}
+    \item Legge ai nodi: la somma algebrica delle correnti in un nodo è nulla
+    \begin{equation*}
+        \sum I_i =0
+    \end{equation*}
+    \item Legge alle maglie: la somma algebrica delle tensioni in una maglia è nulla \newline
+    La maglia è un qualsiasi percorso chiuso del circuito
+    \begin{equation*}
+        \sum V_i =0
+    \end{equation*}
+\end{enumerate}
+
+\subsection*{Volmetro e amperometro}
+Il volmetro è un misuratore di tensione; in condizioni ideali la resistenza del volmetro è infinita $R_v = \infty$, nella realtà presenta una resistenza interna dell'ordine dei mega ohm \newline
+L'amperometro è un misuratore di corrente ; in condizioni ideali ha una resistenza interna nulla $R_A =0$, nella realtà invece la resistenza interna è dell'ordine degli $\Omega$ \newline
+A seconda della situazione in cui ci troviamo abbiamo due diverse configuarazioni:
+\begin{enumerate}
+    \item se la resistenza di carica è molto minore rispetto alla resistenza interna del volmetro e se la resistenza interna dell'amperometro non è confrontabile con quella della resistenza di carica, allora colleghiamo la resistenza e il volmetro in parallelo, perchè la corrente passerà quasi tutta sulla resistenza di carico (che ha una resistenza minore rispetto volmetro) e le nostre misure non subiranno forti alterazioni
+    \item se invece la resitenza interna del volmetro è confrontabile con la resistenza che vogliamo studiare, allora la prima configurazione non è ideale, perchè solo una parte della corrente passerà sulla nostra resistenza, mentre l'altra parte si disperderà sulla resistenza del volmetro, modificando in maniera significativa le nostre misure. In questo caso si usa una configurazione di questo tipo:
+    \begin{center}
+    \begin{circuitikz} \draw
+        (0,0) to[battery] (0,3) 
+      to[R, l = R] (5,3)
+      to[rmeter, t=A] (5,0)
+      (5,0) -- (0.5,0) node[ground]{}
+     (0.5,0) -- (0,0)
+
+    (1,3)  to[rmeter, *-*, t = V] (1, 0);
+    \end{circuitikz}
+\end{center}
+\end{enumerate}
+
+\subsection*{Resistenze in serie e in parallelo}
+
+\subsubsection*{Resistori in serie}
+\begin{equation*}
+    \sum R_i = R_{eq}
+\end{equation*}
+
+\subsubsection*{Resistori in parallelo}
+\begin{equation*}
+    R_{eq} = \frac{1}{\sum \frac{1}{R_i}}
+\end{equation*}
+
+\section{}
+
+
+\end{document}
