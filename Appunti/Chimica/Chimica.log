@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  25 JUN 2022 11:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  27 JUN 2022 11:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -919,7 +919,7 @@ l.35 	\newpage
 
 ]
 Capitolo 1.
-<immagini/grafico1.png, id=130, 733.99219pt x 376.40625pt>
+<immagini/grafico1.png, id=165, 733.99219pt x 376.40625pt>
 File: immagini/grafico1.png Graphic file (type png)
 <use immagini/grafico1.png>
 Package pdftex.def Info: immagini/grafico1.png  used on input line 70.
@@ -928,7 +928,7 @@ Package pdftex.def Info: immagini/grafico1.png  used on input line 70.
 
 ] [3 <./immagini/grafico1.png (PNG copy)>]
 Capitolo 2.
-<immagini/Millikan.png, id=149, 513.41812pt x 345.54094pt>
+<immagini/Millikan.png, id=184, 513.41812pt x 345.54094pt>
 File: immagini/Millikan.png Graphic file (type png)
 <use immagini/Millikan.png>
 Package pdftex.def Info: immagini/Millikan.png  used on input line 97.
@@ -936,18 +936,18 @@ Package pdftex.def Info: immagini/Millikan.png  used on input line 97.
 [4
 
 ]
-<immagini/atomo.png, id=160, 749.80125pt x 369.63094pt>
+<immagini/atomo.png, id=195, 749.80125pt x 369.63094pt>
 File: immagini/atomo.png Graphic file (type png)
 <use immagini/atomo.png>
 Package pdftex.def Info: immagini/atomo.png  used on input line 103.
 (pdftex.def)             Requested size: 483.70392pt x 238.45241pt.
-<immagini/atomo1.png, id=161, 722.7pt x 370.38374pt>
+<immagini/atomo1.png, id=196, 722.7pt x 370.38374pt>
 File: immagini/atomo1.png Graphic file (type png)
 <use immagini/atomo1.png>
 Package pdftex.def Info: immagini/atomo1.png  used on input line 109.
 (pdftex.def)             Requested size: 241.84409pt x 123.94508pt.
  [5 <./immagini/Millikan.png (PNG copy)> <./immagini/atomo.png> <./immagini/atomo1.png (PNG copy)>]
-<immagini/numero.png, id=173, 143.03438pt x 91.09032pt>
+<immagini/numero.png, id=208, 143.03438pt x 91.09032pt>
 File: immagini/numero.png Graphic file (type png)
 <use immagini/numero.png>
 Package pdftex.def Info: immagini/numero.png  used on input line 121.
@@ -965,22 +965,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 222--223
 Capitolo 4.
 [12
 
-] [13] [14] (Chimica.aux)
+] [13] [14]
+Overfull \hbox (7.08897pt too wide) in paragraph at lines 449--458
+ [] 
+ []
+
+[15] [16] (Chimica.aux)
 Package rerunfilecheck Info: File `Chimica.out' has not changed.
-(rerunfilecheck)             Checksum: 1251C9F990F7E0160D5F2BD6D4C94836;4435.
+(rerunfilecheck)             Checksum: BF3B383DD27F747FD35D8FEF43B9A9E0;6281.
  ) 
 Here is how much of TeX's memory you used:
- 32497 strings out of 478582
- 698827 string characters out of 2844344
- 940483 words of memory out of 3000000
- 50093 multiletter control sequences out of 15000+600000
+ 32516 strings out of 478582
+ 699054 string characters out of 2844344
+ 941485 words of memory out of 3000000
+ 50100 multiletter control sequences out of 15000+600000
  492528 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  115i,12n,118p,743b,961s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Chimica.pdf (15 pages, 729710 bytes).
+Output written on Chimica.pdf (17 pages, 747636 bytes).
 PDF statistics:
- 607 PDF objects out of 1000 (max. 8388607)
- 80 named destinations out of 1000 (max. 500000)
- 214 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 671 PDF objects out of 1000 (max. 8388607)
+ 92 named destinations out of 1000 (max. 500000)
+ 270 words of extra memory for PDF output out of 10000 (max. 10000000)
 
