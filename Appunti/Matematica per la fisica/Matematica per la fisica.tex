@@ -2708,5 +2708,42 @@ L'estensione al caso infinito dimensionale è subsola: gli operatori non sono ne
 	Questo teorema funziona anche quando $\dim(Y) = \infty$, basta che X sia finito dimensionale
 \end{oss}
 
+\section{Operatori illimitati}
+
+Proprietà:
+
+\begin{itemize}
+	\item Non sono definiti su tutto $L^2(\R)$
+	\item Non sono continui
+\end{itemize}
+
+\noindent Abbiamo definito il dominio D(A) di A come i'insieme dei vettori su cui può agire l'operatore.
+D(A) è uno sottospazio lineare di X e deve essere denso in X
+
+\begin{nb}
+	Lo stesso operatore A definito su domini differenti D(A) e D'(A) può dare luogo ad operatori con proprietà differenti. Questo è vero solo per operatori illimitati: di solito si parte da D(A) che contiene almeno le funzioni $C^\infty$ e si cerca estensione del dominio $D(A) \subset D'(A)$ fino a che l'operatore A non ha le proprietà desiderate
+\end{nb}
+
+\begin{teo}
+	Dato A operatore continuo e limitato da X a Y spazi completi allora si può sempre estedere il dominio a tutto X
+	\begin{equation*}
+		D(A) = X
+	\end{equation*}
+\end{teo}
+
+\begin{Def}
+	Un operatore 
+	\begin{equation*}
+		A: \; X \mapsto Y
+	\end{equation*}
+	si dice \textbf{chiuso} se le condizioni
+	\begin{equation*}
+		\lim_{n\to\infty} v_n = v \qquad \lim_{n\to\infty} Av_n = w
+	\end{equation*}
+	implica che $Av = w$ \newline
+	Questa condizione è più debole della condizione di continuità perchè ora chiediamo che se $Av_n$ converge  allora lo debba fare ad Av, ma può anche essere che non converga
+\end{Def}
+
+\chapter{Operatori su spazi di Hilbert}
 
 \end{document}

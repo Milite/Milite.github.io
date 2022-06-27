@@ -64,3 +64,5 @@
 \contentsline {section}{\numberline {18.2}Teoria spettrale}{59}{section.18.2}%
 \contentsline {section}{\numberline {18.3}Funzioni di operatori}{60}{section.18.3}%
 \contentsline {chapter}{\numberline {19}Operatori lineari su spazi di Hilbert infinito dimensionali}{62}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Operatori illimitati}{63}{section.19.1}%
+\contentsline {chapter}{\numberline {20}Operatori su spazi di Hilbert}{64}{chapter.20}%
