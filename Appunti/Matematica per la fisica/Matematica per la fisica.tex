@@ -2629,5 +2629,84 @@ L'estensione al caso infinito dimensionale è subsola: gli operatori non sono ne
 	p: \; pf(x) = -i\frac{\delta}{\delta x }f(x) \qquad \text{operatore impulso (momento)}
 \end{gather*}
 
+\noindent Se per esempio $f(x)\in L^2(\R)$ allora p e q sono operatori su uno spazio infinito dimensionale
+
+\begin{oss}
+	Se H è di Hilbert posso definire una norma e di conseguenza una topologia e la nozione di continuità di un operatore
+\end{oss}
+
+\begin{Def}
+	Un operatore 
+	\begin{equation*}
+		A: \; X \mapsto Y
+	\end{equation*}
+	si dice continuo se $\forall$ sequenza $\{v_k\} $ convergenti a v in X allora
+	\begin{equation*}
+		\lim_{k\to\infty} {||v_k-v||}_X =0
+	\end{equation*}
+	si ha che la sequenza $\{Av_k\}$ in Y converge ad $Av \in Y$
+	\begin{equation*}
+		\lim_{k\to\infty} {||Av_k-Av||}_Y =0
+	\end{equation*}
+	cioè A è \textbf{continuo} se posso scambiare limite con l'operatore
+	\begin{equation*}
+		\lim_{k\to\infty} \{Av_k\} = A\{\lim_{k\to\infty v_k}\} = Av
+	\end{equation*}
+	Nel caso finito dimensionale è sempre vero, ma per dimensione di X uguale a $\infty$ può non esserlo 
+\end{Def}
+
+\begin{Def}
+	Un operatore 
+	\begin{equation*}
+		A: \; X \mapsto Y
+	\end{equation*}
+	si dice \textbf{limitato} se 
+	\begin{equation*}
+		\exists k >0 \, | \, {||Av||}_Y \le k{||v||}_X \quad \forall v \ne 0 \in X
+	\end{equation*}
+\end{Def}
+
+\begin{Def}
+	Si dice \textbf{norma} di un operatore A il valore più piccolo di k per cui ${||Av||}_Y \le k {||v||}_X$
+	\begin{equation*}
+		||A|| = \sup_{v \ne 0 \in X} \frac{{||AV||}_Y}{{||v||}_X}
+	\end{equation*}
+\end{Def}
+
+\begin{oss}
+	Vale naturalmente che 
+	\begin{equation*}
+		{||Av||}_Y \le ||A|| \cdot {||v||}_X
+	\end{equation*}
+\end{oss}
+
+\begin{teo}
+	Un operatore si dice continuo se e soltanto se è limitato
+\end{teo}
+
+\begin{oss}
+	Lo spettro degli operatori continui tra X e Y è a sua volta uno spazio vettoriale B(X,Y) che può essere normato con norma
+	\begin{equation*}
+		||A|| = \sup_{v\ne 0 \in X} \frac{{||Av||}_Y}{{||v||}_X}
+	\end{equation*}
+	se Y è completo allora anche B(X,Y) è uno spazio di Banach
+\end{oss}
+
+\begin{Def}
+	Quando $Y = \C$ allora 
+	\begin{equation*}
+		B(X,\C) = X^*
+	\end{equation*}
+	duale di X, spazio normato e completo. Rispetto al caso finito dimensionale, ai funzionali in $X^*$ è richiesto di essere continui (duale topologioc rispetto a duale algebrico)
+\end{Def}
+
+\begin{teo}
+	Operatori lineari su spazi finito dimensionali sono sempre continui e limitati
+\end{teo}
+
+\begin{oss}
+	Questo teorema funziona anche quando $\dim(Y) = \infty$, basta che X sia finito dimensionale
+\end{oss}
+
 
 \end{document}
