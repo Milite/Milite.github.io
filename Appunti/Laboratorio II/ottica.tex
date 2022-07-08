@@ -1,0 +1,209 @@
+\documentclass[a4paper,11pt]{report}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+
+\usepackage{mathdots}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{geometry}
+\geometry{a4paper, top=2.5cm, bottom=2cm, left=2cm, right=2cm}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=blue,
+	citecolor = black,      
+	urlcolor=cyan,
+}
+
+\begin{document}
+	\date{}
+	\author{Marco Militello}
+	\title{Ottica geometrica}
+	\maketitle
+	\tableofcontents
+	\newpage
+
+\chapter{Ottica geometrica}
+
+L'ottica geometrica è un modello che descrive i fenomeni legati alla propagazione della luce in termini di raggi.
+Normalemente si dice che l'ottica geometrica è un approssimazione valida finchè le dimensioni in gioco sono maggiori della lunghezza d'onda
+
+\section{Leggi dell'ottica geometrica}
+
+\begin{enumerate}
+    \item in un mezzo omogeneo la luce si propaga in linea retta
+    \item legge della riflessione
+    \item legge della rifrazione
+\end{enumerate}
+Quando un raggio luminoso incontra una disomogeneità, come è l'interfaccia tra un mezzo e un altro, si separa in due raggi: uno riflesso e uno trasmesso (rifratto)
+
+\section{Riflessione e rifrazione}
+
+Un raggio che incide su una superficie di separazione piana tra due mezzi differenti viene in parte trasmesso e in parte riflesso.
+Raggio incidente, riflesso e rifratto giacciono tutti nello stesso piano, perpendicolare all'interfaccia.
+La direzione dei raggi è identificata con gli angoli che questi fomano rispetto allla normale all'interfaccia stessa.
+
+\subsection*{Legge della riflessione}
+
+\begin{equation*}
+    \theta_{incidente} = \theta_{riflesso}
+\end{equation*}
+
+\subsection*{Legge della riflessione}
+
+Il rapporto tra i seni degli angoli di incidenza e di rifrazione dipende dai due mezzi materiali affacciati, questa caratteristica dei mezzi si chiama indice di rifrazione
+
+\begin{equation*}
+    n_1 \sin{\theta_{inc}} = n_2 \sin{\theta_{rifr}}
+\end{equation*}
+
+\noindent L'indice di rifrazione di un mezzo dipende dalla lunghezza d'onda della luce che lo attraversa, questo ha come conseguenza che l'angolo di rifrazione cambia a seconda del colore della luce incidente.
+la dipendenza dell'indice di rifrazione dalla lunghezza d'onda è descritto dalla legge di Cauchy
+
+\begin{equation*}
+    n(\lambda) = A + \frac{B}{\lambda^2} + \frac{C}{\lambda^4} + \dots 
+\end{equation*}
+
+\noindent Con un prisma realizzato con un materiale sufficientemente dispersivo, un fascio di luce bianaca è scomposto nelle sue componeti cromatiche
+
+\section{Riflessione totale}
+
+Se $n_2 < n_1$ il raggio rifratto si allontana dalla normale. 
+All'aumentare dell'angolo di incidenza l'angolo di rifrazione aumenta. 
+Quando $\theta_{rifr} = 90$ il raggio rifratto scompare, questo succede se $\arcsin{\theta_{inc}} = \frac{n_2}{n_1}$
+
+\section{Riflessione, trasmissione e assorbimento}
+
+Attraverso un mezzo la luce è parzialmente assorbita e si definisce il coefficiente di trasmissione $k_\lambda$ come 
+
+\begin{equation*}
+    I_{trasmessa} = I_0\exp^{-k_\lambda d}
+\end{equation*}
+
+\noindent dove d è la distanza percorsa dal mezzo. \newline
+Quando la luce è scomposta in un raggio riflesso e uno rifratto, si ha una suddivisione dell'intensità luminosa che è misurata dai coefficienti di riflessione e di trasmissione che misurano i rapporti tra le intensità delle tre onde.
+Il valore di tali coefficienti dipende dall'indice di rifrazione e dallo stato di polarizzazione
+
+\section{Principio di Fermat}
+
+In generale la propagazione della luce attraverso mezzi differenti è ben descritta dal principio di Fermat: \newline
+propagandosi da A a B la luce segue il percorso che richiede il minimo di tempo di percerrenza, ovvero il percorso che richiede il cammino ottico più breve.
+Data una distanza d in un mezzo di indice di rifrazione n, il tempo di percorrenza è:
+
+\begin{equation*}
+    t = \frac{d}{w} = \frac{d \cdot n}{c} = \frac{\Delta}{c}
+\end{equation*}
+
+\noindent La velocità della luce differente nei due mezzi fa sì che il percorso più veloce sia quello dato dalla legge di rifrazione
+
+\chapter{Ottica ondulatoria}
+
+Una serie di fenomeni ottici non trova spiegazione nell'ottica geometrica, questi fenomeni (interferenza e diffrazione) sono dovuti al fatto che la luce sia un'onda
+
+\section{Onde}
+
+Le equazioni di Maxwell prevedono la possibilità che i campi elettromagnetici si propaghino nello spazio e nel tempo secondo le equazioni delle onde.
+Un'onda è identificata da una direzione di propagazione e una legge che esprime l'evoluzione dei campi nel tempo e nello spazioe. 
+La velocità di propagazioen è definita dalle leggi di Maxwell come:
+
+\begin{equation*}
+    v_{luce} = \frac{c}{n}    
+\end{equation*}
+
+\subsection*{Onda piana}
+
+Il fronte d'onda è definito come l'insieme dei punti dello spazio in cui i campi, a t fissato, assumono lo stesso valore
+
+\begin{itemize}
+    \item $(x \pm v_{luce}t)$ = costante $\Rightarrow$ onda piana
+    \item $(r \pm v_{luce}t)$ = costante $\Rightarrow$ onda sperica
+\end{itemize}
+
+\noindent I segni - o + indicano l'onda progressiva e regressiva \newline
+Comunemente si considera il caso in cui la dipendenza dei campi dalle coordinate spazio-tempo sia di tipo sinusoidale
+
+\begin{equation*}
+    \vec{E}(x,t) = \vec{E}_0 \sin{(kx \pm \omega t)}
+\end{equation*}
+
+\noindent con $k = \frac{2\pi}{\lambda}$ numero d'onda, $\lambda$ lunghezza d'onda, $\omega = \frac{2\pi}{T}$ pulsazione, T periodo, $\nu = \frac{1}{T}$ frequenza e $v_{luce} = \nu \lambda$
+
+\section{Polarizzazione}
+
+Il vettore $\vec{E}$ è perpendicolare alla direzione di propagazione x e varia la sua ampiezza in modo sinusoidale sia nello spazio che nel tempo.
+La direzione del vettore può cambiar anch'essa.
+Parlo di onda polarizzata linearmente se la direzione di $\vec{E}$ si mantiene sempre fissa; parlo di onda polarizzata circolarmente se la direzione di $\vec{E}$ varia descrivendo uan circoferenza nel piano yz
+
+\section{Intensità}
+
+L'intensità I è la grandezza a cui l'occhio e la maggior parte degli strumenti ottici è sensibile.
+Poichè le oscillazioni che caratterizzano l'onda hanno frequenze molto alte, la grandezza di riferimento è l'intensità media, che viene calcolata come media temporale
+
+\section{Interferenza}
+
+Considero due sorgenti puntiformi $S_A$ e $S_B$ che producono un'onda monocromatica con fronte d'onda sferico.
+Per il principio di sovrapposizione il campo nel punto P è dovuto alla sovrapposizione dei campi dovuti alla due sorgenti; l'intesità dell'onda è proporzionale al quadrato del campo elettrico
+
+\begin{equation*}
+    I(P) = I_A + I_B + \underbrace{2\sqrt[]{I_AI_B} \cos{((k_AR_A - \omega_At)- (k_BR_B - \omega_Bt + \phi))}}_{termine di interferenza}
+\end{equation*}
+
+\noindent Il termine di inteferenza ha valore nullo tranne che in condizioni speciali:
+
+\begin{itemize}
+    \item la frequenza e la lunghezza d'onda delle due sorgenti è uguale
+    \item lo sfasamento tra le due è costante nel tempo $\rightarrow \phi(t) = cost $ $\Rightarrow$ coerenza
+\end{itemize}
+
+\noindent Si ottiene quindi
+
+\begin{equation*}
+    I(P) = I_A + I_B + 2\sqrt[]{I_AI_B} \cos{(k(R_A - R_B) -\phi)}
+\end{equation*}
+
+\begin{itemize}
+    \item massimi (onde in fase): $k(R_A - R_B) -\phi = 2n\pi$
+    \item minimi (onde in opposizione di fase): $k(R_A - R_B) -\phi = (2n +1)\pi$
+\end{itemize}
+
+\noindent Il luogo dei massimi e dei minimi è un iperboloide di rotazione
+
+\section{Monocromaticità e coerenza}
+
+Il fenomeno di interferenza, spiegato solo ammettedo la natura ondulatoria della luce, è osservabile esclusivamente quando si usano sorgenti monocromatiche e coerenti tra di loro.
+Una sorgente si dice monocromatica se emette radiazione di una sola lunghezza d'onda.
+Questo avviene nel caso di processi di diseccitazione radiativa di un atomo o di una molecola eccitati o ionizzati: a un singolo processo corrisponde un'energia caratteristica $E_0$ e quindi una $\lambda_0$ (spesso chiamata riga).
+La monocromaticità della radiazione emessa non è perfetta. 
+Ogni riga di emissione ha una larghezza intrinseca per cui l'intensità della riga ha una distribuzione piccata su $\lambda_0$ e di laghezza $\Delta\lambda$.
+Questa larghezza è determinata dal tempo caratteristico di dieccitazione, quindi è una proprietà della sorgente.
+L'emissione è quindi più assimilabile a una sovrapposizione d onde sinusoidali, tutte in fase tra di loro, la più intensa di lunghezza d'onda $\lambda_0$. 
+Questo insieme di sinusoidi, denominato pacchetto d'onda, non ha però una durata infinita nel tempo, la sua durata dipende dal tempo caratteristico, detto tempo di corenza.
+il tempo di coerenza moltiplicato per la velocità della luce dà la lunghezza spaziale del pacchetto, detta lunghezza di coerenza..
+In una lampada ad Hg come quella in laboratorio, la lunghezza di coerenza dovuta alla larghezza intrinseca della riga è di circa 50 cm (riga 541.6 nm)
+
+\section{Laser}
+
+Dispositivo in grado di emettere un fascio di luce coerente, generalemente monocromatica, e concentrata in un raggio rettilineo estremamente collimato.
+La luminosità delle sorgenti laser è elevatissima a paragone di quella delle sorgenti luminose tradizionali
+
+\section{Coerenza}
+
+Due sorgenti distinte, pur emettendo sulla stessa lunghezza d'onda, non sono coerenti tra di loro, pertanto non possono essere utilizzate per osservare il fenomeno di interferenza.
+Questo richiede infatti di:
+
+\begin{itemize}
+    \item sovrapporre raggi luminosi che provengano dalla stessa sorgente fisica
+    \item far percorrere a questi raggi cammini ottici differenti, che non eccedano la lunghezza di coerenza della sorgente
+\end{itemize}
+
+
+\end{document}
