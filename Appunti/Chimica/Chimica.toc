@@ -1,72 +1,51 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
-\contentsline {chapter}{\numberline {1}Introduzione alla chimica e proprietà della materia}{3}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Introduzione}{3}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Stati aggregazione della materia}{3}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Proprietà della materia}{3}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Composizione della materia}{3}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Teoria atomica di Dalton}{4}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Scoperta delle particelle sub-atomiche: raggi catodici}{4}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Simbolo atomico, numero atomico e numero di massa}{6}{section.1.6}%
-\contentsline {section}{\numberline {1.7}Isotopi}{6}{section.1.7}%
-\contentsline {section}{\numberline {1.8}Teoria atomica moderna}{6}{section.1.8}%
-\contentsline {section}{\numberline {1.9}Tecniche di separazione fondamentali}{6}{section.1.9}%
-\contentsline {section}{\numberline {1.10}Atomi e molecole}{7}{section.1.10}%
-\contentsline {chapter}{\numberline {2}Stechiometria}{8}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Formule chimiche}{8}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Studio delle relazioni di massa in chimica}{8}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Mole}{8}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Massa molare}{9}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Percentuale in massa della formula chimica}{9}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Formule empiriche}{9}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Formula molecolare}{9}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Equazioni chimiche}{9}{section.2.8}%
-\contentsline {section}{\numberline {2.9}Bilanciare un'equazione chimica}{9}{section.2.9}%
-\contentsline {section}{\numberline {2.10}Calcoli stechiometrici}{10}{section.2.10}%
-\contentsline {section}{\numberline {2.11}Reazioni in sequenza}{10}{section.2.11}%
-\contentsline {section}{\numberline {2.12}Reagenti limitanti}{10}{section.2.12}%
-\contentsline {section}{\numberline {2.13}Resa}{10}{section.2.13}%
-\contentsline {section}{\numberline {2.14}Percentuale in massa dalla formula chimica}{10}{section.2.14}%
-\contentsline {section}{\numberline {2.15}Formule empiriche e molecolari}{10}{section.2.15}%
-\contentsline {section}{\numberline {2.16}Determinare la formula molecolare}{11}{section.2.16}%
-\contentsline {section}{\numberline {2.17}Equazioni chimiche}{11}{section.2.17}%
-\contentsline {section}{\numberline {2.18}Reazioni in sequenza}{11}{section.2.18}%
-\contentsline {chapter}{\numberline {3}Struttura elettronica degli atomi}{12}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Debolezze modello planetario atomo}{12}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Luce}{12}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Radiazione di corpo nero e quantizzazione dell'energia}{12}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Quantizzazione dell'energia}{13}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Effetto fotoelettrico e fotoni}{13}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Spettro a righe dell'idrogeno}{13}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Dualismo onda particella di materia e energia}{14}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Principio di indeterminazione di Heisenberg}{14}{section.3.8}%
-\contentsline {section}{\numberline {3.9}Il modello quantomeccanico dell'atomo}{14}{section.3.9}%
-\contentsline {section}{\numberline {3.10}Numeri quantici e orbitali}{14}{section.3.10}%
-\contentsline {section}{\numberline {3.11}Livelli energetici dell'atomo di idrogeno}{15}{section.3.11}%
-\contentsline {section}{\numberline {3.12}Numeri quantici e il principio di esclusione di Pauli}{15}{section.3.12}%
-\contentsline {section}{\numberline {3.13}Schermatura ed energia degli orbitali}{15}{section.3.13}%
-\contentsline {section}{\numberline {3.14}Penetrazione ed energia dei sottolivelli}{15}{section.3.14}%
-\contentsline {section}{\numberline {3.15}Separazione dei livelli in sottolivelli}{16}{section.3.15}%
-\contentsline {section}{\numberline {3.16}Configurazione elettronica e diagrammi degli orbitali}{16}{section.3.16}%
-\contentsline {section}{\numberline {3.17}Configurazioni elettroniche entro i gruppi}{16}{section.3.17}%
-\contentsline {section}{\numberline {3.18}Classificazione degli elettroni}{16}{section.3.18}%
-\contentsline {section}{\numberline {3.19}Carica nucleare efficace}{17}{section.3.19}%
-\contentsline {section}{\numberline {3.20}Raggio metallico e raggio covalente}{17}{section.3.20}%
-\contentsline {section}{\numberline {3.21}Tendenze nei raggi atomici}{17}{section.3.21}%
-\contentsline {section}{\numberline {3.22}Tendenze dell'energia di ionizzazione}{17}{section.3.22}%
-\contentsline {section}{\numberline {3.23}Tendenze nell'affinità elettronica}{17}{section.3.23}%
-\contentsline {chapter}{\numberline {4}Legami chimici}{18}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Proprietà sostanze elementari: metali, non-metalli, metalloidi}{18}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Configurazioni elettroniche degli atomi monoatomici}{18}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Raggio atomico e raggio ionico}{18}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Tipi di legame chimico}{18}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Simboli di Lewis}{19}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Modello del legame ionico}{19}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Energia reticolare}{19}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Proprietà dei composti ionici}{19}{section.4.8}%
-\contentsline {section}{\numberline {4.9}Coppie di legame e coppie solitarie}{20}{section.4.9}%
-\contentsline {section}{\numberline {4.10}Proprietà del legame covalente}{20}{section.4.10}%
-\contentsline {section}{\numberline {4.11}Tendenze di ordien, energia e lunghezza di legame}{20}{section.4.11}%
-\contentsline {section}{\numberline {4.12}Elettronegatività e polarità di legame}{20}{section.4.12}%
-\contentsline {section}{\numberline {4.13}Tendenze all'elettronegatività}{20}{section.4.13}%
-\contentsline {section}{\numberline {4.14}Rappresentazione dei legami polari}{20}{section.4.14}%
-\contentsline {section}{\numberline {4.15}Legame metallico}{21}{section.4.15}%
+\contentsline {chapter}{\numberline {2}Teoria atomica}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Teoria atomica di Dalton}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Simbolo atomico, numero atomico e numero di massa}{7}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Atomi e molecole}{7}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Stechiometria}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Equazioni chimiche}{10}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Percentuale in massa dalla formula chimica}{11}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Formule empiriche e molecolari}{11}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Equazioni chimiche}{11}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Teoria quantistica e spettri atomici}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Debolezze modello planetario atomo}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Luce}{13}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Radiazione di corpo nero e quantizzazione dell'energia}{13}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Quantizzazione dell'energia}{14}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Effetto fotoelettrico e fotoni}{14}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Spettro a righe dell'idrogeno}{14}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Dualismo onda particella di materia e energia}{15}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Principio di indeterminazione di Heisenberg}{15}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Il modello quantomeccanico dell'atomo}{15}{section.4.9}%
+\contentsline {section}{\numberline {4.10}Numeri quantici e orbitali}{15}{section.4.10}%
+\contentsline {section}{\numberline {4.11}Livelli energetici dell'atomo di idrogeno}{16}{section.4.11}%
+\contentsline {section}{\numberline {4.12}Numeri quantici e il principio di esclusione di Pauli}{16}{section.4.12}%
+\contentsline {section}{\numberline {4.13}Schermatura ed energia degli orbitali}{16}{section.4.13}%
+\contentsline {section}{\numberline {4.14}Penetrazione ed energia dei sottolivelli}{16}{section.4.14}%
+\contentsline {section}{\numberline {4.15}Separazione dei livelli in sottolivelli}{17}{section.4.15}%
+\contentsline {section}{\numberline {4.16}Configurazione elettronica e diagrammi degli orbitali}{17}{section.4.16}%
+\contentsline {section}{\numberline {4.17}Configurazioni elettroniche entro i gruppi}{17}{section.4.17}%
+\contentsline {section}{\numberline {4.18}Classificazione degli elettroni}{17}{section.4.18}%
+\contentsline {section}{\numberline {4.19}Carica nucleare efficace}{18}{section.4.19}%
+\contentsline {section}{\numberline {4.20}Raggio metallico e raggio covalente}{18}{section.4.20}%
+\contentsline {section}{\numberline {4.21}Tendenze nei raggi atomici}{18}{section.4.21}%
+\contentsline {section}{\numberline {4.22}Tendenze dell'energia di ionizzazione}{18}{section.4.22}%
+\contentsline {section}{\numberline {4.23}Tendenze nell'affinità elettronica}{18}{section.4.23}%
+\contentsline {chapter}{\numberline {5}Legami chimici}{19}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Le tappe di conversione di una formula molecolare in una formula di Lewis}{19}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Strutture di risonanza}{19}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Ibrido di risonanza}{19}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Delocalizzazione degli elettroni}{19}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Carica formale}{20}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Carica formale e numero di ossidazione}{20}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Eccezioni regola dell'ottetto}{20}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Teoria della repulsione delle coppie di elettroni del guscio di valenza}{20}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Disposizione dei gruppo di elettroni e geometrie molecolari}{20}{section.5.9}%
+\contentsline {section}{\numberline {5.10}Angoli di legame}{21}{section.5.10}%
+\contentsline {section}{\numberline {5.11}Le tappe per convertire una formula molecolare in una strutture molecolare}{21}{section.5.11}%
