@@ -2746,4 +2746,158 @@ D(A) è uno sottospazio lineare di X e deve essere denso in X
 
 \chapter{Operatori su spazi di Hilbert}
 
+\begin{equation*}
+	A: \; H \to H
+\end{equation*}
+generalizza il concetto di matrice dell'algebra lineare anche nel caso $\infty$-dimensionale. \'E possibile comunque definire gli elementi di matrice anche se $\dim{(H)}=\infty$ perchè se H è di Hilbert allora esiste una base ortonormale e completa $\{e_i\}\in H$. Allora l'elemento di matrice A è detto
+\begin{equation*}
+	A_{ij} = (e_i,Ae_j)
+\end{equation*}
+Inoltre se A è continuo $\forall x \in H$ si può scrivere il coefficiente di Fourier i-esimo di Ax come 
+\begin{equation*}
+	{(Ax)}_i = (e_i, Ax) = (e_i, A\sum_{j=1}^\infty x_je_j) = \sum_{j=1}^\infty x_j (e_i,Ae_j) = \sum_{j=1}^\infty A_{ij}x_j = A_{ij}x_j
+\end{equation*}
+Abbiamo usato la continuità di A per scambiare operatore e serie 
+\begin{nb}
+	Molte proprietà valide per $n<\infty$ non lo sono più nel caso $\infty$-dimensionale
+\end{nb}
+
+\section*{Operatore di Shift}
+su $\C^n$ e su $l^2$ $[\dim{(\C^n)} = n, \dim{(l^2)} = \infty]$. Lo shift operator agisce così
+\begin{equation*}
+	E^- 
+	\left(\begin{array}[]{ccc}
+		x_1 \\
+		\vdots \\
+		x_n		
+	\end{array}\right) =
+	\left(
+		\begin{array}[]{ccc}
+			0 \\
+			x_1 \\
+			\vdots \\
+			x_n
+		\end{array}
+	\right)
+\end{equation*}
+Quando lo guardiamo su $l^2$ tale operatore si può vedere come matrice $\infty$-dimensionale
+\begin{equation*}
+	E^- = \left(\begin{array}[]{ccccc}
+		0 & 0 &   0    & 0 &    0   \\
+		1 & 0 &   0    & 0 &    0   \\
+		0 & 1 & \ddots & 0 &    0   \\
+		0 & 0 & \ddots & 0 &    0   \\
+		0 & 0 &   0    & 1 & \ddots \\
+	\end{array}\right)
+\end{equation*}
+Ciò nonostante si può mostrare che $||E^-|| = 1$ su $l^2$; questo non è vero su $\C^n$
+
+\section*{Operatore commutatore}
+
+\begin{equation*}
+	[A,B] = AB - BA
+\end{equation*}
+applicato a posizione e impulso, q e p, si $L^2(\R)$ produce la relazione di commutazione di Heisenberg
+\begin{equation*}
+	[q,p] = i\mathbb{1} \qquad \text{ con} \mathbb{1} \text{ definita su } D(q) \cap D(p) = D'
+\end{equation*}
+\begin{nb}
+	La relazione di commutazione può esistere solo se A e B sono operatori su spazi  $\infty$-dimensionali
+\end{nb}
+
+\section{Spazio duale}
+Nel caso finito dimensionale si aveva che il duale $H^*$ era isomorfo a H e si poteva sempre definire il funzionale lineare $Ax in H^* \; \forall x \in H$ tramite il prodotto scalare 
+\begin{equation*}
+	\alpha x (y) = (x,y) \qquad \forall y \in H
+\end{equation*}
+Nel caso infinito dimensionale il teorema di Riesz ci assicura che si può fare lo stesso, cioè: il duale $H^*$ di uno spazio di Hilbert infinito dimensionale è isomorfo ad H
+\begin{teo}{Riesz}
+	Ogni funzionale lineare continuo
+	\begin{equation*}
+		\beta: \; H \mapsto \C 
+	\end{equation*}
+	con $\beta \in H^*$ può essere scritto in maniera univoca come
+	\begin{equation*}
+		\beta(y) = (X_\beta, y) \qquad \text{con } X_\beta \in H 
+	\end{equation*}
+	inoltre vale 
+	\begin{equation*}
+		{||\beta||}_{H^*} = {||X_\beta||}_H
+	\end{equation*}
+	L'identificazione $\beta \in H^*$ con $X_\beta \in H$ è biunivoca e preserva la norma; l'unica peculiarità che ha è che è anti-lienare, infatti per le proprietà del prodotto scalare 
+	\begin{gather*}
+		\beta \to \lambda\beta \qquad \beta \to (x, \\
+		X_\beta \to \lambda^*X_\beta \qquad X_\beta \to (\lambda^* x, 
+	\end{gather*}
+\end{teo}
+
+\section{Aggiunto di un operatore continuo e limitato}
+Si definisce aggiunto tramite (per $A: \; H \to H$ continuo e limitato su spazio infinito dimensionale)
+\begin{equation*}
+	(A^+w,v) = (w,Av) \qquad \forall \, v,w \in H
+\end{equation*}
+\begin{teo}
+	$D(A^+)$ è estendibile a tutto H, $A^+$ è ben definito e continuo su tutto H
+\end{teo}
+\begin{teo}
+	\begin{equation*}
+		||A^+|| = ||A||
+	\end{equation*}
+\end{teo}
+
+\section{Aggiunto di un operatore non limitato}
+Quando A non è limitato bisogna stare atteti a definire il dominio di A e del suo aggiunto; dato che A densamente (dominio denso in A) definito su $D(A) \subset H$ allora esiste operatore aggiunto $A^+$ definito su $D(A^+)\subset H$ tale che 
+\begin{equation*}
+	(A^+ w , v) = (w, Av) \qquad \forall \, v \in D(A) \; \forall \, v \in D(A)
+\end{equation*}
+In generale però $D(A) \neq D(A^+)$; si ha in particolare che $D(A^+)$ è l'insieme dei $w\in H $ per cui $(w,Av)$ è continuo $\forall \, v \in D(A)$. Proprietà del tipo ${(A^+)}^+ = A$ non valgono più per operatori illimitati generici; si può al più dire che $D(A) \subset D({(A^+)}^+)$. Però per operatori densamente definiti e chiusi si ha che 
+\begin{equation*}
+	{(A^+)}^+ = A
+\end{equation*} 
+
+\section{Operatori autoaggiunti}
+
+\begin{Def}
+	$A: \, H\to H \; \infty$-dim si dice autoaggiunto o Hermitiano se 
+	\begin{equation*}
+		A^+ = A \text{ e } D(A) = D(A^+)
+	\end{equation*} 
+	cioè se 
+	\begin{equation*}
+		(Aw, v) = (w, Av) \qquad \forall \, v,w \in D(A)
+	\end{equation*}
+\end{Def}
+\begin{Def}
+	Se $(Aw, v) = (w, Av)$ ma $D(A) \subset D(A^+)$ allora si dice OPERATORE SIMMETRICO
+\end{Def}
+\begin{oss}
+	Per operatori continui il dominio si può estendere a tutto H, quindi Hermiticità se e soltanto se simmetria e $D(A) = H = D(A^+)$. Per operatori illimitati invece, se A è solo simmetrico, si può estendere il dominio D(A) e restringere il dominio $D(A^+)$ in modo da arrivare all'autoaggiuntezza
+\end{oss}
+
+\section{Operatori unitari}
+Operatori continui e limitati U su spazi infinito dimensionale sono unitari se 
+\begin{equation*}
+	UU^+= \mathbb{1} = U^+U \qquad U^+ = U^{-1}
+\end{equation*}
+sono quindi isometria
+\begin{equation*}
+	(Uv, Uw) = (v, U^+Uw) = (v,w)
+\end{equation*}
+Ponendo $v = w$ ho 
+\begin{equation*}
+	||Uv|| = ||v||
+\end{equation*} 
+quindi
+\begin{equation*}
+	||U|| = \sup_v \frac{||Uv||}{||v||} = 1
+\end{equation*}
+Sono operatori invertibili e si usano per cambi di base anche su spazi infinito dimensionale
+
+\subsection*{Trasformata di Fourier}
+Trasformata di Fourier su $L^2(\R)$
+\begin{equation*}
+	F^+ = F^{-1} = \hat{F} \qquad \text{trasformata inversa}
+\end{equation*}
+abbiamo visto che è un'isometria di $L^2(\R)$ e manda dalla base delle posizioni alla base degli impulsi e viceversa
+
 \end{document}
