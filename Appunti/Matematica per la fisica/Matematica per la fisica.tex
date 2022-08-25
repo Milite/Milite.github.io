@@ -2799,7 +2799,7 @@ Ciò nonostante si può mostrare che $||E^-|| = 1$ su $l^2$; questo non è vero 
 \end{equation*}
 applicato a posizione e impulso, q e p, si $L^2(\R)$ produce la relazione di commutazione di Heisenberg
 \begin{equation*}
-	[q,p] = i\mathbb{1} \qquad \text{ con} \mathbb{1} \text{ definita su } D(q) \cap D(p) = D'
+	[q,p] = i\mathbb{I} \qquad \text{ con} \mathbb{I} \text{ definita su } D(q) \cap D(p) = D'
 \end{equation*}
 \begin{nb}
 	La relazione di commutazione può esistere solo se A e B sono operatori su spazi  $\infty$-dimensionali
@@ -2877,7 +2877,7 @@ In generale però $D(A) \neq D(A^+)$; si ha in particolare che $D(A^+)$ è l'ins
 \section{Operatori unitari}
 Operatori continui e limitati U su spazi infinito dimensionale sono unitari se 
 \begin{equation*}
-	UU^+= \mathbb{1} = U^+U \qquad U^+ = U^{-1}
+	UU^+= \mathbb{I} = U^+U \qquad U^+ = U^{-1}
 \end{equation*}
 sono quindi isometria
 \begin{equation*}
@@ -2899,5 +2899,45 @@ Trasformata di Fourier su $L^2(\R)$
 	F^+ = F^{-1} = \hat{F} \qquad \text{trasformata inversa}
 \end{equation*}
 abbiamo visto che è un'isometria di $L^2(\R)$ e manda dalla base delle posizioni alla base degli impulsi e viceversa
+
+\section{Autovalori e teoria spettrale per operatori infinito dimensionali}
+Se $\dim{X} = n < \infty$ allora A Hermitiano può essere diagonalizzato; gli autovalori sono reali e autovettori mutualmente ortogonali
+\begin{equation*}
+	Av = \lambda v \Rightarrow (A-\lambda\mathbb{I})v =0
+\end{equation*}
+questa equazione ha soluzione per $\lambda$ fissato solo se $v \in \ker{\{A-\lambda\mathbb{I}\}}$ cioè se $\ker{\{A-\lambda\mathbb{I}\}}$ non è vuoto. Questo implica che $A - \lambda\mathbb{I}$ non è invertibile. Quindi possiamo definire lo spettro di A 
+\begin{equation*}
+	\sigma(A) = \{\lambda\in \C \, | \, A-\lambda\mathbb{I} \text{ non è invertibile}\}
+\end{equation*}
+Estendiamo ora al caso infinito dimensionale: vediamo subito che ci sono dei problemi
+\begin{enumerate}
+	\item Possono esistere operatori autoaggiunti che non hanno autovalori in senso tradizionale, cioè $v \not\in D(A)$; bisogna quindi estendere il concetto di autovalore: autovalori impropri o generalizzati
+	\item Bisogna anche estendere il concetto di autovettore: autovettori generalizzati
+	\item Bisogna rivisitare la nozione di invertibilità
+\end{enumerate}
+Definiamo $\sigma(A)$ come insieme degli autovalori di un operatore A
+\begin{equation*}
+	D(A) \subset H \mapsto H \qquad H \text{ $\infty-$dim}
+\end{equation*}
+richiediamo che l'operatore 
+\begin{equation*}
+	A-\lambda \mathbb{I} : \, D(A) \subset H \mapsto H
+\end{equation*}
+sia biunivoco e che il suo inverso ${(A-\lambda\mathbb{I})}^{-1}$ chiamato OPERATORE RISOLVENTE esista su tutto H e sia limitato, cioè
+\begin{equation*}
+	{(A-\lambda\mathbb{I})}^{-1} : \, H \mapsto \C
+\end{equation*}
+perciò
+\begin{equation*}
+	{(A-\lambda\mathbb{I})}^{-1} \in \beta(H)
+\end{equation*}
+l'insieme dei $\lambda$ per cui questo è vero si chiama insieme risolvente e si indica con $\rho(A)$
+\begin{equation*}
+	\rho(A) = \{\lambda\in\C \, | \, {(A-\lambda\mathbb{I})}^{-1}\in \beta(H)\}
+\end{equation*}
+lo spettro $\sigma(A)$ è allora definito come il complementare del risolvente
+\begin{equation*}
+	\sigma(A) = \C \setminus \rho(A)
+\end{equation*}
 
 \end{document}
