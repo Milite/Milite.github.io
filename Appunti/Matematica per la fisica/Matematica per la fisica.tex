@@ -2939,5 +2939,73 @@ lo spettro $\sigma(A)$ è allora definito come il complementare del risolvente
 \begin{equation*}
 	\sigma(A) = \C \setminus \rho(A)
 \end{equation*}
+\begin{oss}
+	L'unica richiesta ulteriore per il caso $\infty$-dim è la continuità del risolvente
+\end{oss}
+Un qualsiasi $\lambda \in \C$ appartiene a $\sigma(A)$ in 3 possibili casi
+\begin{enumerate}
+	\item $A - \lambda\mathbb{I}$ non è iniettivo. Quindi ${(A - \lambda\mathbb{I})}^{-1}$ non esiste. In questo caso $Av=\lambda v$ ha almeno 1 autovalore perchè $\ker{\{A - \lambda\mathbb{I}\}} \neq 0$: allora SPETTRO DISCRETO $\sigma_d(A)$
+	\item $(A - \lambda\mathbb{I})$ è iniettiva quindi ${(A - \lambda\mathbb{I})}^{-1}$ è densamente definito su H, ma non è continuo e quindi non limitato. Dato che $\ker{\{A - \lambda\mathbb{I}\}} = 0$ allora $\lambda$ non è un autovalore proprio $\Rightarrow$ SPETTRO CONTINUO $\sigma_c(A)$
+	\item $(A - \lambda\mathbb{I})$ è iniettivo, ma ${(A - \lambda\mathbb{I})}^{-1}$ non è densamente definito su H $\Rightarrow$ SPETTRO RESIDUO $\sigma_r(A)$
+\end{enumerate}
+Lo spettro residuo non è importante per operatori di interesse fisico perchè operatori autoaggiunti hanno $\sigma_r(A) = 0$. Gli operatori q e p sono operatori limitati e hanno spettro continuo; quindi è interessante vedere come si definiscono gli autovettori impropri \newline
+Dato che il $\ker{\{A - \lambda\mathbb{I}\}} = 0$ allora $\not\exists v \in D(A) \, | \, Av = \lambda v$. Però si può trovare una successione $\{v_n\}\in H $ tale che 
+\begin{equation*}
+	\lim_{n\to \infty} {||Av_n -\lambda v_n||}_H =0
+\end{equation*}
+a quel punto questo $\lambda$ si dice autovalore improprio \newline
+Valgono le seguenti proprietà:
+\begin{enumerate}
+	\item $\sigma(A) = \sigma_d(A) + \sigma_c(A) + \sigma_r(A)$ somma disgiunta
+	\item $\sigma(A)$ è un sottoinsieme chiuso di $\C$
+	\item Se A è limitato allora $\sigma(A)$ è contenuto nel disco $|z| \leq ||A||$
+	\item Se A è limitato e $\lambda \in \sigma(A)$ allora $\bar{\lambda} \in \sigma(A^+)$
+	\item Se $\lambda \in \sigma_r(A)$ allora $\bar{\lambda} \in \sigma(A^+)$
+\end{enumerate}
+
+\section{Spettro di operatori autoaggiunti o unitari}
+\begin{teo}
+	Se A è autoggiunto si ha:
+	\begin{itemize}
+		\item $\sigma_A \subset \R$ Spettro reale
+		\item Autovalori relativi ad utovalori diversi sono mutualmente ortogonali
+		\item $\sigma_r(A) =0$ Spettro residuo vuoto
+	\end{itemize}
+\end{teo}
+\begin{teo}
+	Analogamente per operatori unitari si ha che 
+	\begin{enumerate}
+		\item $\sigma(U)$ è un sottoinsieme della circonferenza unitaria
+		\begin{equation*}
+			\lambda = e^{i\theta} \quad \text{ con } \theta \in \R \quad {|\lambda|}^2 = 1
+		\end{equation*}
+		\item Autovettori mutualmente ortogonali
+		\item Spettro residuo vuoto $\sigma_r(U) = 0$
+	\end{enumerate}
+\end{teo}
+
+\subsection*{Teorema spettrale per operatori autoaggiunti}
+Per costruire una base di autovettori generalizzati devo considerare la distribuzione e quindi definire l'azione di un operatore su una distribuzione: consideriamo A autoaggiunto 
+\begin{equation*}
+	A: \, L^2(\R) \mapsto L^2(\R)
+\end{equation*}
+e ricordiamo che 
+\begin{equation*}
+	S(\R) \subset L^2(\R) \subset S'(\R)
+\end{equation*}
+Quindi partiamo definendo 
+\begin{equation*}
+	A: \, S(\R) \mapsto S(\R)
+\end{equation*}
+e lo estendiamo fino a $S'(\R)$. Per distribuzioni regolari abbiamo che 
+\begin{equation*}
+	<T_f,\varPhi> = \int_\R \bar{f}(x)\varPhi(x) \, dx = (\bar{f}, \varPhi)
+\end{equation*}
+quindi estendendolo anche alle distribuzioni singolari si ha che 
+\begin{equation*}
+	<T,\varPhi> = (\bar{T}, \varPhi) \qquad \bar{T}(\varPhi) = \overline{(T(\bar{\varPhi}))}
+\end{equation*}
+A questo punto l'azione di un operatore Hermitiano A su di una distribuzione temperata T è data da 
+
 
 \end{document}
