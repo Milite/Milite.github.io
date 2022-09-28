@@ -18,7 +18,7 @@
 \usepackage{hyperref}
 \hypersetup{
 	colorlinks=true,
-	linkcolor=blue,
+	linkcolor=black,
 	filecolor=blue,
 	citecolor = black,      
 	urlcolor=cyan,
@@ -47,5 +47,74 @@
 	\newpage
 	
 \chapter{Introduzione}
+
+\section*{Spettro elettromagnetico}
+Spettro corpo nero: 
+$\begin{cases}
+    \nu_{max} = 10^{11} Hz \\
+    \lambda_{max} T = 3 \times 10^6 nm \cdot K
+\end{cases}$ \newline
+Osservazione di tutto lo spettro elettromagnetico: telescopi terrestri e telescopi spaziali a seconda della frequenza
+
+\section*{Tecniche di osservazione}
+Risoluzione angolare $\rightarrow \theta \simeq 1.22 \frac{\lambda}{D}$ con $\lambda$ lunghezza d'onda e $D$ diametro del telescopio; per l'occhio si ha una risoluzione angolare di 60 arcsec: se la dimensione dell'oggetto da osservare è minore di 60 arcsec allora l'occhio lo vede come un punto; se la distanza tra due oggetti è minone di 60 arcsec allora li vediamo sovrapposti. \newline
+Gli effetti atmosferici peggiorano la visione: per esempio l'umidità, che deve essere bassa. \newline
+Tecniche interferometriche migliorano la risoluzione (esempio l'utilizzo di diversi telescopi). \newline
+Oltre a misurare la posizione degli oggetti si può misurare il flusso, lo spettro e la polarizzazione
+
+\section*{Coordinate}
+\begin{itemize}
+    \item Celesti: per astronomia amatoriale, non professionale
+    Da equatore celeste divido la volta celeste in 2 emisferi
+    \begin{itemize}
+        \item Nord 
+        $\begin{cases}
+            \text{Declinazione: da 0° a 90° (asse di rotazione terrestre)} \\
+            \text{Ascensione retta: da 0 a 24 ore} 
+        \end{cases}$
+        \item Sud
+        $\begin{cases}
+            \text{Declinazione: da 0° a -90° (asse di rotazione terrestre)} \\
+            \text{Ascensione retta: da 0 a 24 ore}
+        \end{cases}$
+    \end{itemize}
+    \item Galattiche: da piano della galassia in cui ci troviamo. 
+    \begin{itemize}
+        \item Latitudine: da -90° a 90° $\rightarrow$ 0° piano della galassia
+        \item Longitudine: da 0° a 360° $\rightarrow$ senso antiorario
+    \end{itemize}
+\end{itemize}
+Centro galattico è il centro della galassia
+
+\section*{Proiezioni}
+\begin{itemize}
+    \item Proiezione azimutale equidistante: centro latitudine corrisponde a 90°, mentre l'esterno corrisponde a 0°; si hanno minime distorsioni, ma visualizzo solo metà volta celeste
+    \item Proiezione di Hammer-Aitoff: rappresentazione completa della volta celeste, ma si hanno forti distorsioni ai poli. Il piano della galassia è il piano centrale orizzontale. Solitamente in astrofisica si usa questa rappresentazione
+\end{itemize}
+
+\section*{Visulizzazioni}
+\begin{itemize}
+    \item Ottico: a causa delle polveri il centro della galassia è molto oscurato. L'assorbimento galattico è descritto dalla funzione
+    \begin{equation*}
+        I= I_0 e^{-\alpha r}
+    \end{equation*}
+    dove r è la distanza tra noi e l'oggetto osservato, mentre $\alpha$ è proporzionale a $\lambda^{-1}$
+    \item Infrarosso: l'ssorbimento galattico è minore, quindi si vede molto meglio il centro della galassia (si rimuove parte delle polveri). Si possono trovare alcune bande infrarosso anche sulla terra. Anche noi emettiamo infrarosso, quindi rischio di avere rumore termico nelle mie misure: posso tenere il telescopio a basse temperature per diminuire il problema. \newline
+    Dall'infrarosso in poi si usano falsi colori: associo colore in base all'intensità della radiazione.
+    \item Microonde: porta a scoperta della radiazione di fondo cosmica
+    \item Radio: porta a due scoperte
+    \begin{enumerate}
+        \item Stella di neutroni, grazie ad un segnale periodico; pulsar non si vedono nell'ottico
+        \item Quasar
+    \end{enumerate}
+    \item Raggi-x: si vedono solo in orbita, non a terra. Portano prima prova dell'esistenza dei buchi neri: si capta emissione di materia che cadeva nel buco nero. Il buco nero invece non emette radiazione.
+    \item Raggi-$\gamma$: porta scoperta dei gamma-ary bursts. \newline
+    Neutrini: particelle che interagiscono per interazione debole (anche il sole li emette). Esplosione supernova è una sorgente di neutrini; l'unica prova diretta di un'esplosione di una supernova è SN1987A
+\end{itemize}
+
+\section*{Onde gravitazionali}
+Sono state captate da interferometri a terra nel 2015, ma predette già dalla relatività generale. Le distorsioni dello spazio-tempo si propagano come un'onda. \newline
+Le sorgenti più luminose sono le binare, 2 oggetti compatti che ruotano.
+
 
 \end{document}
