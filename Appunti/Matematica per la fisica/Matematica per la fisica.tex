@@ -3006,6 +3006,119 @@ quindi estendendolo anche alle distribuzioni singolari si ha che
 	<T,\varPhi> = (\bar{T}, \varPhi) \qquad \bar{T}(\varPhi) = \overline{(T(\bar{\varPhi}))}
 \end{equation*}
 A questo punto l'azione di un operatore Hermitiano A su di una distribuzione temperata T è data da 
+\begin{equation*}
+	(AT,\varPhi) = (T,A\varPhi) \qquad \forall \varPhi \in S(\R) \; \forall \, T \in S'(\R)
+\end{equation*}
+cioè sposto l'azione dell'operatore su una funzione di test (lo posso fare dato che $A=A^+$). Se T è $T_f$ regolare, questo si riduce a 
+\begin{equation*}
+	<AT_f, \varPhi> = (\overline{Af}, \varPhi) = (\bar{f}, A\varPhi)
+\end{equation*}
+Per operatori unitari si procede in modo analogo e si usa 
+\begin{equation*}
+	<UT, \varPhi> = (T, U^{-1}\varPhi)
+\end{equation*}
+\begin{teo}[Spettrale]
+	$\forall \, A: \, L^2(\R) \mapsto L^2(\R)$ autoaggiunto si ha che
+	\begin{enumerate}
+		\item $\sigma_d(A)$ ha autovalori $\{\lambda_n\} \in \R$ e autovettori $\{u_n\}$ ortogonali: $(u_n,u_m) = \delta_{n,m}$
+		\item $\sigma_c$ è dato da un insieme continuo di autovalori generalizzati $\{\lambda\} = I$ con autovettori generalizzati $\{u_\lambda\} \in S'(\R)$ che soddisfano
+		\begin{equation*}
+			Au_\lambda = \lambda u_\lambda \qquad \text{su } S'(\R)
+		\end{equation*}
+		e sono ortonormali su $S'(\R)$ cioè
+		\begin{equation*}
+			(u_\lambda, u_{\lambda'}) = \delta(\lambda- \lambda') \quad \text{delta di Dirac}
+		\end{equation*}
+		\item Lo spettro residuo è vuoto: $\delta_r(A) = \{0\}$
+		\item $\{u_n\} \cup \{u_\lambda\}$ forma una base generalizzata che un S.O.N.C di $L^2(\R)$ e quindi possiamo scrivere un generico $f\in L^2(\R)$ come 
+		\begin{equation*}
+			f = \sum_n \underbrace{\alpha_n}_{(u_n,f)}u_n + \int_I \underbrace{\alpha(\lambda)}_{(u_\lambda,f)}u_\lambda \, d\lambda
+		\end{equation*}
+		\item Vale identità di Parsevalù
+		\begin{equation*}
+			{||f||}^2 = \sum_n {|\alpha_n|}^2 + \int_I {|\alpha(\lambda)|}^2 \, d\lambda
+		\end{equation*}
+		\item A è diagonale sulla base degli $\{u_n\} \cup \{u_\lambda\}$ nel senso che 
+		\begin{equation*}
+			Af = \sum_n \alpha_n A u_n + \int_I \alpha(\lambda) A u_n \, d\lambda = \sum_n \alpha_n \lambda_n u_n + \int_I \alpha(\lambda) \lambda u\lambda \, d\lambda 
+		\end{equation*}
+		\item Per qualsiasi funzione g regolare si può definire g(A) tramite
+		\begin{equation*}
+			g(A)f = \sum_n \alpha_n g(\lambda_n)u_n + \int_I \alpha(\lambda)g(\lambda)u_\lambda \, d\lambda
+		\end{equation*}
+		\end{enumerate}
+\end{teo}
+\begin{oss}
+	Il teorema spettrale può essere generalizzato a qualsiasi spazio di Hilbert, basta trovare 
+	\begin{equation*}
+		\varPhi \subset H \subset \varPhi'
+	\end{equation*} 
+	che siano densi dentro quello che lo contiene
+\end{oss}
+\begin{oss}
+	Questo vale anche per operatori unitari o in generale per operatori normali 
+	\begin{equation*}
+		[T,T^+] = 0
+	\end{equation*}
+	Per gli operatori unitari gli autovalori sono sul cerchio unitario
+\end{oss}
+\begin{oss}
+	Nel caso di autovalori degeneri si generalizza a famiglie di autovettori
+	\begin{equation*}
+		f (\in L^2(\R)) = \sum_{n,\beta} \alpha^\beta_n u^\beta_n + \sum_{\beta'} \int_I \alpha^{\beta'}(\lambda)\underbrace{u^{\beta'}_\lambda}_{\in S'(\R)} \qquad Au^\beta_n = \lambda_n u^\beta_n \; A U^{\beta'}_\lambda = \lambda u^{\beta'}_\lambda
+	\end{equation*}
+\end{oss}
+\begin{oss}
+	L'uguaglianza precente è valida per due motivi
+	\begin{enumerate}
+		\item Posso definire $T_f$ distribuzione regolare in $S'(\R)$
+		\item $u_\lambda \in S'(\R)$ diventano funzioni $L^2(\R)$ se integrate su intervallo infintesimo dopo moltiplicazione con test function
+		\begin{equation*}
+			\int_\Delta \lambda\alpha(\lambda) u_\lambda \, d\lambda \; \in L^2(\R)
+		\end{equation*}
+		dato che $\alpha(\lambda) = (u\lambda, f)$, che ha senso solo se $f\in S(\R)$, ma si può estendere a $L^2(\R)$ dato che $S(\R)$ è denso in $L^2(\R)$
+	\end{enumerate}
+\end{oss}
+\begin{oss}
+	Quando $\sigma_c(A) = 0$ si ha che 
+	\begin{equation*}
+		\sigma(A) = \sigma_d(A)
+	\end{equation*}
+	e gli $\{u_n\}$ autovettori propri formano un S.O.N.C.
+\end{oss}
 
+\chapter{Trasformata di Laplace}
+
+\begin{Def}
+	Data $f \in L^1_{loc} [0,\infty)$ si definisce
+	\begin{equation*}
+		\mathbb{L}[f](x) = F(z) = \int^\infty_0 e^{-zt}f(t) \, dt \qquad z \in \C,\, t \in \R
+	\end{equation*}
+	l'integrale esiste se $\exists \alpha, M \in \R \; \exists x_0 \in \R$ tali che 
+	\begin{equation*}
+		|f(x)| \leq Me^{\alpha x} \qquad \forall x> x_0
+	\end{equation*}
+	cioè se f è di ordine esponenziale all'infinito. C'è perciò un valore minimo $\alpha_0$ per cui vale la disuguaglianza $\forall x $; $\alpha_0$ si chiama ascissa di convergenza per f(x)
+\end{Def}
+\begin{teo}
+	F(z) = $\mathbb{L}[f](z)$ esiste per $\Re\{z\}> \alpha_0$ ed è olomorfa
+\end{teo}
+\begin{oss}
+	Possiamo anche definire
+	\begin{equation*}
+		\mathbb{L}_- [f](z) = \int^0_{-\infty} e^{-zt}f(t) \, dt
+	\end{equation*}
+	o la trasformata bilatera
+	\begin{equation*}
+		\mathbb{L}_{\pm} [f](z) = \int^{+\infty}_{-\infty} e^{-zt}f(t) \, dt = \mathbb{L}_+ [f](z) + \mathbb{L}_- [f] (z)
+	\end{equation*}
+\end{oss}
+\begin{oss}
+	La trasformata di Laplace può essere vista come estensione olomorfa della traformata di Fourier; la trasformata di Laplace è la trasformata di Fourier della funzione 
+	\begin{equation*}
+		\sqrt[]{2\pi} \theta(x) f(x) e^{-\alpha x }
+	\end{equation*}
+	con $\alpha$ fissato e considerata come funzione delle sole p
+\end{oss}
 
 \end{document}

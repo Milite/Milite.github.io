@@ -1,0 +1,8 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {chapter}{\numberline {1}La crisi della fisica classica}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Corpo nero}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Effetto fotoelettrico}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Effetto Compton}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Spettri atomici}{3}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Interferenza e diffrazione onde elettromagnetiche}{4}{chapter.2}%

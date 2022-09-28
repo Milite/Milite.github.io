@@ -1,0 +1,130 @@
+\documentclass[a4paper,11pt]{report}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+
+\usepackage{mathdots}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{geometry}
+\geometry{a4paper, top=2.5cm, bottom=2cm, left=2cm, right=2cm}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=blue,
+	citecolor = black,      
+	urlcolor=cyan,
+}
+
+\swapnumbers
+\theoremstyle{remark}
+\newtheorem*{oss}{Oss}
+\newtheorem*{nb}{N.B}
+\newtheorem*{coro}{Corollario}
+\theoremstyle{definition}
+\newtheorem*{teo}{Teorema}
+\newtheorem*{Def}{Def}
+
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\begin{document}
+	\date{}
+	\author{Marco Militello}
+	\title{Meccanica Quantistica}
+	\maketitle
+	\tableofcontents
+	\newpage
+	
+\chapter{La crisi della fisica classica}
+
+Concetti incompatibili con la fisica classica, che non si riescono a spiegare. Per fisica classica si intende
+\begin{enumerate}
+    \item meccanica newtoniana
+    \item termodinamica fisica statistica classica
+    \item elettromagnetismo e le leggi di Maxwell
+    \item relatività ristretta
+\end{enumerate}
+
+\section{Corpo nero}
+
+Universalità: stesso spettro di emissione. Basi termodinamiche $\rightarrow$ Kirchoff. \newline
+1900 Planck: giunge a risultato giusto, ma partendo da principi sbagliati
+\begin{equation*}
+    g(\nu, T) = \frac{8\pi h}{c^3} \frac{\nu^3}{e^{\frac{h\nu}{K_B T}}-1}
+\end{equation*}
+Ottiene questa relazione grazie a fit dei dati sperimentali; aggiusta i paramentri: si ottiene per la prima volta $h$, la costante di Planck
+\begin{equation}
+    h = 6.6 \times 10^{-34} J \cdot s
+\end{equation}
+ha la stessa dimesione di un momento angolare
+
+\section{Effetto fotoelettrico}
+
+1905 Einstein \newline
+Proposta di Einstein che spiega l'effetto: scambio di energia come multiplo di $h\nu \rightarrow$ QUANTI DI RADIAZIONE. \newline
+Nel grafico dell'energia massima in funzione della frequenza, Millikan misurò la pendenza della retta che risultò essere $\frac{h}{e}$
+Si continuava però a pensare che l'energia si propagasse nel continuo, mentre durante le interazioni ci fossere scambi a pacchetti. Questa idea viene abbandonata con l'effetto Compton
+
+\section{Effetto Compton}
+Raggi-x su un metallo; $E_m >> E_{legame}$: in questo modo gli elettroni sono visti come liberi.
+\begin{equation*}
+    E^2 - p^2c^2 = m^2c^4
+\end{equation*}
+se v=c allora m=0. Quindi
+\begin{equation*}
+    p^2c^2 = E^2 = {(h\nu)}^2 \Rightarrow p=\frac{h\nu}{c}
+\end{equation*}
+
+\subsection*{Esperimento}
+Tratto fotone come particella con 
+$\begin{cases}
+    E = h\nu \\
+    p = \frac{h\nu}{c}
+\end{cases}$
+\begin{equation*}
+    \lambda' - \lambda = \frac{h}{m_e c}(1 - \sin(\theta))
+\end{equation*}
+onda elettromagnetica non completamente descritta dalle leggi di Maxwell \newline
+$\frac{h}{m_e c} \simeq 2.4 \times 10^{-12} m$: lunghezza d'onda di Compton per l'elettrone $\Rightarrow$ ha la dimensione di una lunghezza. \newline
+1926 Lewis: assegna nome ai fotoni
+
+\section{Spettri atomici}
+Spettro solare ha delle righe nere: radiazione viene assorbita dallo strato esterno del sole e poi viene diffusa, quindi ci arriva meno intensa $\Rightarrow$ righe nere. $He$ scoperto grazie allo spettro solare. \newline
+1897: scoperta elettrone \newline
+Modelli atomici $\rightarrow$ Rutherford: però non riesce a spiegare spettri atomici \newline
+Emissione e assorbimento non sono un continuo \newline
+Bohr: Energia quantizzata
+\begin{equation*}
+    \nu_{mn} = (E_m - E_n)\frac{1}{h}
+\end{equation*}
+ma non dà alcun tipo di spiegazione
+\begin{equation*}
+    m_e v r = n \hslash \qquad \text{ momento angolare è multiplo intero di } \hslash = \frac{h}{2\pi}
+\end{equation*}
+
+\chapter{Interferenza e diffrazione onde elettromagnetiche}
+Luce descrivibile con fenomeni ondulatori. \newline
+Esperimento doppia fenditura: metto uno schermo a una distanza $L >> \lambda$ dalle fenditure. In ogni punto ho che $ I \neq I_1 + I_2$, ma ho che 
+\begin{equation*}
+    I = {|\vec{E}_1 + \vec{E}_2|}^2 \neq {|\vec{E}_1|}^2 + {|\vec{E}_2|}^2
+\end{equation*}
+La differenza di fase vale $d\sin(\theta)$; se la differenza di fase vale $n\frac{\lambda}{2}$ allora ho interferenza distruttiva. Il primo punto di buio si ha per 
+\begin{equation*}
+    \theta = \frac{n}{2}\frac{\lambda}{d} \text{ con } n=1
+\end{equation*}
+Se prendo una lampadina gialla (580 nm) da 100 W, allora vengono emessi $\sim 10^{20}$ fotoni al secondo. Cosa succede se abbasso intensità fino ad avere emissione di un fotone al secondo? L'esperimento della doppia fenditura porta allo stesso risultato precedente; però se ripeto di nuovo l'esperimento la posizione di ogni singolo fotone è diverso, anche se la figura che si viene a creare porta allo stesso risultato. Allora devo introdurre una trattazione probabilistica: posso solo dare distribuzione probabilità \newline
+Se chiudo una delle due fenditure non osservo alcuna figura di interferenza: il fotone "sente" la presenza di entrambe le fenditure. Ma con chi interferisce il fotone? Da che fenditura passa? \newline
+Esperimenti per capire da che fenditura sia passato il fotone distruggono la figura di interferenza $\Rightarrow$ misura microscopica disturba il fenomeno
+
+\end{document}

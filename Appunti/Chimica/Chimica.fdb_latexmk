@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1657357267 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Chimica/Chimica.tex" "Chimica.pdf" "Chimica" 1657357287
+["pdflatex"] 1662449695 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Chimica/Chimica.tex" "Chimica.pdf" "Chimica" 1662449707
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1654335452 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1648037088 28976 d56dca20927a79c4468ac39f2cb67e88 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1648037073 31952 aef68ca89a05b961636a6e8f295f9836 ""
@@ -227,11 +227,11 @@
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/units/nicefrac.sty" 1469029150 4163 0462ee5ab265cf59dc15a41a3b883101 ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1636288472 56029 3f7889dab51d620aa43177c391b7b190 ""
-  "Chimica.aux" 1657357284 8450 078d6cb332413f3eba7046323dfc7cb9 "pdflatex"
-  "Chimica.out" 1657357284 11341 88726deacc3c06ddcd1783299d1add02 "pdflatex"
-  "Chimica.tex" 1657357235 39388 59907d00af363638491ce2ae3b319563 ""
-  "Chimica.toc" 1657357285 4689 a11ef13882a0da39290da574fb7ee6a2 "pdflatex"
-  "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Chimica/Chimica.tex" 1657357235 39388 59907d00af363638491ce2ae3b319563 ""
+  "Chimica.aux" 1662449705 8450 078d6cb332413f3eba7046323dfc7cb9 "pdflatex"
+  "Chimica.out" 1662449705 11341 88726deacc3c06ddcd1783299d1add02 "pdflatex"
+  "Chimica.tex" 1662449690 39390 a4b4c8728dfcd79e8596de0c1cdf500a ""
+  "Chimica.toc" 1662449705 4689 a11ef13882a0da39290da574fb7ee6a2 "pdflatex"
+  "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Chimica/Chimica.tex" 1662449690 39390 a4b4c8728dfcd79e8596de0c1cdf500a ""
   "immagini/Millikan.png" 1650101010 135045 33c1db9a3d1ecbfc72fbb9556798b903 ""
   "immagini/atomo.png" 1650100828 204277 dfe9009aa62ce9aca3133fe2e105f7a2 ""
   "immagini/atomo1.png" 1650101116 206985 02a6384fbc13cb6a1559f8ed79a4d5ba ""
