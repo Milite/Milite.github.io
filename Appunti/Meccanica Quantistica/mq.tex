@@ -125,6 +125,80 @@ La differenza di fase vale $d\sin(\theta)$; se la differenza di fase vale $n\fra
 \end{equation*}
 Se prendo una lampadina gialla (580 nm) da 100 W, allora vengono emessi $\sim 10^{20}$ fotoni al secondo. Cosa succede se abbasso intensità fino ad avere emissione di un fotone al secondo? L'esperimento della doppia fenditura porta allo stesso risultato precedente; però se ripeto di nuovo l'esperimento la posizione di ogni singolo fotone è diverso, anche se la figura che si viene a creare porta allo stesso risultato. Allora devo introdurre una trattazione probabilistica: posso solo dare distribuzione probabilità \newline
 Se chiudo una delle due fenditure non osservo alcuna figura di interferenza: il fotone "sente" la presenza di entrambe le fenditure. Ma con chi interferisce il fotone? Da che fenditura passa? \newline
-Esperimenti per capire da che fenditura sia passato il fotone distruggono la figura di interferenza $\Rightarrow$ misura microscopica disturba il fenomeno
+Esperimenti per capire da che fenditura sia passato il fotone distruggono la figura di interferenza $\Rightarrow$ misura microscopica disturba il fenomeno. \newline
+Risultati esperimento:
+\begin{enumerate}
+    \item Fotone colpisce schermo in un punto ben preciso $\Rightarrow$ deposita tutta la sua energia $h\nu$
+    \item Con pochi eventi lo schermo sembra riempirsi in maniera casuale; non sappiamo esattemente dove andrà un fotone, ma possiamo dire dove si sono addensati maggiormente $\Rightarrow$ PROBABILIT\'A
+    \item Se chiudo una fenditura sparisce figura di interferenza: fotone con $\lambda << d$ "sente" le 2 fenditure; ogni tentativo di capire da quale fenditura passi il fotone distrugge la figura di interferenza $\rightarrow$ disturbo con la misura. La misura su un sistema microscopico lo può disturbare in maniera significativa.
+\end{enumerate}
+In fisica classica, date le condizioni inziali posso completamente determinare il moto di una particella; invece non posso determinare moto di un fotone: fotone ha una certa probabilità di colpire lo schermo proporzionale all'intensità I(x) [probabilità che fotone finisca in un punto preciso dello schermo]ù
+
+\subsection*{Dualismo onda-particella}
+In alcuni esperimenti è più facile interpretare come particella altre volte come onda; la vera natura è l'elettrodinamica quantistica
+\begin{enumerate}
+    \item La radiazione elettromagnetica si comporta come un flusso di particelle
+    \item Previsioni sul comportamento sono solo probabilistiche
+    \item In un certo punto $\vec{r}$ dello schermo al tempo t $\rightarrow$ fotone è portato da campo elettrico $\vec{E}(\vec{r}, t)$ che è soluzione delle equazioni di Maxwell; campo elettrico va interpretato come un'ampiezza di probabilità di trovare un fotone in un istante t in un punto $\vec{r}$
+    \begin{equation*}
+        {|E(\vec{r},t)|}^2 \rightarrow \text{ densità di probabilità}
+    \end{equation*}
+    \item Le equazioni di MAxwell sono lineari in $\vec{E} \Rightarrow$ vale principio di sovrapposizione: se $E_1, E_2$ sono soluzioni delle equazioni di Maxwell allora anche $\vec{E} = \lambda_1\vec{E}_1 + \lambda_2 \vec{E}_2$ con $\lambda_1,\lambda_2 \in \R$ è soluzione delle equazioni di Maxwell. Principio di sovrapposizione è anche quello che ci permette di spiegare interferenza
+\end{enumerate}
+"Ogni fotone interfesce solo con se stesso"
+
+\chapter{La polarizzazione della luce}
+La luce ha una direzione privilegiata. Es.: laser, smartphone \newline
+
+\section*{Esperimento}
+Mettere immagine \newline
+Interpretazione classica: c'è onda che si propaga lungo z
+\begin{equation*}
+    \vec{E}(\vec{r},t) = E_0 \vec{\epsilon}_p e^{i(kz-wt)}+ c.c. \qquad k = \frac{2\pi}{\lambda} \; w = 2\pi\nu \; \lambda\nu = c
+\end{equation*} 
+Il campo elettrico è libero, non ci sono cariche $\Rightarrow$ $\div\vec{E}=0 \rightarrow \vec{k}\cdot \vec{\epsilon}_p =0$. Quindi trasverso rispetto alla direzione di propagazione \newline
+$\vec{k} // \vec{z} \Rightarrow$ il vettore di polarizzazione appartiene al pino perpendicolare alla direzione di propagazione
+\begin{equation*}
+    I_0 = {|E_0|}^2
+\end{equation*} 
+Dopo polarizzazione: $\vec{E}'(\vec{r},t) = E_0'\vec{e}_x e^{i(kz-wt)}$
+\begin{equation*}
+    E_0' = E_0 cos\theta \Rightarrow I = I_0 \cos^2\theta
+\end{equation*}
+Dopo polarizzatore passa solo componente parallela $\rightarrow$ interpretazione che viene data. \newline
+Adesso faccio esperimento in cui diminuisco intensità fascio fino a che emetta solo un fotone alla volta. Conseguenze:
+\begin{enumerate}
+    \item Rilevatore o vede il fotone o non lo vede
+    \item Quando vede fotone lo vede tutto $\rightarrow $ tutta energia $h\nu$
+    \item se $\begin{cases}
+        \theta = 0 \Rightarrow \text{ rilevatore vede tutto fotone} \\
+        \theta = \frac{\pi}{2} \Rightarrow \text{ rilevatore non lo vede mai}
+    \end{cases}$ \newline
+    La probabilità con cui vedo fotone è $\cos^2\theta \Rightarrow$ Numero fotoni arrivato $ = N_0\cos^2\theta$. Ogni singolo fotone può essere rappresentato come miscela di 2 stati
+    \begin{itemize}
+        \item uno stato con probabilità di passare 1: $\psi_x$
+        \item uno stato con probabilità di passare 0: $\psi_y$
+    \end{itemize}
+    Questi valori sono mutualmente esclusivi
+    \item Descrivo come somma di due stati $\psi_p = \psi_x \cos\theta + \psi_y \sin\theta \rightarrow$ inizio principio di decomposizione spettrale
+    \begin{itemize}
+        \item $\psi_x$ passa con probabilità ${|\cos\theta|}^2=\cos^2\theta$
+        \item $\psi_y$ non passa con probabilità ${|\sin\theta|}^2=\sin^2\theta$
+    \end{itemize}
+    Interpretazione probabilistica è sensata perchè $\sin^2\theta + \cos^2\theta = 1$
+    \item Se io ora metto un altro polarizzatore lungo x, tutti i fotoni passeranno perchè ora tutti i fotoni sono $\psi_x$: dopo polarizzatore lo stato fotone è diventato $\psi_x$. La misura ha fatto precipitare lo stato del sistema da $\psi_p$ a $\psi_x$
+\end{enumerate}
+
+\chapter{De Broglie}
+Maxwell introduce andamento ondulatorio della radiazione elettromagnetico, mentre Einstein ipotizza andamento corpuscolare. De Broglie nel 1923 introduce ipotesi andamento ondulatorio elettroni. \newline
+Onda $\rightarrow \exp(i \vec{k}\cdot \vec{x}- iwt)$; per essere invariante secondo Loretz $(\vec{k},w),(\vec{p},E)$ diventano tetravettori
+\begin{equation*}
+    |\vec{p}| = \frac{E}{c} = \frac{h\nu}{c} = \frac{h}{\lambda} = \hslash |\vec{k}| \Rightarrow \frac{h}{|\vec{p}|}
+\end{equation*}
+Ad ogni particella di massa è associato $\vec{k} = \frac{\vec{p}}{\hslash}$ e quindi un'onda $\lambda = \frac{h}{|\vec{p}|}$ \newline
+Numericamente
+\begin{enumerate}
+    \item Elettroni
+\end{enumerate} 
 
 \end{document}

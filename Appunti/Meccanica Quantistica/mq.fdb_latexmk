@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1664356060 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/mq.tex" "mq.pdf" "mq" 1664356067
+["pdflatex"] 1664441727 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/mq.tex" "mq.pdf" "mq" 1664441734
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1654335452 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1648037088 28976 d56dca20927a79c4468ac39f2cb67e88 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1648037073 31952 aef68ca89a05b961636a6e8f295f9836 ""
@@ -9,6 +9,7 @@
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1095.pk" 1648037077 26228 c3ac01008b51173fdecb379020b309d4 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk" 1648036760 28440 16a614817ec2f8529c2935cf08328691 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1728.pk" 1648036764 42516 9512d2a8286a1a2c4cee2538021a6a6e ""
+  "C:/Users/m2001/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1648052498 12668 97130be99d371cce739a8202b326de52 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1648035619 10246961 b72c463e4cc72abb29cb8a40ae680e07 ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx1095.tfm" 993061956 3228 aacd2ac2d814480e4422ad7e830fd2d4 ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx1200.tfm" 993061958 3200 b8d69bc738e5ef3e08cefeef3109ff56 ""
@@ -23,6 +24,7 @@
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1728.tfm" 993062128 3168 11457c8185ce67fb79662ba8b03d6db1 ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm2074.tfm" 993062130 3184 b2541675eba9fa86d240ec0ecc913558 ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm2488.tfm" 993062132 3184 93c67f4c0884ba9e31b75d469978f63b ""
+  "C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1095.tfm" 993062508 1460 8005ce585ff351dff78998923504da5e ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233955448 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233955454 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -119,11 +121,11 @@
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575574882 9715 b051d5b493d9fe5f4bc251462d039e5f ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1636713860 10214 00ce62e730d0cfe22b35e8f1c84949c7 ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/mq.tex" 1664356057 5520 f7a0752a675e31b9bcde4c80e910cc25 ""
-  "mq.aux" 1664356066 1678 059d081a2764134ac71b7ae1acdd7d97 "pdflatex"
-  "mq.out" 1664356066 1038 0ff49a6121119e9ddd6c4507cd16351b "pdflatex"
-  "mq.tex" 1664356057 5520 f7a0752a675e31b9bcde4c80e910cc25 ""
-  "mq.toc" 1664356066 552 43269f5d2e0a38881e13033ab0be2b29 "pdflatex"
+  "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/mq.tex" 1664441723 11158 f56e64c11d9a413031a087bcb9bfb046 ""
+  "mq.aux" 1664441733 2062 6b10b0d8a9ae085f23c9be5f1ad85d10 "pdflatex"
+  "mq.out" 1664441733 1326 206364dfa457ff6793876077d8e89b7f "pdflatex"
+  "mq.tex" 1664441723 11158 f56e64c11d9a413031a087bcb9bfb046 ""
+  "mq.toc" 1664441733 702 f808da6689d70909d14a99a78063c755 "pdflatex"
   (generated)
   "mq.aux"
   "mq.log"
