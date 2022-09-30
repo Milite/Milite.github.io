@@ -1,0 +1,195 @@
+\documentclass[a4paper,11pt]{report}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+
+\usepackage{mathdots}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{geometry}
+\geometry{a4paper, top=2.5cm, bottom=2cm, left=2cm, right=2cm}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=blue,
+	citecolor = black,      
+	urlcolor=cyan,
+}
+
+\swapnumbers
+\theoremstyle{remark}
+\newtheorem*{oss}{Oss}
+\newtheorem*{nb}{N.B}
+\newtheorem*{coro}{Corollario}
+\theoremstyle{definition}
+\newtheorem*{teo}{Teorema}
+\newtheorem*{Def}{Def}
+
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\begin{document}
+	\date{}
+	\author{Marco Militello}
+	\title{Relatività}
+	\maketitle
+	\tableofcontents
+	\newpage
+
+\chapter{Richiami meccanica classica ed elettromagnetismo}
+
+La meccanica di Newton si basa su 3 principi:
+\begin{enumerate}
+    \item In assenza di moto $\Rightarrow$ quiete o moto rettilineo uniforme
+    \item $\frac{d}{dt}\vec{p} = F $ con $ \vec{p} = m\vec{v}$
+    \item Principio di azione e reazione
+\end{enumerate}
+Se in un sistema S ho un moto rettilineo uniforme descritto da $\vec{x}(t) = \vec{x}_0 + \vec{u}t$ ed applico una trasformazione del tipo
+\begin{equation*}
+    \vec{x}' = \vec{x} + \vec{w}t^2
+\end{equation*}
+allora nel sistema S' avrò un moto accelerato descritto da $\vec{x}' = \vec{x}_0 + \vec{u}t + \vec{w}t^2$ \newline
+SISTEMI DI RIFERMENTO INERZIALI (SDRI): sistemi in cui una particella di "test" (particella con massa e dimensioni trascurabili rispetto a quello a che sta intorno; non c'è perturbazione della misura) non soggetta a forza permane in stato di quiete o moto rettilineo uniforme \newline
+Dato S che è SDRI e S' tale che 
+\begin{equation*}
+    \vec{x}' = \vec{x} - \vec{u}t
+\end{equation*} 
+dove $\vec{v}$ è la velocità relativa tra S e S', allora anche S' è SDRI \newline
+Se faccio rotazione (che non dipenda dal tempo) allora permane il moto rettilineo \newline
+
+\noindent PRINICIPIO DI RELATIVIT\'A: le leggi fisiche devono avere la stessa forma (es. F=ma deve diventare F'=ma') in tutti i SDRI; questo principio si basa su osservazioni empiriche. Enunciato in questo modo vale sia in meccanica classica, sia in relatività $\rightarrow$ cambia solo la trasformazione che uso \newline
+COVARIANZA LEGGI FISICHE: significa invarianza in forma \newline
+Sistema di rifermento $\rightarrow$ terna di assi cartesiasi e orologio (in fisica classica sono tutti sincronizzati) \newline
+SDRI $ \rightarrow$ empiricamente sarà sistema inerziale in una certa regione di spazio, in un certo intervallo di tempo ed entro accuratezza delle misure che faccio
+
+\section{Trasformazioni galileiane}
+
+Costruite a partire da principio relatività con ipotesi del tempo unitario (t=t') \newline
+Voglio trovare trasformazioni per passare da SDRI a SDRI del tipo
+\begin{equation*}
+    \begin{cases}
+        t' = t'(t,x,y,z) \\
+        x' = x'(t,x,y,z) \\
+        y' = y'(t,x,y,z) \\
+        z' = z'(t,x,y,z)
+    \end{cases}
+\end{equation*}
+Nel sistema S descrivo con $\vec{x}_p(t) = \vec{x}_0 + \vec{u}t$: nello spazio è una retta $\Rightarrow$ in S' deve rimanere una retta, quindi deve essere una trasformazione lineare
+\begin{equation*}
+    \begin{cases}
+        x' = a_{11}x +  a_{12}y +  a_{13}z +  a_{14}t \\
+        x' = a_{21}x +  a_{22}y +  a_{23}z +  a_{24}t \\
+        x' = a_{31}x +  a_{32}y +  a_{33}z +  a_{34}t \\
+        x' = a_{41}x +  a_{42}y +  a_{43}z +  a_{44}t 
+    \end{cases}
+\end{equation*}
+$a_{ij}(\vec{v})$ dipende da $\vec{v}$, ma non può dipendere da x,y,z,t altrimenti non sabbero trasformazioni lineari
+\begin{itemize}
+    \item asse $\hat{x}$ coincide con $\hat{x}'$ $\rightarrow$ y=z=0 $\Rightarrow$ y'=z'=0. Quindi: $a_{21}=a_{24}=a_{31}=a_{34}=0$
+    \item piano xy deve coincidere con piano x'y' $\rightarrow z=0 \Rightarrow z'=0 $ Quindi: $a_{32}=0$
+    \item piano xz deve coincidere con piano x'z' $\rightarrow y=0 \Rightarrow y'=0 $ Quindi: $a_{23}=0$
+    \item Se ruoto asse x di 180° $\Rightarrow$ y va in -y e z in -z. Allora
+    \begin{equation*}
+        x' = a_{11}x +  a_{12}(-y)+  a_{13}(-z) +  a_{14}t
+    \end{equation*}
+    ma coordinata su x non deve cambiare su x'. Quindi $a_{12}=a_{13}=0$
+    \item per simmetria cilindrica niente di particolare lungo asse y e z. Quindi $a_{22}=a_{33}$; di conseguenza anche $a_{43}=a_{42}$
+    \item t non può dipendere da y e z perchè niente di speciale lungo y e z. Quindi $a_{42}=0$
+\end{itemize}
+Ottengo:
+\begin{equation*}
+    \begin{cases}
+        x' = a_{11}x + a_{14}t \\
+        y' = a_{22}y \\
+        z' = a_{22}z \\
+        t' = a_{41}x + a_{44}t
+    \end{cases}
+\end{equation*}
+Trasformazioni devono dipendere al massimo da direzione moto $\rightarrow$ ISOTROPIA DELLO SPAZIO \newline
+Riscrivendo:
+\begin{equation*}
+    \begin{cases}
+        x' = Ax + Bt \\
+        y' = Cy \\
+        z' = Cz \\
+        t' = \dots 
+    \end{cases}
+\end{equation*}
+Moto in O' $\rightarrow$ se 
+$\begin{cases}
+    x'=0 \\
+    y'=0 \\
+    z'=0
+\end{cases} 
+\Rightarrow 
+\begin{cases}
+    0 = Ax + Bt  \Rightarrow x = - \frac{B}{A}t\\
+    x = vt 
+\end{cases}$ 
+\newline Allora $x' = Ax +Bt$ diventa $x'=A(x-vt)$ [perchè $Bt = -Avt$] \newline
+Usando ipotesi aggiuntiva del tempo assoluto ottengo:
+\begin{equation*}
+    \begin{cases}
+        x' = A(v)(x -vt) \\
+        y' = C(v)y \\
+        z' = C(v)z \\
+        t' = t 
+    \end{cases}
+\end{equation*}
+\begin{itemize}
+    \item se v=0 $\Rightarrow$ $A(v=0)=C(v=0)=1$
+    \item per simmetria cilindrica $\Rightarrow$ $C(v)=C(-v)$
+    \item $S \rightarrow S$ deve coincidere a $S \rightarrow S'$ se mando v in -v: $S \rightarrow S'$ stessa forma trasformazione, ma con velocità -v \newline
+    \begin{equation*}\begin{cases}
+        x = \frac{1}{A(v)}(x'+vt) \\
+        y = \frac{1}{C(v)}y' \\
+        z = \frac{1}{C(v)}z' \\
+        t = t'
+    \end{cases} \qquad 
+    \begin{cases}
+        x = A(-v)(x' +vt) \\
+        y = C(-v)y' \\
+        z = C(-v)z' \\
+        t = t'
+    \end{cases}
+\end{equation*}
+Allora ottengo:
+\begin{equation*}
+    \frac{1}{A(v)}= A(-v) \qquad \frac{1}{C(v)}= C(-v) \qquad v = A(-v)v
+\end{equation*}
+Quindi: $A(v)=1 $ e $C(v)=1$
+\end{itemize}
+Per un moto lungo asse x le trasformazioni di Galilei sono:
+\begin{equation*}
+    \begin{cases}
+        x' = x -vt \\
+        y' = y \\
+        z' = z \\
+        t' = t
+    \end{cases}
+\end{equation*}
+In generale le trasformazioni di Galilei sono:
+\begin{equation*}
+    \begin{cases}
+        \vec{x}' = \vec{x} - \vec{v}t \\
+        t'=t
+    \end{cases}
+\end{equation*}
+GRUPPO DI GALILEI: insieme trasformazioni di cui trasformazioni di Galilei fanno parte
+\begin{itemize}
+    \item traslazione rigida $\rightarrow \vec{x}' = \vec{x} + \vec{x}_0 \; t'=t + t_0$
+    \item traslazione asse (no nel tempo) $\rightarrow \vec{x}' = R\vec{x}$ con R matrice di rotazione tale che $RR^T = R^TR = \mathbb{1}$
+\end{itemize}
+
+
+\end{document}
