@@ -35,6 +35,7 @@
 
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\R}{\mathbb{R}}
+\newcommand{\angs}{\text{\AA}}
 
 \DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
 
@@ -198,7 +199,151 @@ Onda $\rightarrow \exp(i \vec{k}\cdot \vec{x}- iwt)$; per essere invariante seco
 Ad ogni particella di massa è associato $\vec{k} = \frac{\vec{p}}{\hslash}$ e quindi un'onda $\lambda = \frac{h}{|\vec{p}|}$ \newline
 Numericamente
 \begin{enumerate}
-    \item Elettroni
+    \item Elettroni: $m_e = 0.9 \times 10^{-30} Kg = 0.511 MeV = 0.511 \times 10^6 eV [eV = 1.6 \times 10^{-19} V\cdot J]$. Un elettrone non relativistico
+    \begin{equation*}
+        E = \frac{p^2}{2m} \rightarrow \lambda = \frac{h}{p} = \frac{h}{\sqrt[]{2m_eE}} = \frac{123}{\sqrt[]{Volt}}\times 10^{-10} m (\angs)
+    \end{equation*}
+    $\lambda \simeq 1 \angs \Rightarrow$ comparabile con raggi-x e distanza atomi cristallo
+    \item Neutroni termici (bassa temperatura termica): 
+    \begin{equation*}
+        \lambda = \frac{h}{p} = \frac{h}{\sqrt[]{2m_nE}} = \frac{h}{\sqrt[]{2m_n \frac{3}{2}K_BT}} =\frac{30}{\sqrt[]{T (Kelvin)}}\times 10^{-10} m (\angs)
+    \end{equation*}
+    \item Granello polvere: $1\mu m$ di dimensione 
+    \begin{equation*}
+        v = 1 \frac{mm}{s} \; m = 10^{-10} Kg \Rightarrow \lambda = 6.6 \times 10^{-11} \angs 
+    \end{equation*}
 \end{enumerate} 
+Non posso vederlo per oggetti macroscopici, ma solo a livello microscopico
+
+\section*{Esperimento di Davisson-Germer 1927}
+Fascio di elettroni su un cristallo di Nichel $\rightarrow$ ogni punto come sorgente $\Rightarrow$ nasce figura di interferenza/diffrazione 
+\section*{Esperimento doppia fenditura con elettroni 1950}
+\section*{Esperimento doppia fenditura con elettrone singolo 1974: Merli-Missiroli-Pozzi}
+\begin{enumerate}
+    \item Elettrone arriva tutto intero; la carica non si sparpaglia sullo schermo
+    \item \'E un grande numero di elettroni che dà origine a figura di interferenza
+    \item Arrivo sullo schermo sembra un arrivo casuale
+    \item Interpreto come distribuzione di probabilità
+    \item Se chiudo una fenditura $\Rightarrow$ sparisce figura interferenza
+    \item Ogni tentativo di capire da quale fenditura sia passato l'elettrone distrugge la figura di intereferenza
+    \item Cade il concetto di traiettoria 
+\end{enumerate}
+Per conservazione del momento $\rightarrow$ durante interazione con lo schermo c'è trasferimento di momento
+
+\chapter{Il principio di indeterminazione}
+Traiettoria $\rightarrow$ determinare posizione e velocità della particella istante per istante $\Rightarrow$ determino procedura di misura \newline
+Per determinare da quale fenditura sia passata la mia particella pongo uno schermo (1 fenditura), ma particella forma figura di diffrazione al passaggio nella fenditura \newline
+Facendo un'analisi degli ordini di grandezza, per una particella che passa da una fenditura di larghezza $\Delta y$, con una lunghezza d'onda $\lambda$, che forma un angolo $\theta$ si ha che
+\begin{equation*}
+    \Delta p_y \simeq p\theta = p \frac{\lambda}{\Delta y} = \frac{h}{\Delta y}
+\end{equation*}
+ottengo così il principio di indeterminazione di Heisenberg
+\begin{equation}
+    \Delta y \cdot \Delta p_y \simeq h
+\end{equation}
+più voglio determinare la posizione (minuisco $\Delta y$) più aumenta l'intervallo $\Delta p_y$; cade così il concetto di traiettoria. \newline
+Questa è un'approssimazione: significato completamente diverso da quello che ricaveremo esattamente \newline
+
+\noindent Principio di indeterminazione è l'effetto della perturbazione causata dallo strumento di misura $\rightarrow$ perturbazione ha ruolo essenziale in meccanica quantistica perchè ha lo stesso ordine di grandezza della mia misura
+\begin{itemize}
+    \item Elettrone: oltre a carica e massa ha anche un momento magnetico, che è una proprietà dell'elettrone $\Rightarrow$ spin $\left(\pm \frac{h}{2}\right)$ [elettrone come piccola calamita]
+\end{itemize}
+
+\chapter{L'equazione di Schrodinger}
+\'E ricavata da ipotesi plausibili, ma non è dimostrabile; descrive fenomeni quantistici, ma non relativistici. \newline
+Deve contenere: 
+\begin{enumerate}
+    \item Principio di indeterminazione di Heisenberg $\rightarrow$ incapacità operativa di calcolare traiettoria particella
+    \item Corretto limite classico $\rightarrow$ quando posso trascurare dettagli quantistici devo riavere fisica classica
+    \item Equazione lineare per poter sovrapporre soluzioni $\Rightarrow$ principio sovrapposizione. Algoritmo per costruire diffrazione (del tipo ${|\vec{E}_1 + \vec{E}_2|}^2 \neq {|\vec{E}_1|}^2 + {|\vec{E}_2|}^2$) $\rightarrow$ somma coerente di 2 oggetti $\Rightarrow {|?|}^2$: densità di probabilità
+    \item Somma coerente richiede lunghezza d'onda $\rightarrow$ ipotesi di De Broglie
+    \item Per somma coerente non è necessario campo vettoriale; massima semplicità: campi scalari complessi $\rightarrow$ in ogni punto ho bisogno di 2 soli valori, non di 3. Ipotesi valida perchè: ${|c_1 + c_2|}^2 \neq {|c_1|}^2 + {|c_2|}^2$
+\end{enumerate}
+Costruzione\dots
+\begin{itemize}
+    \item Particella libera in 1 dimensione
+    \item f(x): campo scalare complesso
+    \item ${|f(x)|}^2 \, dx = dP  \rightarrow$ probabilità infinitesima di trovare particella tra x e x + dx $\Rightarrow {|f(x)|}^2$: densità di probabilità
+    \item $\int dP = 1 \rightarrow$ postulato probabilità
+    \begin{equation*}
+        \int_{-\infty}^\infty dx \, {|f(x)|}^2 =1 
+    \end{equation*}
+    \item f(x) ampiezza di probabilità (campo quantistico)
+    \item Rappresento particella come pacchetto d'onde molto localizzato; ambito naturale è trasformata di Fourier
+    \begin{equation*}
+        f(x) = \int_{-\infty}^\infty dk \, g(k)e^{ikx}
+    \end{equation*}
+    Esempio uso gaussiana $g(k) = e^{\alpha{(k-k_0)}^2}$ che ha come ordine di grandezza della larghezza $\frac{1}{\sqrt[]{\alpha}}$
+    \begin{equation*}
+        f(x) = \sqrt[]{\frac{\pi}{\alpha}}e^{ik_0x}e^{-\frac{x^2}{4\alpha}} \qquad {|f(x)|}^2 = \frac{\pi}{\alpha} e^{-\frac{x^2}{2\alpha}}
+    \end{equation*}
+    Posso calcolare 
+    \begin{equation*}
+        \begin{cases}
+            <x> = \int dx \, xf(x) \\
+            \Delta x^2 = \int dx \, {(x-<x>)}^2f(x)
+        \end{cases}
+    \end{equation*}
+    ottenendo che $\Delta x= \sqrt[]{\alpha}$ e $\Delta k = \frac{1}{\sqrt[]{2}\sqrt[]{\alpha}}$ e quindi che
+    \begin{equation*}
+        \Delta x \Delta k = \frac{1}{\sqrt[]{2}}
+    \end{equation*}
+    In generale si può dimostare che per qualunque funzione vale che 
+    \begin{equation*}
+        \Delta x \Delta k \geq \frac{1}{2}
+    \end{equation*}
+    \item Se voglio che sia valido De Broglie chiamo: $\hslash k = p \rightarrow k = \frac{p}{\hslash}$
+    \begin{equation*}
+        \Delta x \Delta p \geq \hslash
+    \end{equation*}
+    che ci rimanda al principio di indeterminazione: la trasformata di Fourier ci dà informazioni sui momenti
+    \item Tutto qeusto è valido per una particella ad un istante $t = \bar{t} = 0$; devo inserire il tempo: per farlo uso la condizione che il baricentro del pacchetto d'onda soffisfi equazione di Newton $\rightarrow$ posizione classica della particella è il baricentro <x> del pacchetto d'onda
+    \item Per un'onda piana qualsiasi vale che $e^{i(kx - w(k)t)}$, ma per le onde elettromagnetiche nel vuoto $w(k) = 2\pi \nu = 2\pi \frac{c}{\lambda} = kc$, quindi
+    \begin{equation*}
+        e^{ik(x-ct)}
+    \end{equation*}
+    ogni singola onda piana si muove con velocità c. Per soddisfare equazioni di Maxwell $f(x,t) \mapsto f(x-ct)$
+    \begin{equation*}
+        f(x,t) = \int_{-\infty}^\infty dk \, g(k) e^{i(kx-w(k)t)}
+    \end{equation*}
+    espandendo attorno a $k_0 \rightarrow w(k)= w(k_0) + (k-k_0)\left(\frac{dw}{dk}\right)_{k_0} + \frac{1}{2} {(k-k_0)}^2 \left(\frac{d^2w}{dk^2}\right)_{k_0} + \dots $, ponendo $k' = k -k_0$
+    \begin{equation*}
+        f(x,t) = e^{i(k_0x - w(k_0)t)} \int dk' \, g(k')e^{i(x-v_gt)}e^{i\beta t k'^2} \qquad v_g = \left(\frac{dw}{dk}\right)_{k_0} \; \beta = \left(\frac{d^2w}{dk^2}\right)_{k_0}
+    \end{equation*}
+    $v_g$: velocità di gruppo con cui si propaga il centro del pacchetto d'onda. \newline
+    I pacchetti sono centrati $\rightarrow p_0 = \hslash k_0$
+    \item Impongo equazioni di Newton
+    \begin{equation*}
+        v_g = \frac{p_0}{m} = \frac{\hslash k_0}{m} \Rightarrow \left(\frac{dw}{dk}\right)_{k_0} = \frac{\hslash k_0}{m}
+    \end{equation*}
+    integrando si ottiene la relazione di dispersione per una particella libera
+    \begin{equation*}
+        w = \frac{\hslash}{m}\frac{k^2}{2} = \frac{1}{2m\hslash}p^2
+    \end{equation*}
+    mettendo insieme
+    \begin{equation*}
+        f(x,t) = \int dk \, g(k) e^{i\left(kx - \frac{\hslash}{2m}k^2t\right)}\underbrace{=}_{p=\hslash k} \frac{1}{\hslash}\int dp \, g(p)e^{\frac{i}{\hslash}\left(px - \frac{p^2}{2m}t\right)} \underbrace{=}_{E=\frac{p^2}{m}} \frac{1}{\hslash}\int dp \, g(p)e^{\frac{i}{\hslash}(px - Et)}
+    \end{equation*}
+    \begin{equation*}
+        \psi (x,t) = \int dp \, \phi(p) e^{\frac{i}{\hslash}(px - Et)}
+    \end{equation*}
+    \item Impongo condizione che 
+    \begin{equation*}
+        \int_{-\infty}^\infty dV \, {|\psi(x,t)|}^2 = 1 
+    \end{equation*}
+    \item Cerco equazione lineare più semplice che soddisfa $\psi$:
+    \begin{itemize}
+        \item $\frac{\delta \psi}{\delta t} = \int dp \, \Phi (p) \left(-\frac{i}{\hslash}\frac{p^2}{2m}\right)e^{\frac{i}{\hslash}(px-Et)}$
+        \item  $\frac{\delta \psi}{\delta z} = \int dp \, \Phi (p) \frac{i}{\hslash}p e^{\frac{i}{\hslash}(px-Et)}$
+        \item $\frac{\delta^2 \psi}{\delta x^2} = \int dp \, \Phi (p) {\left(-\frac{i}{\hslash}\right)}^2p^2 e^{\frac{i}{\hslash}(px-Et)}$
+    \end{itemize}
+    \begin{equation*}
+        i\hslash \frac{\delta \psi}{\delta t} = \frac{1}{2m} \int dp \, \Phi (p) p^2 e{\frac{i}{\hslash}(px-Et)} = -\frac{\hslash^2}{2m} \frac{\delta^2 \psi}{\delta x^2}
+    \end{equation*}
+    EQUAZIONI DI SCHRODINGER di 1 particella libera in una dimensione 
+    \begin{equation}
+        i\hslash \frac{\delta \psi}{\delta t} = -\frac{\hslash^2}{2m} \frac{\delta^2 \psi}{\delta x^2}
+    \end{equation}
+\end{itemize}
 
 \end{document}
