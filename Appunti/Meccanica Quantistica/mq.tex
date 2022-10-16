@@ -259,6 +259,8 @@ Deve contenere:
     \item Somma coerente richiede lunghezza d'onda $\rightarrow$ ipotesi di De Broglie
     \item Per somma coerente non è necessario campo vettoriale; massima semplicità: campi scalari complessi $\rightarrow$ in ogni punto ho bisogno di 2 soli valori, non di 3. Ipotesi valida perchè: ${|c_1 + c_2|}^2 \neq {|c_1|}^2 + {|c_2|}^2$
 \end{enumerate}
+
+\section{Equazione di Schrodinger per una particella libera}
 Costruzione\dots
 \begin{itemize}
     \item Particella libera in 1 dimensione
@@ -345,5 +347,117 @@ Costruzione\dots
         i\hslash \frac{\delta \psi}{\delta t} = -\frac{\hslash^2}{2m} \frac{\delta^2 \psi}{\delta x^2}
     \end{equation}
 \end{itemize}
+Conclusioni:
+\begin{itemize}
+    \item equazione lineare del secondo ordine nelle coordinate spaziali e del primo ordine in quelle temporali
+    \item non è un'equazione relativistica
+    \item $\psi$ è una funzione complessa
+\end{itemize}
+Commenti gaussiana centrata in $\frac{\hslash k_0}{m}t$
+\begin{enumerate}
+    \item Centro si sposta con velocità $v_g = \frac{\hslash k_0}{m}$
+    \item La larghezza del pacchetto 
+    \begin{equation*}
+        \Delta x = \frac{\alpha}{2}\sqrt[]{1 + \frac{4\hslash^2 t^2}{m^2\alpha^4}}
+    \end{equation*}
+    aumenta con il tempo; con il passare del tempo è sempre più difficile determinare la posizione 
+    \item L'allargamento  di $\Delta x$ per la particella libera non è una caratteristica del solo pacchetto gaussiano: per ogni distribuzione iniziale, se faccio passare un tempo sufficientemente lungo, la larghezza del pacchetto cresce
+    \item La distribuzione dei momenti non cambia. $e^{-\frac{\alpha^2}{4}(k-k_0)}$ rimane lo stesso, compreso il valore centrale dei momenti $\hslash k_0$. La distribuzione dei momenti non cambia perchè pacchetto è libero, non ci sono forze $\rightarrow$ MOMENTO CONSERVATO 
+\end{enumerate}
+
+\section{Equazione di Schrodinger per un potenziale arbitrario V(x)}
+
+\chapter{Conservazione locale probabilità ed equazione di continuità}
+
+\chapter{I postulati della meccanica quantistica}
+Ipotesi meccanica quantistica: ogni sistema descritto da funzione d'onda $\psi(t,\vec{x})$. \newline
+Voglio prendere misura di un'osservabile A; considero tutti i sistemi descritti dalla stessa funzione d'onda $\psi(\vec{x})$ \newline
+Cosa succede se misuro A? Generalmente succede che non avrò lo stesso risultato, INDIPENDENTEMENTE dagli errori di misura. Misuro $A_1,A_2,A_3,\dots,A_i$, che possono essere sia valori discreti (per semplicità il caso che analizziamo), sia continui \newline
+Mi aspetto che 
+\begin{equation*}
+    <\hat{A}> = \int dx \, \psi^*(x)\hat{A}(\hat{x},\hat{p})\psi(x)
+\end{equation*}
+corrisponda al valore classico, quindi
+\begin{equation*}
+    \sum_i^N \frac{a_i}{N} \sim <\hat{A}>
+\end{equation*}
+Per lo scarto quadratico medio posso scrivere l'equivalente di quello che otteniamo classicamente
+\begin{equation*}
+    {(\Delta \hat{A})}^2 = {(\hat{A}-<\hat{A}>)}^2  
+\end{equation*}
+\begin{equation}
+    \label{eq:1}
+    SQM = \int dx \, \psi^* (\hat{A}-<\hat{A}>)(\hat{A}-<\hat{A}>)\psi
+\end{equation}
+Esistono casi in meccanica quantistica in cui, data $\psi$, ottengo sempre lo stesso risultato di misura? \newline
+Se esiste $\psi$ che mi fa ottenere sempre lo stesso risultato, allora $SQM = 0$; ciò significa che esiste uno stato particolare $\bar{\psi}$ che rende nullo l'integrale \ref{eq:1}
+\begin{equation*}
+    (\hat{A}-<\hat{A}>)\bar{\psi}
+\end{equation*}
+Se esiste una $\bar{\psi}$ per cui la misura è sempre la stessa allora deve valere la seguente relazione
+\begin{equation*}
+    \label{eq:autovalori}
+    \hat{A}\psi_a = a\psi_a \qquad \text{EQUAZIONE AGLI AUTOVALORI}
+\end{equation*}
+NON abbiamo detto che \{a\} siano gli unici valori delle misure \newline
+Adesso prendo uno stato generico $\psi$ e faccio una certa misura di un'osservabile; pochissimo tempo dopo faccio di nuovo stessa misura della stessa grandezza: se non lascio evolvere il sistema, mi aspetto di ottenere lo stesso risultato, perchè non ho perturbato il sistema $\rightarrow$ riproducibilità in piccolo \newline
+Questa è una ragionevole assunzione, non la posso dimostrare \newline
+Se faccio una misura e ottengo il valore $a_3$, e subito dopo ottengo lo stesso valore, allora lo stato subito dopo la prima misura si deve essere trasformato nello stato $\psi_3$: solo su questo stato ho la certezza di avere di nuovo $a_3$. Allora la prima misura deve aver trasformato pesantemente il sistema $\rightarrow$ lo proietta su uno degli autostati $(\psi \mapsto \psi_a)$ \newline
+SE \'E COS\'I ALLORA GLI UNICI RISULTATI POSSIBILI DI UNA MISURA SONO GLI AUTOVALORI DELL'OSSERVABILE MISURATA \newline
+Commenti:
+\begin{enumerate}
+    \item Se $\psi$ generica fosse autofunzione di A ($\psi_{a_j}$): allora prima misura mi darebbe sempre $a_j$
+    \item Se $\psi$ non è autofunzione di A: allora $\psi$ deve precipitare su $\psi_{a_j}$ perchè seconda misura deve essere $a_j$
+    \item Le osservabili sono rappresentate da operatori i cui autovalori sono tutti e soli i valori di una misura
+    \item All'atto della misura funzione precipita su autovettore corrispondente ad autovalore misurato
+\end{enumerate}
+In maniera imprevedibile precipitiamo su autostato. A priori non possiamo sapere su quale autostato precipito. Possiamo solo e soltanto ottenere i valori $a_j$ \newline
+Possiamo prevedere con quale probabilità arriviamo su certo autostato? \newline
+Suppongo di fare esperimento su diversi sistemi con valore $\psi$, per farmi idea statistica di ciò che ottengo
+\begin{itemize}
+    \item se $\psi$ coincide con $\psi_{a_3}$ allora $Prob(a_3)=1$
+    \item se $\psi \simeq \psi_{a_3}$ allora $Prob(a_3)\sim 1$
+\end{itemize}
+\begin{enumerate}
+    \item Probabilità devono essere proporzionali a coefficienti di sviluppo in serie della $\psi$ su $\psi_{a_i}$
+    \item Deve valere principio di sovrapposizione delle ampiezze
+    \begin{equation*}
+        \psi = \sum_{i=1}^N c_i\psi_i
+    \end{equation*}
+\end{enumerate}
+Per avere interpretazione probabilistica 
+\begin{equation*}
+    \int dx \, \psi^*\psi = 1
+\end{equation*}
+Se gli autovettori fossero ortogonali:
+\begin{equation*}
+    \int dx \, \psi^*\psi = \sum_i \sum_j \int dx \, c_i^* \psi_{a_i}^*c_j\psi_{a_j} = \sum_i c_i^*c_j \delta_{a_ia_j}= \sum {|c_i|}^2 = 1
+\end{equation*}
+allora posso interpretare ${|c_i|}^2$ come probabilità di ottenere $a_i$. Se ortogonali allora buona congettura che ${|c_i|}^2$ è una probabilità \newline
+Data $\psi = \sum c_i \psi_{a_i}$
+\begin{equation*}
+    \int dx \, \psi_{a_j}^*\psi = \int dx \, \psi_{a_j}^*\psi_{a_i} = c_j
+\end{equation*}
+Conseguenze formali: \newline
+Se "$a_j$" sono tutti e soli i valori di misura allora devono essere reali $\rightarrow$ autovettori ortogonali. Esiste classe di operatori che ha sempre autovalori reali $\rightarrow$ spazio di Hilbert con operatori hermitiani o autoaggiunti
+
+\section*{I postulati}
+\begin{enumerate}
+    \item Qualunque stato quantistico è descritto vettore di stato (ket) $|\psi>$ che vive in uno spazio di Hilbert
+    \item Ad ogni quantità misurabile A è associato operatore $\hat{A}$ che agisce su spazio di Hilbert; $\hat{A}$ è hermitiano ed è chiamato osservabile
+    \item I soli possibili risultati di una misura di una quantità sono gli autovalori associati ad $\hat{A}$ 
+    \item Supponendo di avere uno spettro discreto e non degenere, allora quando osservo A su stato normalizzato $|\psi>$ 
+    \begin{equation*}
+        P(a_n) = {|<\psi_{a_n}|\psi>|}^2
+    \end{equation*}
+    dove $\psi_{a_n}$ è autovettore normalizzato associato ad autovalore $a_n$ dell'operatore $\hat{A}$ 
+    \item Supponendo di avere uno spettro discreto e non degenere, se faccio misura di A descritto da stato $|\psi>$ e ottengo $a_n$ allora la misura successiva si trova su $|\psi_{a_n}>$ corrispondente ad $a_n$
+    \item L'evoluzione temporale $|\psi(t)>$ obbedisce all'equazione di Schrodinger
+    \begin{equation*}
+        i\hslash \frac{\delta}{\delta t}|\psi(t)> = \hat{H}(t)|\psi(t)>
+    \end{equation*}
+    $\hat{H}(t)$ osservabile associata all'energia totale del sistema $\rightarrow$ hamiltoniana
+\end{enumerate}
+
 
 \end{document}

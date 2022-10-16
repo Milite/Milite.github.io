@@ -35,6 +35,9 @@
 
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\R}{\mathbb{R}}
+\newcommand{\rot}{\mbox{rot}}
+\newcommand{\grad}{\mbox{grad}}
+\newcommand{\Div}{\mbox{div}}
 
 \DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
 
@@ -191,5 +194,350 @@ GRUPPO DI GALILEI: insieme trasformazioni di cui trasformazioni di Galilei fanno
     \item traslazione asse (no nel tempo) $\rightarrow \vec{x}' = R\vec{x}$ con R matrice di rotazione tale che $RR^T = R^TR = \mathbb{1}$
 \end{itemize}
 
+\chapter{Notazioni e formalismo (indici-vettori-operatori differenziali)}
+
+\begin{enumerate}
+    \item Convenzione di Einstein $\rightarrow$ indici ripetuti = indici sommati
+    \begin{equation*}
+        \vec{v} = \sum_{i=1}^3 v_i\vec{e}_i = v_i\vec{e}_i
+    \end{equation*}
+    \item Per vettori 4-dimensionali $\rightarrow (ct,x,y,z) = x^\mu$ con $\mu =0,1,2,3$
+    \item $\delta_{ij}=
+    \begin{cases}
+        0 \quad i \ne j \\
+        1 \quad i = j 
+    \end{cases}$
+    \item Simbolo di levi-civita (in 3D)
+    \begin{equation*}
+        \epsilon_{ijk} = \begin{cases}
+            \epsilon_{123} = 1 \quad \text{per ogni permutazione pari di 1,2,3} \\
+            \epsilon_{213} = -1 \quad \text{per ogni permutazione dispari di 1,2,3} \\
+            \epsilon_{ii2} = 0 \quad \text{completamente asimmetrico}
+        \end{cases}
+    \end{equation*}
+    $\epsilon_{ijk} = - \epsilon_{jik}$
+\end{enumerate}
+
+\section*{Matrici}
+A,B matrici
+\begin{equation*}
+    {(AB)}_{ij} = A_{1k}B_{kj}
+\end{equation*}
+Per una matrice A $3 \times 3$ 
+\begin{equation*}
+    \det A = \epsilon_{ijk} a_{1i}a_{2j}a_{3k}
+\end{equation*}
+
+\begin{itemize}
+    \item $\epsilon_{ijk}\epsilon_{ilm} = \delta_{il}\delta_{km} - \delta_{jm}\delta_{kl}$
+    \item $\vec{a}\cdot \vec{b} = a_ib_i = \delta_{ij}a_ib_j$
+    \item $\vec{a}\times \vec{b} = \epsilon_{ijk}a_jb_k\vec{e}_i$ \newline
+    ${(\vec{a}\times \vec{b})}_i = \epsilon_{ijk}a_jb_k$
+\end{itemize}
+
+\section*{Contrazione di indici simmetrici/antisimmetrici}
+$\begin{cases}
+    \text{A: antisimmetrico su i e j} \rightarrow A_{ij}=-A_{ji} \\
+    \text{S: simmetrico su i e j} \rightarrow S_{ij} = S_{ji}
+\end{cases}$ \newline
+
+\noindent Contrarre gli indici i e j significa sommare su i e j
+\begin{equation*}
+    \sum_{i,j=1}^3 A_{ij}S_{ij}\underbrace{=}_{\text{rename}}\sum_{i,j=1}^3 A_{ji}S_{ij} = \sum_{i,j=1}^3 -A_{ij}S_{ij} =0
+\end{equation*}
+
+\section{Operatori differenziali}
+
+\begin{itemize}
+    \item Gradiente
+    \begin{equation*}
+        \vec{\nabla}\phi = (\delta_i\phi)\vec{e}_i \qquad \delta_i\phi= \frac{\delta \phi}{\delta x_i}
+    \end{equation*}
+    \item Divergenza
+    \begin{equation*}
+        \vec{\nabla}\cdot\vec{V} = \delta_i V_i
+    \end{equation*}
+    \item Rotore 
+    \begin{equation*}
+        {(\vec{\nabla}\times \vec{V})} = \epsilon_{ijk}\delta_j V_k
+    \end{equation*}
+    \item Laplaciano
+    \begin{equation*}
+        \vec{\nabla}\cdot (\vec{\nabla}\phi) = \delta^2_x \phi + \delta^2_y \phi + \delta^2_z \phi 
+    \end{equation*}
+    \item D'Alambertiano
+    \begin{equation*}
+        \boxdot\phi = \frac{1}{c^2}\frac{\delta^2}{\delta t^2}\phi -\nabla^2\phi 
+    \end{equation*}
+\end{itemize}
+Proprietà:
+\begin{itemize}
+    \item $\vec{a} \times \vec{b} = -\vec{b} \times \vec{a}$
+    \item $\vec{a} \times (\vec{b} \times \vec{c}) = (\vec{a} \cdot \vec{c})\cdot \vec{b} - (\vec{a}\cdot \vec{b})\cdot \vec{c}$
+    \item $\Div(\rot(\vec{V})) =0$
+    \item $\rot(\grad(\phi)) = 0$
+    \item $\rot(\rot(\vec{V})) = \grad(\Div(\vec{V}))- \nabla^2\vec{V}$
+    \begin{equation*}
+        {[\vec{\nabla} \times (\vec{\nabla} \times \vec{\nabla})]}_i = \delta_i(\vec{\nabla}\vec{V})-\nabla^2V_i
+    \end{equation*}
+\end{itemize}
+
+\section*{Equazioni di Maxwell}
+
+\begin{equation*}
+    \begin{cases}
+        \vec{\nabla} \cdot \vec{E} = 4\pi\rho \\
+        \vec{B} \cdot \vec{B} = 0 \\
+        \vec{\nabla} \times \vec{E} + \delta_t \vec{B} = 0 \\
+        \vec{\nabla} \times \vec{B} - \delta_t \vec{E} = 4 \pi \vec{J}
+    \end{cases} \quad \rightarrow \quad 
+    \begin{cases}
+        \delta_iE_i = 4\pi \rho  \qquad \qquad \text{M1: 1 equazione}\\
+        \delta_iB_i = 0  \qquad \qquad \text{M2: 1 equazione}\\
+        \epsilon_{ijk} \delta_jE_k + \delta_t B_i = 0 \quad \text{M3: 3 equazioni}\\
+        \epsilon_{ijk} \delta_jB_k - \delta_t E_i = 4 \pi J_i \quad \text{M4: 3 equazioni}
+    \end{cases}
+\end{equation*}
+Da M4 $\rightarrow$ applico divergenza
+\begin{align*}
+    \delta_i (\epsilon_{ijk} \delta_jB_k - \delta_t E_i) &= \delta_i 4 \pi J_i \\
+    0 - \delta_t\delta_iE_i &= 4\pi \delta_iJ_i \\
+    - 4\pi \delta_t\rho &= 4\pi (\vec{\nabla}\cdot \vec{J}) 
+\end{align*}
+Ottengo EQUAZIONE CONTINUIT\'A 
+\begin{equation*}
+    \frac{\delta}{\delta t}\rho + \vec{\nabla} \cdot \vec{J} = 0
+\end{equation*}
+Da M2 $\rightarrow$ poichè $\Div(\rot(\vec{A})) = 0$ posso ridefinire $\vec{B}$ come
+\begin{equation*}
+    \vec{B} = \vec{\nabla} \times \vec{A} \Rightarrow B_i = \epsilon_{ijk} \delta_j A_k
+\end{equation*}
+Da M3 $\rightarrow$ poichè
+\begin{eqnarray*}
+    \rot(\vec{E} + \delta_t \vec{A}) = 0 \\
+    \rot(\grad(\phi)) = 0
+\end{eqnarray*}
+posso ridefinire $\vec{E}$ come
+\begin{equation*}
+    \vec{E} + \delta_t \vec{A} = -\vec{\nabla}\phi \Rightarrow \vec{E} = - \vec{\nabla} \phi - \frac{\delta}{\delta t} \vec{A}
+\end{equation*}
+Allora le equazioni di Maxwell
+
+$\begin{cases}
+    \delta_iE_i = 4\pi \rho  \\
+    \epsilon_{ijk} \delta_jB_k - \delta_t E_i = 4 \pi J_i 
+\end{cases}$ \newline
+
+\noindent diventano
+\begin{equation*}
+    \begin{cases}
+        4\pi \rho = \delta_iE_i = - \nabla^2 \phi - \delta_t (\delta_iA_i) \\
+        4 \pi J_i = \epsilon_{ijk} \delta_j (\epsilon_{ijk} \delta_j A_k) - \delta_t (-\delta_i \phi - \delta_t A_i) = \delta_i\delta_j A_j - \nabla^2 A_i + \delta^2_t A_i + \delta_i\delta_t\phi
+    \end{cases}
+\end{equation*}
+sommando $+ \delta_t^2 \phi - \delta_t^2 \phi$ alla prima equazione si ottiene:
+\begin{equation*}
+    \begin{cases}
+        4 \pi \rho = - \nabla^2 \phi + \delta_t^2 \phi - \delta_t (\delta_t \phi + \vec{\nabla} \cdot \vec{A}) \\
+        4 \pi J_i = \nabla^2 A_i + \delta_t^2 A_i +\delta_i (\delta_t \phi + \vec{\nabla} \cdot \vec{A})
+    \end{cases}
+\end{equation*}
+Utilizzando operatore d'almenrtino 
+\begin{equation*}
+    \boxdot = \frac{\delta^2}{\delta t^2 } - \nabla^2
+\end{equation*}
+posso riscrivere le equazioni di Maxwell come
+\begin{equation*}
+    \begin{cases}
+        \boxdot \phi - \delta_t (\delta_t \phi + \vec{\nabla} \cdot \vec{A}) = 4 \pi \rho \\
+        \boxdot A_i - \delta_i (\delta_t \phi + \vec{\nabla} \cdot \vec{A}) = 4 \pi J_i
+    \end{cases}
+\end{equation*}
+
+\section*{Trasformazioni di Gauge}
+
+Considero $\psi(t, \vec{x})$ arbitraria
+\begin{equation*}
+    \begin{cases}
+        \vec{A} \mapsto \vec{A}' = \vec{A} + \vec{\nabla}\psi \\
+        \phi \mapsto \phi' = \phi - \delta_t \psi 
+    \end{cases}
+\end{equation*}
+Usando queste trasformazioni i campi $\vec{E}, \vec{B}$ sono invarianti $\Rightarrow$ invarianza di Gauge \newline
+Posso scegliere $\psi$ per semplificare le scelte iniziali di $\phi,\vec{A} \rightarrow$ scelte di Gauge
+\begin{itemize}
+    \item Lorenz: $\delta_t \phi + \vec{\nabla} \cdot \vec{A} = 0$
+    \item Coulomb: $\vec{\nabla} \cdot \vec{A} = 0$
+    \item Temporale: $\phi = 0$
+    \item Radiazione: $\vec{\nabla} \cdot \vec{A} = 0 \; \phi = 0$ (in assenza di sorgenti)
+\end{itemize}
+Applicando scelta di Lorenz ottengo
+\begin{equation*}
+    \begin{cases}
+        \boxdot \phi = 4 \pi \rho \\
+        \boxdot \vec{A} = 4 \pi \vec{J}
+    \end{cases}
+\end{equation*}
+
+\section{Spazio euclideo 3D}
+
+\subsection*{Distanza infinitesima}
+\begin{equation*}
+    d\vec{x} = (dx,dy,dx) = (dx_1,dx_2,dx_3)
+\end{equation*}
+Distanza euclidea
+\begin{equation*}
+    \underbrace{{|d\vec{x}|}^2}_{\text{metrica}} = d\vec{x} \cdot d\vec{x} = dx^2 + dy^2 + dz^2 = \delta_{ij}x_ix_j \rightarrow \text{tensore metrico}
+\end{equation*}
+
+\subsection*{Rotazioni}
+Trasformazioni lineai che lasciano invariante ${|d\vec{x}|}^2$
+\begin{equation*}
+    \begin{cases}
+        x \mapsto x' \quad x'_i = R_{ij} x_j \rightarrow \text{ R non dipende da $\vec{x}$} \\
+        d\vec{x} \mapsto d\vec{x}_i = R_{ij}dx_j
+    \end{cases}
+\end{equation*}
+Impongo che $d\vec{x}'^2 = d\vec{x}^2$
+\begin{equation*}
+    {|d\vec{x}'|}^2 = d\vec{x}' \cdot d\vec{x}' = R_{ij} dx_j R_{ik} x_k = R_{ij}R_{ik}dx_jdx_k = {(R^T)}_{ij}R_{ik}dx_jdx_k = {(R^TR)}_{jk}dx_jdx_k = \delta_{jk}dx_jdx_k
+\end{equation*}
+Allora 
+\begin{equation*}
+    R^TR = \mathbb{I}_{3\times3} \qquad R \in O(3)
+\end{equation*}
+Quindi se $R\in O(3)$ allora ${|d\vec{x}'|}^2$ è invariante \newline
+ROTAZIONI PROPRIE $\rightarrow R \in SO(3)$
+\begin{equation*}
+    R^TR = RR^T = \mathbb{I} \qquad \det{R} = +1
+\end{equation*}
+\begin{itemize}
+    \item Passivo
+    \begin{equation*}
+        \left(\begin{array}[]{c}
+            x' \\
+            y' \\
+            z'
+        \end{array}\right) =
+        \left(\begin{array}[]{ccc}
+            \cos\theta & \sin\theta & 0 \\
+            -\sin\theta & \cos\theta & 0 \\
+            0 & 0 & 1
+        \end{array}\right)
+        \left(\begin{array}[]{c}
+            x \\
+            y \\
+            z 
+        \end{array}\right)
+    \end{equation*}
+    \item Attivo
+    \begin{equation*}
+        \left(\begin{array}[]{c}
+            x' \\
+            y' \\
+            z'
+        \end{array}\right) =
+        \left(\begin{array}[]{ccc}
+            \cos\theta & -\sin\theta & 0 \\
+            \sin\theta & \cos\theta & 0 \\
+            0 & 0 & 1
+        \end{array}\right)
+        \left(\begin{array}[]{c}
+            x \\
+            y \\
+            z 
+        \end{array}\right)
+    \end{equation*}
+\end{itemize}
+
+\subsection*{Vettori}
+
+$\vec{A}$ è un vettore $(A_x,A_y,A_z)$ se sotto trasformazioni trasforma come vettore
+\begin{equation*}
+    A_i \mapsto A'_i = R_{ij}A_j
+\end{equation*}
+
+\subsection*{Campo vettoriale}
+$\vec{A}(x)$ è un campo vettoriale tale che 
+\begin{equation*}
+    A_i(x) \mapsto A'_i (\vec{x}') = R_{ij} A_j(\vec{x}) \qquad \vec{x}' = R \vec{x}
+\end{equation*}
+
+\subsection*{Tensore di rango m}
+
+\begin{equation*}
+    T_{i_1,\dots, i_n} \underbrace{\mapsto}_{\text{rotazione}} R_{i_1j_1}R_{i_2j_2}\cdots R_{i_nj_n}T_{j_1,\dots,j_n}
+\end{equation*}
+Un tensore di rango n contiene $3^n$ elementi. Un vettore è un caso particolare di tensore: un vettore è un tensore di rango 1
+
+\subsection*{Campo tensoriale}
+\begin{equation*}
+    T_{i_1,\dots, i_n}(\vec{x})
+\end{equation*}
+
+\subsection*{Scalare}
+
+Uno scalare è una quantità invariante sotto rotazione
+\begin{itemize}
+    \item $\vec{A} \cdot \vec{B} = A_iB_i$ è uno scalare $\rightarrow$ rappresenta l'angolo tra i due vettori
+    \item $|\vec{A}| = \vec{A} \cdot \vec{A}$ è uno scalare
+    \item Il prodotto tra due tensori con tutti gli indici contratti è uno scalare
+\end{itemize}
+
+\subsection*{Campo scalare}
+\begin{equation*}
+    \phi(\vec{x}) \qquad \phi'(\vec{x}) = \phi(\vec{x})
+\end{equation*}
+Un esempio è la temperatura
+
+\section{Spazi di Riemann}
+Uno spazio di Riemann è uno spazio N-dimensionale dotato di metrica che esprime la distanza infinitesima tra due punti nello spazio stesso
+\begin{equation*}
+    ds^2 = g_{ab}dx^adx^b \qquad a,b = 1,\dots, N
+\end{equation*}
+con $ds^2$ metrica e $g_{ab}$ tensore metrico, che i generale può dipendere dal punto x
+\begin{itemize}
+    \item g è invertibile $(\det{g}\neq 0)$
+    \item g è simmetrico $(g_{ab}=g_{ba})$
+    \item g non per forza diagonale
+    \item $ds^2$ è invariante, non dipende dal sistema di coordinate
+\end{itemize}
+\begin{enumerate}
+    \item Se $g_{ab}$ non dipende da x $\Rightarrow$ spazio piatto
+    \item Se ho uno spazio piatto $\Rightarrow$ esiste sistema di coordinare in cui $g_{ab}$ è costante su tutto lo spazio
+    \item Segnatura: denota il numero di autovalori positivi e negativi della matrice $g_{ab}$
+    \item n = numero autovalori positivi e N = dimensione dello spazio
+    \begin{equation*}
+        \begin{cases}
+            n = N \Rightarrow \text{Varietà riemanniana $\rightarrow$ metrica euclidea} \\
+            \begin{cases}
+                n = 1 \\
+                n = N-1 
+            \end{cases}
+            \Rightarrow \text{Varietà pseudo riemanniana $\rightarrow$ metrica pseudo euclidea}
+        \end{cases}
+    \end{equation*}
+    La metrica pseudo euclidea comprende anche lo spazio di Minkowski
+\end{enumerate}
+
+\section{Spazio di Minkowski}
+\subsection*{Coordinate controvarianti}
+\begin{equation*}
+    x^\mu = (ct,x,y,z) = (x^0,x^1,x^2,x^3) = (x^0,x^i)
+\end{equation*}
+\begin{equation*}
+    x = x^\mu \hat{e}_\mu
+\end{equation*}
+
+\subsection*{Struttura riemanniana}
+\begin{equation*}
+    M = \R^{1,3} \rightarrow \text{ Spazio di Riemann}
+\end{equation*}
+\begin{equation*}
+    ds^2 = g_{\mu\nu} dx^\mu dx^\nu  \qquad g_{\mu\nu} = \mbox{diag}(+1,-1,-1,-1)
+\end{equation*}
+$ds^2$ non dipende da sistema di coordinate, mentre $g_{\mu\nu}$ (tensore metrico) non dipende da x. M è uno spazio piatto perchè il tensore metrico non dipende da x
+
+\subsection*{Coordinate covarianti}
 
 \end{document}

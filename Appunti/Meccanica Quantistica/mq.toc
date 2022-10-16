@@ -10,3 +10,7 @@
 \contentsline {chapter}{\numberline {4}De Broglie}{8}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Il principio di indeterminazione}{10}{chapter.5}%
 \contentsline {chapter}{\numberline {6}L'equazione di Schrodinger}{11}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Equazione di Schrodinger per una particella libera}{11}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Equazione di Schrodinger per un potenziale arbitrario V(x)}{13}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Conservazione locale probabilità ed equazione di continuità}{14}{chapter.7}%
+\contentsline {chapter}{\numberline {8}I postulati della meccanica quantistica}{15}{chapter.8}%
