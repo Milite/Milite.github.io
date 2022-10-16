@@ -219,4 +219,70 @@ Se riesco a misurarela distanza tra me e sistema con leggi Keplero posso ottener
 \subsection*{Spectroscopy bynarie}
 Deduco presenze di binarie da studio dello spettro perchè risoluzione non mi permette di vedere le due stelle separate (esempio da effetto Doppler dello spettro di assorbimento)
 
+\chapter{Le stelle}
+Stelle con masse inferiori hanno luminosità inferiore
+\begin{equation*}
+    L = 4 \pi R^2 \sigma T^4 
+\end{equation*}
+Esempio: $L_{sole} \simeq 4 \times 10^33 \, erg \cdot s{-1}$
+
+\section{Diagramma di Hertzsprung-Russell}
+
+Anche detto diagramma magnitudine-colore. Si usa per stelle di cui conosco la distanza. \newline
+Asse x: colore B-V; più mi trovo verso sinistra, più picco sul blu. Temperatura cresce verso sinistra \newline
+Asse y: magnitudine assoluta nel V; valori più bassi hanno luminosità più alta \newline
+La maggior parte delle stelle si trova sulla diagonale principale $\rightarrow$ SEQUENZA PRINCIPALE (racchiude le stelle che bruciano H in He). Qui si trova anche il sole, più o meno al centro. La maggior parte della loro vita le stelle la passano sulla sequenza principale (sole $\sim 10$ miliardi di anni) \newline
+Diagonale minore: RAMO DELLE GIGANTI. Si trovano stelle che hanno raggi decisamente più grandi di quelle che si trovano sulla sequenza prinicipale. Vediamo meno stelle sul ramo delle giganti, perchè le stelle passano molto meno tempo in questa fase, e quindi è statisticamente più difficile osservarle \newline
+In basso a sinistra si trovano le NANE BIANCHE: sono l'unico oggetto compatto visibile su diagramma H-R; hanno raggi decisamente più piccoli di quelle sulla sequenza principale \newline
+La massa (indicata con unità di massa solare) andando verso l'alto a sinistra. Sulla sequenza principale massa più grande indica raggi più grandi. La vita lungo sequenza prinicipale diminuisce andando verso alto a sinistra: questo perchè la luminosità è proporzionale a $M^\alpha$ con $\alpha>1$, quindi maggiore è la massa, maggiore è la lumiosità, quindi muore prima
+
+\section{Classificazione delle stelle}
+La classificazione delle stelle avviene in base a spettro di assorbimento: si associano lettere a spettro di assorbimento (OBAFGKM). La "O" è associata ha temperature alte $\sim 40000 K$, mentre la "M" è associata a tempertaure minori $\sim 2400 K$. Ad esempio il sole è di tipo "G". Esiste sottoclassificazione per le temperature: si indica con un numero. Per indicare la posizione della stella nel diagramma si usa un numero romano (V indica che la stella si trova nella sequenza principale)
+
+\section{Descrizione struttura stellare}
+
+Sulla sequenza principale le stelle fanno fusione nucleare per convertire H in He. Per il sole l'efficienza di questo processo è di circa lo $0.7\%$ 
+
+\noindent Composizione massa del sole $\begin{cases}
+    71 \% H \\
+    27 \% He \\
+    2 \% \text{ C,N,O,Fe: metalli (così indico tutti gli elementi più pesanti dell'elio)}
+\end{cases}$ 
+Assunzioni:
+\begin{enumerate}
+    \item Le stelle hanno simmetria sferica: grandezze dipendono solo da r, non da $\theta,\phi,t$
+    \item Le stelle non ruotano
+    \item No campo magnetico
+\end{enumerate}
+
+\subsection{Equazione di equilibrio idrostatico}
+
+Equazione per descrivere la pressione in funzione del raggio \newline
+Forza gravitazionale è uguale alla forza dovuta al gradiente di pressione che bilancia la forza gravitazionale
+\begin{equation*}
+    -\frac{GM(r)dm}{r^2} = dP A
+\end{equation*}
+Considerando che $dm = \rho(r)A dr$ dove $\rho$ è la densità si ottiene
+\begin{equation}
+    -\frac{GM(r)\rho(r)A dr}{r^2} = dP A
+\end{equation}
+che ci porta a scrivere la prima equazione di evoluzione stellare, che però non può essere risolta da sola, perchè non ho espressione di $M(r), \rho(r)$
+\begin{equation*}
+   \frac{dP}{dr} -\frac{GM(r)\rho(r)}{r^2}
+\end{equation*}
+
+\subsection{Equazione di conservazione della massa}
+
+Equazione per descrivere la massa in funzione del raggio \newline
+Considerando che 
+\begin{equation*}
+    dM = \rho(r) 4 \pi r^2 dr
+\end{equation*}
+posso scrivere la seconda equazione di evoluzione stellare
+\begin{equation}
+    \frac{dM}{dr} = \rho(r) 4 \pi r^2
+\end{equation}
+
+\subsection{Teorema del viriale}
+
 \end{document}
