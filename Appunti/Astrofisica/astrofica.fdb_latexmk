@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1665925875 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Astrofisica/astrofica.tex" "astrofica.pdf" "astrofica" 1665925890
+["pdflatex"] 1665999048 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Astrofisica/astrofica.tex" "astrofica.pdf" "astrofica" 1665999055
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1654335452 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1648037088 28976 d56dca20927a79c4468ac39f2cb67e88 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1648037073 31952 aef68ca89a05b961636a6e8f295f9836 ""
@@ -56,6 +56,7 @@
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1247596667 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1247596667 32587 65067f817f408bc71a7312f3d9828a9b ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580393758 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/generic/atbegshi/atbegshi.sty" 1575574700 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -126,11 +127,11 @@
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575574882 9715 b051d5b493d9fe5f4bc251462d039e5f ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1636713860 10214 00ce62e730d0cfe22b35e8f1c84949c7 ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "astrofica.aux" 1665925889 1973 3752ae09337c7527a2adbd7ad39a5391 "pdflatex"
-  "astrofica.out" 1665925889 1494 39b17af2765aff8a14d08f94259515a3 "pdflatex"
-  "astrofica.tex" 1665925848 14829 48bb1a3677f28095438157ad76d906b0 ""
-  "astrofica.toc" 1665925889 765 243a8423e98efd5b009a6c604063988b "pdflatex"
-  "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Astrofisica/astrofica.tex" 1665925848 14829 48bb1a3677f28095438157ad76d906b0 ""
+  "astrofica.aux" 1665999053 1973 04c07601ca65b2fb7104aafa3222b9ec "pdflatex"
+  "astrofica.out" 1665999053 1494 39b17af2765aff8a14d08f94259515a3 "pdflatex"
+  "astrofica.tex" 1665999040 17224 8567ffdbed005cda082f01b1dffd1281 ""
+  "astrofica.toc" 1665999053 765 243a8423e98efd5b009a6c604063988b "pdflatex"
+  "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Astrofisica/astrofica.tex" 1665999040 17224 8567ffdbed005cda082f01b1dffd1281 ""
   (generated)
   "astrofica.aux"
   "astrofica.log"

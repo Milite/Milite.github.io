@@ -284,5 +284,54 @@ posso scrivere la seconda equazione di evoluzione stellare
 \end{equation}
 
 \subsection{Teorema del viriale}
+\begin{equation*}
+    \int_0^{r_*} dr \, 4 \pi r^3 \frac{dP}{dr} = -\int_0^{r_*} dr \, 4 \pi r^3 \frac{GM(r)\rho(r)}{r^2}
+\end{equation*}
+\begin{equation*}
+    \int_0^{r_*} dr \, 4 \pi r^3 \frac{dP}{dr} = - 3 \int_0^{r_*} dr \, 4 \pi r^2 P(r)
+\end{equation*}
+\begin{equation*}
+    -\int_0^{r_*} dr \, 4 \pi r^3 \frac{GM(r)\rho(r)}{r^2} = -\int_0^{r_*} dr \, \frac{GM(r)dM}{rdr} = -\int_0^{M_*} \frac{GM(r)dM}{r} = E_{\mbox{gravitazionale}} 
+\end{equation*}
+Allora 
+\begin{equation*}
+    - 3 \int_0^{r_*} dr \, 4 \pi r^2 P(r) = E_{\mbox{gr}}
+\end{equation*}
+assumendo che la stella sia fatta di gas perfetto e che $\Gamma$ sia costante, considerando la densità di energia interna (e)
+\begin{equation*}
+    P = (\Gamma - 1)e
+\end{equation*}
+si ottiene 
+\begin{equation*}
+    -3 (\Gamma - 1) E_{\mbox{termica}} = E_{gr}
+\end{equation*}
+\begin{itemize}
+    \item gas monoatomico classico, senza effetti quantistici
+    \begin{equation*}
+        P = n K_B T \Rightarrow e = \frac{3}{2}n K_B T = \frac{P}{(\Gamma - 1)}
+    \end{equation*}
+    si ottiene
+    \begin{equation*}
+        \Gamma - 1 = \frac{2}{3} \Rightarrow \Gamma = \frac{5}{3}
+    \end{equation*}
+    sostituendo nel teorema del viriale
+    \begin{equation*}
+        -2 E_{TH} = E_{GR}
+    \end{equation*}
+    L'energia totale è data dell'energia gravitazionale + energia termica
+    \begin{equation*}
+        E_{TOT} = E_{TH} + E_{GR} = -E_{TH} < 0
+    \end{equation*}
+    allora stella è sistema legato: se viene perturbata la stella oscilla attorno al suo punto di equilibrio. Conseguenza: le reazioni nucleari sono stabili $\rightarrow$ se energia termica aumenta per perturbazione allora la pressione fa espandere la stella; allora diminuisce l'energia gravitazionale che fa diminuire energia termica, quindi si torna ad equilibrio $\Rightarrow$ equilibrio stabile (torna a situazione iniziale)
+    \item gas stella di tipo relativistico $\rightarrow$ pressione stella è dovuta principalmente a radiazione (fotoni)
+    \begin{equation*}
+        p = \frac{1}{3} e \Rightarrow \Gamma = \frac{4}{3}
+    \end{equation*}
+    si ottiene quindi 
+    \begin{equation*}
+        -E_{TH} = E_{GR}
+    \end{equation*}
+    di conseguenza l'energia totale è nulla: ciò significa che sistema è marginalmente legato $\rightarrow$ la minima perturbazione fa esplodere la stella
+\end{itemize}
 
 \end{document}
