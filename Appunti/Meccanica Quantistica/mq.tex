@@ -36,6 +36,8 @@
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\angs}{\text{\AA}}
+\newcommand{\x}{\hat{x}}
+\newcommand{\p}{\hat{p}}
 
 \DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
 
@@ -367,7 +369,148 @@ Commenti gaussiana centrata in $\frac{\hslash k_0}{m}t$
 
 \section{Equazione di Schrodinger per un potenziale arbitrario V(x)}
 
+Per particella libera: $E = \frac{p^2}{2m} \rightarrow
+\begin{cases}
+    i\hslash \frac{\delta \psi}{\delta t} = \int dp \, \varPhi(p)E e^{\frac{i}{\hslash}(px-Et)} \\
+    i\frac{\hslash^2}{2m} \frac{\delta^2 \psi}{\delta t^2} = \int dp \, \varPhi(p)E e^{\frac{i}{\hslash}(px-Et)} \\
+\end{cases}$
+Se ho un potenziale V(x) l'energia vale
+\begin{equation*}
+    E = \frac{p^2}{2m} + V(x)
+\end{equation*}
+se moltiplico entrambi i membri per $\int dp \, \varPhi(p)E e^{\frac{i}{\hslash}(px-Et)}$ ottengo
+\begin{equation*}
+    i\hslash \frac{\delta \psi}{\delta t} = \left[-\frac{\hslash^2}{2m}\frac{\delta^2}{\delta x^2} + V(x)\right]\psi
+\end{equation*}
+Se generalizzo in 3 dimensioni ottengo l'equazione di Schrodinger in 3 dimensioni
+\begin{equation*}
+    i\hslash \frac{\delta}{\delta t} \psi(t,\vec{x}) = -\frac{\hslash^2}{2m}\nabla^2 \psi(t,\vec{x}) + V(t,\vec{x})\psi(t,\vec{x}) \qquad \vec{x} = (x,y,z) \; \nabla^2 = \frac{\delta^2}{\delta x^2} + \frac{\delta^2}{\delta y^2} + \frac{\delta^2}{\delta z^2}
+\end{equation*}
+Per avere interpretazione probabilistica voglio che a ogni tempo valga 
+\begin{equation*}
+    \int d^3x \, {|\psi(t,\vec{x})|}^2 = 1
+\end{equation*}
+dP è la probabilità infinitesima di trovare particella in un punto $\vec{x}$ nel volume di $d^3 xs$
+
 \chapter{Conservazione locale probabilità ed equazione di continuità}
+
+\'E vero sempre che vale la sequente relazione?
+\begin{equation*}
+    \int d^3x \, {|\psi(t,\vec{x})|}^2 = 1
+\end{equation*}
+Considero l'equazione di Schrodinger 
+\begin{equation*}
+    i\hslash \frac{\delta}{\delta t} \psi = -\frac{\hslash^2}{2m}\nabla^2 \psi + V\psi
+\end{equation*}
+e ne faccio il complesso coniugato
+\begin{equation*}
+    -i\hslash \frac{\delta}{\delta t} \psi^* = -\frac{\hslash^2}{2m}\nabla^2 \psi^* + V\psi^*
+\end{equation*}
+Prendo l'equazione 
+\begin{equation*}
+    \frac{\delta}{\delta t}{|\psi|}^2 = \frac{\delta}{\delta t} \psi^*\psi = \frac{\delta \psi^*}{\delta t}\psi + \psi^* \frac{\delta \psi}{\delta t}
+\end{equation*}
+sostituendo con ciò che abbiamo ottenuto dalle due equazioni precedenti si ottiene 
+\begin{equation*}
+    \frac{\delta}{\delta t}{|\psi|}^2 = \frac{1}{i\hslash} \left[-\frac{\hslash^2}{2m} \psi^* \nabla^2 \psi + \psi^*V\psi +\frac{\hslash^2}{2m} \psi\nabla^2\psi^* - \psi V\psi^* \right] 
+\end{equation*}
+che in definitiva si ottiene 
+\begin{equation}
+    \label{eq:2}
+    \frac{\delta}{\delta t}{|\psi|}^2 = -\frac{\hslash}{2im} (\psi^*\nabla^2\psi - \psi\nabla^2\psi^*)
+\end{equation}
+Ora posso definire $\vec{J}$, densità di corrente di probabilità
+\begin{equation*}
+    \vec{J} = \frac{\hslash}{2im} (\psi^* \vec{\nabla} \psi - \psi \vec{\nabla}\psi^*)
+\end{equation*}
+calcolo la divergenza di $\vec{J}$
+\begin{equation*}
+    \mbox{div}\vec{J} = \frac{\hslash}{2im} (\psi^*\nabla^2\psi - \psi\nabla^2\psi^*)
+\end{equation*}
+definendo la densità di probabilità $\rho$
+\begin{equation*}
+    \rho = {|\psi(t,\vec{x})|}^2
+\end{equation*}
+l'\autoref{eq:2} diventa
+\begin{equation}
+    \label{eq:3}
+    \frac{\delta \rho}{\delta t} + \mbox{div}\vec{J} = 0
+\end{equation}
+Commenti:
+\begin{enumerate}
+    \item $\vec{J}$ è reale: $\vec{J}^* = \vec{J}$
+    \item A meno di interpretazione l' \autoref{eq:3} è uguale all'equazione di continuità della carica elettrica: conservazione della carica locale e non globale
+\end{enumerate}
+Prendo un volume $\Omega$ arbitrario ($\delta \Omega$ è la superficie del volume)
+\begin{equation*}
+    \frac{\delta}{\delta t } \int_\Omega d^3x \, \rho(t,\vec{x}) = - \int_\Omega d^3x \, \mbox{div}\vec{J}(t,\vec{x})
+\end{equation*}
+usando il teorema di Gauss
+\begin{equation*}
+    \frac{\delta}{\delta t} \int_\Omega d^3x \, \rho = \int_{\delta\Omega} \vec{J} \cdot d\vec{s} 
+\end{equation*}
+se $\Omega$ è tutto lo spazio 
+\begin{equation*}
+    \int_\Omega d^3x \, {|\psi|}^2 = \mbox{finito}
+\end{equation*}
+affinchè $\psi$ possa essere integrata deve "morire" all'infinito $\Rightarrow$ non c'è $\vec{J}$
+\begin{equation*}
+    \frac{\delta}{\delta t} \int d^3x \, {|\psi(t,\vec{x})|}^2 = 0
+\end{equation*}
+quindi
+\begin{equation*}
+    \int_{-\infty}^\infty d^3x \, {|\psi(t,\vec{x})|}^2 = \mbox{cost} = 1 \qquad \forall \, t
+\end{equation*}
+
+\chapter{Considerazione sugli operatori: parte I}
+
+\chapter{Proprietà soluzioni in 1 dimensione}
+
+\begin{equation*}
+    \hat{H}\phi = E\phi \iff -\frac{\hslash^2}{2m}\frac{d^2\phi}{dx^2} + V(x)\phi(x) = E \phi(x) \qquad \phi(x) \in L^2(\R)
+\end{equation*}
+con $\hat{H}$ operatore autoaggiunto o hermitiano
+\begin{equation*}
+    (g,f) = \int_{-\infty}^\infty dx \, g^*f
+\end{equation*}
+\begin{enumerate}
+    \item Spettro discreto
+    \begin{itemize}
+        \item $E_n$ sono reali
+        \item Autofunzioni corrispondenti ad autovalori di $E_n$ diversi sono ortogonali
+        \begin{equation*}
+            \phi_1,\phi_2 \; E_1 \neq E_2 \Rightarrow \int dx \, \phi_1\phi_2^* = 0
+        \end{equation*}
+        \item $\hat{H}\phi = E\phi$ ha una sola soluzione per ogni valore di E: gli stati dello spettro discreto non sono degeneri
+        \item $\phi_n$ dello spettro discreto sono reali
+        \item $\phi_n$ corrispondente ad autovalore (n+1)-esimo di energia si azzera per n punti finiti di x
+        \item Se V(x) è una funzione pari (V(x)=V(-x)) allora gli stati stazionari $\phi_n(x)$ sono o pari o dispari   
+    \end{itemize}
+    \item Spettro continuo: le autofunzioni $\not\in L^2(\R)$, ma possono essere utilizzate per costruire soluzioni fisiche 
+    \begin{itemize}
+        \item Data $\phi_E \rightarrow \hat{H}\phi_E = E\phi_E \Rightarrow \hat{H}$ è limitato
+        \item $\int_{E-\Delta E}^{E+ \Delta E} E c(E)\phi_E(x) \; \in L^2(\R) \Rightarrow$ c(E) hanno spettro finito 
+    \end{itemize}
+\end{enumerate}
+
+\chapter{Considerazioni sugli operatori: parte II}
+
+Considero i due operatori $\hat{x}$ e $\hat{p}$ e una cenerica osservabile classica $A(\vec{x},\vec{p})$. A livello quantistico abbiamo $A(\hat{x},\hat{p})$, ma abbiamo un problema: se a livello classico non c'è preferenza su ordine, in meccanica quantistica cosa succede se A contiene px e non xp?
+\begin{equation*}
+    \frac{xp + px}{2} \mapsto \frac{\hat{x}\hat{p} + \hat{p}\hat{x}}{2}
+\end{equation*}
+N.B.
+\begin{enumerate}
+    \item A noi interessano operatori Hermitiani: $\hat{x}\hat{p}$ non è hermitiano
+    \begin{equation*}
+        {(\hat{x}\hat{p})}^+ = \p^+\x^+ = \p\x \neq \x\p 
+    \end{equation*}
+    ma 
+    \begin{equation*}
+        {\left(\frac{\hat{x}\hat{p} + \hat{p}\hat{x}}{2}\right)}^+ = \frac{\hat{p}^+\hat{x}^+ + \hat{x}^+\hat{p}^+}{2} = \frac{\p\x + \x\p}{2} = \frac{\x\p + \p\x}{2}
+    \end{equation*}
+    \item $\hat{H} = \frac{\p^2}{2m} + V(\x)$
+\end{enumerate}
 
 \chapter{I postulati della meccanica quantistica}
 Ipotesi meccanica quantistica: ogni sistema descritto da funzione d'onda $\psi(t,\vec{x})$. \newline
