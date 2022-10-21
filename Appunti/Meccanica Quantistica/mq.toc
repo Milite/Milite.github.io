@@ -14,6 +14,8 @@
 \contentsline {section}{\numberline {6.2}Equazione di Schrodinger per un potenziale arbitrario V(x)}{13}{section.6.2}%
 \contentsline {chapter}{\numberline {7}Conservazione locale probabilità ed equazione di continuità}{15}{chapter.7}%
 \contentsline {chapter}{\numberline {8}Considerazione sugli operatori: parte I}{17}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Proprietà soluzioni in 1 dimensione}{18}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Considerazioni sugli operatori: parte II}{19}{chapter.10}%
-\contentsline {chapter}{\numberline {11}I postulati della meccanica quantistica}{20}{chapter.11}%
+\contentsline {chapter}{\numberline {9}Potenziali indipendenti dal tempo e stati stazionari}{18}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Proprietà soluzioni in 1 dimensione}{19}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Considerazioni sugli operatori: parte II}{20}{chapter.11}%
+\contentsline {chapter}{\numberline {12}I postulati della meccanica quantistica}{21}{chapter.12}%
+\contentsline {chapter}{\numberline {13}Richiami spazi di Hilbert}{24}{chapter.13}%

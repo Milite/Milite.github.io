@@ -464,6 +464,48 @@ quindi
 
 \chapter{Considerazione sugli operatori: parte I}
 
+\chapter{Potenziali indipendenti dal tempo e stati stazionari}
+
+\begin{equation*}
+    V(t,\vec{x}) \rightarrow V(\vec{x})
+\end{equation*}
+Potenziale che non dipende dal tempo non implica che $\psi(t,x)$ non dipenda dal tempo. Cerco soluzioni in una famiglia a variabili separabili
+\begin{equation*}
+    \psi(t,\vec{x}) = \phi(\vec{x})T(t)
+\end{equation*}
+\begin{equation*}
+    i\hslash \phi(\vec{x}) \frac{\delta T}{\delta t} = -\frac{\hslash^2}{2m} T(t) \nabla^2\phi(\vec{x}) + V(\vec{x})T(t)\phi(\vec{x})
+\end{equation*}
+Divido per $\phi(\vec{x})T(t)$
+\begin{equation*}
+    i\hslash \frac{1}{T} \frac{dT}{dt} = \frac{1}{\phi} \left[-\frac{\hslash^2}{2m}\nabla^2\phi + V\phi \right] = E(cost)
+\end{equation*}
+\begin{equation*}
+    i\hslash \frac{dT}{T} = E dt \rightarrow \mbox{integro } \int_{T_i}^{T_f} \; \int_{t_i}^{t_f}
+\end{equation*}
+\begin{equation*}
+    T = c e^{-\frac{iEt}{\hslash}} \qquad T(0) = c
+\end{equation*}
+E interpretabile come energia totale del sistema che è costante, a patto che il potenziale non dipenda dal tempo. Esistono stati particolari, che chiamiamo stati stazionari, che dipendono dal tempo con un puro fattore di fase
+\begin{equation*}
+    \psi(t,\vec{x}) = \phi(\vec{x}) e^{-\frac{iEt}{\hslash}}
+\end{equation*}
+allora $|\psi| = |\phi|$: non dipende dal tempo 
+
+\subsection*{Equazione di Schrodinger per gli stati stazionari}
+
+\begin{equation}
+    -\frac{\hslash^2}{2m} \nabla^2\phi(\vec{x}) + V(\vec{x})\phi(\vec{x}) = E\phi(\vec{x}) \qquad E = \frac{\hat{p}^2}{2m} + V(\vec{x})
+\end{equation}
+Operatore hamiltoniano
+\begin{equation*}
+    \hat{H} = \frac{\hat{p}^2}{2m} + V(\hat{x}) \underbrace{=}_{\mbox{rappr. coord}} -\frac{\hslash^2}{2m}\nabla^2 + V(\vec{x})
+\end{equation*}
+Allora l'equazione di Schrodinger per gli stati stazionari diventa
+\begin{equation*}
+    \hat{H}\phi = E\phi 
+\end{equation*}
+
 \chapter{Proprietà soluzioni in 1 dimensione}
 
 \begin{equation*}
@@ -601,6 +643,81 @@ Se "$a_j$" sono tutti e soli i valori di misura allora devono essere reali $\rig
     \end{equation*}
     $\hat{H}(t)$ osservabile associata all'energia totale del sistema $\rightarrow$ hamiltoniana
 \end{enumerate}
+
+\chapter{Richiami spazi di Hilbert}
+
+Uno spazio di Hilbert è uno spazio vettoriale, normato (norma segue da definizione prodotto scalare) e completo. Perchè usiamo uno spazio di Hilbert?
+\begin{enumerate}
+    \item Sovrapposizione di funzioni d'onda voglio che siano funzioni d'onda: spazio lineare
+    \begin{equation*}
+        \psi_1,\psi_2 \in H \Rightarrow \lambda_1\psi_1 + \lambda_2\psi_2 \in H \qquad \lambda_1,\lambda_2 \in \C 
+    \end{equation*}
+    \item Prodotto scalare è un numero complesso
+    \begin{equation*}
+        (\phi,\psi) = <\phi | \psi> = \int d^3x \, \phi^*(\vec{x})\psi(\vec{x})
+    \end{equation*}
+    \item $L^2(\R)$ funzioni a quadrato sommabile
+    \begin{equation*}
+        \int_{-\infty}^\infty d^3x \, {|\psi(\vec{x})|}^2 < +\infty
+    \end{equation*}
+\end{enumerate}
+
+\subsection*{Proprietà prodotto scalare}
+
+\begin{itemize}
+    \item $\phi | \psi > = {<\psi | \phi >}^*$
+    \item \'E lineare nel secondo argomento $\Rightarrow <\phi | \lambda_1\psi_1 + \lambda_2\psi_2> = \lambda_1 <\phi | \psi_1 > + \lambda_2 < \phi | \psi_2 >$
+    \item \'E antilineare nel secondo argomento $\Rightarrow <\lambda_1 \phi_1 + \lambda_2 \phi_2 | \psi> = \lambda_1^*<\phi_1 | \psi> + \lambda_2^* <\phi_2 |\psi> $
+\end{itemize}
+
+\subsection*{Norma}
+\'E un numero reale $\ge 0$ 
+\begin{equation*}
+    <\psi | \psi > = \int d^3x \, {|\psi(\vec{x})|}^2 = {||\psi||}^2 
+\end{equation*}
+$<\psi | \psi > = 0 \iff \psi(\vec{x})=0$
+
+\subsection*{Basi ortonormate}
+\begin{enumerate}
+    \item $|n> $ con n = 1,2,\dots tale che $<n|m> = \delta_{nm}$
+    \item Trasformate di Fourier, polinomi di Hermite $\Rightarrow$ basi improprie (continue)
+\end{enumerate}
+
+\subsection*{Spazio completo}
+
+\begin{equation*}
+    |\psi> = \sum_{n=1}^\infty \psi_n |n> \qquad \psi_n = <n | \psi>
+\end{equation*}
+\begin{equation*}
+    |\phi > = \sum_{n=1}^\infty \phi_n |n>
+\end{equation*}
+Allora 
+\begin{equation*}
+    <\psi| \phi> = \sum_{n,m} \psi_n^* \phi_n <n|m> = \sum_n \psi^*_n \phi_n
+\end{equation*}
+
+\subsection*{Notazione di Dirac}
+Serve qualcosa di più astratto per descrivere lo stato della particella; ad esempio $\psi(\vec{x}), \tilde{\phi(\vec{p})}$ portano stesse informazioni, solo che a volte le coordinate vengono indicate con le x, altre volte con le p $\Rightarrow |\psi>$ \newline
+Indico lo stato fisico di un sistema con un KET $|\psi>$; allo spazio dei ket associo un BRA $<\phi|$ spazio duale: spazio dei funzionali lineare nello spazio di Hilbert, dato $<\phi|$ prendo un elemento dello spazio H e ci associo un numero complesso. \newline
+Se ho ket 
+\begin{equation*}
+    |\lambda_1\psi_1 + \lambda_2\psi_2> = \lambda_1|\psi_1> + \lambda_2|\psi_2>
+\end{equation*}
+il suo duale vale 
+\begin{equation*}
+    <\lambda_1\psi_1 + \lambda_2\psi_2| = \lambda_1^*<\psi_1| + \lambda_2^*<\psi_2|
+\end{equation*} 
+Quindi lo spazio dei ket è lineare, mentre lo spazio dei bra è antilineare
+\begin{equation*}
+    <\psi|\phi> = \sum_n \psi_n^* \phi_n = (\psi_1^*\psi_2^*, \dots, \psi_n^*)
+    \left(\begin{array}[]{c}
+        \phi_1 \\
+        \phi_2 \\
+        \vdots \\
+        \phi_n
+    \end{array}\right)
+\end{equation*}
+Possiamo rappresentare $|\phi>$ con i suoi coefficienti su una data base e li organizziamo in un vettore colonna, mentre rappresentiamo $<\psi|$ in un vettore riga. Per passare da $|\psi>$ a $<\psi|$ devo fare il trasposto e il complesso coniugato
 
 
 \end{document}
