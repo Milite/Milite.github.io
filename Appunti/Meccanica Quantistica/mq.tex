@@ -719,5 +719,77 @@ Quindi lo spazio dei ket è lineare, mentre lo spazio dei bra è antilineare
 \end{equation*}
 Possiamo rappresentare $|\phi>$ con i suoi coefficienti su una data base e li organizziamo in un vettore colonna, mentre rappresentiamo $<\psi|$ in un vettore riga. Per passare da $|\psi>$ a $<\psi|$ devo fare il trasposto e il complesso coniugato
 
+\chapter{Osservabili compatibili e incompatibili}
+
+\subsection*{Notazione}
+
+Dati due operatori $\hat{A}$ e $\hat{B}$ che commutano, il ket viene identificato dali $a_i,b_i$
+\begin{align*}
+    \hat{A}|a_ib_j> = a_i |a_ib_j> \\
+    \hat{B}|a_ib_j> = b_j |a_ib_j>
+\end{align*}
+I $b'_j$ trovati dalla diagonalizzazione di $B_3$ sono diversi tra loro? Se alcuni autovalori sono uguali, allora conoscere il valore di $a_i$ e $b_j$ non è sufficiente a conoscere l'autovettore (ci sono k autovalori legati a $b_j$). Si cerca allora il terzo operatore $\hat{C}$ che commuta simultaneamente con $\hat{A}$ e $\hat{B}$
+\begin{equation*}
+    [\hat{A},\hat{B}] = [\hat{B}, \hat{C}] = [\hat{A}, \hat{C}] = 0
+\end{equation*}
+Etichettiamo allora l'autovettore con $|a_ib_jc_k>$ affinchè l'autostato sia univocamente definito. Una volta trovati tutti gli operatori necessari per fare ciò, si dice che si che di ha RISOLTO LA DEGENERAZIONE. Tutti gli operatori usati sono contemporaneamente diagonali sulla base usata. \newline
+Il compito fondamentale della meccanica quantistica è quindi di ricercare il set completo di osservabili che commutano per poter porre un label a ogni autostato in modo che esso sia univocamente determinato $\rightarrow$ complete set of commuting onservables. Il set si dice completo se aggiungendo un'altra osservabile che commuta con tutte quelle già esistenti questa osservabile è funzione di quelle già presenti nel set. \newline
+Per dare una descrizione completa di un sistema, ovvero a dare la massima informazione possibile, dobbia determinare il numero massimo di osservabili indipendenti e che commutano fra di loro. Questa è detta OSSERVAZIONE MASSIMA: dato uno stato $|a_ib_jc_kd_l \dots>$ misurare $\hat{A},\hat{B},\hat{C},\hat{D}$ darà con certezza i risultati $a_i,b_j,c_k,d_l$. Per fare la ricerca del set si osserva l'hamiltoniana e le simmetria del problema
+
+\chapter{Evoluzione temporale del valor medio di un'osservabile}
+
+Consideriamo un operatore $\hat{A}(\hat{x},\hat{p},t)$ e il generico stato $|\psi(t)>$. Il valore medio sarà
+\begin{equation*}
+    <\psi(t)|\hat{A}|\psi(t)> = \int d^3x \, \psi^*(x,t)\hat{A}\left(\hat{x},-i\hslash \frac{\delta}{\delta x}, t\right)\psi(x,t)
+\end{equation*}
+e sarà un numero t-dipendent. La dipendenza dal tempo veniva sia dall'operatore che dalla funzione d'onda. Per notazione scriviamo il valore medio come
+\begin{equation*}
+    <\hat{A}>(t)= <\psi(t)|\hat{A}|\psi(t)>
+\end{equation*}
+allora la derivata sarà
+\begin{equation*}
+    \frac{d}{dt} <\hat{A}>(t) = \left(\frac{d}{dt}<\psi(t)|\right) \hat{A}|\psi(t)> + <\psi(t)|\frac{\delta}{\delta t}\hat{A}|\psi(t)> + <\psi(t)|\hat{A}|\frac{d}{dt}\psi(t)>
+\end{equation*}
+L'ultimo pezzo è noto in quanto deve soddisfare che 
+\begin{equation*}
+    i\hslash \frac{d}{dx}|\psi> = \hat{H}|\psi>
+\end{equation*}
+da essa si ricava che 
+\begin{equation*}
+    -i\hslash \frac{d}{dt}<\psi| <\psi|\hat{H}
+\end{equation*}
+\begin{equation*}
+    \frac{d}{dt} <\hat{A}>(t) = \frac{1}{i\hslash}<\psi(t)| [\hat{A}(t)\hat{H(t)}-\hat{H}(t)\hat{A}(t)]|\psi(t)> + <\psi(t)|\frac{\delta}{\delta t}\hat{A}| \psi(t)>
+\end{equation*}
+Ottenendo
+\begin{equation}
+    \label{*}
+    \frac{d}{dt} <\hat{A}>(t) = \frac{1}{i\hslash} \underbrace{<[\hat{A},\hat{H}]>}_{\mbox{valor medio del commutatore}} + \underbrace{<\frac{\delta A}{\delta t}>}_{\mbox{valor medio della derivata}}
+\end{equation}
+
+\chapter{Limite classico e teorema di Ehrenfest}
+
+Consideriamo una particella senza spin in un potenziale stazionario $V(\vec{x})$. L'hamiltoniana sarà
+\begin{equation*}
+    \hat{H} = \frac{\hat{p}^2}{2m} + V(\vec{x})
+\end{equation*}
+Applichiamo \eqref{*} a $\hat{x},\hat{p}$
+\begin{equation*}
+    \frac{d}{dt}<\hat{x}> = \frac{1}{i\hslash}<[\hat{x},\hat{H}]> = \frac{1}{i\hslash} \left[\hat{x}, \frac{\hat{p}^2}{2m}\right] = \frac{1}{i\hslash 2m}<\hat{p}[\hat{x},\hat{p}]+[\hat{x},\hat{p}]\hat{p}> = \frac{1}{m} <\hat{p}> 
+\end{equation*}
+\begin{equation*}
+    \frac{d}{dt}<\hat{p}> = \frac{1}{i\hslash}<[\hat{p},\hat{H}]> = \frac{1}{i\hslash} <[\hat{p},V(\vec{x})]> = - <\vec{\nabla}V(\vec{\hat{x}})>
+\end{equation*}
+Teorema di Ehrenfest
+\begin{align*}
+    \frac{d}{dt}<\hat{x}> = \frac{1}{m} <\hat{p}> \\
+    \frac{d}{dt}<\hat{p}> = - <\vec{\nabla}V(\vec{\hat{x}})>
+\end{align*}
+Possiamo oa combinare le equazioni
+\begin{equation*}
+    m \frac{d^2}{dt^2}<\hat{x}> = - <\vec{\nabla}V(\vec{\hat{x}})>
+\end{equation*}
+Nel limite classico
+
 
 \end{document}

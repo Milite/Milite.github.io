@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1666358335 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/mq.tex" "mq.pdf" "mq" 1666358341
+["pdflatex"] 1666691279 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/mq.tex" "mq.pdf" "mq" 1666691289
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1654335452 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1648037088 28976 d56dca20927a79c4468ac39f2cb67e88 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1648037073 31952 aef68ca89a05b961636a6e8f295f9836 ""
@@ -125,11 +125,11 @@
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575574882 9715 b051d5b493d9fe5f4bc251462d039e5f ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1636713860 10214 00ce62e730d0cfe22b35e8f1c84949c7 ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/mq.tex" 1666358332 40799 54e23628663a31ede29bf823a0174f45 ""
-  "mq.aux" 1666358340 4698 87464df8450194d1a2b01f5c80d19c2a "pdflatex"
-  "mq.out" 1666358340 4272 9dd22cedcb1f41fb92c27a212a5678d8 "pdflatex"
-  "mq.tex" 1666358332 40799 54e23628663a31ede29bf823a0174f45 ""
-  "mq.toc" 1666358340 1803 b3c27cedea6d4ce7db42ea1ec9e76cb7 "pdflatex"
+  "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/mq.tex" 1666691272 45306 e7957e2d4306d64e71cc0d0d52a91fa7 ""
+  "mq.aux" 1666691288 5457 2139fcce8b091b8a7f8271016fa99b71 "pdflatex"
+  "mq.out" 1666691288 5104 f5c4448fd35fb34c355b5102703a9a40 "pdflatex"
+  "mq.tex" 1666691272 45306 e7957e2d4306d64e71cc0d0d52a91fa7 ""
+  "mq.toc" 1666691288 2111 50864a0434b5857242ae77aedf44c0a7 "pdflatex"
   (generated)
   "mq.aux"
   "mq.log"

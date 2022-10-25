@@ -19,3 +19,6 @@
 \contentsline {chapter}{\numberline {11}Considerazioni sugli operatori: parte II}{20}{chapter.11}%
 \contentsline {chapter}{\numberline {12}I postulati della meccanica quantistica}{21}{chapter.12}%
 \contentsline {chapter}{\numberline {13}Richiami spazi di Hilbert}{24}{chapter.13}%
+\contentsline {chapter}{\numberline {14}Osservabili compatibili e incompatibili}{26}{chapter.14}%
+\contentsline {chapter}{\numberline {15}Evoluzione temporale del valor medio di un'osservabile}{27}{chapter.15}%
+\contentsline {chapter}{\numberline {16}Limite classico e teorema di Ehrenfest}{28}{chapter.16}%
