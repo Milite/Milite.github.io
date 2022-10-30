@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  25 OCT 2022 11:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  29 OCT 2022 15:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/mq.tex"
-(c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/mq.tex
+**"c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/formule.tex"
+(c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/formule.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
@@ -322,8 +322,8 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 25.
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count296
 \l__pdf_internal_box=\box56
-) (mq.aux)
-\openout1 = `mq.aux'.
+) (formule.aux)
+\openout1 = `formule.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
@@ -418,9 +418,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 44.
 LaTeX Info: Redefining \pageref on input line 44.
 LaTeX Info: Redefining \nameref on input line 44.
- (mq.out) (mq.out)
+ (formule.out) (formule.out)
 \@outlinefile=\write3
-\openout3 = `mq.out'.
+\openout3 = `formule.out'.
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
  (C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
@@ -431,9 +431,9 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/m2001/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (mq.toc)
+{C:/Users/m2001/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (formule.toc)
 \tf@toc=\write4
-\openout4 = `mq.toc'.
+\openout4 = `formule.toc'.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
@@ -446,97 +446,22 @@ l.50 	\newpage
 Capitolo 1.
 [2
 
-] [3]
-Capitolo 2.
-[4
-
-] [5]
-Capitolo 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
-
- []
-
-[6
-
-] [7]
-Capitolo 4.
-
-Overfull \hbox (16.61589pt too wide) in paragraph at lines 223--223
-[][]\T1/cmr/bx/n/14.4 Esperimento dop-pia fen-di-tu-ra con elet-tro-ne sin-go-lo 1974: Merli-Missiroli-
- []
-
-[8
-
-] [9]
-Capitolo 5.
-
-Underfull \hbox (badness 10000) in paragraph at lines 245--248
-
- []
-
-[10
-
-]
-Capitolo 6.
-[11
-
-] [12] [13] [14]
-Capitolo 7.
-[15
-
-] [16]
-Capitolo 8.
-[17
-
-]
-Capitolo 9.
-[18
-
-]
-Capitolo 10.
-[19
-
-]
-Capitolo 11.
-[20
-
-]
-Capitolo 12.
-[21
-
-] [22] [23]
-Capitolo 13.
-[24
-
-] [25]
-Capitolo 14.
-[26
-
-]
-Capitolo 15.
-[27
-
-]
-Capitolo 16.
-[28
-
-] (mq.aux)
-Package rerunfilecheck Info: File `mq.out' has not changed.
-(rerunfilecheck)             Checksum: F5C4448FD35FB34C355B5102703A9A40;5104.
+] [3] [4] (formule.aux)
+Package rerunfilecheck Info: File `formule.out' has not changed.
+(rerunfilecheck)             Checksum: B16542794C9C3C6796DE05F2FF185246;3492.
  ) 
 Here is how much of TeX's memory you used:
- 12585 strings out of 478582
- 197856 string characters out of 2844344
- 518844 words of memory out of 3000000
- 30453 multiletter control sequences out of 15000+600000
- 485822 words of font info for 66 fonts, out of 8000000 for 9000
+ 12465 strings out of 478582
+ 197115 string characters out of 2844344
+ 514470 words of memory out of 3000000
+ 30439 multiletter control sequences out of 15000+600000
+ 484292 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,12n,76p,628b,465s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on mq.pdf (29 pages, 350026 bytes).
+ 68i,8n,76p,478b,413s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on formule.pdf (5 pages, 191905 bytes).
 PDF statistics:
- 734 PDF objects out of 1000 (max. 8388607)
- 132 named destinations out of 1000 (max. 500000)
- 177 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 397 PDF objects out of 1000 (max. 8388607)
+ 28 named destinations out of 1000 (max. 500000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
