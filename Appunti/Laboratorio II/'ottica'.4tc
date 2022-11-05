@@ -1,0 +1,19 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Indice}}{2}\relax 
+\doTocEntry\tocchapter{1}{\csname a:TocLink\endcsname{1}{x1-20001}{QQ2-1-2}{Ottica geometrica}}{4}\relax 
+\doTocEntry\tocsection{1.1}{\csname a:TocLink\endcsname{1}{x1-30001.1}{QQ2-1-3}{Leggi dell'ottica geometrica}}{4}\relax 
+\doTocEntry\tocsection{1.2}{\csname a:TocLink\endcsname{1}{x1-40001.2}{QQ2-1-4}{Riflessione e rifrazione}}{4}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-50001.2}{QQ2-1-5}{Legge della riflessione}}{4}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-60001.2}{QQ2-1-6}{Legge della riflessione}}{4}\relax 
+\doTocEntry\tocsection{1.3}{\csname a:TocLink\endcsname{1}{x1-70001.3}{QQ2-1-7}{Riflessione totale}}{5}\relax 
+\doTocEntry\tocsection{1.4}{\csname a:TocLink\endcsname{1}{x1-80001.4}{QQ2-1-8}{Riflessione, trasmissione e assorbimento}}{5}\relax 
+\doTocEntry\tocsection{1.5}{\csname a:TocLink\endcsname{1}{x1-90001.5}{QQ2-1-9}{Principio di Fermat}}{5}\relax 
+\doTocEntry\tocchapter{2}{\csname a:TocLink\endcsname{1}{x1-100002}{QQ2-1-10}{Ottica ondulatoria}}{6}\relax 
+\doTocEntry\tocsection{2.1}{\csname a:TocLink\endcsname{1}{x1-110002.1}{QQ2-1-11}{Onde}}{6}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-120002.1}{QQ2-1-12}{Onda piana}}{6}\relax 
+\doTocEntry\tocsection{2.2}{\csname a:TocLink\endcsname{1}{x1-130002.2}{QQ2-1-13}{Polarizzazione}}{6}\relax 
+\doTocEntry\tocsection{2.3}{\csname a:TocLink\endcsname{1}{x1-140002.3}{QQ2-1-14}{Intensità}}{6}\relax 
+\doTocEntry\tocsection{2.4}{\csname a:TocLink\endcsname{1}{x1-150002.4}{QQ2-1-15}{Interferenza}}{7}\relax 
+\doTocEntry\tocsection{2.5}{\csname a:TocLink\endcsname{1}{x1-160002.5}{QQ2-1-16}{Monocromaticità e coerenza}}{7}\relax 
+\doTocEntry\tocsection{2.6}{\csname a:TocLink\endcsname{1}{x1-170002.6}{QQ2-1-17}{Laser}}{8}\relax 
+\doTocEntry\tocsection{2.7}{\csname a:TocLink\endcsname{1}{x1-180002.7}{QQ2-1-18}{Coerenza}}{8}\relax 

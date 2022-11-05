@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Appunti fisica III</title>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+  </head>
+  <body>
+    <font size="4">
+
+    <h1>Fisica III</h1>
+
+    <hr>
+
+    <h2>Corpuscolarità materia</h2>
+
+    <p>
+      Considero sistema isotropo, a volume fissato, in equilibrio termico
+      <ul>
+        <li>N elementi che interagiscono in maniera elastica</li>
+        <li>Trascuriamo interazioni inter-molecolari</li>
+        <li>Non ci sono forze esterne</li>
+      </ul>
+      Si ottiene che la pressione totale del gas vale
+      \[P_T = \frac{Nm}{V} &lt v_x^2 &gt \]
+      supponendo l'isotropia dello spazio, allora la relazione diventa
+      \[P_T = \frac{1}{3}\frac{N}{V}m &lt v^2 &gt \]
+    </p>
+    <p>
+      Considerazioni:
+      <ul>
+        <li>\(&lt E_k &gt = \frac{3}{2}K_BT \)</li>
+        <li>\(C_v = \frac{3}{2}R \) </li>
+        <li>\(\frac{1}{2}m &lt v^2_x &gt = \frac{1}{2}K_BT \) </li>
+        <li>Teorema di equipartizione dei solidi: \(C_v = 3R \). Sperimentalmente si trova però che il calore specifico dei solidi dipende dalla temperatura, non è costante</li>
+      </ul>
+    </p>
+    <h4>Teorema di equipartizione</h4>
+    <p>
+     Dato un sistema in equilibrio termico, il calore si ripartisce equamente tra i contributi quadratici indipendenti dell'energia con un fattore pari \(\frac{1}{2}K_BT \)
+    </p>
+
+    <h3>Distribuzione di velocità delle particelle</h3>
+
+    <p>
+      Ipotesi:
+      <ul>
+        <li>Lungo le 3 coordinate abbiamo la stessa distribuzione </li>
+        <li>Le 3 distribuzioni sono indipendenti </li>
+        <li>Teorema di equipartizione  </li>
+      </ul>
+      Si ottiene la distribuzione di Maxwell-Boltzmann
+      \[F(v^2_x,v^2_y,v^2_z)dv_xdv_ydv_z = {\left(\frac{m}{2\pi K_BT}\right)}^{\frac{3}{2}} e^{-\frac{m}{2B_BT}(v^2)}dv_xdv_ydv_z \]
+      In coordinate sferiche
+      \[F(v)dv = 4\pi {\left(\frac{m}{2\pi K_BT}\right)}^{\frac{3}{2}} v^2 e^{-\frac{m}{2B_BT}(v^2)}dv \]
+      Valori velocità più importanti della distribuzione
+      \[v_{mp} = \sqrt{2}\sqrt{\frac{K_BT}{m}} \qquad &lt v &gt = \sqrt{\frac{8}{\pi}}\sqrt{\frac{K_BT}{m}} \qquad v_{RMS} = \sqrt{3}\sqrt{\frac{K_BT}{m}} \]
+    </p>
+
+    <h4>Esperimento distribuzione velocità</h4>
+
+    <p>
+      Questo esperimento consiste in un piccolo forno per scaldare un gas; da un piccolo foro il gas può liberamente uscire. Prima di raggiungere il rilevatore, le particelle di gas devo attraversare un selettore di velocità composto da due dischi ruotanti, a cui è stata fatta una fessura.
+    </p>
+    <p>
+      Il risultato che si ottiene è la distribuzione di Maxwell-Boltzmann, a cui però è presente un bias, dovuto al fatto che le particelle che hanno maggiore probabilità di uscire dal forno sono quelle con una velocità maggiore
+      \[v_{RMS} = \sqrt{4}\sqrt{\frac{K_BT}{m}} \]
+    </p>
+
+    <h3>Effetto Doppler termico</h3>
+
+    <p>
+      \[\frac{\Delta\nu}{\nu_0} = \frac{v}{c} \]
+      &Egrave possibile stabile la distribuzione delle frequenze 
+      \[n(\nu)d\nu = N {\left(\frac{m}{2\pi K_BT}\right)}^{\frac{1}{2}} e^{-\frac{m}{2B_BT}\frac{c^2}{\nu^2_0}{(\nu-\nu_0)}^2}\frac{c}{\nu_0}d\nu \]
+      si può quindi scrive la seguente relazione
+      \[\frac{\Delta \nu_D}{\nu_0}= 0.72\times 10^{-6}\sqrt{\frac{T}{n}} \]
+    </p>
+
+    <h3>Coefficiente di trasporto quantità di moto: viscosità</h3>
+
+    <p>
+      \[p_x = -\frac{1}{3}n &lt v &gt ml \frac{\delta v_x}{\delta z} \qquad \eta = \frac{M_{mol}}{3\sqrt{2}\sigma N_A}\sqrt{\frac{8RT}{\pi M_{mol}}} \]
+    </p>
+
+    <h3>Coefficiente di trasporto energia cinetica: conducibilità termica</h3>
+    <p>
+      \[Q = -\frac{1}{3}n &lt v &gt l \frac{C_v}{N_A}\frac{\delta T}{\delta z} \]
+    </p>
+
+    <hr>
+
+    <h2>Corpuscolarità della carica</h2>
+
+    <p>
+      \[\frac{q}{m} = \frac{y_T E}{B^2L\left(\frac{L}{2}+D\right)} \]
+    </p>
+
+    <hr>
+
+    <h2>Corpo nero</h2>
+
+    <p>
+      Tutti i corpi emettono radiazione termica verso quello che lo circondano e assorbono da esso radiazione. Esiste una categoria di corpi che emette radiazione con caratteristiche universali: corpo nero
+    </p>
+    <p>
+      Definizione corpo nero: corpo che assorbe tutta la radiazione termica incidente
+    </p>
+    <p>
+      Tutti i corpi neri ad una stessa temeperatura hanno lo stesso spettro
+    </p>
+    <p>
+      Un corpo in generale può assorbire, riflettere e trasmettere luce, ma
+      \[a+r+t=1\]
+    </p>
+
+    <h3>Leggi fondamentali di Kirkchoff</h3>
+
+    <p>
+      Dati diversi corpi opachi (t=0) in equilibrio termico con l'ambiente, sottoposti ad una radiazione di intensità I, ogni corpo assorbirà parte della radiazione e parte la rifletterà
+      \[a_1+r_1 = 1 \; ; a_2+r_2= 1 \; ; \dots \]
+      L'energia assorbita in ingresso
+      \[a_1IA_1\Delta t\]
+      sarà uguale all'energia emessa in uscita
+      \[R_1A_1\Delta t\]
+      Si ottiene quindi che il rapporto fra la radianza di una superficie e la sua assorbanza è la stessa per ogni superficie ad una certa temeperatura, ed è uguale alla radianza di un corpo nero alla stessa temeperatura
+      \[\frac{R_1}{a_1} = \frac{R_2}{a_2}= \dots = R_{BB} = \text{cost}  \]
+      La radiazione di corpo nero è isotropa
+    </p>
+
+    <h3>Legge di Stefan-Boltzmann</h3>
+
+    <p>
+      Stefan trovò una legge empirica che legava l'energia totale irragiata da un corpo a una temperatura T (per unità di area e di tempo) alla stessa temperatura
+      \[R_{BB} = \sigma T^4\]
+      se un corpo è opaco la relazione diventa
+      \[R = a\sigma T^4\]
+    </p>
+    <p>
+      Boltzmann derivò la legge di Stefan da cosiderazioni termodinamiche
+    </p>
+    <p>
+      La pressione di radiazione nelle pareti di una cavità isotropa è un terzo della densità di energia
+    </p>
+
+    <h3>Legge di Wien</h3>
+
+    <p>
+      Guardando gli spettri di corpo nero a diverse temperature, Wien trovò una legge fenomenologica che lega la lunghezza d'onda del massimo dello spettro e la temperatura del corpo
+      \[\lambda_{max}T = \text{cost}=2.898 \times 10^{-3}mK\]
+      Se si guardano diversi spettri a diverse temperature si riesce a riportarli tutti su una sola curva e si sceglie di graficarli in questo modo
+      \[
+      \begin{cases}
+      R(\lambda) = \lambda^{-5}f(\lambda T) \\
+      R(\lambda) = T^5F(\lambda T)
+      \end{cases}
+      \]
+    </p>
+
+    <h3>Rayleigh-Jeans</h3>
+
+    <p>
+      Rayleigh-Jeans ipotizzarono una forma che potesse descrivere la radianza di corpo nero
+      \[U(\lambda) = \frac{8\pi}{\lambda^4}d\lambda kT  \]
+      dove kT rappresenteva l'energia media. Quello che sbagliavano era considerare continua l'energia media, che invece risulta essere quantizzata 
+      \[\frac{\sum_m m\mu e^{-\frac{m\mu}{K_BT}}}{\sum_{m=0}^\infty e^{-\frac{m\mu}{K_BT}} } \]
+    </p>
+
+    <h3>Planck</h3>
+
+    Planck arrivò a scrivere una formula che descrivesse la radiazione di corpo nero
+    \[U(\lambda) d\lambda = \frac{c_1\lambda^{-5}}{e^{\frac{c_2}{K_B T}}-1} \]
+    sviluppando in serie l'energia media trovata in precedenza, è possibile determinare il valore delle costanti
+    \[U(\lambda) d\lambda = \frac{8\pi}{\lambda^4}\frac{\frac{hc}{\lambda}}{e^{\frac{h\nu}{K_B T}}-1}\]
+    \[U(\nu) d\nu = \frac{8\pi}{c^3}\nu^2d\nu \frac{h\nu}{e^{\frac{h\nu}{K_B T}}-1}\]
+
+    <hr>
+
+    <h2>Calore specifico dei solidi</h2>
+
+    <h3>Teoria Einstein</h3>
+
+    <p>
+      <ul>
+        <li>Corpo composto da oscillatori indipendenti</li>
+        <li>Le 3 dimensioni sono indipendenti</li>
+        <li>Tutti gli oscillatori hanno stessa energia \[\nu = \frac{1}{2\pi}\sqrt{\frac{b}{m}}\]</li>
+      </ul>
+      Ad ogni oscillatore Einstein associa un'energia media in equilibrio termico
+      \[\bar{E} = \frac{h\nu}{e^{\frac{h\nu}{K_BT}}-1}\]
+      L'enegia sarà
+      \[U = 3N\bar{E}\]
+      Calcolando il calore specifico dei solidi
+      \[c_v = \frac{1}{n_{moli}}\left(\frac{\delta U}{\delta T}\right)\]
+      si ottiene un risultato diverso da quello sperimentale, perchè ci si attende che il calore specifico dei soli tenda a 0 come \(T^3\), ma qui si ottiene un valore ben diverso
+    </p>
+
+    <h3>Modello di Debye</h3>
+
+    <p>
+      <ul>
+        <li>Le vibrazione termiche come onde sonore</li>
+        <li>Il solido viene considerato come un continuo elastico</li>
+        <li>Esistono meodi di vibrazione</li>
+      </ul>
+      Se gli atomi sono vincolati ai vertici di un reticolo cristallino mediante un potenziale di interazione, non possono vibrare indipendentemente \(\rightarrow\) modi collettivi che si propagano come onde sonore nel materiale
+    </p>
+    <p>
+      Calcolo il numero di modi per unità di frequenza 
+      \[G(\nu)d\nu = \frac{4\pi Vol}{v^3}\nu^2d\nu\]
+      dato che esistono due modi trasversali e un modo longitudinale
+      \[G(\nu)d\nu = 4\pi Vol\nu^2\left[\frac{1}{v_L^3}+ \frac{2}{v^3_T}\right]d\nu\]
+      Esiste un numero massimo di modi, quindi
+      \[\int G(\nu)d\nu = 3N\]
+      Il modello così ipotizzato descrive bene i dati sperimentali, perchè per temperature alte \(c_v \sim 3R\), mentre per temperature basse \(c_v \to 0 \sim T^3\)
+    </p>
+
+    <hr>
+
+    <h2>Effetto fotoelettrico</h2>
+
+    <p>
+      Uno dei due esperimenti (insieme all'effetto Compton) che mostra la natura corpuscolare della radiazione elettromagnetica
+    </p>
+    <p>
+      Consiste nella capacità della radiazione elettromagnetica di far emettere elettroni a un metallo
+    </p>
+    <p>
+      <ul>
+        <li>Se \(V,\nu,E = cost\) allora la fotocorrente \(I_{fot}\) in funzione della corrente I è lineare</li>
+        <li>Esiste potenziale di stop \(V_s\) (misura dell'energia cinetica massima degli elettroni emessi) \[eV_s=K_{max}\]
+        Il potenziale di stop e di conseguenza l'energia cinetica massima non dipende dalla corrente I</li>
+        <li>Per ogni materiale esiste una frequenza \(\nu_0\) tale che 
+        \[\nu<\nu_0 \rightarrow T_{fot}=0\] </li>
+        <li>Esiste potenziale di estrazione </li>
+      </ul>
+    </p>
+
+    <p>
+      Einstein ipotizzò che l'energia delle onde luminose non fosse distribuita uniformemente su un fronte d'onda classico, ma che fosse concentrata in regioni discrte: quanti di energia ognuno con energia \(h\nu \rightarrow\) fotoni
+      \[K_{max} = h\nu - w_0\]
+    </p>
+
+    <p>
+      A parità di lunghezza d'onda, l'intensità della radiazione elettromagnetica dà il numero di fotoni per secondo e unità di area: quindi diminuendo o aumentando l'intensità di una radiazione sto diminuendo o aumentando il numero di fotoni emessi, non la loro energia
+    </p>
+
+    <h3>Fotomoltiplicatore</h3>
+
+    <p>
+      Rivelatore di fotoni il cui principio base d'operazione è l'effetto fotoelettrico: tubo di vetro vuoto, finestra di quanrzo in entrata \(\rightarrow\) fotocatodo
+    </p>
+
+    <hr>
+
+    <h2>Modelli atomici</h2>
+
+    <h3>Thomson</h3>
+
+    <p>
+      Ipotizzò che l'atomo fosse elettronicamente neutro: il volume atomico è riempito da una componente massiva positiva, mentre gli elettroni occupano posizioni isolate entro il volume atomico, e sono trattenuti da una forza coulombiana alle lore posizioni di equilibrio attorno alle quali possono oscillare  
+    </p>
+    <p>
+      &Egrave possibile calcolare la frequenza di vibrazione per atomo di idrogeno
+      \[\nu = \frac{1}{2\pi} \sqrt{\frac{k}{m}} \]
+    </p>
+
+    <h4>Esperimento Rutherford</h4>
+    <p>
+      Rutherford ideò degli esperimenti per studiare il comportamento delle particelle &alpha; con la materia. Rutherford utilizzò sottili lastre d'oro
+    </p>
+    <p>
+      Risultati:
+      <ul>
+        <li>\(\sqrt{&lt \theta^2 &gt}=1 \) </li>
+        <li>\(\frac{1}{8000} \rightarrow \theta &gt 90°\) </li>
+        <li>\(P(\theta \simeq 180°) \neq 0\) </li>
+      </ul>
+    </p>
+    <p>
+      Lo scattering multiplo è un fenomeno governato dallo stesso tipo di leggi che valgon per il moto browniano, cioè quando si hanno eventi casuali scorrelati tra loro. Quindi l'angolo di deviazione quadratico medio dopo N eventi di collisione sarà proporzionale alla radice quadratica del numero di eventi moltiplicato per l'angolo di deviazione quadratico medio del singolo evento
+      \[\sqrt{&lt \theta^2 &gt } = \sqrt{N} \; \sqrt{&lt \bar{\theta}^2_0 &gt} \]
+      Ma se fosse questo fenomeno a dominare, allora il numero di particelle diffuse ad un certo angolo dipenderebbe dalla radice quadrata dello spessore della lastra, mentre si è trovato sperimentalmente che è proporzionale allo spessore della lastra e non al suo spessore
+    </p>
+
+    <h3>Modello atomico Rutherford</h3>
+    <p>
+      Rutherford ipotizzò che la carica positiva fosse contenuta in una regione (nucleo) molto inferiore rispetto alla regione atomica: allora l'atomo è essenzialmente vuoto
+    </p>
+
+    <h4>Modello dello scattering coulombiano (Rutherford</h4>
+
+    <p>
+      Lo scopo del modello è spiegare la distribuzione angolare delle particelle scatterate dalla lastrina d'oro
+    </p>
+    <p>
+      Ipotesi:
+      <ul>
+        <li>
+          Forza tra particella &alpha; e nucleo è di tipo coulombiano
+        </li>
+        <li>
+          Massa del nucleo infinita 
+        </li>
+        <li>
+          Nucleo e particelle posso essere considerate essenzialmente uniformi rispetto all'interazione coulombiana
+        </li>
+        <li>
+          Trattazione non relativistica
+        </li>
+      </ul>
+    </p>
+    <p>
+      La particella &alpha; arriva su un asintoto "b" chiamato parametro di impatto: cerco relazione tra &theta; e b <br>
+      Tramite l'analisi della variazione dei momenti, si può ottenere la relazione cercata da Rutherford
+      \begin{equation}
+        b = \frac{1}{2}\frac{zZe^22}{4\pi \epsilon_0m\alpha}\frac{1}{v^2_\alpha}cotg \left(\frac{\theta}{2}\right) = \frac{D}{2}cotg \left(\frac{\theta}{2}\right)
+      \end{equation}
+    </p>
+    <p>
+      Per angoli di scattering piccoli, passo molto lontano dal nucleo, allora "b" è grande; viceversa per angolo di scattering grandi
+    </p>
+    <p>
+      Posso quindi costruire una distribuzione angolare della particelle diffuse
+      \begin{equation}
+        \frac{dN}{d\Omega} = nI_0 \frac{D^2}{16}\frac{1}{\sin^4\frac{\theta}{2}}
+      \end{equation}
+    </p>
+
+    <hr>
+
+    <h2>Raggi-x</h2>
+
+    <p>I raggi-x furono scoperti da Rontgen studiando scariche elettriche in gas rarefatti. I raggi catodici dopo aver colpito il vetro suscitano fluorescenza su schermi anche a 2 metri </p>
+
+    <p>Osservazioni di Rontgen: <br>
+      <ul>
+        <li>Tutte le sostanze sono più o meno trasparenti ai raggi-x (alluminio li indebolisce; il vetro al piombo è abbastanza opaco)</li>
+        <li>Varie sostanze colpite dai raggi-x diventano fluorescenti</li>
+        <li>Le lastre fotografiche sono sensibili ai raggi-x</li>
+        <li>Non possono essere rifratti o riflessi</li>
+        <li>Raggi-x scaricano campi magnetici</li>
+        <li>Si generano quando i raggi catodici di un tubo a scarica colpiscono un corpo solido - un elemento più è pesante più è efficiente</li>
+      </ul>
+    </p>
+
+    <p>Un tubo a raggi-x più ottimizzato è il tubo di Coolidge: la sorgente di elettroni catodici è un elemento riscaldato, senza gas residuo nel tubo. Il bersaglio è un metallo con temperatura di fusione e Z alti.</p>
+
+    <p>Rontgen non capì la vera natura dei raggi-x: il primo esperimento di diffrazine dei raggi-x è avvenuto nel 1899 da Haga e Wind. Usando un reticolo si ottenne un debole allargamento del fascio \(10^{10}\) (fenditure da qualche \(\mu m\), leggero allargamento della lastra fotografica) </p>
+
+    <p>Nel 1912 Lane, Friedrich e Kripping sfruttano un crisallo come reticolo naturae per determinare \(\lambda\) dei raggi-x. Ogni atomo diffonde radiazione e le onde diffuse da ogni atomo diverso si ricombinano con ogni fase e si distruggono per interferenza. <br>
+    Lane ipotizzò che per certe lunghezze d'nda e certe dimensioni si ricombinassere e producessreo un fascio rifratto <br>
+    Quindi 
+    <ul>
+      <li>esiste una combinazione distruttiva (criterio sperimentale per il moto ondoso). </li>
+      <li>I raggi-x hanno \(\lambda\) molto corte</li>
+      <li>cristalli hanno atomi in struttura regolare </li>
+    </ul> 
+    Lane: geometria in trasmissione
+    </p>
+
+    <p>
+      Diffrazione di Bragg \(\rightarrow\) recupera idea di Lane, ma usa il cristallo in geometria di diffusione: <br>
+      In generale \(\theta\) angolo di incedenza, mentre \(\alpha\) angolo di diffusione. Condizione per interferenza costruttiva
+      $$\text{differenza di cammino} = N \lambda $$
+      $$\bar{ae}-\bar{cb} = m\lambda \Rightarrow d'cos\alpha - d'cos\theta = m\lambda \qquad (*)$$
+      ma il cristallo ha anche struttura 3D, per cui ci deve essere interferenza costruttiva anche con i piani sottostanti
+      $$\bar{ab}-\bar{bc} = n\lambda \Rightarrow dsin\theta + dcos\alpha = n\lambda \qquad (**)$$
+      le condizioni (*) e (**) sono soddisfatte contemporaneamente se \(\alpha = 0\) <br>
+      Legge di Bragg
+      \[2 dsin\theta = n\lambda\]
+      noto il passo del reticolo d posso determinare la lunghezza d'onda
+    </p>
+
+    <p>
+      Spettro continuo: classicamente una carica in moto accelerato irraggia. Gli elettroni che vengono bruscamente bloccati nel bersaglio emettono radiazione a seconda di quanta energia cedono nell'urto (vari urti o un solo urto) <br>
+      Al massimo un elettrone proiettile può cedere tutta la sua energia in un solo urto con un bersaglio <br>
+      Effetto fotoelettrico inverso
+      \[K = eV = h\nu_{max}= \frac{h}{c\lambda_{min}} \Rightarrow \lambda_{min} = \frac{hc}{eV} \]
+      L'esistenza di una lunghezza d'onda minima non è classico: non c'è motivo per cui onde con lunghezze d'onda minori della lunghzza d'onda minima non debbano emergere dal bersaglio <br>
+      Un elettrone con energia K viene decelerato da un nucleo pesante e trasferisce momento al nucleo e energia \(h\nu\). L'energia acquistata dal nucleo è trascurabile 
+      \[K - K' = h\nu = \frac{hc}{\lambda}\]
+      se ho moltissimi incontri \(\lambda \to \infty\). Se K'=0 allora 
+      \[K = \frac{hc}{\lambda_{min}} \]
+    </p>
+    <p>
+      Diffrazione dei raggi-x da un cristallo descritto in termini di interferenza delle onde riflesse dai piani paralleli del cristallo. <br>
+      Le onde incedenti sono diffuse da tutti gli atomi del cristallo, ogni atomo irraggia in ogni direzione. <br>
+      Il piano cristallino seleziona certe direzione delle ondi diffuse tali che l'angolo di incidenza sia uguale all'angolo di diffusione
+    </p>
+
+    <h3>Effetto Compton</h3>
+
+    <p>
+      Compton studiò la diffusione dei raggi-x da un cristallo di grafite a diversi angoli di diffusione. Usa lo spettrometro di Bragg per determinare la lunghezza d'onda della radiazione diffusa: <br>
+      Per ogni angolo diverso da 0, si vedevano 2 picchi; uno a \(\lambda_0 = \lambda_{text{incidente}}\) l'altro a \(\lambda'>\lambda_0\) <br>
+      Spiegazione classica non aiuta perchè l'elettrone messo in oscillaizione dall'onda incidente irraggia alla stessa lunghezza d'onda
+    </p>
+    <p>
+      Interpretazione: effetto corpuscolare della radiazione elettromagnetica \(\rightarrow\) i fotoni urtano un elettrone della grafite e nell'urto cedono parte dell'energia: l'energia finale del fotone diffuso < energia del fotone incidente 
+      \[\lambda'> \lambda_0\]
+      Ipotizzo il fotone come una particella dotata di energia \(h\nu\) ma anche di quantità di moto \(E = pc\)
+      \[p = \frac{E}{c} = \frac{h\nu}{c} = \frac{h}{\lambda} \]
+      Scrivo le equazioni di conservazione dell'energia per un urto elastico fra fotone ed elettrone, considerando l'elettrone  a riposo e libero
+      \[
+        \begin{cases}
+          p_0 = p_1cos\theta + p_ecos\varphi \\
+          0 = p_1sin\theta - p_e sin\varphi
+        \end{cases}
+      \]
+      Ottengo 
+      \[p_e^2 = p_0^2 + p_1^2 - 2p_0p_1cos\theta \qquad (a)\]
+      \[k_e = c(p_0-p_1) \qquad (b)\]
+      \[p_e^2 = \frac{k_e^2}{c^2} + 2m_0k_e \qquad (c)\]
+      Si ottiene quindi la formula dell'effetto Compton
+      \[\lambda_1 - \lambda_0 =\frac{h}{m_0c}(1-cos\theta) \]
+    </p>
+    <p>
+      Perchè c'è secondo picco nello scattering Compton? All'inizio ho considerato l'elettrone libero, ma l'elettrone non è mai veramente libero, è debolmente legato all'atomo rispetto all'energia del raggio-x:
+      <ul>
+        <li>\(E_\gamma >> E_{legame}\) allora elettrone viene sbalzato via e rincula \(\lambda = \lambda'\)</li>
+        <li>\(E_\gamma \sim E_{legame}\) elettrone vincolato ad atomo e il fotone non cede energia \(\lambda = \lambda_0\)</li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <h2>De Broglie</h2>
+
+    <p>
+      De broglie nel 1923 ipotizzò un parallelismo fra la doppia natura ondulatoria e corpuscolare delle onde eletromagnetiche e la materia
+    </p>
+    <p>
+      Per ogni particella posso associare una lunghezza d'onda 
+      \[\lambda_{DB} = \frac{h}{p}\]
+    </p>
+    <p>
+      Secondo De Broglie se si associa all'elettrone una lunghezza d'onda, le orbite stabili sono quelle per cui le onde sono stazionarie: un numero inetro di \(\lambda\) sta nella circonferenza
+      \[n\lambda = 2\pi r\]
+      ottenendo che 
+      \[L = n\hslash\]
+    </p>
+
+    <h3>Esperimento di Davisson e Germer (1927)</h3>
+
+    <p>
+      Dimostrazione sperimentale del carattere ondulatorio degli elettroni e determinazione della loro lunghezza d'onda come ipotizzato da De Broglie
+    </p>
+    <p>
+      DG stavano studiando la superficie di un composto cristallino di Nichel facendo diffondere elasticamente elettroni poco energetici. Vedevano che se V = 100 V, l'intensità diffusa diminuiva aumentando l'angolo di scattering. Riportandosi alla geometria di Bragg, scoprirono che la lunghezza d'onda di De Broglie era in accordo con i dati sperimentali
+    </p>
+    <p>
+      Non solo gli elettroni hanno caratteristiche ondulatorie; esempio: neutroni termici
+    </p>
+
+    <h3>Interazione della materia</h3>
+
+    <p>
+      Le particelle interagiscono con la materia in modo diverso
+      <ul>
+        <li>Raggi-x \(\rightarrow\) interagiscono con gli elettroni </li>
+        <li>Elettroni \(\rightarrow\) interagiscono con elementi atomici e carica nucleare atomi</li>
+        <li>Neutroni \(\rightarrow\) interagiscono con un nucleo per fare nucleari e con i momenti magnetici nella materia</li>
+      </ul>
+    </p>
+
+    <h3>Pacchetti d'onda e dispersioni</h3>
+
+    <p>
+      Se associo un'onda a una particella, l'onda materiale deve essere tale da permettere di identificare la posizione delle particella ad un certo tempo: non va bene onda sinusoidale con ampiezza e costante ed estensione infinita, perchè non mi permette di localizzare la particella. <br>
+      Allora impulso o pacchetto deve essere sovrapposizione di onde con lunghezze d'onda diverse e con ampiezze e fasi tali che interagiscono costruttivamente solo in una regione limitata dello spazio
+    </p>
+    <p>
+      Associo all'elettrone un pacchetto d'onda. Vorrei che la velocità con cui si muove l'elettrone fosse rappresentata dalla velocità di inviluppo. <br>
+      Le onde materiali mostrano dispersione anche nel vuoto <br>
+      Un mezzo si dice non dispersivo se l'inviluppo viaggia alla stessa velocità della portante
+    </p>
+
+    <hr>
+
+
+    <h2>Principio di indeterminazione di Heisenberg</h2>
+
+    <p>
+      Non è possibile determinare simultaneamente con precisione illimitata la posizione eil momento di una particella
+      \[\Delta x \Delta p_x \geq \frac{\hslash}{2}\]
+      \(\Delta x ,\Delta p_x\) non sono dovute all'incertezza sperimentale, ma al fatto di poter associare ad una particella un pacchetto d'onda. Per poter localizzare la particella entro \(\Delta x\) devo usare la sovrapposizione di moltissime onde con lunghezze d'onda diverse \(\Rightarrow\ \Delta k\) grande
+      \[\Delta E \Delta t \geq \frac{\hslash}{2}\]
+      Non è possibile conoscere l'energia di una particella e il tempo che permane in tale stato con una precisione illimitata. <br>
+      Un elettrone in uno stato eccitato dopo un certo tempo torna ad uno stato con enrgia minore. Quanto tempo in elettrone sta in uno stato eccitato? <br>
+      Il temo medio in cui un elettrone sta nello stato eccitato è il tempo di vita \(\tau\) che è noto con incertezza \(\Delta\tau\) 
+    </p>
+
+    <p>
+      Conseguenze del principio di indeterminazione:
+      <ul>
+        <li>Minimo di energia di una particella in una scatola. Una particella confinata in una scatola chiusa non può avere energia cinetica nulla</li>
+        <li>Oscillatore armonico ha energia quantizzata \[E_n = \left(n + \frac{1}{2}\right)\hslash\omega\]</li>
+      </ul>
+    </p>
+
+    <h3>Dualismo onda-particella</h3>
+
+    <p>
+      Elettroni hanno caratteristiche corpuscolari e ondulatorie che dipendono dall'esperimento, ma è impossibile misurare entrambe le caratteristiche contemporaneamente
+    </p>
+    <p>
+      Consideriamo un esperimento a soppia fenditura con elettroni. Faccio esperimento con fascio di elettroni monocinetici (singola lunghezza d'onda). Il rilevatore è in grado di vedere singolo conteggio a un certo tempo. Se lascio passare abbastanza tempo posso vedere la figura di interferenza. <br>
+      Ma cosa succede se chiudo una fenditura? <br>
+      Se chiudo una fenditura scompare la figura di interferenza
+    </p>
+
+    </font>
+  </body>
+</html>
