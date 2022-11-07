@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  5 NOV 2022 18:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  6 NOV 2022 11:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -513,34 +513,40 @@ Capitolo 13.
 Capitolo 14.
 [26
 
-] [27] [28]) [29]
+] [27] [28]
+<immagini/oscillatore_armonico1.jpg, id=376, 1284.8pt x 479.7925pt>
+File: immagini/oscillatore_armonico1.jpg Graphic file (type jpg)
+<use immagini/oscillatore_armonico1.jpg>
+Package pdftex.def Info: immagini/oscillatore_armonico1.jpg  used on input line 202.
+(pdftex.def)             Requested size: 456.32181pt x 170.40439pt.
+ [29 <./immagini/oscillatore_armonico1.jpg>] [30]) [31]
 Capitolo 15.
-[30
+[32
 
 ]
 Capitolo 16.
-[31
+[33
 
 ]
 Capitolo 17.
-[32
+[34
 
 ] (mq.aux)
 Package rerunfilecheck Info: File `mq.out' has not changed.
-(rerunfilecheck)             Checksum: A0FC6D6361768A7721AA012C6B7AABA5;5418.
+(rerunfilecheck)             Checksum: 559B7512CC152B18899F747966FDBEEA;6130.
  ) 
 Here is how much of TeX's memory you used:
- 12619 strings out of 478582
- 198406 string characters out of 2844344
- 521847 words of memory out of 3000000
- 30458 multiletter control sequences out of 15000+600000
+ 12645 strings out of 478582
+ 198827 string characters out of 2844344
+ 524847 words of memory out of 3000000
+ 30467 multiletter control sequences out of 15000+600000
  486511 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,13n,76p,628b,510s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 68i,18n,76p,628b,510s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\m2001\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on mq.pdf (33 pages, 375349 bytes).
+Output written on mq.pdf (35 pages, 478574 bytes).
 PDF statistics:
- 809 PDF objects out of 1000 (max. 8388607)
- 155 named destinations out of 1000 (max. 500000)
- 193 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 847 PDF objects out of 1000 (max. 8388607)
+ 169 named destinations out of 1000 (max. 500000)
+ 222 words of extra memory for PDF output out of 10000 (max. 10000000)
 

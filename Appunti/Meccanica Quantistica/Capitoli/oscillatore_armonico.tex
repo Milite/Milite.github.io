@@ -177,10 +177,10 @@ N.B. \(\hat{N}\) è autoaggiunto
     \hat{H}|\nu> = \left(\nu + \frac{1}{2}\right)|\nu>
 \end{gather*}
 Calcolo
-\begin{gather*}
+\begin{gather}
     \hat{N}\hat{a}|\nu> = (\nu-1)\hat{a}|\nu>  \tag{4} \\
     \hat{N}\hat{a}^+ |\nu> = (\nu+1) \hat{a}^+|\nu> \tag{5}
-\end{gather*}
+\end{gather}
 allora
 \begin{itemize}
     \item \(\nu\) è autovalore corrispondente a \(\hat{N}|\nu>\)
@@ -197,5 +197,127 @@ Conseguenze:
     \begin{equation*}
         \hat{N}|0> = 0|0> 
     \end{equation*}
-    \item 
+    \item \(\nu>0 \quad \nu \in \R \) \newline
+    Applico la (4) \newline
+    \includegraphics[width=\linewidth]{immagini/oscillatore_armonico1.jpg}
+    Gli autovalori di \(\hat{N}\) appartengono ai numeri reali: ecco perchè del nome \textit{operatore numero}
 \end{enumerate}
+
+\section{Rappresentazione degli stati}
+
+\begin{gather*}
+    a|0> = 0 \\
+    a^+a|0> \div |1> \\
+    a^+|n> = c_n |n+1> \tag{c}
+\end{gather*}
+Ne calcolo la norma al quadrato di (c)
+\begin{gather}
+        {||a^+|n>||}^2 = \dots = (n+1) \tag{a} \\
+        {||c_n|n+1>||}^2 = {|c_n|}^2 \tag{b}
+\end{gather}
+uguagliando (a)=(b)
+\begin{equation*}
+    {|c_n|}^2 = n+1 \Rightarrow c_n = \sqrt[]{n+1}
+\end{equation*}
+sostituendo nella (c)
+\begin{equation*}
+    a^+|n> = \sqrt[]{n+1} |n+1> \tag{6}
+\end{equation*}
+facendo i conti, si può anche ottenere
+\begin{equation*}
+    a|n> = \sqrt[]{n}|n-1> \tag{7}
+\end{equation*}
+usando la (6)
+\begin{equation*}
+    |n> = \frac{1}{\sqrt[]{n}}a^+|n-1>
+\end{equation*}
+Ripetendo 
+\begin{equation*}
+    |n> = \frac{1}{\sqrt[]{n!}} {(a^+)}^n |0> 
+\end{equation*}
+
+\section{Trovare rappresentazione dello stato fondamentale}
+
+Riconverto a in termini di x e p
+\begin{equation*}
+    \frac{1}{\sqrt[]{2}}\left[\sqrt[]{\frac{m\omega}{\hslash}}\hat{x} + i \frac{1}{\sqrt[]{m\hslash\omega}}\hat{p}\right]|0> = 0 \tag{a}
+\end{equation*}
+\begin{enumerate}
+    \item \(\hat{x}|x'> = x'|x'>\)
+    \item \(<x|\hat{p} = -i\hslash \frac{d}{dx}<x|\)
+\end{enumerate}
+moltiplicando la (a) per \(<x|\) si ottiene
+\begin{gather*}
+    \left\{\sqrt[]{\frac{m\omega}{\hslash}}x + i \frac{1}{\sqrt[]{m\hslash\omega}}\left(-i\hslash\frac{d}{dx}\right)\right\}<x|0> = 0 \\
+    \left(\frac{m\omega}{\hslash}x + \frac{d}{dx}\right) \varphi_0(x) = 0 
+\end{gather*}
+integrando e imponendo la condizione di normalizzazione 
+\begin{equation*}
+    \varphi_0 (x) = {\frac{m\omega}{\pi\hslash}}^{\frac{1}{4}} e^{-\frac{m\omega}{2\hslash}x^2} \tag{9}
+\end{equation*}
+Calcolo il bracket 
+\begin{equation*}
+    <x|n> = \varphi_n(x) = \frac{1}{\sqrt[]{n!}} \frac{1}{\sqrt[]{2^n}} {\left(\sqrt[]{\frac{m\omega}{\hslash}}x - \sqrt[]{\frac{\hslash}{m\omega}}\frac{d}{dx}\right)}^n \varphi_0(x)
+\end{equation*}
+introducendo
+\begin{equation*}
+    \xi = \sqrt[]{\frac{m\omega}{\hslash}}x
+\end{equation*}
+si trova
+\begin{equation*}
+    \varphi_n (x) = {\frac{m\omega}{\pi\hslash}}^{\frac{1}{4}} \frac{H_n(\xi)}{\sqrt[]{2^nn!}}e^{-\frac{\xi^2}{2}}
+\end{equation*}
+dove gli \(H_n(\xi)\) sono i polinomi di Hermite
+\begin{equation*}
+    H_n(\xi) = {(-1)}^n e^{\xi^2}{\left(\frac{d}{d\xi}\right)}^ne^{-\xi^2}
+\end{equation*}
+
+\section{Rappresentazione matriciale}
+
+\begin{gather*}
+    a^+|n> = \sqrt[]{n+1} |n+1> \\
+    a|n> = \sqrt[]{n}|n-1> \\
+    \hat{x}|n> = \sqrt[]{\frac{\hslash}{2m\omega}} (\sqrt[]{n+1} |n+1> + \sqrt[]{n}|n-1>) \\
+    \hat{p} |n> = \sqrt[]{\frac{m\hslash\omega}{2}} (\sqrt[]{n+1} |n+1> - \sqrt[]{n}|n-1>)
+\end{gather*}
+\begin{itemize}
+    \item \(<n'|a|n> = \sqrt[]{n}\delta_{n',n-1}\)
+    \item \(<n'|a^+|n> = \sqrt[]{n+1}\delta_{n',n+1}\)
+    \item \(<n'|x|n> = \sqrt[]{\frac{\hslash}{2m\omega}} (\sqrt[]{n+1}\delta_{n',n+1}  + \sqrt[]{n}\delta_{n',n-1})\)
+    \item \(<n'|p|n> = \sqrt[]{\frac{m\hslash\omega}{2}} (\sqrt[]{n+1}\delta_{n',n+1}  - \sqrt[]{n}\delta_{n',n-1})\)
+    \item \(<n'|N|n> = n \delta_{n',n}\)
+\end{itemize}
+\begin{gather*}
+    \hat{a} \dot{=} \left[
+    \begin{array}[]{cccc}
+        0 & \sqrt[]{1} & 0 & 0 \\
+        0 & 0 & \sqrt[]{2} & 0 \\
+        0 & 0 & 0 & \sqrt[]{3}
+    \end{array}\right] \qquad 
+    \hat{a}^+ \dot{=} \left[
+    \begin{array}[]{cccc}
+        0 & 0 & 0 & 0 \\
+        \sqrt[]{1} & 0 & 0 & 0 \\
+        0 & \sqrt[]{2}& 0 & 0
+    \end{array}\right] \\
+    \hat{N} \dot{=} \left[
+    \begin{array}[]{cccc}
+        1 & 0 & 0 & 0 \\
+        0 & 2 & 0 & 0 \\
+        0 & 0 & 3 & 0 \\
+        0 & 0 & 0 & 4
+    \end{array}\right] \\
+    \hat{x} \dot{=} \, \sqrt[]{\frac{\hslash}{2m\omega}}\left[
+    \begin{array}[]{cccc}
+        0 & \sqrt[]{1} & 0 & 0 \\
+        \sqrt[]{1} & 0 & \sqrt[]{2} & 0 \\
+        0 & \sqrt[]{2}& 0 & \sqrt[]{3} \\
+        0 & 0 & \sqrt[]{3} & 0 
+    \end{array}\right] \qquad 
+    \hat{p} \dot{=} \,  \sqrt[]{\frac{m\hslash\omega}{2}}\left[
+    \begin{array}[]{ccc}
+        0 & -i\, \sqrt[]{1} & 0 \\
+        +i\, \sqrt[]{1} & 0 & -i \, \sqrt[]{2}  \\
+        0 & i\, \sqrt[]{2}& 0  
+    \end{array}\right]
+\end{gather*}

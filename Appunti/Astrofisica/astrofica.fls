@@ -738,6 +738,10 @@ INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx120
 INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
 INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT .\Capitoli\nane_bianche.tex
+INPUT Capitoli\nane_bianche.tex
+INPUT .\Capitoli\nane_bianche.tex
+INPUT Capitoli\nane_bianche.tex
 INPUT astrofica.aux
 INPUT .\astrofica.out
 INPUT .\astrofica.out
