@@ -1,2 +1,150 @@
 \chapter{Nane bianche}
 
+\begin{equation*}
+    \frac{dN}{d^3pdV} = \frac{2}{h^3} \frac{1}{e^{\frac{E-\mu(t)}{K_BT}}+1}
+\end{equation*}
+Elettrone che va sbattere sulla superficie della nana bianca
+\begin{gather*}
+    dF_x = \frac{2p_x}{dt} \\
+    \frac{dF_x}{dA} = \frac{2p_x}{dAdt}\frac{dx}{dx} = \frac{2p_x}{dAdx}\frac{dx}{dt} = \frac{2p_x}{dV}v_x
+\end{gather*}
+\begin{equation*}
+    P = \int \frac{2p_xv_x}{dV} \frac{dN}{d^3p}d^3p \underbrace{\frac{1}{2}}_{\mbox{fattore correttivo}} \tag{a}
+\end{equation*}
+caso non relativistico
+\begin{gather*}
+    v^2 = v_x^2 + v^2_y v^2_z = 3v^2_x  \\
+    p_xv_x = mv^2_x = \frac{1}{3}mv^2 = \frac{1}{3}pv   
+\end{gather*}
+allora la (a) diventa
+\begin{equation*}
+    P = \int \frac{1}{3}pv \frac{dN}{dVd^3p}d^3p
+\end{equation*}
+Calcolo la soluzione in 2 casi limiti
+\begin{enumerate}
+    \item \(v<<c\)
+    \begin{equation*}
+        P = \frac{1}{3}\int \frac{2}{h^3}pv d^3p = \frac{1}{3}\int_0^{p_f}\frac{2}{h^3}pv 4\pi p^2dp = \frac{1}{3}\int_0^{p_f} \frac{8\pi}{h^3}p\frac{p}{m_e}p^2dp = \frac{8\pi}{3h^3m_e}\int_0^{p_f}p^4dp = \frac{8\pi}{3h^3m_e}\frac{p^5_f}{5} \tag{b}
+    \end{equation*}
+    sapendo che 
+    \begin{equation*}
+        n = \frac{8\pi}{3h^3}p^3_f 
+    \end{equation*}
+    (b) diventa
+    \begin{equation*}
+        P = {\left(\frac{3}{8\pi}\right)}^{\frac{2}{3}}\frac{h^2}{5m_e}n^{\frac{5}{3}} \tag{c}
+    \end{equation*}
+    usando 
+    \begin{equation*}
+        n= \frac{Z}{A}\frac{\rho}{m_p}
+    \end{equation*}
+    (c) diventa
+    \begin{equation*}
+        P = {\left(\frac{3}{\pi}\right)}^{\frac{2}{3}} \frac{h^2}{20m_e{m_p}^{\frac{5}{3}}}{\left(\frac{Z}{A}\right)}^{\frac{5}{3}}\rho^{\frac{5}{3}}
+    \end{equation*}
+    se \(\rho \sim 10^6 g \,  cm^{-3} \Rightarrow P \simeq 10^{16}atm\) \newline
+    Per i nuclei l'unica pressione è quella della temperatura, il gas è di tipo classico
+    \begin{equation*}
+        P_{TH} = n_N K_B T = \frac{\rho}{Am_p}K_BT
+    \end{equation*}
+    per \(^{12}C\) a \(T = 10^7K\) si ottiene
+    \begin{equation*}
+        P \simeq 10^{14} atm 
+    \end{equation*}
+    pressione termica per le nane bianche ha veramente un ruolo secondario, praticamente insignificante \newline
+    \textit{Gas elettroni degenere non relativistico}
+    \begin{equation*}
+        P = K\rho^{\frac{5}{3}}
+    \end{equation*}
+    \item caso fortemente relativistico: tutti gli elettroni si stanno muovendo alla velocità della luce \([v = c]\); limite per densità che va all'infinito \((\rho \to \infty)\)
+    \item \begin{equation*}
+        P = \int_0^{p_f} \frac{2}{h^3}pc4\pi p^2 dp = \frac{8\pi c}{3h^3}\frac{{p_f}^4}{4}
+    \end{equation*}
+    facendo le stesse sostituzioni precedenti si ottiene l'espressione finale
+    \begin{equation*}
+        {\left(\frac{3}{8\pi}\right)}^{\frac{1}{3}}\frac{hc}{4{m_p}^{\frac{4}{3}}} {\left(\frac{Z}{A}\right)}^{\frac{4}{3}} \rho^{\frac{4}{3}}
+    \end{equation*}
+    quindi
+    \begin{equation*}
+        P = K' \rho^{\frac{4}{3}}
+    \end{equation*}
+    Equazione di stato politropica
+    \begin{equation*}
+        P = K \rho^\gamma
+    \end{equation*}
+\end{enumerate}
+Caso non relativistico
+\begin{equation*}
+    \rho << 10^6 g \,  cm^{-3} \qquad \gamma = \frac{5}{3}
+\end{equation*}
+Caso fortemente relativistico
+\begin{equation*}
+    \rho \to \infty \qquad \gamma = \frac{4}{3}
+\end{equation*}
+Anche i neutroni sono fermioni, quindi avrei potuto fare lo stesso conto, sostituendo solo la massa elettroni con la massa dei neutroni \newline
+Equazioni per la nana bianca 
+\begin{gather*}
+     \frac{dM}{dr} = 4\pi r^2 \rho \\
+     \frac{dP}{dr} = - \frac{GM\rho}{r^2} \\
+     P = Kp^\gamma
+\end{gather*}
+\begin{equation*}
+    \frac{r^2}{\rho}\frac{dP}{dr}= -GM
+\end{equation*}
+derivo entrambi i membri per r
+\begin{gather*}
+    \frac{d}{dr}\left(\frac{r^2}{\rho}\frac{dP}{dr}\right) = -G \frac{dM}{dr} = -G 4\pi r^2 \rho  \\
+    \frac{1}{r^2}\frac{d}{dr} \left(\frac{r^2}{\rho} \frac{dP}{dr}\right) = -4\pi G \rho
+\end{gather*}
+posso usare
+\begin{equation*}
+    P = K \rho^\gamma 
+\end{equation*}
+definisco
+\begin{gather*}
+    \gamma = 1 + \frac{1}{n}  \qquad \mbox{n: indice politropico}\\
+    \theta^n = \frac{\rho}{\rho_c} \qquad \rho_c = \rho(r=0) \\
+    \xi = \frac{r}{a} \qquad a = {\left[\frac{(n+1)K\rho_c^{\left(\frac{1}{n}-1\right)}}{4\pi G}\right]}^{\frac{1}{2}}
+\end{gather*}
+allora ottengo equazione di Lane-Emden
+\begin{equation*}
+    \frac{1}{\xi^2}\frac{d}{d\xi}\left(\xi^2 \frac{d\theta}{d\xi} = \theta^n\right)
+\end{equation*}
+anche questa equazione deve essere risolta numericamente. Condizioni iniziali
+\begin{gather*}
+    \theta (\xi=0) = 1 \\
+    \theta'(\xi=0) = 0 
+\end{gather*}
+Posso fare ragionamento sulla massa
+\begin{equation*}
+    M = \int_0^R 4\pi \rho^2dr = 4\pi a^3\rho_c \int_0^{\xi_1} \xi^2\theta^n d\xi = -4\pi a^3 p_c \int_0^{\xi_1} \frac{d}{d\xi} \left(\xi^2 \frac{d\theta}{d\xi}\right) d\xi = 4\pi a^3 \rho_c \xi^2_1 |\theta' (\xi_1)| 
+\end{equation*}
+combinando con 
+\begin{equation*}
+    R = a \xi_1
+\end{equation*}
+si ottiene 
+\begin{equation*}
+    R \div M^{\frac{1-n}{3-n}}
+\end{equation*}
+caso non relativistico
+\begin{equation*}
+    \begin{cases}
+        \gamma = \frac{5}{3} \\
+        n = \frac{3}{2}
+    \end{cases}
+    \Rightarrow R \div M^{-\frac{1}{3}}
+\end{equation*}
+all'aumentare della massa diminuisce il raggio; allora ho un limite massimo della massa 
+\begin{equation*}
+    M = 4\pi {\left[\frac{(n+1)K}{4\pi G }\right]}^\frac{3}{2} \rho_c^{\frac{3-n}{2n}}\xi^2_1 |\theta'(\xi_1)|
+\end{equation*}
+Caso fortemente relativistico si ottiene il valore limite della massa: \textit{massa di Chandrasekhar}
+\begin{equation*}
+    \begin{cases}
+        \gamma = \frac{4}{3} \\
+        n = 3
+    \end{cases}
+    \Rightarrow M = 1.457 {\left(\frac{A}{2Z}\right)}^{-2}M_{\mbox{sole}}
+\end{equation*}
+
