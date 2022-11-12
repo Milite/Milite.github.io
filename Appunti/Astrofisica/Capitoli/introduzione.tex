@@ -1,0 +1,172 @@
+\chapter{Introduzione}
+
+\section*{Spettro elettromagnetico}
+Spettro corpo nero: 
+$\begin{cases}
+    \nu_{max} = 10^{11} Hz \\
+    \lambda_{max} T = 3 \times 10^6 nm \cdot K
+\end{cases}$ \newline
+Osservazione di tutto lo spettro elettromagnetico: telescopi terrestri e telescopi spaziali a seconda della frequenza
+
+\section*{Tecniche di osservazione}
+Risoluzione angolare $\rightarrow \theta \simeq 1.22 \frac{\lambda}{D}$ con $\lambda$ lunghezza d'onda e $D$ diametro del telescopio; per l'occhio si ha una risoluzione angolare di 60 arcsec: se la dimensione dell'oggetto da osservare è minore di 60 arcsec allora l'occhio lo vede come un punto; se la distanza tra due oggetti è minone di 60 arcsec allora li vediamo sovrapposti. \newline
+Gli effetti atmosferici peggiorano la visione: per esempio l'umidità, che deve essere bassa. \newline
+Tecniche interferometriche migliorano la risoluzione (esempio l'utilizzo di diversi telescopi). \newline
+Oltre a misurare la posizione degli oggetti si può misurare il flusso, lo spettro e la polarizzazione
+
+\section*{Coordinate}
+\begin{itemize}
+    \item Celesti: per astronomia amatoriale, non professionale
+    Da equatore celeste divido la volta celeste in 2 emisferi
+    \begin{itemize}
+        \item Nord 
+        $\begin{cases}
+            \text{Declinazione: da 0° a 90° (asse di rotazione terrestre)} \\
+            \text{Ascensione retta: da 0 a 24 ore} 
+        \end{cases}$
+        \item Sud
+        $\begin{cases}
+            \text{Declinazione: da 0° a -90° (asse di rotazione terrestre)} \\
+            \text{Ascensione retta: da 0 a 24 ore}
+        \end{cases}$
+    \end{itemize}
+    \item Galattiche: da piano della galassia in cui ci troviamo. 
+    \begin{itemize}
+        \item Latitudine: da -90° a 90° $\rightarrow$ 0° piano della galassia
+        \item Longitudine: da 0° a 360° $\rightarrow$ senso antiorario
+    \end{itemize}
+\end{itemize}
+Centro galattico è il centro della galassia
+
+\section*{Proiezioni}
+\begin{itemize}
+    \item Proiezione azimutale equidistante: centro latitudine corrisponde a 90°, mentre l'esterno corrisponde a 0°; si hanno minime distorsioni, ma visualizzo solo metà volta celeste
+    \item Proiezione di Hammer-Aitoff: rappresentazione completa della volta celeste, ma si hanno forti distorsioni ai poli. Il piano della galassia è il piano centrale orizzontale. Solitamente in astrofisica si usa questa rappresentazione
+\end{itemize}
+
+\section*{Visulizzazioni}
+\begin{itemize}
+    \item Ottico: a causa delle polveri il centro della galassia è molto oscurato. L'assorbimento galattico è descritto dalla funzione
+    \begin{equation*}
+        I= I_0 e^{-\alpha r}
+    \end{equation*}
+    dove r è la distanza tra noi e l'oggetto osservato, mentre $\alpha$ è proporzionale a $\lambda^{-1}$
+    \item Infrarosso: l'ssorbimento galattico è minore, quindi si vede molto meglio il centro della galassia (si rimuove parte delle polveri). Si possono trovare alcune bande infrarosso anche sulla terra. Anche noi emettiamo infrarosso, quindi rischio di avere rumore termico nelle mie misure: posso tenere il telescopio a basse temperature per diminuire il problema. \newline
+    Dall'infrarosso in poi si usano falsi colori: associo colore in base all'intensità della radiazione.
+    \item Microonde: porta a scoperta della radiazione di fondo cosmica
+    \item Radio: porta a due scoperte
+    \begin{enumerate}
+        \item Stella di neutroni, grazie ad un segnale periodico; pulsar non si vedono nell'ottico
+        \item Quasar
+    \end{enumerate}
+    \item Raggi-x: si vedono solo in orbita, non a terra. Portano prima prova dell'esistenza dei buchi neri: si capta emissione di materia che cadeva nel buco nero. Il buco nero invece non emette radiazione.
+    \item Raggi-$\gamma$: porta scoperta dei gamma-ary bursts. \newline
+    Neutrini: particelle che interagiscono per interazione debole (anche il sole li emette). Esplosione supernova è una sorgente di neutrini; l'unica prova diretta di un'esplosione di una supernova è SN1987A
+\end{itemize}
+
+\section*{Onde gravitazionali}
+Sono state captate da interferometri a terra nel 2015, ma predette già dalla relatività generale. Le distorsioni dello spazio-tempo si propagano come un'onda. \newline
+Le sorgenti più luminose sono le binare, 2 oggetti compatti che ruotano.
+
+\section*{Studio spettro elettromagnetico}
+Oltre all'intensità della stella possiamo anche vedere lo spettro $\Rightarrow$ spettro quasi perfetto di corpo nero
+\begin{equation*}
+    U_\nu = \frac{8\pi \nu^3 }{c^3} \frac{h\nu}{e^{\frac{h\nu}{K_B t}}-1} \quad \text{densità di energia a una certa frequenza}
+\end{equation*}
+Densità di energia
+\begin{equation*}
+    u = \int _0^\infty d\nu \, U_\nu = aT^4
+\end{equation*}
+a: costante di radiazione e vale $7.6 \times 10^{-15} erg \, cm^{-3}K^{-4}$ \newline
+Flusso per unità di frequenza misurato in $erg \, s^{-1} cm^{-2}{Hz}^{-1} \rightarrow$ $f_\nu$\newline
+Densità di flusso (vettore di Pointing)
+\begin{equation*}
+    f = \int_0^\infty d\nu \, f_\nu = \sigma T^4
+\end{equation*}
+$\sigma$: costante di Stefan-Boltzman che vale $5.7 \times 10^{-5} erg \, s^{-1} {cm}^{-2}K^{-4}$ \newline
+Potenza totale emessa da stella ad una certa frequenza assumendo stella come sfera perfetta misurata in $erg \, s^{-1}{Hz}^{-1}$
+\begin{equation*}
+    L_\nu = f_\nu (r_*) 4\pi r_*^2
+\end{equation*}
+Luminosità misurata in $erg \, s^{-1}$
+\begin{equation*}
+    L = f(r_*)4\pi r_*^2
+\end{equation*}
+Le onde elettromagnetiche di tipo sferico vanno come $\sim \frac{1}{{distanza}^2}$ 
+\begin{equation*}
+    f(d) = f(r_*){\left(\frac{r}{d}\right)}^2 = f(r_*)\frac{4\pi {r_*}^2}{4\pi d^2} = \frac{L}{4\pi d^2}
+\end{equation*}
+\begin{equation}
+    L = 4\pi d^2 f(d)
+\end{equation}
+se vedo oggetto ho sempre il flusso; conoscendo anche distanza da oggetto posso anche stimare la sua luminosità
+
+\subsection*{Metodo parallasse}
+Metodo per stimare la distanza di un oggetto sfruttando il moto apparente di questo oggetto nel cielo; necessita la conoscenza della distanza tra noi e il sole come punto di riferimento \newline
+
+\noindent In astrofisica come unità di misura per le distanze si usa il parsec: distanza tale per cui l'angolo $\alpha$ del moto apparente è di un arcosecondo
+\begin{equation*}
+    1 pc \simeq 3.1 \times 10^{18} cm \simeq 3.3 ly
+\end{equation*}
+La stella più vicina a noi è Proxima Centauri che dista $d \simeq 1.3 pc \rightarrow \alpha \sim 0.768 arcsec$ \newline
+A causa del potere risolutivo con metodo parallasse posso stimare distanze oggetti fino ad una distanza di $\sim 100 \, pc$   
+
+\begin{equation*}
+    L =4\pi {r_*}^2 f(r_*) \underbrace{=}_{\text{per corpo nero}} 4\pi {r_*}^2 \sigma T^4
+\end{equation*}
+La temperatura la ottengo facendo un fit dei dati con la curva del corpo nero; dato che conosco la luminosità posso calcolare il raggio della stella. La temperatura che posso stimare è la temperatura superficiale della stella, perchè i fotoni che ci arrivano sono quelli della superficie
+
+\subsection*{Magnitudine}
+Unità di misura che è stata introdotta dagli antichi greci
+\begin{itemize}
+    \item 0: stella più luminosa che vedo a occhio nudo
+    \item 5: stella più debole visibile a occhio nudo
+\end{itemize}
+Si può legare magnitudine a logaritmo del flusso
+
+\subsubsection*{Magnitudine apparente m}
+Da un punto di vista fisico è uguale al flusso
+\begin{equation*}
+    m = cost - 2.5 \log_{10}f
+\end{equation*}
+devo scegliere come definire la costante \newline
+
+\noindent $\begin{cases}
+    \text{Scelgo costante in modo che m di Vega sia 0} \rightarrow m = -2.5 \log_{10}\left(\frac{f}{f_{Vega}}\right) \\
+    \text{Sistema AB} \rightarrow m = -2.5 \log_{10}\left(\frac{f}{f_0}\right) \text{ con $f_0$ costante per ogni frequenza}
+\end{cases}$
+
+\subsubsection*{Magnitudine assoluta M}
+Da un punto di vista fisico è analogo luminosità. \'E la distanza che dovrebbe avere un oggetto se si trovasse ad una distanza di 10 parsec
+\begin{equation*}
+    M = m - 5\log_{10} \left(\frac{d}{10 \, pc}\right)
+\end{equation*}
+\begin{equation*}
+    M = M_{sole} - 2.5 \log_{10}\left(\frac{L}{L_{sole}}\right) \qquad M_{sole} \simeq 4.75 \; L_{sole} \simeq 3.8 \times 10^{33} erg \, s^{-1} \simeq 3.8 \times 10^{26} W
+\end{equation*}
+Le bande di frequenza vengono segnate usando come pedice una lettera
+
+\subsubsection*{Colore}
+Calcolo della differenza tra magnitudine apparente di una frequenza e un'altra; fisicamente mi dice se oggetto picca più su una frequenza o su un'altra. \'E legata alla temperatura
+
+\section*{Calcolo della massa}
+Per poterla stimare con questo metodo ho bisogno di un sistema binario (2 stelle che orbitano una intorno all'altra). Il piano dell'orbita lo poniamo per semplicità ortogonale a piano vista $\rightarrow$ percorrono circonferenza nel cielo. \newline
+Per definizione centro di massa
+\begin{equation*}
+    r_1M_1 = r_2M_2
+\end{equation*}
+Chiamo la separazione tra le 2 stelle $a = r_1+r_2$ \newline
+Applico legge di Keplero
+\begin{equation*}
+    w^2 = \frac{G(M_1+M_2)}{a^3}
+\end{equation*}
+Tramite separazione angolare $\theta$ che posso calcolare perchè vedo le 2 stelle 
+$\begin{cases*}
+    r_1 = \theta_1 d \\
+    r_2 = \theta_2 d
+\end{cases*} 
+\rightarrow \frac{r_1}{r_2} = \frac{\theta_1}{\theta2}= \frac{M_1}{M_2}$ \newline
+Se riesco a misurarela distanza tra me e sistema con leggi Keplero posso ottenere massa totale del sistema $\Rightarrow$ ho un sistema con 2 equazioni e 2 incognite
+
+\subsection*{Spectroscopy bynarie}
+Deduco presenze di binarie da studio dello spettro perchè risoluzione non mi permette di vedere le due stelle separate (esempio da effetto Doppler dello spettro di assorbimento)

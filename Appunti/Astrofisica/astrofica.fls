@@ -725,6 +725,10 @@ INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tf
 INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 OUTPUT astrofica.toc
+INPUT .\Capitoli\introduzione.tex
+INPUT Capitoli\introduzione.tex
+INPUT .\Capitoli\introduzione.tex
+INPUT Capitoli\introduzione.tex
 INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm2074.tfm
 INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx2074.tfm
 INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1440.tfm
@@ -738,6 +742,14 @@ INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx120
 INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
 INPUT C:\Users\m2001\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT .\Capitoli\struttura_stellare.tex
+INPUT Capitoli\struttura_stellare.tex
+INPUT .\Capitoli\struttura_stellare.tex
+INPUT Capitoli\struttura_stellare.tex
+INPUT .\Capitoli\evoluzione_stellare.tex
+INPUT Capitoli\evoluzione_stellare.tex
+INPUT .\Capitoli\evoluzione_stellare.tex
+INPUT Capitoli\evoluzione_stellare.tex
 INPUT .\Capitoli\nane_bianche.tex
 INPUT Capitoli\nane_bianche.tex
 INPUT .\Capitoli\nane_bianche.tex

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1667817407 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Astrofisica/astrofica.tex" "astrofica.pdf" "astrofica" 1667817414
+["pdflatex"] 1668251152 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Astrofisica/astrofica.tex" "astrofica.pdf" "astrofica" 1668251158
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1667642655 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1648033488 28976 d56dca20927a79c4468ac39f2cb67e88 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1648033473 31952 aef68ca89a05b961636a6e8f295f9836 ""
@@ -129,12 +129,15 @@
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575571282 9715 b051d5b493d9fe5f4bc251462d039e5f ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1636710260 10214 00ce62e730d0cfe22b35e8f1c84949c7 ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
+  "Capitoli/evoluzione_stellare.tex" 1668250715 1428 00b040fcf8e342916b2bbfd9daa351d2 ""
+  "Capitoli/introduzione.tex" 1668250276 9843 39df3961666ab02268c40b5476e0112e ""
   "Capitoli/nane_bianche.tex" 1667817404 5923 80f092f084b870d1e34b0cd8c0a01409 ""
-  "astrofica.aux" 1667817413 2352 f95db8a35cd0cc55db620096780d5247 "pdflatex"
-  "astrofica.out" 1667817413 1742 e99fe9521d848099cb5fc3f3de64cf72 "pdflatex"
-  "astrofica.tex" 1667813684 18691 82745d3c337799a0dd7c0556c2fcb071 ""
-  "astrofica.toc" 1667817413 909 468840f44cbcb3aba63e2c6d03ee61ae "pdflatex"
-  "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Astrofisica/astrofica.tex" 1667813684 18691 82745d3c337799a0dd7c0556c2fcb071 ""
+  "Capitoli/struttura_stellare.tex" 1668250458 6383 0369286086e2471928a5e83b5ed10ec0 ""
+  "astrofica.aux" 1668251157 2361 2bedf213998780d367e6e291bbf7386e "pdflatex"
+  "astrofica.out" 1668251157 1787 1ad08a066194ca6b18da0b681dc07549 "pdflatex"
+  "astrofica.tex" 1668251144 893 cd20bb0813624d62517e30461cf277d5 ""
+  "astrofica.toc" 1668251157 918 27c010c95ef91a3f1d28800ed09badbc "pdflatex"
+  "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Astrofisica/astrofica.tex" 1668251144 893 cd20bb0813624d62517e30461cf277d5 ""
   (generated)
   "astrofica.aux"
   "astrofica.log"

@@ -1,0 +1,114 @@
+\chapter{Struttura stellare}
+Stelle con masse inferiori hanno luminosità inferiore
+\begin{equation*}
+    L = 4 \pi R^2 \sigma T^4 
+\end{equation*}
+Esempio: $L_{sole} \simeq 4 \times 10^33 \, erg \cdot s{-1}$
+
+\section{Diagramma di Hertzsprung-Russell}
+
+Anche detto diagramma magnitudine-colore. Si usa per stelle di cui conosco la distanza. \newline
+Asse x: colore B-V; più mi trovo verso sinistra, più picco sul blu. Temperatura cresce verso sinistra \newline
+Asse y: magnitudine assoluta nel V; valori più bassi hanno luminosità più alta \newline
+La maggior parte delle stelle si trova sulla diagonale principale $\rightarrow$ SEQUENZA PRINCIPALE (racchiude le stelle che bruciano H in He). Qui si trova anche il sole, più o meno al centro. La maggior parte della loro vita le stelle la passano sulla sequenza principale (sole $\sim 10$ miliardi di anni) \newline
+Diagonale minore: RAMO DELLE GIGANTI. Si trovano stelle che hanno raggi decisamente più grandi di quelle che si trovano sulla sequenza prinicipale. Vediamo meno stelle sul ramo delle giganti, perchè le stelle passano molto meno tempo in questa fase, e quindi è statisticamente più difficile osservarle \newline
+In basso a sinistra si trovano le NANE BIANCHE: sono l'unico oggetto compatto visibile su diagramma H-R; hanno raggi decisamente più piccoli di quelle sulla sequenza principale \newline
+La massa (indicata con unità di massa solare) andando verso l'alto a sinistra. Sulla sequenza principale massa più grande indica raggi più grandi. La vita lungo sequenza prinicipale diminuisce andando verso alto a sinistra: questo perchè la luminosità è proporzionale a $M^\alpha$ con $\alpha>1$, quindi maggiore è la massa, maggiore è la lumiosità, quindi muore prima
+
+\section{Classificazione delle stelle}
+La classificazione delle stelle avviene in base a spettro di assorbimento: si associano lettere a spettro di assorbimento (OBAFGKM). La "O" è associata ha temperature alte $\sim 40000 K$, mentre la "M" è associata a tempertaure minori $\sim 2400 K$. Ad esempio il sole è di tipo "G". Esiste sottoclassificazione per le temperature: si indica con un numero. Per indicare la posizione della stella nel diagramma si usa un numero romano (V indica che la stella si trova nella sequenza principale)
+
+\section{Descrizione struttura stellare}
+
+Sulla sequenza principale le stelle fanno fusione nucleare per convertire H in He. Per il sole l'efficienza di questo processo è di circa lo $0.7\%$ 
+
+\noindent Composizione massa del sole $\begin{cases}
+    71 \% H \\
+    27 \% He \\
+    2 \% \text{ C,N,O,Fe: metalli (così indico tutti gli elementi più pesanti dell'elio)}
+\end{cases}$ 
+Assunzioni:
+\begin{enumerate}
+    \item Le stelle hanno simmetria sferica: grandezze dipendono solo da r, non da $\theta,\phi,t$
+    \item Le stelle non ruotano
+    \item No campo magnetico
+\end{enumerate}
+
+\subsection{Equazione di equilibrio idrostatico}
+
+Equazione per descrivere la pressione in funzione del raggio \newline
+Forza gravitazionale è uguale alla forza dovuta al gradiente di pressione che bilancia la forza gravitazionale
+\begin{equation*}
+    -\frac{GM(r)dm}{r^2} = dP A
+\end{equation*}
+Considerando che $dm = \rho(r)A dr$ dove $\rho$ è la densità si ottiene
+\begin{equation}
+    -\frac{GM(r)\rho(r)A dr}{r^2} = dP A
+\end{equation}
+che ci porta a scrivere la prima equazione di evoluzione stellare, che però non può essere risolta da sola, perchè non ho espressione di $M(r), \rho(r)$
+\begin{equation*}
+   \frac{dP}{dr} -\frac{GM(r)\rho(r)}{r^2}
+\end{equation*}
+
+\subsection{Equazione di conservazione della massa}
+
+Equazione per descrivere la massa in funzione del raggio \newline
+Considerando che 
+\begin{equation*}
+    dM = \rho(r) 4 \pi r^2 dr
+\end{equation*}
+posso scrivere la seconda equazione di evoluzione stellare
+\begin{equation}
+    \frac{dM}{dr} = \rho(r) 4 \pi r^2
+\end{equation}
+
+\subsection{Teorema del viriale}
+\begin{equation*}
+    \int_0^{r_*} dr \, 4 \pi r^3 \frac{dP}{dr} = -\int_0^{r_*} dr \, 4 \pi r^3 \frac{GM(r)\rho(r)}{r^2}
+\end{equation*}
+\begin{equation*}
+    \int_0^{r_*} dr \, 4 \pi r^3 \frac{dP}{dr} = - 3 \int_0^{r_*} dr \, 4 \pi r^2 P(r)
+\end{equation*}
+\begin{equation*}
+    -\int_0^{r_*} dr \, 4 \pi r^3 \frac{GM(r)\rho(r)}{r^2} = -\int_0^{r_*} dr \, \frac{GM(r)dM}{rdr} = -\int_0^{M_*} \frac{GM(r)dM}{r} = E_{\mbox{gravitazionale}} 
+\end{equation*}
+Allora 
+\begin{equation*}
+    - 3 \int_0^{r_*} dr \, 4 \pi r^2 P(r) = E_{\mbox{gr}}
+\end{equation*}
+assumendo che la stella sia fatta di gas perfetto e che $\Gamma$ sia costante, considerando la densità di energia interna (e)
+\begin{equation*}
+    P = (\Gamma - 1)e
+\end{equation*}
+si ottiene 
+\begin{equation*}
+    -3 (\Gamma - 1) E_{\mbox{termica}} = E_{gr}
+\end{equation*}
+\begin{itemize}
+    \item gas monoatomico classico, senza effetti quantistici
+    \begin{equation*}
+        P = n K_B T \Rightarrow e = \frac{3}{2}n K_B T = \frac{P}{(\Gamma - 1)}
+    \end{equation*}
+    si ottiene
+    \begin{equation*}
+        \Gamma - 1 = \frac{2}{3} \Rightarrow \Gamma = \frac{5}{3}
+    \end{equation*}
+    sostituendo nel teorema del viriale
+    \begin{equation*}
+        -2 E_{TH} = E_{GR}
+    \end{equation*}
+    L'energia totale è data dell'energia gravitazionale + energia termica
+    \begin{equation*}
+        E_{TOT} = E_{TH} + E_{GR} = -E_{TH} < 0
+    \end{equation*}
+    allora stella è sistema legato: se viene perturbata la stella oscilla attorno al suo punto di equilibrio. Conseguenza: le reazioni nucleari sono stabili $\rightarrow$ se energia termica aumenta per perturbazione allora la pressione fa espandere la stella; allora diminuisce l'energia gravitazionale che fa diminuire energia termica, quindi si torna ad equilibrio $\Rightarrow$ equilibrio stabile (torna a situazione iniziale)
+    \item gas stella di tipo relativistico $\rightarrow$ pressione stella è dovuta principalmente a radiazione (fotoni)
+    \begin{equation*}
+        p = \frac{1}{3} e \Rightarrow \Gamma = \frac{4}{3}
+    \end{equation*}
+    si ottiene quindi 
+    \begin{equation*}
+        -E_{TH} = E_{GR}
+    \end{equation*}
+    di conseguenza l'energia totale è nulla: ciò significa che sistema è marginalmente legato $\rightarrow$ la minima perturbazione fa esplodere la stella
+\end{itemize}

@@ -14,13 +14,13 @@
 \usepackage{fancyhdr}
 \usepackage{float}
 \usepackage{geometry}
-\geometry{a4paper, top=2.5cm, bottom=2cm, left=2cm, right=2cm}
+\geometry{a4paper, top=2.5cm, bottom=2cm, left=1cm, right=1cm}
 \usepackage{hyperref}
 \hypersetup{
 	colorlinks=true,
-	linkcolor=black,
-	filecolor=blue,
-	citecolor = black,      
+	linkcolor=white,
+	filecolor=white,
+	citecolor = white,      
 	urlcolor=cyan,
 }
 
@@ -42,6 +42,9 @@
 \DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
 
 \begin{document}
+    \pagecolor{black}
+    \color{white}
+
 	\date{}
 	\author{Marco Militello}
 	\title{Meccanica Quantistica}
@@ -49,207 +52,9 @@
 	\tableofcontents
 	\newpage
 	
-\chapter{La crisi della fisica classica}
+\input{Capitoli/crisi_fisica_classica.tex}
 
-Concetti incompatibili con la fisica classica, che non si riescono a spiegare. Per fisica classica si intende
-\begin{enumerate}
-    \item meccanica newtoniana
-    \item termodinamica fisica statistica classica
-    \item elettromagnetismo e le leggi di Maxwell
-    \item relatività ristretta
-\end{enumerate}
-
-\section{Corpo nero}
-
-Universalità: stesso spettro di emissione. Basi termodinamiche $\rightarrow$ Kirchoff. \newline
-1900 Planck: giunge a risultato giusto, ma partendo da principi sbagliati
-\begin{equation*}
-    g(\nu, T) = \frac{8\pi h}{c^3} \frac{\nu^3}{e^{\frac{h\nu}{K_B T}}-1}
-\end{equation*}
-Ottiene questa relazione grazie a fit dei dati sperimentali; aggiusta i paramentri: si ottiene per la prima volta $h$, la costante di Planck
-\begin{equation}
-    h = 6.6 \times 10^{-34} J \cdot s
-\end{equation}
-ha la stessa dimesione di un momento angolare
-
-\section{Effetto fotoelettrico}
-
-1905 Einstein \newline
-Proposta di Einstein che spiega l'effetto: scambio di energia come multiplo di $h\nu \rightarrow$ QUANTI DI RADIAZIONE. \newline
-Nel grafico dell'energia massima in funzione della frequenza, Millikan misurò la pendenza della retta che risultò essere $\frac{h}{e}$
-Si continuava però a pensare che l'energia si propagasse nel continuo, mentre durante le interazioni ci fossere scambi a pacchetti. Questa idea viene abbandonata con l'effetto Compton
-
-\section{Effetto Compton}
-Raggi-x su un metallo; $E_m >> E_{legame}$: in questo modo gli elettroni sono visti come liberi.
-\begin{equation*}
-    E^2 - p^2c^2 = m^2c^4
-\end{equation*}
-se v=c allora m=0. Quindi
-\begin{equation*}
-    p^2c^2 = E^2 = {(h\nu)}^2 \Rightarrow p=\frac{h\nu}{c}
-\end{equation*}
-
-\subsection*{Esperimento}
-Tratto fotone come particella con 
-$\begin{cases}
-    E = h\nu \\
-    p = \frac{h\nu}{c}
-\end{cases}$
-\begin{equation*}
-    \lambda' - \lambda = \frac{h}{m_e c}(1 - \sin(\theta))
-\end{equation*}
-onda elettromagnetica non completamente descritta dalle leggi di Maxwell \newline
-$\frac{h}{m_e c} \simeq 2.4 \times 10^{-12} m$: lunghezza d'onda di Compton per l'elettrone $\Rightarrow$ ha la dimensione di una lunghezza. \newline
-1926 Lewis: assegna nome ai fotoni
-
-\section{Spettri atomici}
-Spettro solare ha delle righe nere: radiazione viene assorbita dallo strato esterno del sole e poi viene diffusa, quindi ci arriva meno intensa $\Rightarrow$ righe nere. $He$ scoperto grazie allo spettro solare. \newline
-1897: scoperta elettrone \newline
-Modelli atomici $\rightarrow$ Rutherford: però non riesce a spiegare spettri atomici \newline
-Emissione e assorbimento non sono un continuo \newline
-Bohr: Energia quantizzata
-\begin{equation*}
-    \nu_{mn} = (E_m - E_n)\frac{1}{h}
-\end{equation*}
-ma non dà alcun tipo di spiegazione
-\begin{equation*}
-    m_e v r = n \hslash \qquad \text{ momento angolare è multiplo intero di } \hslash = \frac{h}{2\pi}
-\end{equation*}
-
-\chapter{Interferenza e diffrazione onde elettromagnetiche}
-Luce descrivibile con fenomeni ondulatori. \newline
-Esperimento doppia fenditura: metto uno schermo a una distanza $L >> \lambda$ dalle fenditure. In ogni punto ho che $ I \neq I_1 + I_2$, ma ho che 
-\begin{equation*}
-    I = {|\vec{E}_1 + \vec{E}_2|}^2 \neq {|\vec{E}_1|}^2 + {|\vec{E}_2|}^2
-\end{equation*}
-La differenza di fase vale $d\sin(\theta)$; se la differenza di fase vale $n\frac{\lambda}{2}$ allora ho interferenza distruttiva. Il primo punto di buio si ha per 
-\begin{equation*}
-    \theta = \frac{n}{2}\frac{\lambda}{d} \text{ con } n=1
-\end{equation*}
-Se prendo una lampadina gialla (580 nm) da 100 W, allora vengono emessi $\sim 10^{20}$ fotoni al secondo. Cosa succede se abbasso intensità fino ad avere emissione di un fotone al secondo? L'esperimento della doppia fenditura porta allo stesso risultato precedente; però se ripeto di nuovo l'esperimento la posizione di ogni singolo fotone è diverso, anche se la figura che si viene a creare porta allo stesso risultato. Allora devo introdurre una trattazione probabilistica: posso solo dare distribuzione probabilità \newline
-Se chiudo una delle due fenditure non osservo alcuna figura di interferenza: il fotone "sente" la presenza di entrambe le fenditure. Ma con chi interferisce il fotone? Da che fenditura passa? \newline
-Esperimenti per capire da che fenditura sia passato il fotone distruggono la figura di interferenza $\Rightarrow$ misura microscopica disturba il fenomeno. \newline
-Risultati esperimento:
-\begin{enumerate}
-    \item Fotone colpisce schermo in un punto ben preciso $\Rightarrow$ deposita tutta la sua energia $h\nu$
-    \item Con pochi eventi lo schermo sembra riempirsi in maniera casuale; non sappiamo esattemente dove andrà un fotone, ma possiamo dire dove si sono addensati maggiormente $\Rightarrow$ PROBABILIT\'A
-    \item Se chiudo una fenditura sparisce figura di interferenza: fotone con $\lambda << d$ "sente" le 2 fenditure; ogni tentativo di capire da quale fenditura passi il fotone distrugge la figura di interferenza $\rightarrow$ disturbo con la misura. La misura su un sistema microscopico lo può disturbare in maniera significativa.
-\end{enumerate}
-In fisica classica, date le condizioni inziali posso completamente determinare il moto di una particella; invece non posso determinare moto di un fotone: fotone ha una certa probabilità di colpire lo schermo proporzionale all'intensità I(x) [probabilità che fotone finisca in un punto preciso dello schermo]ù
-
-\subsection*{Dualismo onda-particella}
-In alcuni esperimenti è più facile interpretare come particella altre volte come onda; la vera natura è l'elettrodinamica quantistica
-\begin{enumerate}
-    \item La radiazione elettromagnetica si comporta come un flusso di particelle
-    \item Previsioni sul comportamento sono solo probabilistiche
-    \item In un certo punto $\vec{r}$ dello schermo al tempo t $\rightarrow$ fotone è portato da campo elettrico $\vec{E}(\vec{r}, t)$ che è soluzione delle equazioni di Maxwell; campo elettrico va interpretato come un'ampiezza di probabilità di trovare un fotone in un istante t in un punto $\vec{r}$
-    \begin{equation*}
-        {|E(\vec{r},t)|}^2 \rightarrow \text{ densità di probabilità}
-    \end{equation*}
-    \item Le equazioni di MAxwell sono lineari in $\vec{E} \Rightarrow$ vale principio di sovrapposizione: se $E_1, E_2$ sono soluzioni delle equazioni di Maxwell allora anche $\vec{E} = \lambda_1\vec{E}_1 + \lambda_2 \vec{E}_2$ con $\lambda_1,\lambda_2 \in \R$ è soluzione delle equazioni di Maxwell. Principio di sovrapposizione è anche quello che ci permette di spiegare interferenza
-\end{enumerate}
-"Ogni fotone interfesce solo con se stesso"
-
-\chapter{La polarizzazione della luce}
-La luce ha una direzione privilegiata. Es.: laser, smartphone \newline
-
-\section*{Esperimento}
-Mettere immagine \newline
-Interpretazione classica: c'è onda che si propaga lungo z
-\begin{equation*}
-    \vec{E}(\vec{r},t) = E_0 \vec{\epsilon}_p e^{i(kz-wt)}+ c.c. \qquad k = \frac{2\pi}{\lambda} \; w = 2\pi\nu \; \lambda\nu = c
-\end{equation*} 
-Il campo elettrico è libero, non ci sono cariche $\Rightarrow$ $\div\vec{E}=0 \rightarrow \vec{k}\cdot \vec{\epsilon}_p =0$. Quindi trasverso rispetto alla direzione di propagazione \newline
-$\vec{k} // \vec{z} \Rightarrow$ il vettore di polarizzazione appartiene al pino perpendicolare alla direzione di propagazione
-\begin{equation*}
-    I_0 = {|E_0|}^2
-\end{equation*} 
-Dopo polarizzazione: $\vec{E}'(\vec{r},t) = E_0'\vec{e}_x e^{i(kz-wt)}$
-\begin{equation*}
-    E_0' = E_0 cos\theta \Rightarrow I = I_0 \cos^2\theta
-\end{equation*}
-Dopo polarizzatore passa solo componente parallela $\rightarrow$ interpretazione che viene data. \newline
-Adesso faccio esperimento in cui diminuisco intensità fascio fino a che emetta solo un fotone alla volta. Conseguenze:
-\begin{enumerate}
-    \item Rilevatore o vede il fotone o non lo vede
-    \item Quando vede fotone lo vede tutto $\rightarrow $ tutta energia $h\nu$
-    \item se $\begin{cases}
-        \theta = 0 \Rightarrow \text{ rilevatore vede tutto fotone} \\
-        \theta = \frac{\pi}{2} \Rightarrow \text{ rilevatore non lo vede mai}
-    \end{cases}$ \newline
-    La probabilità con cui vedo fotone è $\cos^2\theta \Rightarrow$ Numero fotoni arrivato $ = N_0\cos^2\theta$. Ogni singolo fotone può essere rappresentato come miscela di 2 stati
-    \begin{itemize}
-        \item uno stato con probabilità di passare 1: $\psi_x$
-        \item uno stato con probabilità di passare 0: $\psi_y$
-    \end{itemize}
-    Questi valori sono mutualmente esclusivi
-    \item Descrivo come somma di due stati $\psi_p = \psi_x \cos\theta + \psi_y \sin\theta \rightarrow$ inizio principio di decomposizione spettrale
-    \begin{itemize}
-        \item $\psi_x$ passa con probabilità ${|\cos\theta|}^2=\cos^2\theta$
-        \item $\psi_y$ non passa con probabilità ${|\sin\theta|}^2=\sin^2\theta$
-    \end{itemize}
-    Interpretazione probabilistica è sensata perchè $\sin^2\theta + \cos^2\theta = 1$
-    \item Se io ora metto un altro polarizzatore lungo x, tutti i fotoni passeranno perchè ora tutti i fotoni sono $\psi_x$: dopo polarizzatore lo stato fotone è diventato $\psi_x$. La misura ha fatto precipitare lo stato del sistema da $\psi_p$ a $\psi_x$
-\end{enumerate}
-
-\chapter{De Broglie}
-Maxwell introduce andamento ondulatorio della radiazione elettromagnetico, mentre Einstein ipotizza andamento corpuscolare. De Broglie nel 1923 introduce ipotesi andamento ondulatorio elettroni. \newline
-Onda $\rightarrow \exp(i \vec{k}\cdot \vec{x}- iwt)$; per essere invariante secondo Loretz $(\vec{k},w),(\vec{p},E)$ diventano tetravettori
-\begin{equation*}
-    |\vec{p}| = \frac{E}{c} = \frac{h\nu}{c} = \frac{h}{\lambda} = \hslash |\vec{k}| \Rightarrow \frac{h}{|\vec{p}|}
-\end{equation*}
-Ad ogni particella di massa è associato $\vec{k} = \frac{\vec{p}}{\hslash}$ e quindi un'onda $\lambda = \frac{h}{|\vec{p}|}$ \newline
-Numericamente
-\begin{enumerate}
-    \item Elettroni: $m_e = 0.9 \times 10^{-30} Kg = 0.511 MeV = 0.511 \times 10^6 eV [eV = 1.6 \times 10^{-19} V\cdot J]$. Un elettrone non relativistico
-    \begin{equation*}
-        E = \frac{p^2}{2m} \rightarrow \lambda = \frac{h}{p} = \frac{h}{\sqrt[]{2m_eE}} = \frac{123}{\sqrt[]{Volt}}\times 10^{-10} m (\angs)
-    \end{equation*}
-    $\lambda \simeq 1 \angs \Rightarrow$ comparabile con raggi-x e distanza atomi cristallo
-    \item Neutroni termici (bassa temperatura termica): 
-    \begin{equation*}
-        \lambda = \frac{h}{p} = \frac{h}{\sqrt[]{2m_nE}} = \frac{h}{\sqrt[]{2m_n \frac{3}{2}K_BT}} =\frac{30}{\sqrt[]{T (Kelvin)}}\times 10^{-10} m (\angs)
-    \end{equation*}
-    \item Granello polvere: $1\mu m$ di dimensione 
-    \begin{equation*}
-        v = 1 \frac{mm}{s} \; m = 10^{-10} Kg \Rightarrow \lambda = 6.6 \times 10^{-11} \angs 
-    \end{equation*}
-\end{enumerate} 
-Non posso vederlo per oggetti macroscopici, ma solo a livello microscopico
-
-\section*{Esperimento di Davisson-Germer 1927}
-Fascio di elettroni su un cristallo di Nichel $\rightarrow$ ogni punto come sorgente $\Rightarrow$ nasce figura di interferenza/diffrazione 
-\section*{Esperimento doppia fenditura con elettroni 1950}
-\section*{Esperimento doppia fenditura con elettrone singolo 1974: Merli-Missiroli-Pozzi}
-\begin{enumerate}
-    \item Elettrone arriva tutto intero; la carica non si sparpaglia sullo schermo
-    \item \'E un grande numero di elettroni che dà origine a figura di interferenza
-    \item Arrivo sullo schermo sembra un arrivo casuale
-    \item Interpreto come distribuzione di probabilità
-    \item Se chiudo una fenditura $\Rightarrow$ sparisce figura interferenza
-    \item Ogni tentativo di capire da quale fenditura sia passato l'elettrone distrugge la figura di intereferenza
-    \item Cade il concetto di traiettoria 
-\end{enumerate}
-Per conservazione del momento $\rightarrow$ durante interazione con lo schermo c'è trasferimento di momento
-
-\chapter{Il principio di indeterminazione}
-Traiettoria $\rightarrow$ determinare posizione e velocità della particella istante per istante $\Rightarrow$ determino procedura di misura \newline
-Per determinare da quale fenditura sia passata la mia particella pongo uno schermo (1 fenditura), ma particella forma figura di diffrazione al passaggio nella fenditura \newline
-Facendo un'analisi degli ordini di grandezza, per una particella che passa da una fenditura di larghezza $\Delta y$, con una lunghezza d'onda $\lambda$, che forma un angolo $\theta$ si ha che
-\begin{equation*}
-    \Delta p_y \simeq p\theta = p \frac{\lambda}{\Delta y} = \frac{h}{\Delta y}
-\end{equation*}
-ottengo così il principio di indeterminazione di Heisenberg
-\begin{equation}
-    \Delta y \cdot \Delta p_y \simeq h
-\end{equation}
-più voglio determinare la posizione (minuisco $\Delta y$) più aumenta l'intervallo $\Delta p_y$; cade così il concetto di traiettoria. \newline
-Questa è un'approssimazione: significato completamente diverso da quello che ricaveremo esattamente \newline
-
-\noindent Principio di indeterminazione è l'effetto della perturbazione causata dallo strumento di misura $\rightarrow$ perturbazione ha ruolo essenziale in meccanica quantistica perchè ha lo stesso ordine di grandezza della mia misura
-\begin{itemize}
-    \item Elettrone: oltre a carica e massa ha anche un momento magnetico, che è una proprietà dell'elettrone $\Rightarrow$ spin $\left(\pm \frac{h}{2}\right)$ [elettrone come piccola calamita]
-\end{itemize}
+\input{Capitoli/principio_indeterminazione.tex}
 
 \chapter{L'equazione di Schrodinger}
 \'E ricavata da ipotesi plausibili, ma non è dimostrabile; descrive fenomeni quantistici, ma non relativistici. \newline
