@@ -1,52 +1,9 @@
-\documentclass[a4paper,11pt]{report}
-
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[italian]{babel}
-
-\usepackage{mathdots}
-\usepackage{mathtools}
-\usepackage{graphicx}
-\usepackage{amsfonts}
-\usepackage{amsthm}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{fancyhdr}
-\usepackage{float}
-\usepackage{geometry}
-\geometry{a4paper, top=2.5cm, bottom=2cm, left=1cm, right=1cm}
-\usepackage{hyperref}
-\hypersetup{
-	colorlinks=true,
-	linkcolor=white,
-	filecolor=white,
-	citecolor = white,      
-	urlcolor=cyan,
-}
-
-\swapnumbers
-\theoremstyle{remark}
-\newtheorem*{oss}{Oss}
-\newtheorem*{nb}{N.B}
-\newtheorem*{coro}{Corollario}
-\theoremstyle{definition}
-\newtheorem*{teo}{Teorema}
-\newtheorem*{Def}{Def}
-
-\newcommand{\C}{\mathbb{C}}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\angs}{\text{\AA}}
-\newcommand{\x}{\hat{x}}
-\newcommand{\p}{\hat{p}}
-
-\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\input{../preambolo.tex}
 
 \begin{document}
     \pagecolor{black}
     \color{white}
 
-	\date{}
-	\author{Marco Militello}
 	\title{Meccanica Quantistica}
 	\maketitle
 	\tableofcontents
@@ -221,8 +178,7 @@ sostituendo con ciò che abbiamo ottenuto dalle due equazioni precedenti si otti
 \end{equation*}
 che in definitiva si ottiene 
 \begin{equation}
-    \label{eq:2}
-    \frac{\delta}{\delta t}{|\psi|}^2 = -\frac{\hslash}{2im} (\psi^*\nabla^2\psi - \psi\nabla^2\psi^*)
+    \frac{\delta}{\delta t}{|\psi|}^2 = -\frac{\hslash}{2im} (\psi^*\nabla^2\psi - \psi\nabla^2\psi^*) \tag{a}
 \end{equation}
 Ora posso definire $\vec{J}$, densità di corrente di probabilità
 \begin{equation*}
@@ -236,15 +192,14 @@ definendo la densità di probabilità $\rho$
 \begin{equation*}
     \rho = {|\psi(t,\vec{x})|}^2
 \end{equation*}
-l'\autoref{eq:2} diventa
+l'equazione (a) diventa
 \begin{equation}
-    \label{eq:3}
-    \frac{\delta \rho}{\delta t} + \mbox{div}\vec{J} = 0
+    \frac{\delta \rho}{\delta t} + \mbox{div}\vec{J} = 0 \tag{b}
 \end{equation}
 Commenti:
 \begin{enumerate}
     \item $\vec{J}$ è reale: $\vec{J}^* = \vec{J}$
-    \item A meno di interpretazione l' \autoref{eq:3} è uguale all'equazione di continuità della carica elettrica: conservazione della carica locale e non globale
+    \item A meno di interpretazione la  è uguale all'equazione di continuità della carica elettrica: conservazione della carica locale e non globale
 \end{enumerate}
 Prendo un volume $\Omega$ arbitrario ($\delta \Omega$ è la superficie del volume)
 \begin{equation*}
@@ -598,5 +553,6 @@ Possiamo ora combinare le equazioni
 \end{equation*}
 Nel limite classico
 
+\input{Capitoli/legame_p2_L2.tex}
 
 \end{document}
