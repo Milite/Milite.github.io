@@ -321,3 +321,23 @@ dove gli \(H_n(\xi)\) sono i polinomi di Hermite
         0 & i\, \sqrt[]{2}& 0  
     \end{array}\right]
 \end{gather*}
+
+\section{Oscillatore armonico 3D}
+
+\boxedeq{\hat{H} = \hat{H}_x + \hat{H}_y + \hat{H}_z = \sum_{i=0}^3 -\frac{\hslash^2}{2m}\frac{\delta^2}{\delta x^2_i} + \frac{1}{2} m \omega^2_i x^2_i}
+\begin{equation*}
+    \varphi (x,y,z) = \varphi^{\omega_1}_{n_1}(x) + \varphi^{\omega_2}_{n_2}(y) + \varphi^{\omega_3}_{n_3}(z)
+\end{equation*}
+\begin{equation*}
+     E_{n_1,n_2,n_3} = \hslash\omega_1 \bra{n_1 + \frac{1}{2}} + \hslash\omega_2 \bra{n_2 + \frac{1}{2}} + \hslash\omega_3 \bra{n_3 + \frac{1}{2}}
+\end{equation*}
+Se \(\omega_1,\omega_2,\omega_3\) sono incommensurabili \(\Rightarrow\) non c'è degenerazione \newline
+Posso aumentare al massimo la simmetria: \(\omega = \omega_1 = \omega_2 = \omega_3\)
+\begin{equation*}
+    \hat{H} = \frac{\hat{p}^2}{2m} + \frac{1}{2} m \omega^2 \hat{\vec{x}}^2 \qquad V = \frac{1}{2}m\omega^2r^2 = V(r) \mbox{ sferosimmetrico}
+\end{equation*}
+allora nascono nuove costanti del moto e quindi compare la degenarazione
+\begin{gather*}
+    E_{n_1,n_2,n_3} = \hslash\omega \bra{n_1 + n_2 + n_3 + \frac{3}{2}} \\
+    n_{deg} = \frac{1}{2}(n+1)(n+2) \qquad n = n_1 + n_2 + n_3
+\end{gather*}

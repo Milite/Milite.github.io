@@ -1,54 +1,3 @@
-\documentclass[a4paper,11pt]{report}
-
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[italian]{babel}
-
-\usepackage{mathdots}
-\usepackage{mathtools}
-\usepackage{graphicx}
-\usepackage{amsfonts}
-\usepackage{amsthm}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{fancyhdr}
-\usepackage{float}
-\usepackage{geometry}
-\geometry{a4paper, top=2.5cm, bottom=2cm, left=2cm, right=2cm}
-\usepackage{hyperref}
-\hypersetup{
-	colorlinks=true,
-	linkcolor=black,
-	filecolor=blue,
-	citecolor = black,      
-	urlcolor=cyan,
-}
-
-\swapnumbers
-\theoremstyle{remark}
-\newtheorem*{oss}{Oss}
-\newtheorem*{nb}{N.B}
-\newtheorem*{coro}{Corollario}
-\theoremstyle{definition}
-\newtheorem*{teo}{Teorema}
-\newtheorem*{Def}{Def}
-
-\newcommand{\C}{\mathbb{C}}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\angs}{\text{\AA}}
-\newcommand{\x}{\hat{x}}
-\newcommand{\p}{\hat{p}}
-
-\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
-
-\begin{document}
-	\date{}
-	\author{Marco Militello}
-	\title{Meccanica Quantistica}
-	\maketitle
-	\tableofcontents
-	\newpage
-
 \chapter{Formule}
 
 \section{Equazione Schrodinger per una particella libera 1D}
@@ -164,4 +113,62 @@
     E_n = \hslash\omega \left(n + \frac{1}{2}\right)
 \end{equation*}
 
-\end{document}
+\chapter{Per esame}
+
+\section{Traformata di Fourier}
+\begin{equation*}
+    \hat{f}(k) = \frac{1}{\sqrt[]{2\pi}} \int dx \, e^{-ikx}f(x) \qquad k = \frac{p}{\hslash}
+\end{equation*}
+
+\section{Rappresentazione coordinate}
+\begin{gather*}
+    \hat{p}_x = -i\hslash \frac{\delta}{\delta x} \\
+    \hat{x} = x 
+\end{gather*}
+
+\section{Rappresentazione coordinate}
+\begin{gather*}
+    \hat{p} = p \\
+    \hat{x} = i \hslash \frac{\delta}{\delta p}
+\end{gather*}
+
+\section{Operatore hamiltoniana}
+\begin{equation*}
+    \hat{H} = \frac{\hat{p}^2}{2m} + V(\hat{x})
+\end{equation*}
+
+\section{Valor medio}
+\begin{gather*}
+    <A> = \int dx \, \psi^*(x)A\psi(x) \\
+    <A> = \int dx \, \tilde{\psi}^*(x) A \tilde{\psi}(x)
+\end{gather*}
+
+\section{Buche di potenziale}
+
+\begin{itemize}
+    \item Particella in una scatola con potenziale infinito
+        \subsection*{Energia}
+        \begin{equation*}
+            E_n = \frac{n^2 \pi^2 \hslash^2}{2a^2m}
+        \end{equation*}
+        \subsection*{Autofunzioni}
+        \begin{equation*}
+            \varphi_n = \sqrt[]{\frac{2}{a}}\sin \bra{\frac{n\pi x}{a}}
+        \end{equation*}
+\end{itemize}
+
+\section{Equazione Schrodinger}
+\begin{equation*}
+    \ddot{\psi} + \frac{2m}{\hslash^2}[E-V(x)]\psi(x) = 0
+\end{equation*}
+
+\section{Oscillatore armonico}
+\begin{equation*}
+    \hat{x}|n> = \sqrt[]{\frac{\hslash}{2m\omega}} (\sqrt[]{n+1}|n+1> \sqrt[]{n}|n-1>)
+\end{equation*}
+
+\section{Formule trigonometriche}
+
+\begin{equation*}
+    \sin (2x) = 2 \sin x \cos x
+\end{equation*}
