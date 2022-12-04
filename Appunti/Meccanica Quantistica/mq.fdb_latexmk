@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1669027197 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/mq.tex" "mq.pdf" "mq" 1669027205
+["pdflatex"] 1670160414 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/mq.tex" "mq.pdf" "mq" 1670160422
   "../preambolo.tex" 1668870209 1208 9d39311cc10f8b92e168f7396eb346e1 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1668350939 97363 1cc07ab0b821ab7506c90c5287e965d8 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1648032019 10246961 b72c463e4cc72abb29cb8a40ae680e07 ""
@@ -133,10 +133,10 @@
   "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/mq.tex" 1669027174 30349 de8e0d1b72925287eafbcb6e5bc7b520 ""
   "formule.tex" 1669027165 5748 084c8547a20043130abda5cb7e05dec1 ""
   "immagini/oscillatore_armonico1.jpg" 1667727971 89012 e9035bf4c8a9441b4f5c9a328f088a54 ""
-  "mq.aux" 1669027204 10102 07cc8a27a16de3ac67304558f3d65716 "pdflatex"
-  "mq.out" 1669027204 11509 57c3eaad9ed0c2d66129ee4444333ca1 "pdflatex"
+  "mq.aux" 1670160420 10102 07cc8a27a16de3ac67304558f3d65716 "pdflatex"
+  "mq.out" 1670160420 11509 57c3eaad9ed0c2d66129ee4444333ca1 "pdflatex"
   "mq.tex" 1669027174 30349 de8e0d1b72925287eafbcb6e5bc7b520 ""
-  "mq.toc" 1669027204 5381 2c2f1d04207dfaeb20003f933eeb2bf8 "pdflatex"
+  "mq.toc" 1670160420 5381 2c2f1d04207dfaeb20003f933eeb2bf8 "pdflatex"
   (generated)
   "mq.aux"
   "mq.log"
