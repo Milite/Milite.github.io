@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1670160414 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/mq.tex" "mq.pdf" "mq" 1670160422
+["pdflatex"] 1670412012 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/mq.tex" "mq.pdf" "mq" 1670412019
   "../preambolo.tex" 1668870209 1208 9d39311cc10f8b92e168f7396eb346e1 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1668350939 97363 1cc07ab0b821ab7506c90c5287e965d8 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1648032019 10246961 b72c463e4cc72abb29cb8a40ae680e07 ""
@@ -126,17 +126,18 @@
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575571282 9715 b051d5b493d9fe5f4bc251462d039e5f ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1636710260 10214 00ce62e730d0cfe22b35e8f1c84949c7 ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
+  "Capitoli/atomo_idrogenoide.tex" 1670411966 2290 b216ce6cd5c1e5b7c6af0965b9d5bf34 ""
   "Capitoli/crisi_fisica_classica.tex" 1668251897 12098 b0b4c148e7b87f2bca9358e93f31f272 ""
   "Capitoli/legame_p2_L2.tex" 1668670733 712 8dda1cb9355a92078d236145edfbb493 ""
   "Capitoli/oscillatore_armonico.tex" 1668870616 13712 0ecfd85d2776c30987fef13cf23c54d3 ""
   "Capitoli/principio_indeterminazione.tex" 1668251713 1547 bce4c3d0e076231c7f50181a2a383407 ""
-  "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/mq.tex" 1669027174 30349 de8e0d1b72925287eafbcb6e5bc7b520 ""
+  "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/mq.tex" 1670412001 30389 eb2cd083f8eb77b714defb71607c682b ""
   "formule.tex" 1669027165 5748 084c8547a20043130abda5cb7e05dec1 ""
   "immagini/oscillatore_armonico1.jpg" 1667727971 89012 e9035bf4c8a9441b4f5c9a328f088a54 ""
-  "mq.aux" 1670160420 10102 07cc8a27a16de3ac67304558f3d65716 "pdflatex"
-  "mq.out" 1670160420 11509 57c3eaad9ed0c2d66129ee4444333ca1 "pdflatex"
-  "mq.tex" 1669027174 30349 de8e0d1b72925287eafbcb6e5bc7b520 ""
-  "mq.toc" 1670160420 5381 2c2f1d04207dfaeb20003f933eeb2bf8 "pdflatex"
+  "mq.aux" 1670412018 10322 fb009a66a9ac3dc2ebf97d6cc383a133 "pdflatex"
+  "mq.out" 1670412018 11786 bca3c1ce94135a73204c5d5b1bd8ad49 "pdflatex"
+  "mq.tex" 1670412001 30389 eb2cd083f8eb77b714defb71607c682b ""
+  "mq.toc" 1670412018 5484 23ec2efd8472e61e3c074d9afdfebe49 "pdflatex"
   (generated)
   "mq.aux"
   "mq.log"

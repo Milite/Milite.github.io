@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  4 DEC 2022 14:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  7 DEC 2022 12:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -968,22 +968,22 @@ File: ujkpsyc.fd 2006/08/15 v1.0
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 ...enziale arbitrario V(x)}{33}{section.16.2}
+l.33 ...}{\numberline {17}Formule}{35}{chapter.17}
                                                   % [1
 
 ]
-Overfull \hbox (1.53296pt too wide) detected at line 49
-\T1/jkp/m/n/10.95 16.10 
- []
-
-
-Overfull \hbox (0.49277pt too wide) detected at line 50
-\T1/jkp/m/n/10.95 16.10.1 
+Overfull \hbox (1.53296pt too wide) detected at line 50
+\T1/jkp/m/n/10.95 17.10 
  []
 
 
 Overfull \hbox (0.49277pt too wide) detected at line 51
-\T1/jkp/m/n/10.95 16.10.2 
+\T1/jkp/m/n/10.95 17.10.1 
+ []
+
+
+Overfull \hbox (0.49277pt too wide) detected at line 52
+\T1/jkp/m/n/10.95 17.10.2 
  []
 
 )
@@ -1059,7 +1059,7 @@ Capitolo 11.
 [23
 
 ] [24] [25]
-<immagini/oscillatore_armonico1.jpg, id=513, 1284.8pt x 479.7925pt>
+<immagini/oscillatore_armonico1.jpg, id=518, 1284.8pt x 479.7925pt>
 File: immagini/oscillatore_armonico1.jpg Graphic file (type jpg)
 <use immagini/oscillatore_armonico1.jpg>
 Package pdftex.def Info: immagini/oscillatore_armonico1.jpg  used on input line 202.
@@ -1078,32 +1078,36 @@ Capitolo 14.
 
 ]
 Capitolo 15.
-) (formule.tex [32
+) (Capitoli/atomo_idrogenoide.tex [32
 
 ]
 Capitolo 16.
 [33
 
-] [34] [35]
+]) (formule.tex [34]
 Capitolo 17.
-[36
+[35
 
-]) [37] (mq.aux)
+] [36] [37]
+Capitolo 18.
+[38
+
+]) [39] (mq.aux)
 Package rerunfilecheck Info: File `mq.out' has not changed.
-(rerunfilecheck)             Checksum: 57C3EAAD9ED0C2D66129EE4444333CA1;11509.
+(rerunfilecheck)             Checksum: BCA3C1CE94135A73204C5D5B1BD8AD49;11786.
  ) 
 Here is how much of TeX's memory you used:
- 14038 strings out of 478582
- 218227 string characters out of 2844344
+ 14047 strings out of 478582
+ 218491 string characters out of 2844344
  542139 words of memory out of 3000000
- 31760 multiletter control sequences out of 15000+600000
+ 31763 multiletter control sequences out of 15000+600000
  579573 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,18n,79p,671b,510s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 74i,18n,79p,671b,535s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}<C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpbn8a.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpbne.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpex.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpexa.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmi.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmia.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmit8a.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmn8a.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmne.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsy.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsyc.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on mq.pdf (38 pages, 362780 bytes).
+Output written on mq.pdf (40 pages, 368989 bytes).
 PDF statistics:
- 689 PDF objects out of 1000 (max. 8388607)
- 211 named destinations out of 1000 (max. 500000)
- 478 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 702 PDF objects out of 1000 (max. 8388607)
+ 214 named destinations out of 1000 (max. 500000)
+ 486 words of extra memory for PDF output out of 10000 (max. 10000000)
 

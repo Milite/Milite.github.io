@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  18 NOV 2022 10:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  7 DEC 2022 15:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Astrofisica/astrofica.tex
-(c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Astrofisica/astrofica.tex
+**c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Relatività/relativita.tex
+(c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Relatività/relativita.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (../preambolo.tex (C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
@@ -812,8 +812,8 @@ File: t1jkp.fd 2007/01/24 Fontinst v1.928 font definitions for T1/jkp.
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count304
 \l__pdf_internal_box=\box58
-) (astrofica.aux)
-\openout1 = `astrofica.aux'.
+) (relativita.aux)
+\openout1 = `relativita.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 3.
 LaTeX Font Info:    Trying to load font information for OML+jkp on input line 3.
@@ -939,9 +939,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
 LaTeX Info: Redefining \nameref on input line 3.
- (astrofica.out) (astrofica.out)
+ (relativita.out) (relativita.out)
 \@outlinefile=\write3
-\openout3 = `astrofica.out'.
+\openout3 = `relativita.out'.
 
 LaTeX Font Info:    Trying to load font information for OT1+jkp on input line 9.
  (C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ot1jkp.fd
@@ -964,9 +964,9 @@ LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 9
 File: ujkpsyc.fd 2006/08/15 v1.0
 ) [1
 
-{C:/Users/m2001/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (astrofica.toc)
+{C:/Users/m2001/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (relativita.toc)
 \tf@toc=\write4
-\openout4 = `astrofica.toc'.
+\openout4 = `relativita.toc'.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
@@ -975,56 +975,54 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 l.10 	\newpage
                [1
 
-] (Capitoli/introduzione.tex
+] (capitoli/richiami.tex
 Capitolo 1.
-LaTeX Font Info:    Trying to load font information for TS1+jkp on input line 19.
-(C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ts1jkp.fd
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--21
+
+ []
+
+[2
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+jkp on input line 50.
+ (C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ts1jkp.fd
 File: ts1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for TS1/jkp.
-) [2
-
-]
-Overfull \hbox (9.89594pt too wide) in paragraph at lines 85--88
-\T1/jkp/m/n/10.95 Potenza to-ta-le emes-sa da stel-la ad una cer-ta fre-quen-za as-su-men-do stel-la co-me sfe-ra per-fet-ta mi-su-ra-ta in $\OML/jkp/m/it/10.95 erg s[][][]$ 
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+)
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--133
-
- []
-
-[4]) (Capitoli/struttura_stellare.tex [5]
+[3]) (capitoli/formalismo.tex [4]
 Capitolo 2.
-[6
 
-] [7]) (Capitoli/evoluzione_stellare.tex [8]
-Capitolo 3.
-) (Capitoli/nane_bianche.tex [9
+Underfull \hbox (badness 10000) in paragraph at lines 43--47
 
-]
-Capitolo 4.
-[10
+ []
 
-] [11]) [12] (astrofica.aux)
-Package rerunfilecheck Info: File `astrofica.out' has not changed.
-(rerunfilecheck)             Checksum: 1AD08A066194CA6B18DA0B681DC07549;1787.
+[5
+
+] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 130--134
+
+ []
+
+[7] [8] [9]) [10] (relativita.aux)
+Package rerunfilecheck Info: File `relativita.out' has not changed.
+(rerunfilecheck)             Checksum: E948638A04FC7A52CC32F8BCCC500817;1470.
  ) 
 Here is how much of TeX's memory you used:
- 13814 strings out of 478582
- 215700 string characters out of 2844344
- 523889 words of memory out of 3000000
- 31699 multiletter control sequences out of 15000+600000
- 579579 words of font info for 142 fonts, out of 8000000 for 9000
+ 13790 strings out of 478582
+ 215036 string characters out of 2844344
+ 527929 words of memory out of 3000000
+ 31693 multiletter control sequences out of 15000+600000
+ 573432 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,13n,79p,640b,441s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}<C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpbn8a.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpex.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmi.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmia.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmit8a.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmn8a.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmne.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on astrofica.pdf (13 pages, 132856 bytes).
+ 74i,13n,79p,490b,421s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpbn8a.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpbne.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpex.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmi.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmn8a.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmne.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsy.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsyc.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on relativita.pdf (11 pages, 118303 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 177 PDF objects out of 1000 (max. 8388607)
+ 45 named destinations out of 1000 (max. 500000)
+ 57 words of extra memory for PDF output out of 10000 (max. 10000000)
 
