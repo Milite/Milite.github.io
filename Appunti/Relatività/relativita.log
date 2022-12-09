@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  7 DEC 2022 15:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  9 DEC 2022 09:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -8,8 +8,8 @@ entering extended mode
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (../preambolo.tex (C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
-(C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
-File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+(C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@chapter=\count186
@@ -803,7 +803,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip59
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 25.
+Package hyperref Info: Option `colorlinks' set `true' on input line 26.
 )
 LaTeX Font Info:    Trying to load font information for T1+jkp on input line 3.
  (C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\t1jkp.fd
@@ -904,12 +904,12 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \topmargin=-38.1381pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=50.0pt
+* \marginparwidth=35.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -988,12 +988,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--21
 LaTeX Font Info:    Trying to load font information for TS1+jkp on input line 50.
  (C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ts1jkp.fd
 File: ts1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for TS1/jkp.
-)
+) [3]
 Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
-[3]) (capitoli/formalismo.tex [4]
+) (capitoli/formalismo.tex [4]
 Capitolo 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 43--47
@@ -1012,15 +1012,15 @@ Package rerunfilecheck Info: File `relativita.out' has not changed.
 (rerunfilecheck)             Checksum: E948638A04FC7A52CC32F8BCCC500817;1470.
  ) 
 Here is how much of TeX's memory you used:
- 13790 strings out of 478582
- 215036 string characters out of 2844344
- 527929 words of memory out of 3000000
- 31693 multiletter control sequences out of 15000+600000
- 573432 words of font info for 137 fonts, out of 8000000 for 9000
+ 13792 strings out of 478582
+ 214993 string characters out of 2844344
+ 526883 words of memory out of 3000000
+ 31698 multiletter control sequences out of 15000+600000
+ 565965 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,13n,79p,490b,421s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 74i,13n,79p,490b,435s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpbn8a.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpbne.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpex.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmi.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmn8a.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmne.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsy.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsyc.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on relativita.pdf (11 pages, 118303 bytes).
+Output written on relativita.pdf (11 pages, 118466 bytes).
 PDF statistics:
  177 PDF objects out of 1000 (max. 8388607)
  45 named destinations out of 1000 (max. 500000)
