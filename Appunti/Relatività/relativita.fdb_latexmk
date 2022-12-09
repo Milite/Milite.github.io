@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1670576128 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Relatività/relativita.tex" "relativita.pdf" "relativita" 1670576136
-  "../preambolo.tex" 1670576125 1209 fba967f8c1babbe99f6a90b714b3ff60 ""
+["pdflatex"] 1670582621 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Relatività/relativita.tex" "relativita.pdf" "relativita" 1670582629
+  "../preambolo.tex" 1670577901 1210 2edb5fd07d5f13c84db420ff5f4dffca ""
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1670423622 97363 1cc07ab0b821ab7506c90c5287e965d8 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1648032019 10246961 b72c463e4cc72abb29cb8a40ae680e07 ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -119,13 +119,13 @@
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575571282 9715 b051d5b493d9fe5f4bc251462d039e5f ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1636710260 10214 00ce62e730d0cfe22b35e8f1c84949c7 ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Relatività/relativita.tex" 1668762891 241 66b9f06edb4e2996b67319d16ecc8cd1 ""
-  "capitoli/formalismo.tex" 1668762883 12889 fe1fe2f0976a548190893ed3dfba52b6 ""
-  "capitoli/richiami.tex" 1668762846 6289 40ce936220f2e0bf9d603ef3432fccb5 ""
-  "relativita.aux" 1670576135 1853 496d3c979d17765d945aa9949a38085f "pdflatex"
-  "relativita.out" 1670576135 1470 e948638a04fc7a52cc32f8bccc500817 "pdflatex"
-  "relativita.tex" 1668762891 241 66b9f06edb4e2996b67319d16ecc8cd1 ""
-  "relativita.toc" 1670576135 685 1c3e1046903b331a4314d737f1cf361b "pdflatex"
+  "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Relatività/relativita.tex" 1670577817 241 66b9f06edb4e2996b67319d16ecc8cd1 ""
+  "capitoli/formalismo.tex" 1670582618 12965 1346ef0e235eb5987bb3ec2d3d991cc6 ""
+  "capitoli/richiami.tex" 1670579626 6290 838523647910b0db5efbcfe7232a05e4 ""
+  "relativita.aux" 1670582628 1854 ff40c508416835f4a492769cfb706b9b "pdflatex"
+  "relativita.out" 1670582628 1470 e948638a04fc7a52cc32f8bccc500817 "pdflatex"
+  "relativita.tex" 1670577817 241 66b9f06edb4e2996b67319d16ecc8cd1 ""
+  "relativita.toc" 1670582628 686 8885dd7763f4832dbeb5c97df8576e51 "pdflatex"
   (generated)
   "relativita.aux"
   "relativita.log"
