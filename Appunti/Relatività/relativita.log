@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  9 DEC 2022 11:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  10 DEC 2022 10:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -127,12 +127,66 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
+) (C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/generic/mathdots\mathdots.sty
+Package: mathdots 2014/06/11 v0.9 Improve and add various macros for dots in math.
+\MDo@unit=\dimen157
+\MDo@dotsbox=\box52
+\MDoprekern=\muskip17
+\MDopostkern=\muskip18
+\MDodotkern=\muskip19
+) (C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\empheq.sty
+Package: empheq 2017/03/31 v2.15 Emphasizing equations
+ (C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+) (C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
+Package: mathtools 2022/02/07 v1.28a mathematical typesetting tools
+ (C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count281
+\calc@Bcount=\count282
+\calc@Adimen=\dimen158
+\calc@Bdimen=\dimen159
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count283
+\calc@Cskip=\skip54
+)
+\g_MT_multlinerow_int=\count284
+\l_MT_multwidth_dim=\dimen160
+\origjot=\skip55
+\l_MT_shortvdotswithinadjustabove_dim=\dimen161
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen162
+\l_MT_above_intertext_sep=\dimen163
+\l_MT_below_intertext_sep=\dimen164
+\l_MT_above_shortintertext_sep=\dimen165
+\l_MT_below_shortintertext_sep=\dimen166
+\xmathstrut@box=\box53
+\xmathstrut@dim=\dimen167
+)
+\l_EQ_equationtype_int=\count285
+\l_EQ_alignmentmode_int=\count286
+\l_EQ_totalwidth_dim=\dimen168
+\l_EQ_displaywidth_dim=\dimen169
+\l_EQ_temp_linewidth_dim=\dimen170
+\l_EQ_linewidth_dim=\dimen171
+\EmphEqdelimitershortfall=\dimen172
+\EmphEqdelimiterfactor=\count287
+\g_EQ_toptag_height_dim=\dimen173
+\g_EQ_bottomtag_depth_dim=\dimen174
+\g_EQ_toprow_height_dim=\dimen175
+\g_EQ_bottomrow_depth_dim=\dimen176
+\g_EQ_widesttag_dim=\dimen177
+\EQ_mathdisplay_box=\box54
+\EQ_tag_box=\box55
+\g_EQ_temprow_int=\count288
 ) (C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\kpfonts.sty
 Package: kpfonts  2022/09/19 v3.34
-\c@mv@rm=\count281
-\c@mv@boldrm=\count282
-\c@mv@sf=\count283
-\c@mv@boldsf=\count284
+\c@mv@rm=\count289
+\c@mv@boldrm=\count290
+\c@mv@sf=\count291
+\c@mv@boldsf=\count292
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 374.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/jkp/m/n on input line 374.
@@ -395,60 +449,6 @@ LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `boldsf'
 (Font)                  U/jkpexa/m/n --> U/jkpexa/bx/n on input line 640.
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 960.
 LaTeX Info: Redefining \not on input line 1600.
-) (C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/generic/mathdots\mathdots.sty
-Package: mathdots 2014/06/11 v0.9 Improve and add various macros for dots in math.
-\MDo@unit=\dimen157
-\MDo@dotsbox=\box52
-\MDoprekern=\muskip17
-\MDopostkern=\muskip18
-\MDodotkern=\muskip19
-) (C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\empheq.sty
-Package: empheq 2017/03/31 v2.15 Emphasizing equations
- (C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
-Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
-) (C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
-Package: mathtools 2022/02/07 v1.28a mathematical typesetting tools
- (C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count285
-\calc@Bcount=\count286
-\calc@Adimen=\dimen158
-\calc@Bdimen=\dimen159
-\calc@Askip=\skip52
-\calc@Bskip=\skip53
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count287
-\calc@Cskip=\skip54
-)
-\g_MT_multlinerow_int=\count288
-\l_MT_multwidth_dim=\dimen160
-\origjot=\skip55
-\l_MT_shortvdotswithinadjustabove_dim=\dimen161
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen162
-\l_MT_above_intertext_sep=\dimen163
-\l_MT_below_intertext_sep=\dimen164
-\l_MT_above_shortintertext_sep=\dimen165
-\l_MT_below_shortintertext_sep=\dimen166
-\xmathstrut@box=\box53
-\xmathstrut@dim=\dimen167
-)
-\l_EQ_equationtype_int=\count289
-\l_EQ_alignmentmode_int=\count290
-\l_EQ_totalwidth_dim=\dimen168
-\l_EQ_displaywidth_dim=\dimen169
-\l_EQ_temp_linewidth_dim=\dimen170
-\l_EQ_linewidth_dim=\dimen171
-\EmphEqdelimitershortfall=\dimen172
-\EmphEqdelimiterfactor=\count291
-\g_EQ_toptag_height_dim=\dimen173
-\g_EQ_bottomtag_depth_dim=\dimen174
-\g_EQ_toprow_height_dim=\dimen175
-\g_EQ_bottomrow_depth_dim=\dimen176
-\g_EQ_widesttag_dim=\dimen177
-\EQ_mathdisplay_box=\box54
-\EQ_tag_box=\box55
-\g_EQ_temprow_int=\count292
 ) (C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring symbol font `AMSa' on input line 59.
@@ -802,7 +802,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip59
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 31.
+Package hyperref Info: Option `colorlinks' set `true' on input line 30.
 )
 LaTeX Font Info:    Trying to load font information for T1+jkp on input line 3.
  (C:\Users\m2001\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\t1jkp.fd
@@ -1008,13 +1008,13 @@ Package rerunfilecheck Info: File `relativita.out' has not changed.
 Here is how much of TeX's memory you used:
  13797 strings out of 478582
  215071 string characters out of 2844344
- 526106 words of memory out of 3000000
+ 526114 words of memory out of 3000000
  31702 multiletter control sequences out of 15000+600000
  565965 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,15n,71p,490b,415s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 65i,18n,71p,490b,415s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpbn8a.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpbne.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpex.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmi.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmn8a.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmne.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsy.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsyc.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on relativita.pdf (11 pages, 118794 bytes).
+Output written on relativita.pdf (11 pages, 118799 bytes).
 PDF statistics:
  177 PDF objects out of 1000 (max. 8388607)
  45 named destinations out of 1000 (max. 500000)
