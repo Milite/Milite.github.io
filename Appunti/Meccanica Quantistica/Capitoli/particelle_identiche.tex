@@ -1,0 +1,79 @@
+\chapter{Particelle identiche}
+
+In meccanica classica le particelle sono distinguibili, perchè è possibile seguire la traiettoria; in meccanica quantistica per un arbitrario numero di particelle è valido che le traiettorie non sono definibili: non è possibile fare una mappatura o dare delle etichette.
+
+\noindent Una conseguenza del principio di inderteminazione è l'indistinguibilità delle particelle identiche. 
+Devo costruire un modo di numerare i gradi di libertà tale che non implichi la numerazione delle particelle
+
+\noindent Per le particelle indistinguibili non ci deve essere alcuna differenza nell'ordine: possiamo solo dire che in certo stato fisico \(\psi\) c'è una particella nella posizione 1 con una certa massa, una particelle nella posizione 2, una nella posizione 3, \dots, ma non possiamo dire che sia la prima particella nella posizione 1, ecc. 
+
+\noindent Tutti i gradi di libertà li indico con "1","2","3", \dots 
+
+\noindent La \(\psi(1,2,3,\dots)\) deve rappresentare lo stesso stato di \(\psi(2,1,3,\dots)\): posso permutare tutte le N partcelle e avere lo stesso stato; ma ciò non vuol dire che i due stati sono indentici
+\begin{equation*}
+    \psi(2,1) = \alpha \psi(1,2) \tag{1}
+\end{equation*}
+con \(\alpha\) che può solo dipendere dal tipo con cui abbiamo a che fare; non può dipendere dalla posizione, dal momento o dalla proiezione della particella perchè lo spazio è omogeneo e isotropo
+
+\noindent Si ricava che \(\alpha^2 = 1\) allora si hanno solo 2 casi
+
+\begin{enumerate}
+    \item \(\alpha=1\): simmetrica per scambio di due particelle qualunque
+    \item \(\alpha=-1\): antisimmetrica per scambio di due particelle qualunque
+\end{enumerate}
+
+\noindent Questo discorso è valido per qualsiasi particella, sia che sia elementare, sia che sia composta
+
+\noindent Le particelle con \(\alpha=1\) sono dette BOSONI, mentre quelle con \(\alpha=-1\) sono dette FERMIONI; hanno comportamenti completamente differenti
+
+\noindent Combinando la meccanica quantistica e la relatività si ricava il teorema SPIN-STATISTICA: 
+
+\noindent tutte le particelle il cui spi è semi-intero sono dette fermioni e seguono la statistica di Fermi; quelle invece che hanno spin intero sono dette bosoni e seguono la statistica di Bose-Einstein
+
+\noindent Per le particelle massless non si può ricavare quello che abbiamo fatto fino ad ora perchè mancano le proiezioni intermedie. Però nei fatti vengono considerate bosoni perchè hanno "spin" intero
+
+\section{Particelle composte}
+
+Una particella composta da un numero pari di fermioni e un numero arbitrario di bosoni è un bosone, mentre una composta da un numero dispari di fermioni e un numero arbitrario di bosoni è detta fermione
+
+\section{Stati di particella indipendente o particella singolare}
+
+Per il potenziale, uso come approssimazione il considerare soltanto la distanza dal nucleo e non l'interazione tra le singole particelle.
+Con questa approssimazione posso procedere alla separazione delle variabili, ottenendo una soluzione fattorizzata, costituita da stati di particella indipendente (indipendente del moto delle altre particelle)
+
+\noindent Ipotesi: considero elettroni indipendenti tra di loro (APPROSSIMAZIONE DI HARTREE)
+
+\begin{enumerate}
+    \item trascuro totalmente le interazioni tra gli elettroni 
+    \item considero che gli altri elettroni attorno trasformano
+    \begin{equation*}
+        V_c = \frac{1}{r} \mapsto \tilde{V} = \frac{1}{r^\alpha}
+    \end{equation*}
+    \item \(\psi\) prodotto di autofunzioni dell'elettrone singolo
+\end{enumerate}
+
+\begin{itemize}
+    \item considero due elettroni
+    \begin{equation*}
+        \psi(1,2) = \phi_a(1)\phi_b(2)
+    \end{equation*}
+    
+    \noindent non può esistere uno stato di questo tipo che descrive i due elettroni perchè ci dice che il primo elettroni ha numeri quantici "a", mentre il secondo ha numeri quantici "b" 
+    
+    \noindent devo costruire una funzione d'onda antisimmetrica 
+    \begin{equation*}
+        \psi(1,2) = \frac{1}{\sqrt[]{2}}[\phi_a(1)\phi_b(2) - \phi_a(2)\phi_b(1) ]
+    \end{equation*}
+
+    \item considero due bosoni con approssimazione di Hartree, devo simmetrizzare la funzione d'onda 
+        \begin{equation*}
+            \psi(1,2) = \frac{1}{\sqrt[]{2}} [\phi_a(1)\phi_b(2) + \phi_a(2)\phi_b(1)]
+        \end{equation*}
+\end{itemize} 
+
+\noindent Conseguenze: \newline
+se cerchiamo di mettere 2 fermioni nello stesso stato otteniamo che la funzione d'onda finale è nulla; allora due fermioni non possono occupare lo stesso stato du particella singola: principio di esclusione di Pauli
+
+\noindent Esiste quindi una correlazione nel moto di 2 fermioni anche se non fossero interamente interagenti. Non possono avere lo stesso set di numeri quantici
+
+    

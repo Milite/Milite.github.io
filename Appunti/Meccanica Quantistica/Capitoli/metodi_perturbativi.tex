@@ -1,0 +1,81 @@
+\chapter{Metodi perturbativi}
+
+Vengono utilizzati per determinare autovalori e autofunzioni di hamiltoniane che non dipendono dal tempo; metodi approssimati validi solo per soluzioni analitiche 
+
+\section{Teoria perturbazioni non dipendenti dal tempo}
+
+\begin{equation*}
+    \hat{H} |\varphi_n> = E_n |\varphi_n> \qquad  \hat{H} = \hat{H}_0 + \hat{H}_p = \hat{H}_0 + \lambda \hat{H}_1
+\end{equation*}
+ipotizzo \(\lambda\) un parametro piccolo detto PARAMETRO DI ACCOPPIAMENTO
+
+\noindent Se riesco a risolvere esattamente \(\hat{H}_0\) allora posso cercare soluzioni come serie di potenze di \(\lambda\) che siano rapidamente convergenti in modo da guardare i primi termini della serie per capirne l'andamento
+
+\noindent N.B. \; Non è detto che \(\hat{H}\) siano funzioni analitiche in \(\lambda\)
+
+\noindent Per usare questo metodo devo essere sicuro che il mio sistema sia stabile, in modo che una piccola perturbazione nel sistema non cambi molto
+
+\subsection{Metodo generale calcolo perturbativo}
+
+Sapendo risolvere esattamente per \(\hat{H}_0\) posso riscrivere \(|\psi_n\) sulle autofunzioni \(\varphi_n\)
+
+\noindent Quindi il calcolo PERTURBATO è portato avanti con rappresentazione degli stati imperturbati
+
+\noindent Esistono due diversi casi, il caso in cui \(E^{(0)}_n\) sia non genere e il caso un cui invece sia degenere
+
+\subsection{Caso non degenere}
+
+Posso scrivere 
+\begin{equation*}
+    |\psi_n> = N(\lambda)\left[|\varphi_n> + \sum_{k \neq 0 }c_{nk}(\lambda)|\varphi_n>\right]
+\end{equation*}
+Se \(\lambda = 0\) allora
+\begin{itemize}
+    \item N(0) = 1
+    \item \(c_{nk}(0)=0\)
+\end{itemize}
+Per trovare \(c_{nk}(\lambda)\) cerco soluzioni analitiche espandendo in termini di \(\lambda\); faccio lo stesso con \(E_n\)
+
+\noindent La prima correzione dell'energia all'ordine 1 in \(\lambda\) è il valore di aspettazione della perturbazione tra gli stati imperturbati
+\begin{equation*}
+    \lambda E^{(1)}_n = <\varphi_n| \hat{H}_p | \varphi_n>
+\end{equation*}
+Se \(\varphi_n\) ha parità definita e la perturbazione è dispari allora l'integrale è nullo perchè diventa l'integrale di una funzione dispari 
+
+\noindent Calcolando \(c_{nk}(\lambda)\) si trova che la perturbazione mescola gli stati con diversi pesi, proporzionale al valore di aspettazione della perturbazione tra i due stati impertubati diviso per la differenza di energia tra i due stati imperturbati
+\begin{equation*}
+    \lambda c_{nk}^{(1)} = \frac{\lambda < \varphi_k |\hat{H_1} | \varphi_n> }{E^{(0)}_n - E^{(0)}_k }
+\end{equation*}
+
+\noindent Affinchè la serie in \(\lambda\) sia convergente voglio che i coefficienti siano sempre più piccoli; voglio:
+\begin{enumerate}
+    \item che l'energia all'ordine 1 sia piccola rispetto all'energia all'ordine 0
+    \item che gli elementi off the diagonal degli stati  della perturbazione tra gli stati imperturbati siano piccoli rispetto alla differenza di energia degli stati imperturturbati
+\end{enumerate}
+
+\noindent All'ordine 2 si ottiene 
+\begin{equation*}
+    \lambda^2 E^{(2)}_n = \sum_{k \neq n} \frac{{|<\varphi_k | \hat{H}_p | \varphi_n >|}^2}{E^{(0)}_n - E^{(0)}_k}
+\end{equation*}
+
+\subsection*{Commenti}
+
+\begin{itemize}
+    \item Per l'energia all'ordine 1 ho il valore di aspettazione della perturbazione tra gli stati imperturbati; all'ordine 2 trovo gli elementi fuori dalla diagonale
+    \item \(E^{(0)}_n - E^{(0)}_k\): per k diverso da n il denominatore non si annulla mai; gli stati lontani da \(E^{(0)}_n\) contribuiscono sempre meno alla somma: allora ho la speranza di troncare la sommatoria ai primi termini
+    \item Se \(\varphi_n\) è lo stato fondamentale allora le correzioni al secondo ordine sono negative 
+    \item Suppongo che lo stato k sia "più importante": allora se k è sopra il livello "n" le correzioni al secondo ordine sono negative, quindi il livello n viene spinto verso il basso; se k invece è sotto il livello n allora le correzioni al secondo ordine sono positive e quindi il livello n viene spinto verso l'alto. Si ha quella che viene chiamata TENDENZA DEI LIVELLI A RESPINGERSI
+\end{itemize}
+
+\section{Teoria perturbazioni sugli stati degeneri}
+
+Esistono più stati con la stessa energia \(E^{(0)}_n\)
+
+\noindent All'ordine 1 in \(\lambda\) si trova che per risolvere il problema dobbiamo diagonalizzare la perturbazione nel sottospazio degenere
+\begin{equation*}
+    \sum \alpha_i < \varphi^j_n | \hat{H}_1 | \varphi^i_n> = E^{(1)}_n \alpha_j
+\end{equation*}
+Troviamo che la correzione all'energia all'ordine 1 ha \(g_n\) valori, dove \(g_n\) rappresenta il numero della degenerazione del livello n-esimo. Per ogni valore di \(E^{(1)}_n\) corrispe un autovettore (\(g_n\) autovettori che diagonalizzano l'hamiltoniana perturbata nel sottospazio degenere)
+
+\noindent N.B. \; Non stiamo diagonalizzando la perturbazione in tutto lo spazio, altrimenti saremmo in grado di trovare gli autostati esatti
+

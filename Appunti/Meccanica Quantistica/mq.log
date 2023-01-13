@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  10 DEC 2022 11:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  12 JAN 2023 09:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -970,22 +970,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 l.31 ... {L}^2\) e \(\hat {p}^2\)}{35}{chapter.15}
                                                   % [1
 
-]
-Overfull \hbox (1.67993pt too wide) detected at line 50
-\T1/jkp/m/n/12 17.10 
- []
-
-
-Overfull \hbox (0.54pt too wide) detected at line 51
-\T1/jkp/m/n/12 17.10.1 
- []
-
-
-Overfull \hbox (0.54pt too wide) detected at line 52
-\T1/jkp/m/n/12 17.10.2 
- []
-
-)
+])
 \tf@toc=\write4
 \openout4 = `mq.toc'.
 
@@ -1058,7 +1043,7 @@ Capitolo 11.
 [25
 
 ] [26] [27]
-<immagini/oscillatore_armonico1.jpg, id=526, 1284.8pt x 479.7925pt>
+<immagini/oscillatore_armonico1.jpg, id=426, 1284.8pt x 479.7925pt>
 File: immagini/oscillatore_armonico1.jpg Graphic file (type jpg)
 <use immagini/oscillatore_armonico1.jpg>
 Package pdftex.def Info: immagini/oscillatore_armonico1.jpg  used on input line 202.
@@ -1083,30 +1068,34 @@ Capitolo 15.
 Capitolo 16.
 [36
 
-]) (formule.tex [37]
+]) (Capitoli/somma_momenti_angolari.tex [37]
 Capitolo 17.
 [38
 
-] [39] [40]
+]) (Capitoli/particelle_identiche.tex [39]
 Capitolo 18.
-[41
+[40
 
-]) [42] (mq.aux)
+]) (Capitoli/metodi_perturbativi.tex [41]
+Capitolo 19.
+[42
+
+]) [43] [44] (mq.aux)
 Package rerunfilecheck Info: File `mq.out' has not changed.
-(rerunfilecheck)             Checksum: BCA3C1CE94135A73204C5D5B1BD8AD49;11786.
+(rerunfilecheck)             Checksum: 256E7A3C6B386D9AE94F331847B72F57;8912.
  ) 
 Here is how much of TeX's memory you used:
- 14053 strings out of 478582
- 218526 string characters out of 2844344
- 536326 words of memory out of 3000000
- 31764 multiletter control sequences out of 15000+600000
+ 14032 strings out of 478582
+ 218576 string characters out of 2844344
+ 536318 words of memory out of 3000000
+ 31748 multiletter control sequences out of 15000+600000
  569326 words of font info for 140 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  65i,18n,71p,671b,535s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}<C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpbn8a.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpbne.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpex.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpexa.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmi.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmia.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmit8a.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmn8a.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpmne.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsy.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkpsyc.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on mq.pdf (43 pages, 372934 bytes).
+Output written on mq.pdf (45 pages, 365469 bytes).
 PDF statistics:
- 719 PDF objects out of 1000 (max. 8388607)
- 217 named destinations out of 1000 (max. 500000)
- 486 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 629 PDF objects out of 1000 (max. 8388607)
+ 206 named destinations out of 1000 (max. 500000)
+ 326 words of extra memory for PDF output out of 10000 (max. 10000000)
 

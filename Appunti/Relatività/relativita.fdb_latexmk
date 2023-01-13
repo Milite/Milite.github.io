@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1670665809 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Relatività/relativita.tex" "relativita.pdf" "relativita" 1670665828
-  "../preambolo.tex" 1670665786 1208 c66b8d8aed86a28372877c9a6ea7addf ""
+["pdflatex"] 1673512458 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Relatività/relativita.tex" "relativita.pdf" "relativita" 1673512468
+  "../preambolo.tex" 1670667970 1208 feb42d2c78b82782b9bbbef43639266f ""
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1670583675 97363 1cc07ab0b821ab7506c90c5287e965d8 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1648032019 10246961 b72c463e4cc72abb29cb8a40ae680e07 ""
   "C:/Users/m2001/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -122,10 +122,10 @@
   "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Relatività/relativita.tex" 1670583757 241 66b9f06edb4e2996b67319d16ecc8cd1 ""
   "capitoli/formalismo.tex" 1670584570 12967 904d8187748c9db5ad6bde84d69641c4 ""
   "capitoli/richiami.tex" 1670579626 6290 838523647910b0db5efbcfe7232a05e4 ""
-  "relativita.aux" 1670665826 1854 ff40c508416835f4a492769cfb706b9b "pdflatex"
-  "relativita.out" 1670665826 1470 e948638a04fc7a52cc32f8bccc500817 "pdflatex"
+  "relativita.aux" 1673512466 1854 ff40c508416835f4a492769cfb706b9b "pdflatex"
+  "relativita.out" 1673512466 1470 e948638a04fc7a52cc32f8bccc500817 "pdflatex"
   "relativita.tex" 1670583757 241 66b9f06edb4e2996b67319d16ecc8cd1 ""
-  "relativita.toc" 1670665826 686 8885dd7763f4832dbeb5c97df8576e51 "pdflatex"
+  "relativita.toc" 1673512466 686 8885dd7763f4832dbeb5c97df8576e51 "pdflatex"
   (generated)
   "relativita.aux"
   "relativita.log"
