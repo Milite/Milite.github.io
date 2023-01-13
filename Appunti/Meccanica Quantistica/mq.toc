@@ -40,3 +40,4 @@
 \contentsline {subsection}{\numberline {19.1.1}Metodo generale calcolo perturbativo}{42}{subsection.19.1.1}%
 \contentsline {subsection}{\numberline {19.1.2}Caso non degenere}{42}{subsection.19.1.2}%
 \contentsline {section}{\numberline {19.2}Teoria perturbazioni sugli stati degeneri}{43}{section.19.2}%
+\contentsline {section}{\numberline {19.3}Effetto Stark su atomi idrogenoidi}{44}{section.19.3}%

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1673512751 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/mq.tex" "mq.pdf" "mq" 1673512758
+["pdflatex"] 1673624415 "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/mq.tex" "mq.pdf" "mq" 1673624423
   "../preambolo.tex" 1670667970 1208 feb42d2c78b82782b9bbbef43639266f ""
   "C:/Users/m2001/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1670583675 97363 1cc07ab0b821ab7506c90c5287e965d8 ""
   "C:/Users/m2001/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1648032019 10246961 b72c463e4cc72abb29cb8a40ae680e07 ""
@@ -129,17 +129,17 @@
   "Capitoli/atomo_idrogenoide.tex" 1670411966 2290 b216ce6cd5c1e5b7c6af0965b9d5bf34 ""
   "Capitoli/crisi_fisica_classica.tex" 1668251897 12098 b0b4c148e7b87f2bca9358e93f31f272 ""
   "Capitoli/legame_p2_L2.tex" 1668670733 712 8dda1cb9355a92078d236145edfbb493 ""
-  "Capitoli/metodi_perturbativi.tex" 1673018710 4974 3346f02c98775acc56beffe183cb928b ""
+  "Capitoli/metodi_perturbativi.tex" 1673624413 8920 2b59dbe50e89f97409b5e16b24a5f423 ""
   "Capitoli/oscillatore_armonico.tex" 1668870616 13712 0ecfd85d2776c30987fef13cf23c54d3 ""
   "Capitoli/particelle_identiche.tex" 1672829962 4836 559457aaf91a2be43eff1205a5bf6520 ""
   "Capitoli/principio_indeterminazione.tex" 1668251713 1547 bce4c3d0e076231c7f50181a2a383407 ""
   "Capitoli/somma_momenti_angolari.tex" 1673173197 1717 062d49ad23aaeb2579bcbd4d8af9e4b4 ""
-  "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/mq.tex" 1673512739 31935 afaccc3d358c930544cf30511887ce7d ""
+  "c:/Users/m2001/Documents/GitHub/Milite.github.io/Appunti/Meccanica Quantistica/mq.tex" 1673621202 30499 b05e9211d882296401613f57e3e8807e ""
   "immagini/oscillatore_armonico1.jpg" 1667727971 89012 e9035bf4c8a9441b4f5c9a328f088a54 ""
-  "mq.aux" 1673512757 7915 e2d56431543f0ac78b3ba7b0d82066fe "pdflatex"
-  "mq.out" 1673512757 8912 256e7a3c6b386d9ae94f331847b72f57 "pdflatex"
-  "mq.tex" 1673512739 31935 afaccc3d358c930544cf30511887ce7d ""
-  "mq.toc" 1673512757 3821 b4ffba89b3cc5539d39f987b70da115f "pdflatex"
+  "mq.aux" 1673624422 8053 72449055eec8e0f7a52ce18d9475b27e "pdflatex"
+  "mq.out" 1673624422 9151 42dce647b02cf30d203bb320cde87a1b "pdflatex"
+  "mq.tex" 1673621202 30499 b05e9211d882296401613f57e3e8807e ""
+  "mq.toc" 1673624422 3918 acd9fd8a52876d9a7594bccf073e649c "pdflatex"
   (generated)
   "mq.aux"
   "mq.log"

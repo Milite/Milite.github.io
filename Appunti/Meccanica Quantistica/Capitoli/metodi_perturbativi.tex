@@ -27,20 +27,36 @@ Sapendo risolvere esattamente per \(\hat{H}_0\) posso riscrivere \(|\psi_n\) sul
 
 Posso scrivere 
 \begin{equation*}
-    |\psi_n> = N(\lambda)\left[|\varphi_n> + \sum_{k \neq 0 }c_{nk}(\lambda)|\varphi_n>\right]
+    |\psi_n> = N(\lambda)\left[|\varphi_n> + \sum_{k \neq 0 }c_{nk}(\lambda)|\varphi_n>\right] \tag{1a}
 \end{equation*}
 Se \(\lambda = 0\) allora
 \begin{itemize}
     \item N(0) = 1
     \item \(c_{nk}(0)=0\)
 \end{itemize}
-Per trovare \(c_{nk}(\lambda)\) cerco soluzioni analitiche espandendo in termini di \(\lambda\); faccio lo stesso con \(E_n\)
+Per trovare \(c_{nk}(\lambda)\) cerco soluzioni analitiche espandendo in termini di \(\lambda\)
+\begin{equation*}
+    c_{nk} = c_{nk}(0) + \lambda c_{nk}^{(1)} + \lambda^2 c_{nk}^{(2)}
+\end{equation*} 
+faccio lo stesso con \(E_n\)
+\begin{equation*}
+    E_n = E_n^{(0)} + \lambda E_n^{(1)} + \lambda^2 E_n^{(2)}
+\end{equation*}
+
+\noindent Applico \(\hat{H}\) alla (1a) e guardo i termini che hanno lo stesso ordine in \(\lambda\)
+
+\noindent All'ordine 0 si ha l'energia della hamiltoniana imperturbata; non si hanno correzioni all'energia
 
 \noindent La prima correzione dell'energia all'ordine 1 in \(\lambda\) è il valore di aspettazione della perturbazione tra gli stati imperturbati
 \begin{equation*}
     \lambda E^{(1)}_n = <\varphi_n| \hat{H}_p | \varphi_n>
 \end{equation*}
-Se \(\varphi_n\) ha parità definita e la perturbazione è dispari allora l'integrale è nullo perchè diventa l'integrale di una funzione dispari 
+Nella rappresentazione delle coordinate la correzione dell'energia al primo ordine si scrive
+\begin{equation*}
+    \lambda E_n^{(1)} = \int d^3x \, \varphi_n^* (x) \lambda \hat{H}_1 \varphi_n (x) = \int d^3 x \, {|\varphi_n (\vec{x})|}^2 H_p(\vec{x})
+\end{equation*}
+
+\noindent Se \(\varphi_n\) ha parità definita e la perturbazione è dispari allora l'integrale è nullo perchè diventa l'integrale di una funzione dispari 
 
 \noindent Calcolando \(c_{nk}(\lambda)\) si trova che la perturbazione mescola gli stati con diversi pesi, proporzionale al valore di aspettazione della perturbazione tra i due stati impertubati diviso per la differenza di energia tra i due stati imperturbati
 \begin{equation*}
@@ -50,7 +66,7 @@ Se \(\varphi_n\) ha parità definita e la perturbazione è dispari allora l'inte
 \noindent Affinchè la serie in \(\lambda\) sia convergente voglio che i coefficienti siano sempre più piccoli; voglio:
 \begin{enumerate}
     \item che l'energia all'ordine 1 sia piccola rispetto all'energia all'ordine 0
-    \item che gli elementi off the diagonal degli stati  della perturbazione tra gli stati imperturbati siano piccoli rispetto alla differenza di energia degli stati imperturturbati
+    \item che gli elementi-off-the-diagonal degli stati  della perturbazione tra gli stati imperturbati siano piccoli rispetto alla differenza di energia degli stati imperturturbati
 \end{enumerate}
 
 \noindent All'ordine 2 si ottiene 
@@ -79,3 +95,65 @@ Troviamo che la correzione all'energia all'ordine 1 ha \(g_n\) valori, dove \(g_
 
 \noindent N.B. \; Non stiamo diagonalizzando la perturbazione in tutto lo spazio, altrimenti saremmo in grado di trovare gli autostati esatti
 
+\section{Effetto Stark su atomi idrogenoidi}
+
+Considero un'ampolla di gas immersa in un campo elettrico esterno diretto lungo la direzione z. Considero un potenziale di tipo coulombiano puntiforme
+
+\noindent La perturbazione è del tipo 
+\begin{equation*}
+    \hat{H} = -q \vec{E} \vec{x} = -qEz
+\end{equation*}
+La hamiltoniana imperturbata è 
+\begin{equation*}
+    H_0 = \frac{p^2}{2\mu} - \frac{Ze^2}{r}
+\end{equation*}
+e per ogni valore del campo elettrico si ha che
+\begin{equation*}
+    H_p << H_0
+\end{equation*}
+
+\subsection*{Stato fondamentale}
+
+Si ha che n=1, l=0, m=0 e per questo viene rappresentato con |100>
+
+\noindent Per quello che stiamo considerando ora lo stato fondamentale non è degenere; allora calcolo la correzione dell'energia al primo ordine usando la teoria delle perturbazioni non degeneri.
+
+\noindent Poichè l'atomo idrogeno ha parità definita, mentre z ha parità dispari, allora l'integrale è nulla. 
+Di conseguenza non si hanno correzioni all'energia al primo ordine
+
+\noindent Per calcolare la correzione al secondo ordine dell'energia, faccio prima alcune considerazioni sulle simmetrie del mio sistema: la perturbazione ha rotto la simmetria sferica e ci ha fatto passare a una simmetria cilindrica. 
+Ha senso quindi considerare \(\hat{L}_z\).
+
+\noindent Utilizzando il fatto che \(\hat{L}_z\) commuta con z, si può vedere che \(\hat{z}|nlm>\) è autostato di \(\hat{L}_z\). Ciò ci permette subito di scrivere la prima regola di selezione
+\begin{equation*}
+    \Delta m = m-m' = 0
+\end{equation*}
+Si ottiene quindi, nel nostro caso, che m=m'=0
+
+\noindent Devo calcolare
+\begin{equation*}
+    <nl0|z|100>
+\end{equation*}
+che dipende da come è fatta la perturbazione. \newline
+Per farlo guardo prima come è fatta la parte angolare: poichè z è proporzionale alla \(Y^0_1\) e la \(Y^0_0\) è una costante, si ottiene che l=1 
+\begin{equation*}
+    E_{100}^{(2)} = -q^2E^2a_0^2 \sum_{n=2}^\infty \frac{f(n)}{\frac{1}{2}\mu c^2 \alpha^2 \bra{1-\frac{1}{n^2}}} = - 2 a_0^3 E^2 \sum_{n=2}^\infty \frac{n^2 f(n)}{n^2-1} \qquad f(n) = \frac{1}{3} 2^8 \frac{n^7 {(n-1)}^{2n-5}}{{n+1}}^{2n+5}
+\end{equation*}
+La correzione all'energia ha segno negativo, quindi vuol dire che l'energia è scesa
+
+\subsection*{Primo stato eccitato}
+
+Per il primo stato eccitato si ha n=2, di conseguenza lo stato è 4 volte degenere, trascurando lo spin, la struttura fine e iperfine;
+gli stati sono |200>, |211>, |210>, |21-1>
+
+\noindent Dato che lo stato è degenere devo diagonalizzare nel sottospazio degenere: si ottiene una matrice \(4 \times 4\)
+
+\noindent Anche in questo caso \(\hat{z}|nlm>\)  è autostato di \(\hat{L}_z\), di conseguenza si ottiene \(\delta_{mm'}\); per ragioni di parità gli stati che hanno entrambi l=0 o l=1 danno integrale nullo perchè hanno entrambi parità definita che vale \({(-1)}^l\) mentre z ha parità dispari. 
+
+\noindent Gli unici integrali che danno valore non nulli sono quelli che connettono stati con l diversi
+
+\noindent Diagonalizzando nel sottospazio degenere si ottiene che la correzione all'energia vale 
+\begin{equation*}
+    E_2^{(2)} = \pm 3 a_0 qE
+\end{equation*}
+Si ottenuto un effetto lineare in E
