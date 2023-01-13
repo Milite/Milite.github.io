@@ -32,7 +32,7 @@ Luminosità misurata in $erg \, s^{-1}$
 
 $$ L = f(r_*)4\pi r_*^2 $$
 
-Le onde elettromagnetiche di tipo sferico vanno come $\sim \frac{1}{{distanza}^2}$ 
+Le onde elettromagnetiche di tipo sferico vanno come $\sim \frac{1}{{\text{distanza}}^2}$ 
 
 $$ f(d) = f(r_*){\left(\frac{r}{d}\right)}^2 = f(r_*)\frac{4\pi {r_*}^2}{4\pi d^2} = \frac{L}{4\pi d^2} $$
 $$ L = 4\pi d^2 f(d) $$
