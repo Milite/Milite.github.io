@@ -112,3 +112,4 @@ A seconda della temperatura si hanno diversi processi di assorbimento:
 - Temperature intermedie ($10^{4.5} K < T < 10^{7.5} K$) si ha un assorbimento di 2 tipi
     - BOUND-FREE: elettrone prima è legato, ma dopo l'urto con il fotone si libera e l'atomo si ionizza; si ha fotoionizzazione
     - FREE-FREE: l'elettrone è libera sia prima che dopo l'urto, l'atomo viene semplicemente accelerato; si ha inverso brem strahlung
+- Alte temperature ($ T> 10^7 K$): SCATTERING THOMSON
