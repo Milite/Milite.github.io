@@ -44,3 +44,14 @@ $$v_{rot} \sim r^{-\frac{1}{2}}$$
 
 Per avere quindi una velocità di rotazione costante devo quindi avere della massa extra che noi non vediamo: alone di materia oscura che genera forza gravitazione che tiene legate le stelle; 
 ne percepiamo quindi gli effetti gravitazionali, ma non la vediamo
+
+$$ \frac{M}{L} \sim 10-20 \frac{M_{sole}}{L_{sole}} $$
+
+In realtà mi aspetto che questo rapporto sia 1, ciò vuol dire che c'è molta più massa di quella che vedo
+
+Indice di Sersic n: come varia l'intensità in funzione della distanza
+$$ \log_{10} \left[\frac{I(r)}{I(r_l)}\right] = -b_n \left[\left(\frac{r}{r_l}\right)^{\frac{1}{n}}-1\right] $$
+
+Funzione di luminosità delle galassie
+$$ \Phi(L)dL \simeq \Phi(L^*) \left(\frac{L}{L^*}\right)^{-1}e^{-\frac{L}{L^*}} dL $$
+numero di galassie che hanno luminosità tra L e L+dL
