@@ -2,8 +2,9 @@ pandoc --verbose ^
     -H style\preambolo.tex ^
     --number-sections ^
     style\settings.md ^
-    capitoli\introduzione.md ^
-    capitoli\struttura_stellare.md ^
-    capitoli\evoluzione_stellare.md ^
-    capitoli\galassie.md ^
+    Capitoli\introduzione.md ^
+    Capitoli\struttura_stellare.md ^
+    Capitoli\evoluzione_stellare.md ^
+    Capitoli\galassie.md ^
+    Capitoli\cosmologia.md ^
     -o out\astrofisica.pdf
