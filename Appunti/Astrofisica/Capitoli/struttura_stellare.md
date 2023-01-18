@@ -106,3 +106,10 @@ $$-3 (\Gamma - 1) E_{\text{termica}} = E_{gr}$$
     si ottiene quindi 
     $$-E_{TH} = E_{GR}$$
     di conseguenza l'energia totale è nulla: ciò significa che sistema è marginalmente legato $\rightarrow$ la minima perturbazione fa esplodere la stella
+
+A seconda della temperatura si hanno diversi processi di assorbimento:
+- Basse temperature ($T < 10^{4.5} K$): ASSORBIMENTO BOUND-BOUND; si ha che l'elettrone è legato sia prima che dopo l'urto con l'elettrone
+- Temperature intermedie ($10^{4.5} K < T < 10^{7.5} K$) si ha un assorbimento di 2 tipi
+    - BOUND-FREE: elettrone prima è legato, ma dopo l'urto con il fotone si libera e l'atomo si ionizza; si ha fotoionizzazione
+    - FREE-FREE: l'elettrone è libera sia prima che dopo l'urto, l'atomo viene semplicemente accelerato; si ha inverso brem strahlung
+- Alte temperature ($ T> 10^7 K$): SCATTERING THOMSON
