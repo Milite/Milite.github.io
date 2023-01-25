@@ -55,3 +55,27 @@ $$ \log_{10} \left[\frac{I(r)}{I(r_l)}\right] = -b_n \left[\left(\frac{r}{r_l}\r
 Funzione di luminosità delle galassie
 $$ \Phi(L)dL \simeq \Phi(L^*) \left(\frac{L}{L^*}\right)^{-1}e^{-\frac{L}{L^*}} dL $$
 numero di galassie che hanno luminosità tra L e L+dL
+
+Concentrazione idrogeno è maggiore nelle galassie a spirale: può essere usato per formare nuove stelle 
+
+Relazione tra luminosità e velocità di dispersione
+$$ L \sim \sigma^4 \qqaud \sigma: \text{ velocità di dispersione} $$
+
+## Nuclei galattici attivi
+
+La presenza di nuclei galattici attivi è segnalata da
+
+1. Centro luminoso e compatto
+1. Getti di materia a velocità relatovistiche
+1. Linee di emissione dall'infrarosso ai raggi X
+1. Alta variabilità della luminosità a tutte le lunghezze d'onda
+1. Forte emissione UV da una regione centrale
+1. Forte emissione non termica
+
+Le componenti du un nucleo galattico attivo sono:
+- un buco nero
+- un disco di accrescimento
+- un toro oscurante
+- è possibile un getto relativistico
+- una narrow line region
+- una broad line region
