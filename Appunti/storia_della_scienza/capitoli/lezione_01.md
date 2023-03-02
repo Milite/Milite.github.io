@@ -1,4 +1,4 @@
-# Lezione 1 
+# 01 marzo 2023 
 
 Alcune definizioni di scienza
 
