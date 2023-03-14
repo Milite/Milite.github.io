@@ -46,7 +46,7 @@ Queste sfere sono anche loro fatte di etere
 Idea sfere sono prese da Eudosso (matematico), che vedeva le sfere come semplici proiezioni matematiche
 
 Sotto la Luna abbiamo sistema di sfere materiali: fuoco, aria, terra, acqua. Queste sostanze sono mescolate l'una con l'altra; i corpi a seconda della materia di cui sono fatti tenderanno verso i loro luoghi naturali  
-Terra e acqua tendono verso il basso, mentre aria e fuooco tendono verso il basso; moto naturale è sempre solo naturale. Caduta corpi dovuta alla sua tendenza ad andare verso il suo luogo naturale (moto violento contro natura quando forzo il moto verso un luogo che non è il suo); corpi più pesanti caduto più velocemente verso il basso
+Terra e acqua tendono verso il basso, mentre aria e fuoco tendono verso il basso; moto naturale è sempre solo naturale. Caduta corpi dovuta alla sua tendenza ad andare verso il suo luogo naturale (moto violento contro natura quando forzo il moto verso un luogo che non è il suo); corpi più pesanti caduto più velocemente verso il basso
 
 Carattere teleologico della concezione aristotelica della natura  
 La natura è governata da motore divino indeterminato che non è mosso da niente; esiste principio che muove le cose e che governa il destino delle cose materiali
