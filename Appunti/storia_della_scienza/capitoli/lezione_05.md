@@ -78,4 +78,4 @@ Specializzazioni sempre più marcate da parte dei medici, compresi anche i chiru
 
 Erofilo di Calcedonia viene considerato uno dei primi anotomisti della storia, con studi sul cervello, sul sistema nervoso e anche sull'intestino (duodeno)
 
-Erasistrato di Ceo introduce studi su sistema circolare, ma in modo particolare introduce concetto di spirito vitale con scopo di vividificare gli atomi del corpo umano
+Erasistrato di Ceo introduce studi su sistema vascolare, ma in modo particolare introduce concetto di spirito vitale con scopo di vividificare gli atomi del corpo umano
