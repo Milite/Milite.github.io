@@ -1,4 +1,4 @@
-pandoc --verbose ^
+pandoc --pdf-engine=xelatex ^
     -H style\preambolo.tex ^
     --number-sections ^
     style\settings.md ^

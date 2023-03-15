@@ -26,8 +26,57 @@ Presenza di prospettive discordanti circa la definizione del campo d'indagine e 
 
 La verità non è nascosta, ma è qualcosa che emerge, che è evidente
 
-#### La scuola di Atene di Raffaello
+![La scuola di Atene](image\scuola_atene.png){width="75%"}
 
 Al centro dell'affresco si trovano i due massimi rappresentanti del pensiero antico: 
 
 - Platone: dipinto con le sembianze di Leonardo da Vinci, col mantello rosso, indica in alto (teorizza la superiorità della dimensione idelae rispetto alla concretezza del mondo materiale)
+- Aristotele: vestito di blu, mano aperta che poggia verso il basso (concentra la sua attenzione sullo studio del mondo fisico)
+
+A sinista sullo sfonfo domina la statua di Apollo, a destra quella di Minerva (rappresentano la razionalità)  
+A sinistra Socrate, in veste color verde, dialoga con il gruppo di persone che gli sta davanti; più a sinistra c'è Epicuro, alle cui spalle è presente Federico Gonzaga fanciullo  
+Al centro in primo piano c'è Eraclito, con le sembianze di Michelangelo (aggiunto dopo il suo lavoro alla Cappella Sistina, difatti il filosofo non era presente nel cartone preparatorio dell'opera), che appogia il gomito su un grande blocco  
+All'estrema destra si trova, con i tratti del Bramante, euclide che disegna a terra. Inoltre è raffigurato Pitagora intento a scrivere su un libro  
+Unica donna della scena, sulla sinistra, è la matematica d'Alessandria Ipazia, che sembra essere l'unico personaggio che volge lo sguardo a chi guarda l'affresco, nessun altro infatti sembra essere interessato ad entrare in contatto con l'osservatore.  
+Infine i due giovani che si trovano all'estrema destra in vesti contemporanee all'epoca della creazione dell'affresco sono degli autoritratti di Raffaello stesso con l'amico e collega Sodoma
+
+Il punto di fuga dell'affresco sta tra le due figure di Platone e Aristotele, quasi a voler indicare che il vero abbia le caratteristiche intuite da questi due filosofi, considerati il centro dello sviluppo del pensiero occidentale
+
+### Periodi e scuole principali della scienza antica
+
+1. Colonie greche in Asia:
+    - Scuola di Mileto (Talete,Anassimandro, Anassimane)
+    - Eraclito di Efeso
+    - Scuola ippocratica di medicina, che aveva il suo centro nell'isola di Cos
+1. Colonie greche in Italia e in Sicilia:
+    - Pitagora di Crotone
+    - Parmenide di Elea
+    - Empedocle di Agrigento
+1. Grecia orientale:
+    - Anassagora di Clazomene nella Ionia prese dimora ad Atene e fu maestro di Pericle
+    - Democrito di Abdera
+1. Atene:
+    - Socrate, Platone, Aristotele
+1. Età alessandrina:
+    - Matematici: Euclide, Archimede, Apollonio
+    - Astronomi: Aristarco, Eratostene, Ipparco
+    - Anatomisti: Erafilo ed Eristato
+1. Periodo greco-romano:
+    - dei pensatori greci di questo periodi i più conosciuti furono l'astronomo e geografo Tolomeo e l'anatomista e fisico Galeno
+
+## La nascita della scienza greca
+
+La meraviglia alla base dell'atteggiamento filosofico è il motore della nostra attività razionale
+
+Problema del fondamento o principio di tutte le cose: studio della natura con l'intento di trovarne il principio esplicativo (che è anche legge e principio morale) a partire dal quale sia poi possibile spiegare tutta la realtà, a prescindere dal ricorso al mito  
+Questo principio fisico viene rintracciato nella natura (forza generatrice)  
+
+Il mondo greco non conosce l'idea di creazione dal nulla, ma domina l'idea che la materia ci sia da sempre e che non ci sia una divinità &rarr; dimensione di eternità della materia e di eterne sue generazioni; non c'è un principio generazionistico
+
+Ci troviamo in Asia minore
+
+- Talete di Mileto: acqua &rarr; all'interno di tutte le cose c'è una radice di umidità
+- Anassimene di Mileto: aria &rarr; dall'aria per varie rarefazioni, condensazioni, si sviluppano le cose
+- Eraclito di Efeso: fuoco &rarr; dal fuoco si separano i vari elementi (parla anche di dinamiche tra opposti, la natura come divenire); tutte le cose vivono un cambiamento, ma trovano unità nel principio del fuoco
+
+## Pitagora e il pitagorismo
