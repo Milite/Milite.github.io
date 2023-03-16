@@ -1,6 +1,6 @@
-# 09 marzo 2023
+<div style="text-align: right"> 09 marzo 2023 </div>
 
-### Aristotele
+## Aristotele
 
 Il più importante allievo di Platone; vive in un periodo molot diverso da quello di Platone: crisi delle città stato greco, con il prevalere delle civiltà macedoni (Aristotele è il maestro privato di Alessandro Magno)  
 Si assiste a un venir meno a una passione della politica  
@@ -61,7 +61,7 @@ Il cuore viene visto come sede dell'intelligenza, andando contro alla tradizione
 
 Aristotele segna la fine della grande classicità greca, dando origine all'ellenismo
 
-## La cultura scientifica ellenistica
+# La cultura scientifica ellenistica
 
 Alessandria d'Egitto diventa centro importante dopo la morte di Alessandro Magno: fondazione del *Museo* e della *Biblioteca* che conserva tutto il patrimonio culturale del mondo antico  
 
@@ -71,7 +71,7 @@ La scienza si distacca tra la scienza e la filosofia: lo scienzato diventa profe
 
 Sviluppo fecondo ma breve della medicina, della matematica e dell'astronomia 
 
-### La medicina ellenistica
+## La medicina ellenistica
 
 Sistemazione del *Corpus Hippocraticum* nella versione che ancora oggi conosciamo  
 Specializzazioni sempre più marcate da parte dei medici, compresi anche i chirurghi  

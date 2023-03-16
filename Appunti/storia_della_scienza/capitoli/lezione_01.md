@@ -1,7 +1,8 @@
-# 01 marzo 2023 
+<div style="text-align: right"> 01 marzo 2023 </div>
+
+# Introduzione
 
 Alcune definizioni di scienza
-
 - il fatto di sapere, di conoscere qualche cosa; notizia, conoscenza
 - sapere, dottrina, insieme di conoscenze ordinate e coerenti, organizzate logicamente e con coerenza metodologica rigorosa (propria struttta in base all'epoca)
 - settore particolare delle indagini, del sapere , degli interessi scientifici

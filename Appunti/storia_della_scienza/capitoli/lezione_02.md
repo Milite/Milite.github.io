@@ -1,4 +1,4 @@
-# 02 marzo 2023
+<div style="text-align: right"> 02 marzo 2023 </div>
 
 La storia della scienza non si occupa soltanto di scienziati e di scienza del passato, ma anche di come funziona la scienza e di come lavorano gli scienziati, ovviamente secondo una prospettiva storica, sincrona e diacronica, che fa ampio uso delle fonti
 
@@ -12,7 +12,7 @@ Come si è prodotto il sapere? Quali sono le condizioni? Quali metodi?
 Organizzazioni sociali che hanno portato alla produzione del sapere  
 Materialità, tecnologie che hanno reso possibili le osservazioni (es: telescopio)  
 
-## Nascita di una disciplina
+# Nascita di una disciplina
 
 Da un punto di vista puramente accademico. Disciplina relativamente giovane: origine attorno alla fine del '800; vengono fondate le prime cattedre (prima cattedra di storia della scienza in Europa in Francia nel 1892 al Collège de France, Oxford nel 1926).  
 In Italia le prime cattedre arrivano tardi, solo nel 1979  
@@ -33,7 +33,7 @@ Importanza delle scienze fisico-matematiche che diventano delle verità universa
 
 Importanza della Encyclopèdie (istruzione circolare): Diderot e D'Alambert. dizionario ragionato delle scienze, delle arti e dei mestieri; per tenere traccia dell'universalità del sapere
 
-## Alcune teorie sullo sviluppo del sapere scientifico
+# Alcune teorie sullo sviluppo del sapere scientifico
 
 Il fenomeno scienza non si può descrivere solo come una coppia di terminire (verificazione e falsificazione) [circolo di Vienna: positivismo logico]  
 
@@ -45,7 +45,7 @@ Falsificazione
 
 Questi modelli sono insufficienti a chiarire gli aspetti della scienza moderna, che ha sfaccettature di ordine politico, economico, istituzionale, etico e sociale
 
-### Thomas Kuhn (La struttura delle rivoluzioni scientifiche)  
+## Thomas Kuhn (La struttura delle rivoluzioni scientifiche)  
 Le nuove teorie sceintifiche non sorgno solo da falsificazione e verificazione, ma c'è sistema molto più complesso, l'alternarsi di periodi di scienze normali e periodi di rottura rivoluzionarie  
 La scienza non procede linearmente, ma per rotture, momenti in cui scatta il cambiamento  
 I periodi di scienza normale sono caratterizzati da paradigmi (es: paradigma geocentrico)
@@ -69,7 +69,7 @@ I paradigmi quindi non possono essere tra loro paragonati, sono tra loro incomme
 L'accettazione di un nuovo paradigma avviene in seguito a una sorta di conversione dovuta a ragioni anche di tipo extrascientifico  
 Nella scienza non c'è progresso perchè si arriva sempre di più alla verità, ma perchè ci sillontana sempre di più da modelli inefficaci di spiegazione. Processo a partire da qualcosa, più che verso qualcosa. Lascio un modello che si è rivelato inefficace
 
-### Imre Lakatos (La falsificazione e la metodologia dei programmi di ricerca scientifici)
+## Imre Lakatos (La falsificazione e la metodologia dei programmi di ricerca scientifici)
 
 Programmi di ricerca parola fondamnentale 
 
@@ -89,7 +89,7 @@ Si hanno due diversi tipi di programmi scientifici:
 
 Quando si arriva all'insostenibilità si cambia teoria
 
-### Paul Feyerabend (Contro il metodo)
+## Paul Feyerabend (Contro il metodo)
 
 Sviluppa una prospettiva anarchica: non esiste un metodo unico, nessuno schema comune; la scienza procede in maniera quasi anarchica con metodo che di volta in volta si presenta più efficace, anche a seconda dei periodi storici. Non si ha un principio ma si procede in maniera anarchica  
 Distruzione di ogni metodologia scientifica precostituita  
@@ -97,7 +97,7 @@ Esiste la libera inventva della scienza di darsi un metodo, la scienza si dà un
 
 La storia della sceinza non è del tutto casuale, non possiamo stabilire un metodo univversale
 
-### Larry Laudan (Progress and its problems)
+## Larry Laudan (Progress and its problems)
 
 Scopo della scienza è quello di risolvere i problemi.  
 Il problema risolto è alla base del progresso scientifico.  

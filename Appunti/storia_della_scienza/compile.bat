@@ -1,5 +1,8 @@
-pandoc --pdf-engine=xelatex ^
-    -H style\preambolo.tex ^
+pandoc -t html5^
+    -V margin-top=2.5cm -V margin-left=1cm -V margin-right=1cm -V margin-bottom=2cm ^
+    -V papersize=a4 ^
+    --css style\styles.css ^
+    --toc ^
     --number-sections ^
     style\settings.md ^
     Capitoli\lezione_01.md ^

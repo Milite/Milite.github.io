@@ -1,13 +1,13 @@
-# 07 marzo 2023
+<div style="text-align: right"> 07 marzo 2023 </div>
 
-## La scienza antica
+# La scienza antica
 
 Il mondo greco, più che il mondo romano risulta essere più importante dal punto di vista scientifico  
 
 Scienza
 : filosofia del mondo antico
 
-### Caratteri generali della scienza antica
+## Caratteri generali della scienza antica
 
 La scienza e la filosofia sono nati in Grecia?  
 Risposta difficile, dipende dalla prospettiva con cui guardiamo al mondo scientifico. Ma per quanto ci riguarda hanno un origine greca
@@ -26,7 +26,7 @@ Presenza di prospettive discordanti circa la definizione del campo d'indagine e 
 
 La verità non è nascosta, ma è qualcosa che emerge, che è evidente
 
-![La scuola di Atene](image\scuola_atene.png){width="75%"}
+<div align="center"><img class ="flex" src="image\scuola_atene.png"></div>
 
 Al centro dell'affresco si trovano i due massimi rappresentanti del pensiero antico: 
 
@@ -42,7 +42,7 @@ Infine i due giovani che si trovano all'estrema destra in vesti contemporanee al
 
 Il punto di fuga dell'affresco sta tra le due figure di Platone e Aristotele, quasi a voler indicare che il vero abbia le caratteristiche intuite da questi due filosofi, considerati il centro dello sviluppo del pensiero occidentale
 
-### Periodi e scuole principali della scienza antica
+## Periodi e scuole principali della scienza antica
 
 1. Colonie greche in Asia:
     - Scuola di Mileto (Talete,Anassimandro, Anassimane)
@@ -64,7 +64,7 @@ Il punto di fuga dell'affresco sta tra le due figure di Platone e Aristotele, qu
 1. Periodo greco-romano:
     - dei pensatori greci di questo periodi i più conosciuti furono l'astronomo e geografo Tolomeo e l'anatomista e fisico Galeno
 
-## La nascita della scienza greca
+# La nascita della scienza greca
 
 La meraviglia alla base dell'atteggiamento filosofico è il motore della nostra attività razionale
 
@@ -80,3 +80,31 @@ Ci troviamo in Asia minore
 - Eraclito di Efeso: fuoco &rarr; dal fuoco si separano i vari elementi (parla anche di dinamiche tra opposti, la natura come divenire); tutte le cose vivono un cambiamento, ma trovano unità nel principio del fuoco
 
 ## Pitagora e il pitagorismo
+
+Pitagora di Samo si trasferisce a Crotone dove costruisce la sua scuola  (quasi una vera e propria setta religiosa)  
+Sposta l'obiettivo da elementi della dimensione naturale a qualcosa che già si lega a un'azione del pensiero: il numero
+
+Numero intero come fondamento di tutte le cose e principio del cosmo.  
+Numero come simbolo (numeri pari e dispari); valenza mistica e magica &rarr; diventa la chiave per spiegare la grande catena di opposizioni che caratterizza la nostra realtà (limitato/illimitato, luce/tenebra, mobile/immobile, dritto/curvo, uno/molteplice, buono/cattivo, vero/falso)
+
+Dualiosmo filosofico di fondo (opposizione originaria) tra il limite (dispari) e illimitato (pari): 
+
+- pari lasciano spazio all'illimitato  
+- dispari rappresentano limite, perfezione, compiuto  
+
+es: 5 = 2+3 &rarr; somma primo numero pari e primo numero dispari (escluso l'uno) = unione tra maschile e femminile &rarr; ogni aspetto della realtà ha la sua corrispondente spiegazione numerologica
+
+Aspetto discontinuo della realtà fisica (granularità)  
+Ipotesi della sfericità della terra: la sfera (simbolo di perfezione) è perfetta perchè ha tutti i punti equidistanti dal centro
+
+Filolao di Crotone ha fornito una primissima idea di decentramento della Terra: al centro dell'universo c'è un grande fuoco che dà la vita e riscalda tutto l'universo
+
+Il problema degli irrazionali e la crisi del pitagorismo: scoperta della diagonale del quadrato
+
+## L'essere e il divenire
+
+Altro gruppo di autori che ha centrato la sua attenzione sul rapporto tra la realtà delle cose (l'essere) e il loro cambiamento
+
+- Parmenide di Elea. la realtà è una grande illusione, doxa che nasconde la verità cioè che l'Essere (principio che permea la realtà delle cose) nella sua vera natura è eterno, immutabile e unico &rarr; in realtà nulla cambia è tutto fisso, invariabile (atteggiamento metafisico). La vera conoscenza non è sensibile, ma puramente razionale
+- Zenone di Elea: autore di diversi paradossi (Achille e la tartaruga) per dimostrare che non esiste il movimento, il tempo, il cambiamento, ma che tutto è un enorme eterno, invariabile, unico essere
+- Eraclito di Efeso: 

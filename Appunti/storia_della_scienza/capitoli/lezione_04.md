@@ -1,4 +1,4 @@
-# 08 marzo 2023
+<div style="text-align: right"> 08 marzo 2023 </div>
 
 ## Ippocrate 
 
@@ -47,14 +47,14 @@ Il sapere medico deve restare chiuso in un numero limitato di persone
 Il medico non può provocare la morte, deve avere vocazione per salvare la vita  
 Per secoli medico e chirurgo erano figure diverse; il medico era considerato in maniera molto più positva rispetto a chirurgo che era assimilato di più a un macellaio
 
-## I grandi sistemi metafisici: Platone e Aristotele
+# I grandi sistemi metafisici: Platone e Aristotele
 
 Pensiero filosofico diventa in gradi speigare ogni aspetto della natura dell'uomo  
 Socrate ha fornito strumento del dialogo, importante per la focalizzazione sui problemi dell'uomo  
 Importanza di Socrate è rivolta al dialogo (metodo critico e antidogmatico); strumento razionale importante per la critica, tendenza a sminuzzare i problemi e giungere a riassunto finale  
 Condanna a morte per corruzione dei giovani
 
-### Platone
+## Platone
 
 Allievo di Socrate, che scrive a proposito del suo maestro, che invece non ha scritto nulla  
 Platone ha esasperato scissione da mentalità e fisicità: divisione tra mondo idee e mondo della materia fisica. Quando conosciamo mondo fisico cadiamo in errori, nostri sensi hanno qualcosa che non fa tornare i conti, i sensi ingannano  
