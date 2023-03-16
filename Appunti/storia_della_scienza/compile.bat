@@ -1,8 +1,5 @@
-pandoc -t html5^
-    -V margin-top=1cm -V margin-left=1cm -V margin-right=1cm -V margin-bottom=1cm ^
-    -V papersize=a4 ^
-    --css style\styles.css ^
-    --toc ^
+pandoc -s^
+    -H style\preambolo.tex^
     --number-sections ^
     style\settings.md ^
     Capitoli\lezione_01.md ^
@@ -10,4 +7,7 @@ pandoc -t html5^
     Capitoli\lezione_03.md ^
     Capitoli\lezione_04.md ^
     Capitoli\lezione_05.md ^
+    Capitoli\lezione_06.md ^
+    Capitoli\lezione_07.md ^
+    Capitoli\lezione_08.md ^
     -o out\storia_della_scienza.pdf

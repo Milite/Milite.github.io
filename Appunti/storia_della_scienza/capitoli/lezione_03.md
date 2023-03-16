@@ -1,4 +1,4 @@
-<div style="text-align: right"> 07 marzo 2023 </div>
+\hfill 07 marzo 2023 
 
 # La scienza antica
 
@@ -26,7 +26,7 @@ Presenza di prospettive discordanti circa la definizione del campo d'indagine e 
 
 La verità non è nascosta, ma è qualcosa che emerge, che è evidente
 
-<div align="center"><img class ="flex" src="image\scuola_atene.png"></div>
+![La scuola di Atene](image\scuola_atene.png){width="75%"}
 
 Al centro dell'affresco si trovano i due massimi rappresentanti del pensiero antico: 
 

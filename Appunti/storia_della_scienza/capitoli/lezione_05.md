@@ -1,4 +1,4 @@
-<div style="text-align: right"> 09 marzo 2023 </div>
+\hfill 09 marzo 2023
 
 ## Aristotele
 

@@ -1,4 +1,4 @@
-<div style="text-align: right"> 08 marzo 2023 </div>
+\hfill 08 marzo 2023
 
 ## Ippocrate 
 
