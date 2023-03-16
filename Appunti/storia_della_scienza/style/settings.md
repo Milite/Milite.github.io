@@ -4,6 +4,13 @@ documentclass: article
 title: Storia della scienza
 author: 'Marco Militello'
 
+output: 
+    keep_md: true
+    css: style/styles.css
+    toc: true
+    toc_float: true
+    number_sections: true
+
 fontsize: 12pt
 number-sections: true 
 
@@ -21,3 +28,5 @@ geometry:
 papersize: a4
 
 ---
+
+
