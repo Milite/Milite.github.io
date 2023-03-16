@@ -3,3 +3,7 @@ p {
 }
 
 .flex {max-width: 100%}
+
+#TOC {
+    color: black; 
+  }
