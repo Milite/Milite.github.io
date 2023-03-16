@@ -7,7 +7,7 @@ author: 'Marco Militello'
 output: 
     keep_md: true
     css: style/styles.css
-    toc: true
+    toc: false
     toc_float: true
     number_sections: true
 
