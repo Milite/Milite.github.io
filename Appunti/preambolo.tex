@@ -1,0 +1,55 @@
+\documentclass[12pt]{report}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+
+\usepackage[a4paper, 
+			hdivide={1cm, , 1cm},
+			vdivide={2.5cm, , 2cm}]{geometry}
+
+\usepackage{amsmath}
+\usepackage{mathdots}
+\usepackage{empheq}
+
+\usepackage{kpfonts}
+
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=white,
+	filecolor=white,
+	citecolor = white,      
+	urlcolor=cyan,
+}
+
+\swapnumbers
+\theoremstyle{remark}
+\newtheorem*{oss}{Oss}
+\newtheorem*{nb}{N.B}
+\newtheorem*{coro}{Corollario}
+\theoremstyle{definition}
+\newtheorem*{teo}{Teorema}
+\newtheorem*{Def}{Def}
+
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\rot}{\mbox{rot}}
+\newcommand{\grad}{\mbox{grad}}
+\newcommand{\Div}{\mbox{div}}
+\newcommand{\angs}{\text{\AA}}
+\newcommand{\x}{\hat{x}}
+\newcommand{\p}{\hat{p}}
+\newcommand{\boxedeq}[1]{\begin{empheq}[box = \fcolorbox{red}{black}]{equation*}#1\end{empheq}}
+\newcommand{\bra}[1]{\left(#1\right)}
+
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\date{}
+\author{Marco Militello}
