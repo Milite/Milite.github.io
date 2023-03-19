@@ -1,5 +1,8 @@
 \clearpage
-\hfill 01 marzo 2023 
+
+\begin{flushright}
+01 marzo 2023
+\end{flushright}
 
 # Introduzione
 

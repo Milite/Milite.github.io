@@ -1,4 +1,6 @@
-\hfill 07 marzo 2023 
+\begin{flushright}
+07 marzo 2023
+\end{flushright}
 
 # La scienza antica
 

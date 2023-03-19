@@ -1,4 +1,6 @@
-\hfill 14 marzo 2023
+\begin{flushright}
+14 marzo 2023
+\end{flushright}
 
 ## Euclide 
 

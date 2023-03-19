@@ -1,4 +1,6 @@
-\hfill 16 marzo 2023
+\begin{flushright}
+16 marzo 2023
+\end{flushright}
 
 # La rivoluzione rinascimentale
 

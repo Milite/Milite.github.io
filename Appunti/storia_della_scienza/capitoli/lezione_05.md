@@ -1,4 +1,6 @@
-\hfill 09 marzo 2023
+\begin{flushright}
+09 marzo 2023
+\end{flushright}
 
 ## Aristotele
 

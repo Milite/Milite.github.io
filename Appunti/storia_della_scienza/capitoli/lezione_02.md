@@ -1,4 +1,6 @@
-\hfill 02 marzo 2023 
+\begin{flushright}
+02 marzo 2023
+\end{flushright}
 
 La storia della scienza non si occupa soltanto di scienziati e di scienza del passato, ma anche di come funziona la scienza e di come lavorano gli scienziati, ovviamente secondo una prospettiva storica, sincrona e diacronica, che fa ampio uso delle fonti
 

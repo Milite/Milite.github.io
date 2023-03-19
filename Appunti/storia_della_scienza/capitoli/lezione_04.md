@@ -1,4 +1,6 @@
-\hfill 08 marzo 2023
+\begin{flushright}
+08 marzo 2023
+\end{flushright}
 
 ## Ippocrate 
 
