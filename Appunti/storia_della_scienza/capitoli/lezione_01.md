@@ -1,4 +1,4 @@
-\clearpage
+\part{Parte generale}
 
 \begin{flushright}
 01 marzo 2023

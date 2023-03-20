@@ -28,7 +28,11 @@ Presenza di prospettive discordanti circa la definizione del campo d'indagine e 
 
 La verità non è nascosta, ma è qualcosa che emerge, che è evidente
 
-![La scuola di Atene](image\scuola_atene.png){width="75%"}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\linewidth]{scuola_atene.png}
+\caption{La scuola di Atene}
+\end{figure}
 
 Al centro dell'affresco si trovano i due massimi rappresentanti del pensiero antico: 
 
