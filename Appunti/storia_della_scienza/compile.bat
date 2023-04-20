@@ -14,4 +14,5 @@ pandoc -s^
     Capitoli\lezione_10.md ^
     Capitoli\lezione_11.md ^
     Capitoli\lezione_16.md ^
+    Capitoli\lezione_19.md ^
     -o out\storia_della_scienza.pdf
