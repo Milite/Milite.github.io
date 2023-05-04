@@ -83,3 +83,4 @@ L'ospitalario chiede al genovese di raccontare i suoi viaggi: è andato verso l'
 
 Nel dialogo il Sole come principio universale positivo del mondo, l'immagine sensibile del divino: quando guardiamo il sole, guardiamo Dio. Il sole coincide con il divino  
 Il Sole veniva rappresentato con il suo simbolo, come se fosse impronunciabile
+
