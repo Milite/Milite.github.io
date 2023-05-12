@@ -14,7 +14,7 @@ Come si è prodotto il sapere? Quali sono le condizioni? Quali metodi?
 Organizzazioni sociali che hanno portato alla produzione del sapere  
 Materialità, tecnologie che hanno reso possibili le osservazioni (es: telescopio)  
 
-# Nascita di una disciplina
+# \textcolor{blue}{Nascita di una disciplina}
 
 Da un punto di vista puramente accademico. Disciplina relativamente giovane: origine attorno alla fine del '800; vengono fondate le prime cattedre (prima cattedra di storia della scienza in Europa in Francia nel 1892 al Collège de France, Oxford nel 1926).  
 In Italia le prime cattedre arrivano tardi, solo nel 1979  
@@ -35,7 +35,7 @@ Importanza delle scienze fisico-matematiche che diventano delle verità universa
 
 Importanza della Encyclopèdie (istruzione circolare): Diderot e D'Alambert. dizionario ragionato delle scienze, delle arti e dei mestieri; per tenere traccia dell'universalità del sapere
 
-# Alcune teorie sullo sviluppo del sapere scientifico
+# \textcolor{blue}{Alcune teorie sullo sviluppo del sapere scientifico}
 
 Il fenomeno scienza non si può descrivere solo come una coppia di terminire (verificazione e falsificazione) [circolo di Vienna: positivismo logico]  
 

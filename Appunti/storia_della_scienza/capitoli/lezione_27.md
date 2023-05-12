@@ -15,7 +15,7 @@ Immagina la storia come un grande eterno movimento che si divide in diverse epoc
 
 Raggiunta di un nuovo stadio in cui le passioni non vengono soffocate, ma vengono soddisfatte, armonizzate. Le passioni possono essere degli enigmi incomprensibili o possono portare a stato superiore di armonie
 
-E\' una civilità che ha perno nelle passioni e si organizza in piccole colonie (falangi: gruppi di $\sim 1500$ persone cehe vivono in edifici posti poco lontani dalle città &rarr; fuga dalle città per rifugiarsi fuori dalla civilità ricca di contraddizioni)  
+$\'E$ una civilità che ha perno nelle passioni e si organizza in piccole colonie (falangi: gruppi di $\sim 1500$ persone che vivono in edifici posti poco lontani dalle città &rarr; fuga dalle città per rifugiarsi fuori dalla civilità ricca di contraddizioni)  
 Questi gruppi vivono come in una sorta di grande comunità: accomunati da caratteristiche passionali  
 Si ritrovano laboratori industriali e gli appartamenti, delle sale comuni per le relazioni pubbliche  &rarr; *falansteri*
 
@@ -35,11 +35,11 @@ Società che ammette disuguaglianza dei redditi, ma uguali diritti (per es. educ
 
 Recupero di una forma armonica che tenga insieme istanza capitale e istanza sociale. Importanza della comunità scientifica
 
-# La distopia novecentesca
+# \textcolor{blue}{La distopia novecentesca}
 
 R. Trousson, *Viaggi in nessun luogo. Storia letteraria del pensiero utopico*, 1975
 
->> Nel corso dei secoli, il contenuto delle utopie e la loro ispirazione si sono evoluti. Il RInascimento vi ha introdotto la ragione e il principio antiteologico dell'autonomia umana. Il Settecento gli ha confidato la sua fede nelle perfettibilità e la sua convizione che la sua felicità dipendeva dalla perfezione delle istituzioni. L'Ottocento vi ha proiettato le sue speranze nelle scienza, l'evoluzione storica, l'emancipaione delle classi sociali. Il nostro tempo ne ha fatto il veicolo delle sue angosce e dei suoi dubbi, la dimostrazione per assurdo della necessità di un umanesimo, di un antropocentismo cha fa dell'uomo un fine e non un mezzo
+> "Nel corso dei secoli, il contenuto delle utopie e la loro ispirazione si sono evoluti. Il RInascimento vi ha introdotto la ragione e il principio antiteologico dell'autonomia umana. Il Settecento gli ha confidato la sua fede nelle perfettibilità e la sua convizione che la sua felicità dipendeva dalla perfezione delle istituzioni. L'Ottocento vi ha proiettato le sue speranze nelle scienza, l'evoluzione storica, l'emancipaione delle classi sociali. Il nostro tempo ne ha fatto il veicolo delle sue angosce e dei suoi dubbi, la dimostrazione per assurdo della necessità di un umanesimo, di un antropocentismo cha fa dell'uomo un fine e non un mezzo"
 
 Si rischia di vivere un futuro catasfrofico, perchè si sta perdendo il senso dell'essero uomo. Dimostrare attraverso l'assurdo della necessità di recupeare l'uomo, ricollocare al centro l'essere umano, e non delle macchine. No troppa scienza che cerca di governare sugli uomini e di limitare la sua libertà
 

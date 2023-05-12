@@ -1,10 +1,12 @@
-\part{Parte generale}
+\newpage
+
+\part{\textcolor{red}{Parte generale}}
 
 \begin{flushright}
 01 marzo 2023
 \end{flushright}
 
-# Introduzione
+# \textcolor{blue}{Introduzione}
 
 Alcune definizioni di scienza
 - il fatto di sapere, di conoscere qualche cosa; notizia, conoscenza
