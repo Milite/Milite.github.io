@@ -2,7 +2,7 @@
 23 marzo 2023
 \end{flushright}
 
-# Cartesio e il meccanicismo
+# \textcolor{blue}{Cartesio e il meccanicismo}
 
 Due filoni filosofici che si contrappongono agli inizi del '600
 
