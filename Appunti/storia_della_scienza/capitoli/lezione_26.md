@@ -31,3 +31,4 @@ Progetti di legislazione, componente politica all'interno delle utopie
 - Saint-Simone &rarr; 1824, *Il catechismo degli industriali*: noi possiamo uscire dal caos costruendo una nuova società con punti cardine quali la scienza (potere spirituale)  e l'industroia (potere temporale); in mezzo ci sono i banchieri
 - Robert Owen &rarr; 1826-1844, *A book of the new moral world*  
   Modifica nel mondo industriale &rarr; in Indiana forma una grande cooperativa e si propone di fondare una società basata sulla verità, $\underbrace{\text{sulla scienza e sul lavoro}}_{\substack{\text{cardini sia della formazione} \\ \text{che della  loro vita stessa}}}$
+
