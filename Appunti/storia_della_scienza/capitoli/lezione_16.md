@@ -2,7 +2,7 @@
 13 aprile 2023
 \end{flushright}
 
-# Le origini della psicologia scientifica
+# \textcolor{blue}{Le origini della psicologia scientifica}
 
 La psicologia scientifca ha caratteristica fondamentale: è pluralistica. Sussiste una pluralità di fondo, non c'è una spiegazione unica dei comportamenti umani. Pluralità di approcci, che può essere adeguatamente compresa solo alla luce di un'analisi storica
 
