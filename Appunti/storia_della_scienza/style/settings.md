@@ -8,7 +8,7 @@ header-includes: |
     \usepackage{color}
 
 title: Storia della scienza
-date: 
+date: 14-05-2023
 author: Marco Militello
 
 geometry:
