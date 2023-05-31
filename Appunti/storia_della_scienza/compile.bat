@@ -1,1 +1,1 @@
-pandoc -s style\settings.md -d letter.yaml
+pandoc -s style\settings.md -d letter.yaml -o storia_della_scienza.pdf
