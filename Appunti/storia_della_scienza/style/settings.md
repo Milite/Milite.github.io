@@ -8,7 +8,6 @@ header-includes: |
     \usepackage{color}
 
 title: Storia della scienza
-subtitle: Anno accademico 2022-2023
 author: Marco Militello
 
 geometry:
