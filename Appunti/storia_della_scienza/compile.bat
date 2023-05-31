@@ -1,1 +1,1 @@
-pandoc -s style\settings.md -d style\letter.yaml
+pandoc -s style\settings.md -d letter.yaml
