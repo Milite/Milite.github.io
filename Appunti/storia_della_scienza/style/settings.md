@@ -7,9 +7,8 @@ header-includes: |
     \graphicspath{ {image/} }
     \usepackage{color}
 
-title: Fisica nucleare e subnucleare
+title: Storia della scienza
 author: Marco Militello
-date: Anno accademico 2022-2023
 
 geometry:
     - a4paper
