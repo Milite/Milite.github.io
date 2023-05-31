@@ -1,4 +1,5 @@
-pandoc -s style\settings.md ^
+pandoc -s ^
+    style\settings.md ^
     capitoli\lezione_01.md ^
     capitoli\lezione_02.md ^
     capitoli\lezione_03.md ^
