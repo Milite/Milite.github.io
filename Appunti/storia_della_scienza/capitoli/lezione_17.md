@@ -57,4 +57,4 @@ Kurt Lewin &rarr; applicazione del paradigma gestaltista allo studio della perso
 Adozione di un punto di vista dinamico
 $$C = f(S) \quad S = (PA) \Rightarrow C = f(PA)$$
 Il comportamento (C) è una funzione dello spazio di vita (S), che include anche la persona (P) e il suo ambiente psicologico &rarr; lo spazio di vita comprende tutti qui fattori che in varia misura influenzano il comportamento di una persona in un determinato momento, punto di vista integrato (relazione imprescindibile con l'ambiente), le interazioni con l'ambiente esterno hanno una natura dinamica, ciascuna modificazione all'interno del campo ha delle conseguenze nella relazione con l'ambiente e con gli altri   
-Per Lewin quindi il gruppo è più della somam delle singole parti, una totalità integrata
+Per Lewin quindi il gruppo è più della somma delle singole parti, una totalità integrata
