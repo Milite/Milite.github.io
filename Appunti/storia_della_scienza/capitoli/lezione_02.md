@@ -37,7 +37,7 @@ Importanza della Encyclopèdie (istruzione circolare): Diderot e D'Alambert. diz
 
 # \textcolor{blue}{Alcune teorie sullo sviluppo del sapere scientifico}
 
-Il fenomeno scienza non si può descrivere solo come una coppia di terminire (verificazione e falsificazione) [circolo di Vienna: positivismo logico]  
+Il fenomeno scienza non si può descrivere solo come una coppia di termini (verificazione e falsificazione) [circolo di Vienna: positivismo logico]  
 
 Verificazione  
 : nella realtà noi cerchiamo ciò che io affermo; corrispondenza sul piano della realtà empirica. Privo di senso tutto quello che non ha una verificazione 
@@ -48,12 +48,12 @@ Falsificazione
 Questi modelli sono insufficienti a chiarire gli aspetti della scienza moderna, che ha sfaccettature di ordine politico, economico, istituzionale, etico e sociale
 
 ## Thomas Kuhn (La struttura delle rivoluzioni scientifiche)  
-Le nuove teorie sceintifiche non sorgno solo da falsificazione e verificazione, ma c'è sistema molto più complesso, l'alternarsi di periodi di scienze normali e periodi di rottura rivoluzionarie  
+Le nuove teorie scientifiche non sorgono solo da falsificazione e verificazione, ma c'è sistema molto più complesso, l'alternarsi di periodi di scienze normali e periodi di rottura rivoluzionarie  
 La scienza non procede linearmente, ma per rotture, momenti in cui scatta il cambiamento  
 I periodi di scienza normale sono caratterizzati da paradigmi (es: paradigma geocentrico)
 
 Paradigmi  
-: complessi organizzarti di teorie o medelli di ricerca, o pratiche sperimentali ai quali la comunità scientifica dà massimo credito in una determinata epoca storica; esiste qualcosa che domina su tutti gli altri ed è il fondamento del resto
+: complessi organizzarti di teorie o modelli di ricerca, o pratiche sperimentali ai quali la comunità scientifica dà massimo credito in una determinata epoca storica; esiste qualcosa che domina su tutti gli altri ed è il fondamento del resto
 
 Le nuove teorie sorgono tramite sostituzioni di vari paradigmi con paradigmi (riorentamento gestaltico: riconfigurazione del mondo) nuovi secondo il seguente schema:
 
@@ -67,26 +67,26 @@ Le nuove teorie sorgono tramite sostituzioni di vari paradigmi con paradigmi (ri
 Nuove anomalie possono mettere di nuovo in crisi i nuovi paradigmi a cui si è giunti (es: meccanica quantistica con fisica newtoniana)
 
 Ogni osservazione empirica assume un significato diverso a seconda del contesto teorico a cui la si interpreta. I dati dell'osservazione sono carichi di teoria; la teoria stabilisce che cosa sia un fatto  
-I paradigmi quindi non possono essere tra loro paragonati, sono tra loro incommensurabili, uno esclude l'altro, non esistono edgli standard razionali per un proficui confronto. Paradigmi successivi ci dicono cose diverse, ogni paradigma viaggia per conto suo  
+I paradigmi quindi non possono essere tra loro paragonati, sono tra loro incommensurabili, uno esclude l'altro, non esistono degli standard razionali per un proficuo confronto. Paradigmi successivi ci dicono cose diverse, ogni paradigma viaggia per conto suo  
 L'accettazione di un nuovo paradigma avviene in seguito a una sorta di conversione dovuta a ragioni anche di tipo extrascientifico  
-Nella scienza non c'è progresso perchè si arriva sempre di più alla verità, ma perchè ci sillontana sempre di più da modelli inefficaci di spiegazione. Processo a partire da qualcosa, più che verso qualcosa. Lascio un modello che si è rivelato inefficace
+Nella scienza non c'è progresso perchè si arriva sempre di più alla verità, ma perchè ci si allontana sempre di più da modelli inefficaci di spiegazione. Processo a partire da qualcosa, più che verso qualcosa. Lascio un modello che si è rivelato inefficace
 
 ## Imre Lakatos (La falsificazione e la metodologia dei programmi di ricerca scientifici)
 
-Programmi di ricerca parola fondamnentale 
+Programmi di ricerca parola fondamanntale 
 
 Non accetta soluzione teoria di Kuhn. Sapere scientifico come serie di programmi in competizione tra di loro
 
 Programmi di ricerca sono  serie di teorie di scientifiche coerenti che obbediscono ad alcune regole metodologiche:
 
-1. Nucleo (hard core): aspetto fuori discossione del programma di ricerca, che vengono considerate sacre, intoccabili. Insieme di teorie ritenute inconfutabili, a meno che non si decida di abbandonare queste teorie per quelle nuove
-1. Cintura protettiva: insieme di teorie e di ipotesi che possono essere più facilmente ritoccabili. Ha la funzione di difendere il nucleo, ma anche funzione prescrittiva che da luogo a due tipi di azioni
+1. Nucleo (hard core): aspetto fuori discussione del programma di ricerca, che vengono considerate sacre, intoccabili. Insieme di teorie ritenute inconfutabili, a meno che non si decida di abbandonare queste teorie per quelle nuove
+1. Cintura protettiva: insieme di teorie e di ipotesi che possono essere più facilmente ritoccabili. Ha la funzione di difendere il nucleo, ma anche funzione prescrittiva che dà luogo a due tipi di azioni
     - euristica negativa (vie negativa che mantiene intatto nucleo)
     - euristica positiva (vie da seguire, che incoraggia a sviluppare il programma di ricerca)
 
 Si hanno due diversi tipi di programmi scientifici: 
 
-1. Programma di ricerca progressivo per grantire lo sviluppo delle conoscenze
+1. Programma di ricerca progressivo per garantire lo sviluppo delle conoscenze
 2. Programma di ricerca degenerante (pseudo-scientifici): ostacola il progresso della scienza, scopo difensivo    
 
 Quando si arriva all'insostenibilità si cambia teoria
@@ -95,15 +95,15 @@ Quando si arriva all'insostenibilità si cambia teoria
 
 Sviluppa una prospettiva anarchica: non esiste un metodo unico, nessuno schema comune; la scienza procede in maniera quasi anarchica con metodo che di volta in volta si presenta più efficace, anche a seconda dei periodi storici. Non si ha un principio ma si procede in maniera anarchica  
 Distruzione di ogni metodologia scientifica precostituita  
-Esiste la libera inventva della scienza di darsi un metodo, la scienza si dà un fine, i mezzi migliori per raggiungere quel fine in base al periodo; non esiste un'unica strada. Lotta contra il metodo, lotta per la libertà
+Esiste la libera inventiva della scienza di darsi un metodo, la scienza si dà un fine, i mezzi migliori per raggiungere quel fine in base al periodo; non esiste un'unica strada. Lotta contro il metodo, lotta per la libertà
 
-La storia della sceinza non è del tutto casuale, non possiamo stabilire un metodo univversale
+La storia della sceinza non è del tutto casuale, non possiamo stabilire un metodo universale
 
 ## Larry Laudan (Progress and its problems)
 
 Scopo della scienza è quello di risolvere i problemi.  
 Il problema risolto è alla base del progresso scientifico.  
-Lo scopo della scienza è qullo di massimizzare la portata dei problemi empirici anomili e di quellli concettuali non risolti  
+Lo scopo della scienza è qullo di massimizzare la portata dei problemi empirici anomili e di quelli concettuali non risolti  
 Critica il concetto di paradigma e di programma di ricerca; non sono le teorie ad entrare in crisi, ma sono i metodi con cui queste teorie vengono sviluppati
 
 Tradizioni di ricerca (elemento dinamico) 

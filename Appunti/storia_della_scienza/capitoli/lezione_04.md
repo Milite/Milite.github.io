@@ -2,15 +2,15 @@
 08 marzo 2023
 \end{flushright}
 
-## Ippocrate 
+# \textcolor{blue}{Ippocrate} 
 
 Possibilità di conoscere la vera natura della medicina, che è una vera e propria tecnica, con ricaduta operativa    
 
-> La vita è breve, l'arte è lunga, l'occasione è fugace, l'esperienza è fallace, il giudizio è difficile
+> "La vita è breve, l'arte è lunga, l'occasione è fugace, l'esperienza è fallace, il giudizio è difficile"
 
 La tecnica è l'applicazione operativa di un sistema di concetti: la medicina è qualcosa di pratico (medicina razionale)
 
-Ippocrate era diventato capo nel centro medico; tantissimi leggende sulla sua vita: Ha lasciato un corpo di opere *Corpus Hippocraticum* 
+Ippocrate era diventato capo nel centro medico; tantissimi leggende sulla sua vita: aa lasciato un corpo di opere *Corpus Hippocraticum* 
 
 L'idea di medicina come sapere pratico, modello operativo, destinato a sostituire il sapere precedente; ha a cuore il risvolto pratico. Struttura metodica propria, con conoscenze precise, tecniche.  
 L'anatomia era ancora molto sconosciuta, scasa conoscenza anatomica, si basava su anatomia animali. Il compito della medicina è di osservare i sintomi del corpo e non l'interno, e poi proporre delle possibili cure. Il medico deve sapere dove intervenire e di capire dove lasciare che sia la natura a curare il corpo (capacità curative della Natura)
@@ -28,7 +28,7 @@ Tutte le malattie per Ippocrate sono malattie fisiche, non esistono malattie men
 
 Teoria degli umori: tutte le malattie che possono colpire l'uomo hanno origine da umori
 
-Umori
+Umori:
 : sostanza che circola nel corpo umano; l'equilibrio nel corpo è necessaria per la salute. Quasi tutte le malattie hanno origine da squilibrio umorale
 
 4 tipi di umore
@@ -49,9 +49,9 @@ Il sapere medico deve restare chiuso in un numero limitato di persone
 Il medico non può provocare la morte, deve avere vocazione per salvare la vita  
 Per secoli medico e chirurgo erano figure diverse; il medico era considerato in maniera molto più positva rispetto a chirurgo che era assimilato di più a un macellaio
 
-# I grandi sistemi metafisici: Platone e Aristotele
+# \textcolor{blue}{I grandi sistemi metafisici: Platone e Aristotele}
 
-Pensiero filosofico diventa in gradi speigare ogni aspetto della natura dell'uomo  
+Pensiero filosofico diventa in grado di spiegare ogni aspetto della natura dell'uomo  
 Socrate ha fornito strumento del dialogo, importante per la focalizzazione sui problemi dell'uomo  
 Importanza di Socrate è rivolta al dialogo (metodo critico e antidogmatico); strumento razionale importante per la critica, tendenza a sminuzzare i problemi e giungere a riassunto finale  
 Condanna a morte per corruzione dei giovani

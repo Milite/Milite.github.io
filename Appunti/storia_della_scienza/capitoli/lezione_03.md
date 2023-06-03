@@ -2,7 +2,7 @@
 07 marzo 2023
 \end{flushright}
 
-# La scienza antica
+# \textcolor{blue}{La scienza antica}
 
 Il mondo greco, più che il mondo romano risulta essere più importante dal punto di vista scientifico  
 
@@ -70,7 +70,7 @@ Il punto di fuga dell'affresco sta tra le due figure di Platone e Aristotele, qu
 1. Periodo greco-romano:
     - dei pensatori greci di questo periodi i più conosciuti furono l'astronomo e geografo Tolomeo e l'anatomista e fisico Galeno
 
-# La nascita della scienza greca
+# \textcolor{blue}{La nascita della scienza greca}
 
 La meraviglia alla base dell'atteggiamento filosofico è il motore della nostra attività razionale
 
@@ -93,7 +93,7 @@ Sposta l'obiettivo da elementi della dimensione naturale a qualcosa che già si 
 Numero intero come fondamento di tutte le cose e principio del cosmo.  
 Numero come simbolo (numeri pari e dispari); valenza mistica e magica &rarr; diventa la chiave per spiegare la grande catena di opposizioni che caratterizza la nostra realtà (limitato/illimitato, luce/tenebra, mobile/immobile, dritto/curvo, uno/molteplice, buono/cattivo, vero/falso)
 
-Dualiosmo filosofico di fondo (opposizione originaria) tra il limite (dispari) e illimitato (pari): 
+Dualismo filosofico di fondo (opposizione originaria) tra il limite (dispari) e illimitato (pari): 
 
 - pari lasciano spazio all'illimitato  
 - dispari rappresentano limite, perfezione, compiuto  
