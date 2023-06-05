@@ -2,7 +2,7 @@
 16 marzo 2023
 \end{flushright}
 
-# La rivoluzione rinascimentale
+# \textcolor{blue}{La rivoluzione rinascimentale}
 
 Tre fatti fondamentali:
 
@@ -59,7 +59,7 @@ Si cominciano ad abbandonare le credenze aristoteliche
 
 Leonardo non è il teorico del metodo sperimentale, ma c'è una ricerca delle cause fisiche che avvicina Leonardo alle acquisizioni della scienza moderna
 
-# La nascita della scienza moderna
+# \textcolor{blue}{La nascita della scienza moderna}
 
 Esigenza di dominare la natura e di conoscerla, dando una spiegazione razionale, trovano un accordo più solido
 

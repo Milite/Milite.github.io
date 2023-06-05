@@ -47,7 +47,7 @@ Da Cartesio le scienze che studieranno il mondo vivente riceveranno un impulso d
 
 Passi successivi
 
-- da un'indagine sull'essenza della mente (processi dell'anima, psichici, del pensiero) a un'indagine sui soui processi &rarr; empirismo e associazionalismo 
+- da un'indagine sull'essenza della mente (processi dell'anima, psichici, del pensiero) a un'indagine sui suoi processi &rarr; empirismo e associazionalismo 
 - da una concezione del corpo come macchina a una sua concezione come organismo animale (insieme integrato di funzioni vitali)
 
 ## Empirismo e associazionalismo: al di là dell'essenza della mente 
@@ -56,7 +56,7 @@ Passi successivi
 
 In opposizione al razionalismo, si sviluppa nel suo nucleo originario in Inghilterra
 
-Intelletto come tabula rasa: idea di una mente come un foglio bianco sopa il quale l'esperienza, che noi compiamo tutti i giorni fin dalla nascita, scrive (alcune cose rimangono lasciando una traccia, altre vengono levigate dal tempo) &rarr; non esiste nulla di innato, tutto è frutto dell'esperienza; attraverso gli organi di senso facciamo esperienza del mondo esterno e poi siamo in grado piano piano di meditare sulla nostra esperienza interiore
+Intelletto come tabula rasa: idea di una mente come un foglio bianco sopra il quale l'esperienza, che noi compiamo tutti i giorni fin dalla nascita, scrive (alcune cose rimangono lasciando una traccia, altre vengono levigate dal tempo) &rarr; non esiste nulla di innato, tutto è frutto dell'esperienza; attraverso gli organi di senso facciamo esperienza del mondo esterno e poi siamo in grado piano piano di meditare sulla nostra esperienza interiore
 
 Questi autori non intendono negare l'esistenza dell'anima, ma vogliono considerare scientificamente solo le sue funzioni (la metafisica o la teologia si occuperanno della natura e dell'essenza dell'anima)
 
@@ -65,11 +65,11 @@ Da Locke si aprono poi due possibili sviluppi
   - indagare i processi che si svolgono nell'intelletto
   - indagare i rapporti tra mente e corpo
 - David Hume, *Trattato sulla natura umana*: i sensi sono la base di tutto quello che noi siamo e sappiamo, siamo il risultato delle nostre esperienze sensibili; associazione come processo fondamentale che regola l'intelletto (i sensi vengono riorganizzati nella forma delle idee che vengono associate); segreti legami tra idee e associazioni per somiglianza, contiguità e causazione che la mente fa
-- David Hartley, *Observations on man, his frame, his duty and his expectations*: teoria delle vibraziuncole, secondo cui le esperienze sensoriali provocano, attraverso i nostri organi di senso, delle piccole vibrazioni nel sistema nervoso che vengono elaborate e viene coferito loro un'unità di senso data dal rpincipio associazionistico &rarr; cercva di connettere i sensi, la dimensione corporea alle nostre idee, il sistema nervoso diventa un luogo di interazioni tra le operazioni fisiche e mentali
+- David Hartley, *Observations on man, his frame, his duty and his expectations*: teoria delle vibraziuncole, secondo cui le esperienze sensoriali provocano, attraverso i nostri organi di senso, delle piccole vibrazioni nel sistema nervoso che vengono elaborate e viene conferito loro un'unità di senso data dal principio associazionistico &rarr; cercava di connettere i sensi, la dimensione corporea alle nostre idee, il sistema nervoso diventa un luogo di interazioni tra le operazioni fisiche e mentali
 
 ### Sviluppi dell'associazionismo dell'Ottocento
 
-- John Stuart Mill, *Sistema di logica*: teoria della chimica mentale, secondo cui siamo fatti di idee semplici che si combinano tra di loro per creare strutture mentali, concettuali via via più complesse (come avviene per gli elementi chimici quando vanno a formare dei composti); ci devino essere delle affinità elettive che favoriscono o meno l'unirsi degli elementi
+- John Stuart Mill, *Sistema di logica*: teoria della chimica mentale, secondo cui siamo fatti di idee semplici che si combinano tra di loro per creare strutture mentali, concettuali via via più complesse (come avviene per gli elementi chimici quando vanno a formare dei composti); ci devono essere delle affinità elettive che favoriscono o meno l'unirsi degli elementi
 - Alexander Bain, *Mente e corpo*: necessità di dare una base neurofisiologica allo studio del comportamenti, il quale opera per tentativi ed errori
 
 ### Gli ideologi francesi: dall'uomo macchina all'uomo come organismo vivente

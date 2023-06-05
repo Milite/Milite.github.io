@@ -2,7 +2,7 @@
 28 marzo 2023
 \end{flushright}
 
-# \textcolor{blue}{La soperta della circolazione sanguigna}
+# \textcolor{blue}{La scoperta della circolazione sanguigna}
 
 Il meccanicismo del XVII si propone di spiegare le proprità dei fenomeni fisici, soprattutto biologici, in termini esclusivamente meccanici, utilizzando la materia e il movimento; 
 riduce quindi i fenomeni biologici a due fondamentali ingredienti, per cui utto si può spiegare tramite relazioni di causa-effetto quantificabili 
@@ -25,7 +25,7 @@ rientrato ain patria, diventò medico personale di Carlo I, al quale rimase semp
 
 Ad Harvey si riconosce la priorità della scoperta della circolazione sanguigna: in realtà fu l'esito di un processo graduale di tutta una serie di ricerche che erano partite da Vesalio, messe poi in discussione da Galeno e arrivano al culmine proprio co  Harvey, ma che troveranno poi una conferma definitiva nell'opera di Macello Malpighi
 
-Non potendo dissezionare uomini vivi, ma solo cadaveri, non poteva verificare sperimentalmente la circolazione sanguigna, in quanto il sangue non è più sottoposto alla pressione sanguigna in un corpo morto; per cui inizia a tagliare la gola alle pecoree notò che il sangue fuoriusciva con violenza, quindi non stillava dolcemente dal corpo, ma subiva la pressione di qualcosa &rarr; c'è all'opera qualcosa (muscolo, organo) che negli animali e nell'uomo fosse perennemente all'opere: il cuore 
+Non potendo dissezionare uomini vivi, ma solo cadaveri, non poteva verificare sperimentalmente la circolazione sanguigna, in quanto il sangue non è più sottoposto alla pressione sanguigna in un corpo morto; per cui inizia a tagliare la gola alle pecore notò che il sangue fuoriusciva con violenza, quindi non stillava dolcemente dal corpo, ma subiva la pressione di qualcosa &rarr; c'è all'opera qualcosa (muscolo, organo) che negli animali e nell'uomo fosse perennemente all'opera: il cuore 
 
 *Exercitatio anatomica de motu cordis et sanguinis in anuumalibus*: opera intrisa di aristotelismo di base, qunque tutto il movimento del corpo animale può essere interpretato meccanicisticamente come una macchina idraulica (ad esempio il sangue scorre nelle vene e nelle arterie spinto dal moto del cuore)
 
@@ -41,16 +41,16 @@ C'era poi il passaggio interverticolare che divideva in due parti il cuore, qui 
 Funzione centrale del cuore è la diastole per attrarre dentro il cuore il sangue (movimento opposto alla sistole)
 
 Critica di Harvey alla dottrina galenica
-: La quantità di sangue espulsa dal cuore in un'ora supera il peso di un uomo: allora come può questa enorme quantità di suangue essere prodotta dalla nutrizione? E il passaggio di sangue da un ventricolo all'altro?
+: La quantità di sangue espulsa dal cuore in un'ora supera il peso di un uomo: allora come può questa enorme quantità di sangue essere prodotta dalla nutrizione? E il passaggio di sangue da un ventricolo all'altro?
 
 ### Il nuovo modello della circolazione
 
 Il sangue circola ininterrottamente nel corpo e la funzione fondamentale del cuore è la sistole; il cuore è come una grande pompa che spinge continuamente il sangue fuori di sè
 
-Le arterie pulsano non a causa del dilatarsi della loro parete, ma a causa della pressione del liquido in esse spinto dal cuore; le vene sono dotate di alcune valvole che impediscono il reflusso del sangue venoso al contrario &rarr; il snague ricco e caldo proveniente dal cuore si esaurisce e si raffredda alla periferia del corpo; passando dalle ultime ramificazioni delle arterie agli ultimi capi delle vene esso ritorna perennemente al cuore come fonte di vita
+Le arterie pulsano non a causa del dilatarsi della loro parete, ma a causa della pressione del liquido in esse spinto dal cuore; le vene sono dotate di alcune valvole che impediscono il reflusso del sangue venoso al contrario &rarr; il sangue ricco e caldo proveniente dal cuore si esaurisce e si raffredda alla periferia del corpo; passando dalle ultime ramificazioni delle arterie agli ultimi capi delle vene esso ritorna perennemente al cuore come fonte di vita
 
 L'eperimento delle legature al braccio
-: le arterie su un braccio sono situate più in profondità frispetto alle vene, che sono più in superficie; se facciamo una legatura molto stretta appena sopra al gomito, impediamo al sangue arterioso di arrivare alla mano e quindi l'arteria che sta nella parte sopra del braccio si gonfia e la mano piano piano si raffredda e rallentano le punsazioni in quella zono.  
+: le arterie su un braccio sono situate più in profondità rispetto alle vene, che sono più in superficie; se facciamo una legatura molto stretta appena sopra al gomito, impediamo al sangue arterioso di arrivare alla mano e quindi l'arteria che sta nella parte sopra del braccio si gonfia e la mano piano piano si raffredda e rallentano le punsazioni in quella zona.  
 Se invece facciamo una legatura più moderata impediamo al suangue venoso di refluire al cuore e quindi le vene si gonfiano al di sotto della legatura e la mano è molto più gonfia (vuole dimostrare il doppio sistema circolatorio, arterioso e venoso &rarr; parte destra e parte sinistra del cuore sono rigidamente distinte)
 
 La centralità del cuore come "Sole del microcosmo": propulsore, permette la vita dell'organismo; risponde a un modello idraulico, le vene e le arterie sono come dei tubi dove scorre un liquido in pressione e in movimento, il sangue e le valvole venose sono come quelle meccaniche che possono regolare il flusso del liquido
@@ -62,7 +62,7 @@ Due aspetti appena accennati che poi troveranno conferme sperimentali in altri a
 - l'ossigenazione del sangue nei polmoni (Lower)
 - L'esistenza dei vasi capillari (Malpighi)
 
-## La latromeccanica
+## La iatromeccanica
 
 Fa del meccanicismo biologico la propria chiave di volta: è possibile interpretare i fenomeni fisiologici (e patologici) alla luce delle leggi fondamentali della meccanica
 

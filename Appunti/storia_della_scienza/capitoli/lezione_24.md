@@ -2,7 +2,7 @@
 04 maggio 2023
 \end{flushright}
 
-# Tommaso Campanella
+# \textcolor{blue}{Tommaso Campanella}
 
 La natura è animata, tutte le cose della natura hanno un senso, dotate di sensibilità, espressione di Dio
 

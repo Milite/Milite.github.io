@@ -12,13 +12,13 @@ Si assiste a un venir meno a una passione della politica
 - A Tella viene chiamato da Filippo il Macedone, dove diventa l maestro privato di Alessandro Magno; prende una posizione di noterietà, dove può approfondire la sua conoscenza e istruisce Alessandro Magno per potersi esporre come sovrano  
 Posizione dispotica di Alessandro, allora Aristotele ne prende le distanze
 - Ad Atene (dove aveva fatto ritorno) sfrutta sue conoscenze per fondare sua scuola filosofica che prende il nome di **liceo**  
-Era dotata di cortile interno e di una cammino interno (da cui prende il nome di *peripatetica*)  
+    Era dotata di cortile interno e di una cammino interno (da cui prende il nome di *peripatetica*) 
 - Muore Alessandro Magno provoca l'insurrezione nazionalistica ateniese, situazione che mette in pericolo anche la vita di Aristotele
 - Aristotele fugge in un'isola dove però avrà vita breve
 
 Ha lasciato corpus di opere molto ampio, ha scritto su qualsiasi cosa, si è occupato di logica, di filosofia, di metafisica, di fisica, di metereologia, di retorica (tragedie greche), di ricerche biologiche 
 
-Ha influezato sia nel bene che nel male la scienza: alcuni suoi errori grossolani sono stati assunti come delle verità assolute (fine Medioevo) grazie alla sua autorità
+Ha influenzato sia nel bene che nel male la scienza: alcuni suoi errori grossolani sono stati assunti come delle verità assolute (fine Medioevo) grazie alla sua autorità
 
 Presupposti filosofici di fondo
 
@@ -63,7 +63,7 @@ Il cuore viene visto come sede dell'intelligenza, andando contro alla tradizione
 
 Aristotele segna la fine della grande classicità greca, dando origine all'ellenismo
 
-# La cultura scientifica ellenistica
+# \textcolor{blue}{La cultura scientifica ellenistica}
 
 Alessandria d'Egitto diventa centro importante dopo la morte di Alessandro Magno: fondazione del *Museo* e della *Biblioteca* che conserva tutto il patrimonio culturale del mondo antico  
 

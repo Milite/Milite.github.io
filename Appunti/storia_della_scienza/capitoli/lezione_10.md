@@ -4,12 +4,13 @@
 
 # \textcolor{blue}{Galileo Galilei}
 
-Dal testo teatrsle *Vita di Galileo* di Bertold Brecht:
-> Scopo della scienza non è tanto quello di aprire le porte all'infinito sapere, quanto quello di porre una barrirea all'infinita ignoranza
+Dal testo teatrale *Vita di Galileo* di Bertold Brecht:
+
+> "Scopo della scienza non è tanto quello di aprire le porte all'infinito sapere, quanto quello di porre una barrirea all'infinita ignoranza"
 
 Vive in un periodo di grande fermento culturale e filosofico
 
-\'E lo scienziato che più di ogni altro ha contribuito alla riformulazione delle basi metodologiche della scienza (in senso moderno), è il vero iniziatore della scienza moderna 
+$\'E$ lo scienziato che più di ogni altro ha contribuito alla riformulazione delle basi metodologiche della scienza (in senso moderno), è il vero iniziatore della scienza moderna 
 
 Le sue innovazioni non riguardano solo lo stretto ambito tecnico-scientifico, ma hanno anche delle ripercussioni filosofiche importanti
 
@@ -17,12 +18,12 @@ Ridimensionamento drastico dell'aristotelismo, nuovo rapporto tra filosofia e sc
 
 Manifesta sin da subito un interesse per le discipline matematico-fisiche per la loro natura empirica, applicata, pratica e a solo 22 anni pubblica una piccola opera di idrostatica: *La bilancetta* &rarr; forte influenza degli studi di Archimede
 
-Nel 1589 prende il lettorato (cattedra) all'università di Pisa, nel 1592 passa a Padova, dove c'è un nocciolo duro di aristotelici che non vede di buon occhio le sue innovazioni. Entra così in contatto con Cesare Cremonini, aristotelico tra i più ortodossi nell'ambiente padpvano, con Paolo Sarpi, autore della storia del concilio di Trento, e con Francesco Sagredo
+Nel 1589 prende il lettorato (cattedra) all'università di Pisa, nel 1592 passa a Padova, dove c'è un nocciolo duro di aristotelici che non vede di buon occhio le sue innovazioni. Entra così in contatto con Cesare Cremonini, aristotelico tra i più ortodossi nell'ambiente padovano, con Paolo Sarpi, autore della storia del concilio di Trento, e con Francesco Sagredo
 
-Costruzione del cannocchiale
+Costruzione del cannocchiale:
 : Galileo ha perfezionato l'invenzione che proveniva dall'Olanda dal punto di vista tecnico e lo trasforma in uno strumento scientifico
 
-*Siderius nuncius* (1610)
+*Siderius nuncius* (1610):
 : prima opera di un certo spessore. Contiene una serie di osservazioni compiute con il cannocchiale che mettono in crisi definitivamente diverse concezioni dell'aristotelismo (perfezione dei corpi celesti e dei cieli)
 
 Nel 1610, acquisita una certa fama, Galileo torna a Pisa e diventa primo matematico del gran ducato di Toscana e primario dell'università di Pisa; poteva quindi vivere con i frutti della sua ricerca e non aveva l'obbligo di insegnare perchè era un ricercatore, poteva perciò dedicarsi ai suoi studi 
@@ -34,11 +35,11 @@ Nel 1612 i domenicani avevano dichiarato eretiche le teorie copernicane; Galileo
 Nel 1623 esce il *Saggiatore* e viene eletto pontefice Urbano VIII, che aveva manifestato simpatie per la scienza ed era in buoni rapporti con Galileo; per questo motivo Galilei si sente motivato a riprendere in mano la questione sulle teorie copernicane
 
 Nel 1632 esce il *Dialogo sopra i due massimi sistemi del mondo*: apparentemente non prende una diretta posizione nei confronti del copernicanesimo, ma tra le righe si capisce benissimo da che parte sta; è un dialogo, una narrazione, una finzione letteraria tra 3 personaggi &rarr; Salviati (copernicano, raffinato), Simplicio (aristotelico ortodosso molto fastidioso) e Sagredo (mediatore, arbitro tra i due)  
-Il testo viene immediatamente denunciato e Galilei per difendersi dalle accuse dice che il testo è un'ipotesi matematica, ma le preferenze galileiane sono talmente evidenti che viene comunque denunciato pubbliicamente al Sant'Uffizio degli ecclesiastici e dagli aristotelici 
+Il testo viene immediatamente denunciato e Galilei per difendersi dalle accuse dice che il testo è un'ipotesi matematica, ma le preferenze galileiane sono talmente evidenti che viene comunque denunciato pubblicamente al Sant'Uffizio degli ecclesiastici e dagli aristotelici 
 
 Galileo era fortemente certo della verità fisica del copernicanesimo, non era solo un'ipotesi matematica: per cui si oppone all'idea di accettare due ordini di verità (copernicanesimo contro Sacre Scritture), la verità è una sola, la coesistenza di verità antitetiche è inaccettabile, la vera certezza è data dalla verità fisica del sistema copernicano
 
-Subisce un processo abbastanza peniso al quale deve sottostare e alla fine è costretto ad abiurare: rinuncia a sostenere le sue teorie; è lecito però dubitare delle sue reali convinzioni, dato che la sua ultima opera, pubblicata nel 1638 presenta una concezione del moto fondata sui principi della nuova scienza e non su quelli dell'aristotelismo.  
+Subisce un processo abbastanza penoso al quale deve sottostare e alla fine è costretto ad abiurare: rinuncia a sostenere le sue teorie; è lecito però dubitare delle sue reali convinzioni, dato che la sua ultima opera, pubblicata nel 1638 presenta una concezione del moto fondata sui principi della nuova scienza e non su quelli dell'aristotelismo.  
 In più è sottoposto a una sorta di ergastolo che però viene poi trasformato in arresti domiciliari (prima va a Roma e poi ad arcetri, dove passa il resto della sua vita) evitando la morte
 
 Nel 1638 scrive  i *Discorsi e dimostrazioni matematiche sopra due nuove scienze* dove fa trasparire la sua simpatia copernicana; il *Dialogo* viene inserito nell'Indice dei libri proibiti

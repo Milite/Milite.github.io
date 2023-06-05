@@ -1,3 +1,10 @@
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[LO,LE]{Marco Militello}
+\fancyfoot[CO,CE]{}
+\fancyfoot[RO,RE]{\thepage}
+
 \newpage
 
 \part{\textcolor{red}{Parte generale}}

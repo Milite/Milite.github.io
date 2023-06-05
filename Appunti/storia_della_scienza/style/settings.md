@@ -6,6 +6,7 @@ header-includes: |
     \usepackage{graphicx}
     \graphicspath{ {image/} }
     \usepackage{color}
+    \usepackage{fancyhdr}
 
 title: Storia della scienza
 subtitle: Anno accademico 2022-2023

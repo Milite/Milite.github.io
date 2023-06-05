@@ -32,7 +32,7 @@ La ragione è unica e uguale in tutti gli uomoni; la ragione è una facoltà uma
 Dall'unità stessa della ragione consegue unità stesso del sapere scientifico  
 La ragione trova in se stessa le verità fondamentale: la ragione le coglie immediatamente perchè sono così evidenti; i sensi rischiano solo di ingannare ciò che la ragione può capire con certezza
 
-La filosofia viene a configurarsi come una sorta di grande albero, le cui radici sono la metafisica, il tronco è la fisica, i vari rami che spuntano dal tronco sono tutte le altre scienze (la meccanica, la medicina, la morale [sfera della volontà])
+La ragione viene a configurarsi come una sorta di grande albero, le cui radici sono la metafisica, il tronco è la fisica, i vari rami che spuntano dal tronco sono tutte le altre scienze (la meccanica, la medicina, la morale [sfera della volontà])
 
 L'unità del metodo: il sapere è tale perchè rispetta una metodologia, una serie di principi  
 Nel *Discorso sul metodo* Cartesio parla del metodo, 4 momenti del metodo che la ragione segue per arrivare al sapere, a una conoscenza certa
@@ -43,7 +43,7 @@ Nel *Discorso sul metodo* Cartesio parla del metodo, 4 momenti del metodo che la
 1. enumerazione e revisione: ci vuole un enumerazione che permette di verificare che non abbia dimenticato nulla o che non abbia commesso errori
 
 Il metodo di Cartesio obbedisce a un modello matematico (scienza dell'ordine, della misura in generale); la matematica cartesiana deve anche una ricaduta sullo studio nei fenomeni fisici o anche musicali (fenomeni naturali in generali)  
-Il metodo non ha bisogno di una giustificazione filosofica
+Il metodo non ha bisogno di una giustificazione filosofica, esso stesso è evidente
 
 Se qualcosa non è chiaro ed evidente qualcosa, dobbiamo sospendere il nostro giudizio, devo dubitare della verità di qualcosa  
 Il dubbio diventa uno strumento metodologico quella strada che dobbiamo seguire nell'acquisizione di un sapere certo; dubbio che viene applicato a diversi ambiti della nostra vita, soprattutto della nostra esperienza sensibile.  

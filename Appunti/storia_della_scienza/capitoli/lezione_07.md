@@ -2,13 +2,13 @@
 15 marzo 2023
 \end{flushright}
 
-# La breve rinascita dell'età imperiale (II sec d.C.)
+# \textcolor{blue}{La breve rinascita dell'età imperiale (II sec d.C.)}
 
 Premessa: la decadenza dello spirito scientifico a partire dal II secolo a.C.
 
 ## Claudio Tolomeo
 
-Ha fissuto ad Alessandria  
+Ha vissuto ad Alessandria  
 *Mathematikè Syntaxis o Almagesto*: testo base del sapere astronomico dell'antichità (fino a Copernico)
 
 Divide la ricerca teorica in 3 grandi blocchi:
@@ -69,7 +69,7 @@ Esistenza di fori invisibili tra parete destra e sinistra del cuore, setto che p
 
 Fegato come organo di produzione del sangue: avviene tramite la digestione del cibo che diventa *chilo*, arriva al fegato e con una serie di trasformazioni diventa sangue
 
-# Il declino della scienza moderna nel mondo occidentale
+# \textcolor{blue}{Il declino della scienza moderna nel mondo occidentale}
 
 Con Tolomeo e Galeno si ha periodo di fine della scienza antica; inizia un periodo di decadenza della medicina, della fisica e dell'astronomia  
 Questi grandi sistemi si cristallizzano come blocchi inamovibili, come se il sapere del mondo antico fosse giunto al suo capolinea, come se non ci fosse più niente da dire o fare in più 

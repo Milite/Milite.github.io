@@ -2,7 +2,7 @@
 21 marzo 2023
 \end{flushright}
 
-# Il rinnovamento dell'astronomia
+# \textcolor{blue}{Il rinnovamento dell'astronomia}
 
 Processo di cambiamento della cultura / dei saperi  
 Nel 1543 avviene la pubblicazione dell'opera di Copernico &rarr; dal mondo chiuso all'universo infinito; allargamento dei confini
@@ -74,8 +74,7 @@ Keplero vede le sfere dei pianeti come inscritte o circoscritte in questi solidi
 
 Una vera geometria del cielo &rarr; riconosce a se stesso un ruolo centrale nello svelamento della comprensione dell'universo
 
-# Il rinnovamento della medicina
-
+# \textcolor{blue}{Il rinnovamento della medicina}
 Impennata di studi che conosce l'anatomia 
 
 ## Andrea Vesalio
