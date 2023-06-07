@@ -103,7 +103,7 @@ es: 5 = 2+3 &rarr; somma primo numero pari e primo numero dispari (escluso l'uno
 Aspetto discontinuo della realtà fisica (granularità)  
 Ipotesi della sfericità della terra: la sfera (simbolo di perfezione) è perfetta perchè ha tutti i punti equidistanti dal centro
 
-Filolao di Crotone ha fornito una primissima idea di decentramento della Terra: al centro dell'universo c'è un grande fuoco che dà la vita e riscalda tutto l'universo
+**\underline{Filolao di Crotone}** ha fornito una primissima idea di decentramento della Terra: al centro dell'universo c'è un grande fuoco che dà la vita e riscalda tutto l'universo
 
 Il problema degli irrazionali e la crisi del pitagorismo: scoperta della diagonale del quadrato
 

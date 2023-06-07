@@ -8,7 +8,7 @@ Sappiamo molto poco della sua vita; ha insegnato ad Alessandria; la maggior part
 
 - Elementi (13 libri) = geometria piana elementare e aritmetica 
 - Uso del metodo deduttivo: distinzioni tra basi (termini, postulati e nozioni comuni/assiomi) e conseguenze da esse dedotte 
--influenza filosofica/platonica e di tutti i maggiori filosofi greci (geometria euclidea può avere vita propria a prescindere dal suo contatto con la realtà/dimsione fisica) &rarr; entità razionali che vivono in maniera autonoma
+- influenza filosofica/platonica e di tutti i maggiori filosofi greci (geometria euclidea può avere vita propria a prescindere dal suo contatto con la realtà/dimsione fisica) &rarr; entità razionali che vivono in maniera autonoma
 - i 5 postulati (richieste che il matematico fa allo studioso che gli impongono di accettarle come vere):
     * è sempre possibile tracciare una retta tra due punti qualunque
     * è sempre possibile prolungare una retta (la geometria di Euclide rimane ancorata ad un mondo finito)
